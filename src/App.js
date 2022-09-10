@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import CompanySlider from './components/CompanySlider';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
     <div className="App">
-      <CompanySlider/>
+      <Homepage/>
     </div>
   );
 }
