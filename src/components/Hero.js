@@ -1,11 +1,12 @@
 import React from 'react'
-import { Grid, Container, Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
+import { Container } from '@mui/system'
 import wave from "../Assets/wave1.svg"
 import styled from 'styled-components'
 const Hero = () => {
     return (
         <HeroWrapper> 
-      <img src={wave} alt="" width={"100%"}/>
+      {/* <img src={wave} alt="" width={"100%"}/> */}
 
         <Container maxWidth={"lg"} >
             <Grid container  >
