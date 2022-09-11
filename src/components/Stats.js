@@ -12,20 +12,20 @@ const Stats = () => {
     return (
         <Container maxWidth='xl' style={StatsBackground}>
             <Container maxWidth="xl">
-                <Grid container>
-                    <Grid item md={3}>
+                <Grid container spacing={5}>
+                    <Grid item md={3} sm={6} xs={12}>
                         <Typography variant='h2' align='center' > 100%</Typography>
                         <Typography variant='h5' align='center' > Placements</Typography>
                     </Grid>
-                    <Grid item md={3}>
+                    <Grid item md={3} sm={6} xs={12}>
                         <Typography variant='h2' align='center'> 50+</Typography>
                         <Typography variant='h5' align='center'> Dream Companies Cracked</Typography>
                     </Grid>
-                    <Grid item md={3}>
+                    <Grid item md={3} sm={6} xs={12}>
                         <Typography variant='h2' align='center'>50+</Typography>
                         <Typography variant='h5' align='center'> Placed in Amazon</Typography>
                     </Grid>
-                    <Grid item md={3}>
+                    <Grid item md={3} sm={6} xs={12}>
                         <Typography variant='h2' align='center'> 500+</Typography>
                         <Typography variant='h5' align='center'>Students Placed</Typography>
                     </Grid>
