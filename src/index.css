@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 
 @media screen and (max-width:1200px) {
@@ -31,3 +32,12 @@
     font-size: 11px;
   }
 }
+=======
+/* body{
+  background-color: #070f24;
+opacity: 0.8;
+ background-image:  radial-gradient(#B97CFD 0.9px, transparent 0.9px), radial-gradient(#B97CFD 0.9px, #070f24 0.9px); 
+background-size: 36px 36px;
+background-position: 0 0,18px 18px;
+} */
+>>>>>>> d61c49811366a2f22811cc3e81c8d2c2532de95b

@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
-import './CompanySlider.css';
+import styled from 'styled-components'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -39,7 +39,7 @@ dots:false,
       }
     
   return (
-    <div className='slider'>
+    <CompanySlider_main>
         <Slider {...settings}>
             <div>
         <h3>1</h3>
@@ -72,8 +72,15 @@ dots:false,
             <h3>6</h3>
           </div>
         </Slider>
-    </div>
+        </CompanySlider_main>
   )
 }
+
+const CompanySlider_main=styled.div`
+position: static;
+color:white;  
+
+
+`
 
 export default CompanySlider
