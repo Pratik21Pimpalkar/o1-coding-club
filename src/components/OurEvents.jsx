@@ -13,7 +13,7 @@ const FeatureParagraph = {
   // webkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
   padding: "5rem 2rem",
-  fontSize: "19px",
+  fontSize: "1.18rem",
 };
 const OurEvents = () => {
   return (

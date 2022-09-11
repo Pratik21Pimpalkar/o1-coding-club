@@ -49,12 +49,17 @@ const Testimonial = () => (
 
 const TestimonialWrapper = styled.div`
 
+$color-purple: #8B5CF6;
+$color-pink: #EC4899;
+$color-gray: #9CA3AF;
+$color-black: #1F2937;
+$card-size: 23rem;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: linear-gradient(45deg, $color-purple, $color-pink);
+  background-image: linear-gradient(45deg,#8B5CF6 ,  #EC4899);
   font-family: 'Montserrat', sans-serif;
 
 .carousel {

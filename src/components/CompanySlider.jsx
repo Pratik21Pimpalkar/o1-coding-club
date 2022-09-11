@@ -77,10 +77,7 @@ dots:false,
 }
 
 const CompanySlider_main=styled.div`
-position: static;
 color:white;  
-
-
 `
 
 export default CompanySlider
