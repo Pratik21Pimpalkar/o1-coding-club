@@ -5,14 +5,16 @@ import wave from "../Assets/wave1.svg"
 import OurEvents from '../components/OurEvents'
 import Testimonial from '../components/Testimonial'
 import Stats from '../components/Stats'
+import Footer from '../components/Footer'
 const Homepage = () => {
   return (
     <div>
       <Hero />
-      {/* <CompanySlider/> */}
+      <CompanySlider/>
       <OurEvents/>
       <Stats/>
       <Testimonial/>
+      <Footer/>
     </div>
   )
 }
