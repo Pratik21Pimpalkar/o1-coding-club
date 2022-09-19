@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Hero = () => {
   return (
     <HeroWrapper style={{
-      backgroundImage: `url(${bg})`,
+      // backgroundImage: `url(${bg})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: "cover",
       backgroundAttachment: "fixed",

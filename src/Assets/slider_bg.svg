@@ -1,0 +1,30 @@
+<svg width="1440" height="496" viewBox="0 0 1440 496" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_165_12429" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="496">
+<rect width="1440" height="496" fill="#140230"/>
+</mask>
+<g mask="url(#mask0_165_12429)">
+<rect x="-3.05176e-05" width="1440" height="496" fill="#140230"/>
+<g style="mix-blend-mode:screen" filter="url(#filter0_f_165_12429)">
+<path d="M753.398 267.422C652.402 109.788 442.74 63.874 285.106 164.871L265.421 177.483C107.787 278.479 61.874 488.141 162.871 645.775V645.775C263.867 803.409 473.529 849.323 631.163 748.326L650.848 735.714C808.482 634.717 854.395 425.056 753.398 267.422V267.422Z" fill="url(#paint0_radial_165_12429)"/>
+</g>
+<g style="mix-blend-mode:lighten" filter="url(#filter1_f_165_12429)">
+<rect width="801.611" height="800.679" rx="400.34" transform="matrix(-0.938454 0.345405 0.345405 0.938454 1205.9 4)" fill="#9450FF"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_165_12429" x="-101.52" y="-99.5197" width="1119.31" height="1112.24" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="105.395" result="effect1_foregroundBlur_165_12429"/>
+</filter>
+<filter id="filter1_f_165_12429" x="340.14" y="-109.4" width="1255.81" height="1255.08" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="113.536" result="effect1_foregroundBlur_165_12429"/>
+</filter>
+<radialGradient id="paint0_radial_165_12429" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(458.135 456.598) rotate(57.3522) scale(338.98 1115.08)">
+<stop stop-color="#00C6BC"/>
+<stop offset="1" stop-color="#2400FF" stop-opacity="0.37"/>
+</radialGradient>
+</defs>
+</svg>

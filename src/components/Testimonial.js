@@ -59,7 +59,7 @@ $card-size: 23rem;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-image: linear-gradient(45deg,#8B5CF6 ,  #EC4899);
+  /* background-image: linear-gradient(45deg,#8B5CF6 ,  #EC4899); */
   font-family: 'Montserrat', sans-serif;
 
 .carousel {

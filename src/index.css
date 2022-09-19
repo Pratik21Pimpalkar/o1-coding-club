@@ -3,12 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
-
+body{
+  background-color: black;
+}
 @media screen and (max-width:1200px) {
   html{
     font-size: 15px;
+
   }
 }
 @media screen and (max-width:765px) {
