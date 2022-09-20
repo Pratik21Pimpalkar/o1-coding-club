@@ -39,9 +39,9 @@ const Hero = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} md={8} lg={12}>
+          <Grid item xs={12} md={8} lg={12} >
             <div className="css-1o807li e1u5tl5y0">
-              <img src={lappyimg} alt="" className="lappyimg" />
+              {/* <img src={lappyimg} alt="" className="lappyimg" /> */}
               <div className="css-ucfc1 e1foku9a4" >
                 <div className="css-18q3wgh e1foku9a3" >
                   <img alt="Background Gradient" src={bluebubble} />

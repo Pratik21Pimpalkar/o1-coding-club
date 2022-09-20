@@ -8,7 +8,7 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
-    <footerwrap>
+    <Footerwrap>
     <div id="footer-wrap">
       <footer className="footer">
         <div className="top-footer">
@@ -84,10 +84,10 @@ const Footer = () => {
       </footer>
     </div>
 
-    </footerwrap>
+    </Footerwrap>
   );
 };
-const footerwrap = styled.div`
+const Footerwrap = styled.div`
 
 .footer {
     padding: 90px 105px 25px 105px;
