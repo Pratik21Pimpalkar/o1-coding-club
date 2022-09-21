@@ -41,9 +41,9 @@ const Testimonial2 = () => {
                 }}
             >
                 <SwiperSlide><Card /></SwiperSlide>
-                <SwiperSlide><Card /></SwiperSlide>
-                <SwiperSlide><Card /></SwiperSlide>
-                <SwiperSlide><Card /></SwiperSlide>
+                    {/* <SwiperSlide><Card /></SwiperSlide>
+                    <SwiperSlide><Card /></SwiperSlide>
+                    <SwiperSlide><Card /></SwiperSlide> */}
 
             </Swiper>
         </TestimonialWrapper >
