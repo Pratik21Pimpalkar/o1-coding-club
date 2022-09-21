@@ -101,7 +101,7 @@ const HeroWrapper = styled.div`
   .inside-grid {
     position: absolute;
     top: 13rem;
-    font-family: "Open Sans,Ubuntu ,sans-serif";
+ 
 
     font-weight: 500;
   }
