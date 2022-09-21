@@ -6,6 +6,7 @@ import OurEvents from '../components/OurEvents'
 import Testimonial from '../components/Testimonial'
 import Stats from '../components/Stats'
 import Footer from '../components/Footer'
+import Testimonial2 from '../components/Testimonial2'
 const Homepage = () => {
   return (
     <div>
@@ -13,7 +14,8 @@ const Homepage = () => {
       <CompanySlider/>
       <OurEvents/>
       <Stats/>
-      <Testimonial/>
+      <Testimonial2/>
+      {/* <Testimonial/> */}
       <Footer/>
     </div>
   )
