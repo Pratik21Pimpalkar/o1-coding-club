@@ -25,10 +25,11 @@ const OurEvents = () => {
           style={{
             textAlign: "center",
             color: "white",
+            fontSize: "2.5rem"
           }}
         >
           
-            <h2 style={{ fontSize: "2.5rem" }}>Our Events</h2>
+            Our Events
             
          
         </Typography>
