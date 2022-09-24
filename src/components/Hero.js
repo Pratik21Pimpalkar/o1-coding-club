@@ -2,20 +2,15 @@ import React from "react";
 import { Grid, Container, Typography } from "@mui/material";
 import bg from "../Assets/3.svg";
 import styled from "styled-components";
-
+import tab from "../Assets/tab.png";
 import bluebubble from "../Assets/Bubble-blue.svg";
 import purplebubble from "../Assets/Bubble-purple.svg";
 import lappyimg from "../Assets/lappy_img.png";
+
 const Hero = () => {
   return (
     <HeroWrapper
       style={{
-        // backgroundImage: `url(${bg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
         minHeight: "100vh",
         color: "white",
       }}
@@ -23,32 +18,26 @@ const Hero = () => {
       {/* <img src={bg} alt="" /> */}
       <Container maxWidth={"lg"}>
         <Grid container className="main-grid">
-          <Grid item xs={12} md={8} lg={6} className="inside-grid css-130rcti">
-            <Typography
-              variant="h1 "
-              style={{
-                fontFamily: "Open Sans,Ubuntu ,sans-serif",
-                fontWeight: "700",
-                fontSize: "5vw",
-              }}
-            >
-              O(1) Coding Club
+          <Grid item xs={12} md={8} lg={5} className="inside-grid">
+            <Typography className="headingtext" variant="h1">
+              O(1) <br /> Coding
+              <br /> Club
             </Typography>
-            <Typography variant="h6" className="short-line">
+            <Typography variant="h5" className="short-line">
               Closer to your AMBITIONS,a step at a time.
             </Typography>
           </Grid>
 
-          <Grid item xs={12} md={8} lg={12} >
-            <div className="css-1o807li e1u5tl5y0">
-              {/* <img src={lappyimg} alt="" className="lappyimg" /> */}
-              <div className="css-ucfc1 e1foku9a4" >
-                <div className="css-18q3wgh e1foku9a3" >
-                  <img alt="Background Gradient" src={bluebubble} />
+          <Grid item xs={12} md={8} lg={8}>
+            <div className="animation css-1o807li">
+              <img src={tab} alt="" className="tabimg" />
+              <div className="css-ucfc1 e1foku9a4">
+                <div className="css-18q3wgh">
+                  <img src={bluebubble} />
                 </div>
 
-                <div className="css-19fx3dz e1foku9a2" >
-                  <img alt="Background Gradient" src={purplebubble} />
+                <div className="css-19fx3dz">
+                  <img src={purplebubble} />
                 </div>
               </div>
             </div>
@@ -60,14 +49,15 @@ const Hero = () => {
 };
 
 const HeroWrapper = styled.div`
-  /* min-height: 100vh; */
-  position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 
-  .lappyimg  {
-    top:5rem;
-    height: 35rem;
-    width: 40rem;
+  .headingtext {
+    font-size: 5vw;
+  }
+  .tabimg {
+    z-index: 52;
+    height: 40rem;
   }
   .css-130rcti {
     font-size: 3.4rem;
@@ -88,20 +78,22 @@ const HeroWrapper = styled.div`
       display: initial;
     }
   }
-
-  @media screen and (min-width: 576px) {
-    .css-130rcti {
-      font-size: 6rem;
-      line-height: 6.4rem;
+  @media screen and (max-width: 576px) {
+    .headingtext {
+      text-align: center;
+      font-size: 15vw;
+    }
+    .inside-grid {
+      top: 3rem;
     }
   }
+
   .main-grid {
     position: relative;
   }
   .inside-grid {
     position: absolute;
     top: 13rem;
- 
 
     font-weight: 500;
   }
@@ -111,30 +103,26 @@ const HeroWrapper = styled.div`
 
   .css-1o807li {
     /* width: 1320px; */
-    max-width: 100%;
-    padding: 0 36px;
-    margin: 0 auto;
+
+    /* padding: 0 36px; */
+    /* margin: 0 auto; */
+    top: 10rem;
     position: relative;
-    height: calc(100% - 202px);
-    margin-top: 202px;
+    /* height: calc(100% - 202px); */
+    /* margin-top: 202px; */
     -webkit-transform: translateX(50%);
     -moz-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
-    overflow-y:visible;
+    /* overflow-y:visible; */
   }
 
-  @media screen and (min-width: 576px) {
-    .css-1o807li {
-      padding: 0 16px;
-    }
-  }
   .css-ucfc1 {
     position: absolute;
     height: 100%;
     width: 50%;
-    top: 0;
-    left: 0;
+    top: 8vh;
+    left: 25vw;
     pointer-events: none;
   }
   .css-18q3wgh {
@@ -153,47 +141,6 @@ const HeroWrapper = styled.div`
     animation: animation-vdr77 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
   }
 
-  @-webkit-keyframes animation-vdr77 {
-    0% {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    50% {
-      -webkit-transform: scale(0.8);
-      -moz-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-      transform: scale(0.8);
-    }
-    100% {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-  }
-
-  @keyframes animation-vdr77 {
-    0% {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    50% {
-      -webkit-transform: scale(0.8);
-      -moz-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-      transform: scale(0.8);
-    }
-    100% {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-  }
   .css-19fx3dz {
     position: absolute;
     top: 0;
@@ -210,27 +157,6 @@ const HeroWrapper = styled.div`
     animation: animation-vdr77 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
-  }
-
-  @-webkit-keyframes animation-vdr77 {
-    0% {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-    50% {
-      -webkit-transform: scale(0.8);
-      -moz-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-      transform: scale(0.8);
-    }
-    100% {
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1);
-    }
   }
 
   @keyframes animation-vdr77 {
