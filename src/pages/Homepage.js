@@ -10,8 +10,8 @@ const Homepage = () => {
   return (
     <div>
       <Hero />
-      <CompanySlider/>
       <OurEvents/>
+      <CompanySlider/>
       <Stats/>
       <Testimonial/>
       <Footer/>
