@@ -1,19 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
-import sample from "../Assets/ss.jpg"
-const Card = () => {
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+const Card = ({ data }) => {
     return (
         <CardWrapper>
             <div className='card-wrapper'>
                 <div className="layer"></div>
                 <div className="content">
-                    <div className='details'> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ullam adipisci doloremque. Adipisci in exercitationem accusantium earum natus enim accusamus sapiente id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque provident nisi laudantium, totam libero obcaecati, quod quisquam ipsa quibusdam alias, quasi possimus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum id reiciendis, dignissimos, fugit voluptates necessitatibus sed omnis aspernatur possimus quis eveniet animi?</div>
+                    <div className='details'>
+                        <FormatQuoteIcon />
+                        {data.content}
+                        <FormatQuoteIcon />
+                    </div>
+
                     <div className='imageDiv'>
-                        <img src={sample} alt="" />
+                        <img src={data.img} alt="" />
                     </div>
                     <div className="nameBox">
-                        <p className='name'>Jenny Hamilton</p>
-                        <p className='role'>Software Developer</p>
+                        <p className='name'>{data.name}</p>
+                        <p className='role'> {data.role}</p>
                     </div>
 
                 </div>
@@ -23,6 +28,7 @@ const Card = () => {
 }
 const CardWrapper = styled.div`
 width: 35rem;
+min-height:35rem ;
 border:1px solid black;
 color:white;
 height: fit-content;
@@ -59,7 +65,7 @@ justify-content: center;
     height: 100%;
     width: 100%;
     z-index: 1;
-    transition: 0.5s all;
+    transition: 0.45s all ease-in-out;
 }
 .content{
     display: flex;
@@ -74,6 +80,7 @@ justify-content: center;
     width: 6rem;
     height: 6rem;
     border: 0.12rem solid white;
+    border: 0.22rem solid white;
     border-radius: 50%;
     img{
     border-radius: 50%;

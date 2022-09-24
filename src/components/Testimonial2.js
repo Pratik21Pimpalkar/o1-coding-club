@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import styled from 'styled-components';
 import 'swiper/css';
 import 'swiper/css/bundle'
+import testimonialData from './testimonialData';
 import Card from './Card';
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
-
 const Testimonial2 = () => {
     return (
         <TestimonialWrapper>
@@ -19,31 +19,34 @@ const Testimonial2 = () => {
                 disableOnInteraction: false,
             }} effect={'coverflow'} loop={true} centeredSlides={true} slidesPerView={3}
                 coverflowEffect={{
-                    rotate: 10,
-                    stretch: 30,
+                    rotate: 40,
+                    stretch: 10,
                     depth: 1230, modifier: 1, slideShadows: true,
                 }}
                 breakpoints={{
                     // when window width is >= 320px
                     320: {
                         slidesPerView: 1,
-                        
+
                     },
                     // when window width is >= 480px
                     480: {
                         slidesPerView: 1,
-                        
+
                     },
                     1280: {
                         slidesPerView: 2,
-                        
+
                     },
                 }}
             >
-                <SwiperSlide><Card /></SwiperSlide>
-                    {/* <SwiperSlide><Card /></SwiperSlide>
-                    <SwiperSlide><Card /></SwiperSlide>
-                    <SwiperSlide><Card /></SwiperSlide> */}
+                {
+                    testimonialData.map((data, index) => (
+                        <SwiperSlide key={index}>
+                            <Card data={data} />
+                        </SwiperSlide>
+                    ))
+                }
 
             </Swiper>
         </TestimonialWrapper >
