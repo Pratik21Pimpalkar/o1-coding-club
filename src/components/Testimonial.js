@@ -64,10 +64,10 @@ $card-size: 23rem;
 
 .carousel {
   position: relative;
-  width: 23rem;
-  height: 23rem;
+  width: 35rem;
+  height: 26rem;
   perspective: 500px;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d; 
 }
 
 .card-container {

@@ -18,9 +18,11 @@ const Hero = () => {
       {/* <img src={bg} alt="" /> */}
       <Container maxWidth={"lg"}>
         <Grid container className="main-grid">
-          <Grid item xs={12} md={8} lg={5} className="inside-grid">
+          <Grid item xs={12} md={8}  lg={4}  className="inside-grid">
             <Typography className=" ejyuya510 css-130rcti" variant="h1">
               O(1) Coding Club
+
+         
             </Typography>
             <Typography variant="h5" style={{opacity:"0.7"}}>
               Closer to your AMBITIONS,a step at a time.
@@ -32,7 +34,7 @@ const Hero = () => {
 
           <Grid item xs={12} md={8} lg={8}>
             <div className="animation css-1o807li">
-              <img src={tab} alt="" className="tabimg" />
+              <img src={tab} alt="" style={{ filter: " drop-shadow(15px 11px 24px #5471B7)" }} className="tabimg" />
               <div className="css-ucfc1 e1foku9a4">
                 <div className="css-18q3wgh">
                   <img src={bluebubble} />
@@ -135,7 +137,7 @@ const HeroWrapper = styled.div`
 
     /* padding: 0 36px; */
     /* margin: 0 auto; */
-    top: 10rem;
+    top: 3rem;
     position: relative;
     /* height: calc(100% - 202px); */
     /* margin-top: 202px; */
@@ -147,6 +149,7 @@ const HeroWrapper = styled.div`
   }
 
   .css-ucfc1 {
+    z-index: -1;
     position: absolute;
     height: 100%;
     width: 50%;
@@ -171,6 +174,7 @@ const HeroWrapper = styled.div`
   }
 
   .css-19fx3dz {
+   
     position: absolute;
     top: 0;
     right: 0;
