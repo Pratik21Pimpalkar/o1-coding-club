@@ -1,7 +1,12 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import styled from "styled-components";
-import cubesvg from "../Assets/cube.svg";
+import aptitudeseries from "../Assets/events/aptitudeseries.png";
+import coderun from "../Assets/events/coderun.png";
+import coresubjects from "../Assets/events/coresubjects.png";
+import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
+import sdebootcamp from "../Assets/events/sdebootcamp.png";
+import super30 from "../Assets/events/super30.png";
 const FeaturePosition = {
   color: "white",
 //   marginBottom: "4rem",
@@ -36,7 +41,7 @@ const OurEvents = () => {
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
 
-            <img src={cubesvg} alt="" />
+            <img src={aptitudeseries} alt="" height={340} />
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box sx={{ height: "max-content" }}>
@@ -58,7 +63,7 @@ const OurEvents = () => {
           columnSpacing={5}
           wrap={"wrap-reverse"}
         >
-          {/* <h3  className="heading-desktop" >Subject-wise Performance</h3> */}
+         
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
@@ -70,12 +75,12 @@ const OurEvents = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-          <img src={cubesvg} alt="" width={"100%"}/>
+          <img src={coderun} alt="" width={"100%"} height={340} />
           </Grid>
         </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
-          <img src={cubesvg} alt="" width={"100%"}/>
+          <img src={super30} alt="" width={"100%"}/>
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box>
@@ -108,7 +113,7 @@ const OurEvents = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-          <img src={cubesvg} alt="" width={"100%"}/>
+          <img src={sdebootcamp} alt="" width={"100%"}/>
           </Grid>
         </Grid>
 
