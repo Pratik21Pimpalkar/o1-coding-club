@@ -11,9 +11,9 @@ const Homepage = () => {
   return (
     <div>
       <Hero />
+      <Stats/>
       <OurEvents/>
       <CompanySlider/>
-      <Stats/>
       <Testimonial2/>
       {/* <Testimonial/> */}
       <Footer/>

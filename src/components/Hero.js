@@ -18,23 +18,29 @@ const Hero = () => {
       {/* <img src={bg} alt="" /> */}
       <Container maxWidth={"lg"}>
         <Grid container className="main-grid">
-          <Grid item xs={12} md={8}  lg={4}  className="inside-grid">
+          <Grid item xs={12} md={8} lg={4} className="inside-grid">
             <Typography className=" ejyuya510 css-130rcti" variant="h1">
               O(1) Coding Club
-
-         
             </Typography>
-            <Typography variant="h5" style={{opacity:"0.7"}}>
+            <Typography variant="h5" style={{ opacity: "0.7" }}>
               Closer to your AMBITIONS,a step at a time.
             </Typography>
             <Typography variant="h5" className="short-line">
-            Not just a coding school, but a complete placement ecosystem with strong emphasis on high quality placement training & support, not only equipping you with relevant job market skills but providing every help to land your dream job.
+              Not just a coding school, but a complete placement ecosystem with
+              strong emphasis on high quality placement training & support, not
+              only equipping you with relevant job market skills but providing
+              every help to land your dream job.
             </Typography>
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>
             <div className="animation css-1o807li">
-              <img src={tab} alt="" style={{ filter: " drop-shadow(15px 11px 24px #5471B7)" }} className="tabimg" />
+              <img
+                src={tab}
+                alt=""
+                style={{ filter: " drop-shadow(15px 11px 24px #5471B7)" }}
+                className="tabimg"
+              />
               <div className="css-ucfc1 e1foku9a4">
                 <div className="css-18q3wgh">
                   <img src={bluebubble} />
@@ -67,7 +73,7 @@ const HeroWrapper = styled.div`
   }
   .tabimg {
     z-index: 52;
-    height: 40rem;
+    height: 45rem;
   }
 
   @media screen and (min-width: 576px) {
@@ -75,8 +81,6 @@ const HeroWrapper = styled.div`
       font-size: 6rem;
       line-height: 6.4rem;
     }
- 
-    
   }
   @media screen and (max-width: 576px) {
     .headingtext {
@@ -85,14 +89,15 @@ const HeroWrapper = styled.div`
     }
     .inside-grid {
       top: 3rem;
-
+      z-index: 5;
+    }
   }
-  }    @media screen and (min-width: 992px) {
-        .ejyuya510 {
-          white-space: pre;
-        }
-      }
-    
+  @media screen and (min-width: 992px) {
+    .ejyuya510 {
+      white-space: pre;
+    }
+  }
+
   .css-130rcti {
     font-size: 3.4rem;
     line-height: 3.9rem;
@@ -104,16 +109,12 @@ const HeroWrapper = styled.div`
     line-height: 3.9rem;
   }
 
-
   @media screen and (min-width: 576px) {
     .css-130rcti {
       font-size: 6rem;
       line-height: 6.4rem;
     }
- 
   }
-
-
 
   .main-grid {
     position: relative;
@@ -121,15 +122,15 @@ const HeroWrapper = styled.div`
   .inside-grid {
     position: absolute;
     top: 13rem;
-
+    z-index:2;
     font-weight: 500;
   }
   .short-line {
     margin-top: 2rem;
     font-size: 1.2rem !important;
     opacity: 0.5;
-    font-family:muli;
-  font-weight: lighter;
+    font-family: muli;
+    font-weight: lighter;
   }
 
   .css-1o807li {
@@ -153,7 +154,7 @@ const HeroWrapper = styled.div`
     position: absolute;
     height: 100%;
     width: 50%;
-    top: 8vh;
+    top: 40vh;
     left: 25vw;
     pointer-events: none;
   }
@@ -174,7 +175,6 @@ const HeroWrapper = styled.div`
   }
 
   .css-19fx3dz {
-   
     position: absolute;
     top: 0;
     right: 0;

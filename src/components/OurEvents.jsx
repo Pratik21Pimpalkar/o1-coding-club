@@ -10,12 +10,11 @@ import super30 from "../Assets/events/super30.png";
 const FeaturePosition = {
   color: "white",
 //   marginBottom: "4rem",
-  fontFamily:"sans-serif"
+  fontFamily:"muli"
 };
 const FeatureParagraph = {
   background: "-webkit-linear-gradient(38deg, #ffffff, #c5c5c5, #4e4747)",
   WebkitBackgroundClip: "text",
-  // webkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
   padding: "5rem 2rem",
   fontSize: "1.18rem",
@@ -31,7 +30,9 @@ const OurEvents = () => {
             textAlign: "center",
             color: "white",
             fontSize: "3.0rem",
-            fontWeight:"bold"
+            fontWeight:"bold",
+            marginBottom:"2rem",
+            marginTop:"2rem",
           }}
         >
           
