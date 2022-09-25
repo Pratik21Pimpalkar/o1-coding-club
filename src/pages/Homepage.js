@@ -6,9 +6,11 @@ import Testimonial from '../components/Testimonial'
 import Stats from '../components/Stats'
 import Footer from '../components/Footer'
 import Testimonial2 from '../components/Testimonial2'
+import Navbar from '../components/Navbar'
 const Homepage = () => {
   return (
     <div>
+      <Navbar/>
       <Hero />
       <Stats/>
       <OurEvents/>

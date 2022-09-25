@@ -77,7 +77,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-5">
                 <p className="copyright pt-3">
-                  O(1) Know Your Prep &reg; {new Date().getFullYear()}
+                  O(1) Official Website  &reg; {new Date().getFullYear()}
                 </p>
               </div>
             </div>
