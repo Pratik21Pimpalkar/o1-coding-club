@@ -60,7 +60,7 @@ const CompanySlider = () => {
         {/* {fnames.map(fname)} */}
         {fnames.map((fname) => (
           <div>
-            <img src={fname} alt="" height={100} />{" "}
+            <img src={fname} style={{margin:"2rem"}} alt="" height={100} />{" "}
           </div>
         ))}
 

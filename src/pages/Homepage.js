@@ -7,10 +7,12 @@ import Testimonial from '../components/Testimonial'
 import Stats from '../components/Stats'
 import Footer from '../components/Footer'
 import Testimonial2 from '../components/Testimonial2'
+import FeaturesCard from '../components/FeaturesCard'
 const Homepage = () => {
   return (
     <div>
       <Hero />
+      <FeaturesCard/>   
       <OurEvents/>
       <CompanySlider/>
       <Stats/>

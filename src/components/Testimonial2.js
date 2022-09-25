@@ -20,7 +20,7 @@ const Testimonial2 = () => {
             }} effect={'coverflow'} loop={true} centeredSlides={true} slidesPerView={3}
                 coverflowEffect={{
                     rotate: 40,
-                    stretch: 10,
+                    stretch: 50,
                     depth: 1230, modifier: 1, slideShadows: true,
                 }}
                 breakpoints={{
