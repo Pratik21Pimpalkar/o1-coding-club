@@ -38,7 +38,7 @@ const Hero = () => {
               <img
                 src={tab}
                 alt=""
-                style={{ filter: " drop-shadow(15px 11px 24px #5471B7)" }}
+         
                 className="tabimg"
               />
               <div className="css-ucfc1 e1foku9a4">
@@ -73,7 +73,8 @@ const HeroWrapper = styled.div`
   }
   .tabimg {
     z-index: 52;
-    height: 45rem;
+    height: 33rem;
+    margin-top: 4rem;
   }
 
   @media screen and (min-width: 576px) {
