@@ -55,7 +55,12 @@ const CompanySlider = () => {
 
   return (
     <CompanySlider_main>
-      <h1>Companies</h1>
+      <h1    style={{
+            textAlign: "center",
+            color: "white",
+            fontSize: "3.0rem",
+            fontWeight:"bold"
+          }}>Our students are placed at</h1>
       <Slider {...settings}>
         {/* {fnames.map(fname)} */}
         {fnames.map((fname) => (
@@ -64,33 +69,7 @@ const CompanySlider = () => {
           </div>
         ))}
 
-        {/* <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div> */}
+
       </Slider>
     </CompanySlider_main>
   );

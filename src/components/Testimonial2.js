@@ -12,7 +12,13 @@ const Testimonial2 = () => {
     return (
         <TestimonialWrapper>
             <div className='testimonial-head'>
-                <p>Stories to Inspire</p>
+                <p style={{
+            textAlign: "center",
+            color: "white",
+            fontSize: "3.0rem",
+            fontWeight:"bold",
+     
+          }}>Stories to Inspire</p>
             </div>
             <Swiper grabCursor={true} autoplay={{
                 delay: 1500,

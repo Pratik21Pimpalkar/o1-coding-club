@@ -23,7 +23,7 @@ const Footer = () => {
                       alt="O(1)-logo"
                       className="img-fluid"
                     />
-                    Official website of O1 Coding Club
+                   O1 Coding Club
                   </a>
                   {/* <p className="tagline">A product of O1 Coding Club.</p> */}
                 </div>
