@@ -19,18 +19,28 @@ const Hero = () => {
       <Container maxWidth={"lg"}>
         <Grid container className="main-grid">
           <Grid item xs={12} md={8} lg={4} className="inside-grid">
-            <Typography className="headingtext" variant="h1">
-              O(1) <br /> Coding
-              <br /> Club
+            <Typography className=" ejyuya510 css-130rcti" variant="h1" >
+              O(1) Coding Club
+            </Typography>
+            <Typography variant="h5" style={{ opacity: "0.7" }}>
+              Closer to your AMBITIONS,a step at a time.
             </Typography>
             <Typography variant="h5" className="short-line">
-              Closer to your AMBITIONS,a step at a time.
+              Not just a coding school, but a complete placement ecosystem with
+              strong emphasis on high quality placement training & support, not
+              only equipping you with relevant job market skills but providing
+              every help to land your dream job.
             </Typography>
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>
             <div className="animation css-1o807li">
-              <img src={tab} alt="" style={{ filter: " drop-shadow(15px 11px 24px #5471B7)" }} className="tabimg" />
+              <img
+                src={tab}
+                alt=""
+                style={{ filter: " drop-shadow(15px 11px 24px #5471B7)" }}
+                className="tabimg"
+              />
               <div className="css-ucfc1 e1foku9a4">
                 <div className="css-18q3wgh">
                   <img src={bluebubble} />
@@ -52,17 +62,53 @@ const HeroWrapper = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
 
+  @media screen and (min-width: 992px) {
+    .css-ygum12 .ejyuya510 {
+      white-space: pre;
+    }
+  }
+
   .headingtext {
     font-size: 5vw;
   }
   .tabimg {
     z-index: 52;
-    height: 40rem;
+    height: 45rem;
   }
+
+  @media screen and (min-width: 576px) {
+    .css-130rcti {
+      font-size: 6rem;
+      line-height: 6.4rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .headingtext {
+      /* text-align: center; */
+      /* font-size: 15vw; */
+    }
+    .main-grid{
+
+        .inside-grid {
+        /* top: 3rem; */
+        z-index: 5;
+        top: 8rem;
+      }
+    }
+
+
+  }
+  @media screen and (min-width: 992px) {
+    .ejyuya510 {
+      white-space: pre;
+    }
+  }
+
   .css-130rcti {
     font-size: 3.4rem;
     line-height: 3.9rem;
-    /* color: #121619; */
+    color: white;
+    font-family: muli;
     margin: 0 0 16px;
     font-weight: 800;
     font-size: 3.4rem;
@@ -74,18 +120,6 @@ const HeroWrapper = styled.div`
       font-size: 6rem;
       line-height: 6.4rem;
     }
-    .css-130rcti br {
-      display: initial;
-    }
-  }
-  @media screen and (max-width: 576px) {
-    .headingtext {
-      text-align: center;
-      font-size: 15vw;
-    }
-    .inside-grid {
-      top: 3rem;
-    }
   }
 
   .main-grid {
@@ -94,11 +128,15 @@ const HeroWrapper = styled.div`
   .inside-grid {
     position: absolute;
     top: 13rem;
-
+    z-index:2;
     font-weight: 500;
   }
   .short-line {
     margin-top: 2rem;
+    font-size: 1.2rem !important;
+    opacity: 0.5;
+    font-family: muli;
+    font-weight: lighter;
   }
 
   .css-1o807li {
@@ -122,7 +160,7 @@ const HeroWrapper = styled.div`
     position: absolute;
     height: 100%;
     width: 50%;
-    top: 8vh;
+    top: 40vh;
     left: 25vw;
     pointer-events: none;
   }
@@ -143,7 +181,6 @@ const HeroWrapper = styled.div`
   }
 
   .css-19fx3dz {
-   
     position: absolute;
     top: 0;
     right: 0;

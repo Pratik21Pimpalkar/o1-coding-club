@@ -23,7 +23,7 @@ const Footer = () => {
                       alt="O(1)-logo"
                       className="img-fluid"
                     />
-                    Official website of O1 Coding Club
+                   O1 Coding Club
                   </a>
                   {/* <p className="tagline">A product of O1 Coding Club.</p> */}
                 </div>
@@ -77,7 +77,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-5">
                 <p className="copyright pt-3">
-                  O(1) Know Your Prep &reg; {new Date().getFullYear()}
+                  O(1) Official Website  &reg; {new Date().getFullYear()}
                 </p>
               </div>
             </div>
