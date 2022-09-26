@@ -95,6 +95,9 @@ const HeroWrapper = styled.div`
         z-index: 5;
         top: 8rem;
       }
+      .tabimg{
+        display: none;
+      }
     }
 
 
