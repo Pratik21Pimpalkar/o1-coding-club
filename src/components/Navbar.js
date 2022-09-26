@@ -105,6 +105,7 @@ const Navwrap = styled.div`
   .brand-name {
     text-decoration: none;
     font-size: 1.3rem;
+    padding: 1rem;
     margin-left: 1rem;
   }
   .navigation-menu {
