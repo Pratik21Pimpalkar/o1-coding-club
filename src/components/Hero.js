@@ -19,7 +19,7 @@ const Hero = () => {
       <Container maxWidth={"lg"}>
         <Grid container className="main-grid">
           <Grid item xs={12} md={8} lg={4} className="inside-grid">
-            <Typography className=" ejyuya510 css-130rcti" variant="h1">
+            <Typography className=" ejyuya510 css-130rcti" variant="h1" >
               O(1) Coding Club
             </Typography>
             <Typography variant="h5" style={{ opacity: "0.7" }}>
@@ -84,13 +84,19 @@ const HeroWrapper = styled.div`
   }
   @media screen and (max-width: 576px) {
     .headingtext {
-      text-align: center;
-      font-size: 15vw;
+      /* text-align: center; */
+      /* font-size: 15vw; */
     }
-    .inside-grid {
-      top: 3rem;
-      z-index: 5;
+    .main-grid{
+
+        .inside-grid {
+        /* top: 3rem; */
+        z-index: 5;
+        top: 8rem;
+      }
     }
+
+
   }
   @media screen and (min-width: 992px) {
     .ejyuya510 {

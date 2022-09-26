@@ -26,7 +26,7 @@ const CompanySlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    arrows:false,
+    arrows: false,
 
     dots: false,
     responsive: [
@@ -55,32 +55,37 @@ const CompanySlider = () => {
 
   return (
     <CompanySlider_main>
-      <h1    style={{
-            textAlign: "center",
-            color: "white",
-            fontSize: "3.0rem",
-            fontWeight:"bold"
-          }}>Our students are placed at</h1>
+      <h1>Our students are placed at</h1>
       <Slider {...settings}>
         {/* {fnames.map(fname)} */}
         {fnames.map((fname) => (
-          <div>
-            <img src={fname} style={{margin:"2rem"}} alt="" height={100} />{" "}
+          <div key={fname}>
+            <img src={fname} style={{ margin: "1rem" }} alt="" height={100} />{" "}
           </div>
         ))}
-
-
       </Slider>
     </CompanySlider_main>
   );
 };
 
 const CompanySlider_main = styled.div`
-  color: white;
-  h1{
-      text-align: center;
-      font-family: 'Muli';  
+  h1 {
+    text-align: center;
+    font-family: "Muli";
+    color: white;
+    font-weight: bold;
+    margin: 3rem 0;
+    font-size: 3rem;
   }
+
+
+  @media screen and (max-width: 576px) {
+    h1 {
+    
+    font-size: 2rem;
+  }
+  } 
+   
 `;
 
 export default CompanySlider;
