@@ -74,6 +74,7 @@ const CompanySlider_main = styled.div`
     font-family: "Muli";
     color: white;
     font-weight: bold;
+    margin: 3rem 0;
     font-size: 3rem;
   }
 

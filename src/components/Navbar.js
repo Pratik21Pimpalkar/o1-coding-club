@@ -1,3 +1,4 @@
+import { Container } from "@mui/system";
 import React from "react";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
@@ -8,10 +9,10 @@ export default function Navbar() {
   const [navbarColor, setNavbarColor] = useState(false);
 
   const changeBackground = () => {
-      if (window.scrollY >= 125) {
-           setNavbarColor(true);
+    if (window.scrollY >= 125) {
+      setNavbarColor(true);
     } else {
-        setNavbarColor(false);
+      setNavbarColor(false);
     }
     console.log(navbarColor + "color");
   }
@@ -24,56 +25,59 @@ export default function Navbar() {
   });
 
   return (
-    <Navwrap>
-      <nav  className={navbarColor ? "navigation scrolled" : "navigation"} style={{ color: "white" }}>
-        <a href="#" className="brand-name" title="O1 Analysis">
-          <img src={logo} width="50" alt="O(1)-logo" className="img-fluid" />
-        </a>
+    
+      <Navwrap>
+        <nav className={navbarColor ? "navigation scrolled" : "navigation"} style={{ color: "white" }}>
+          
+          <a href="#" className="brand-name" title="O1 Analysis">
+            <img src={logo} width="50" alt="O(1)-logo" className="img-fluid" />
+          </a>
 
-        <button
-          className="hamburger"
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            viewBox="0 0 20 20"
-            fill="white"
+          <button
+            className="hamburger"
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
           >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </button>
-        <div
-          className={
-            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-          }
-        >
-          <ul>
-            <li>
-              <a href="/home">Home</a>
-            </li>
-            <li>
-              <a href="/about">Stats</a>
-            </li>
-            <li>
-              <a href="/contact"> Our Events</a>
-            </li>
-            <li>
-              <a href="/contact"> Testimonial</a>
-            </li>
-            <li>
-              <a href="/contact"> About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </Navwrap>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="white"
+            >
+              <path
+                fillRule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            className={
+              isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+            }
+          >
+            <ul>
+              <li>
+                <a href="/home">Home</a>
+              </li>
+              <li>
+                <a href="/about">Stats</a>
+              </li>
+              <li>
+                <a href="/contact"> Our Events</a>
+              </li>
+              <li>
+                <a href="/contact"> Testimonial</a>
+              </li>
+              <li>
+                <a href="/contact"> About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </Navwrap>
+    
   );
 }
 
@@ -83,10 +87,10 @@ const Navwrap = styled.div`
     color: white;
   }
   .navigation {
+   
     z-index: 9999;
     color: white !important;
-
-    height: 60px;
+    height: 5rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -100,8 +104,8 @@ const Navwrap = styled.div`
 
   .brand-name {
     text-decoration: none;
-    margin-top: 1rem;
     font-size: 1.3rem;
+    padding: 1rem;
     margin-left: 1rem;
   }
   .navigation-menu {
@@ -211,9 +215,15 @@ const Navwrap = styled.div`
     -o-transition: all ease-out 0.5s;
     transition: all ease-out 0.5s;
   }
-  .navigation .scrolled {
+  .scrolled {
     /* How it will look when scrolled */
-    background-color: #ffffff !important;
-    color: black;
+    
+    background-color: #fff !important;
+    li{
+      a{
+        color:black;
+        font-weight: 600; 
+      }
+    }
   }
 `;

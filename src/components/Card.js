@@ -40,7 +40,9 @@ display: flex;
 margin:0 auto;
 justify-content: center;
 background-color: #252525;
-
+@media screen and (max-width:400px){
+    width: 25rem;
+}
 .card-wrapper{
 position: relative;
 gap: 2rem;

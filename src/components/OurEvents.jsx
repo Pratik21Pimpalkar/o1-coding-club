@@ -31,8 +31,8 @@ const OurEvents = () => {
             color: "white",
             fontSize: "3.0rem",
             fontWeight: "bold",
-            marginBottom: "2rem",
-            marginTop: "2rem",
+            marginBottom: "3rem",
+            marginTop: "5rem",
           }}
         >
           Our Events
@@ -129,12 +129,14 @@ const Events = styled.div`
   position: relative;
 
   h3 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
   }
 
   div p {
     margin-top: 0.5rem;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    font-size: 1.55rem;
   }
   @media screen and (max-width: 576px) {
     
