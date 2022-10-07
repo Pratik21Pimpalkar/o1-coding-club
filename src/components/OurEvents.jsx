@@ -51,6 +51,7 @@ const OurEvents = () => {
                   latest test format.
                 </p>
               </div>
+              <button className="btn">Explore More</button>
             </Box>
           </Grid>
         </Grid>
@@ -147,6 +148,9 @@ const Events = styled.div`
     margin-top: 0.2rem;
     font-size: 1.4rem;
   }
+  }
+  .btn{
+    
   }
 `;
 

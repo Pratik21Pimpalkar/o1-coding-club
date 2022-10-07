@@ -2,7 +2,7 @@ import React from "react";
 // import { SocialIcon } from "react-social-icons";
 import styled from "styled-components";
 
-import logo from "../Assets/logo.svg" ;
+import logo from "../Assets/logo.svg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -23,12 +23,13 @@ const Footer = () => {
                       alt="O(1)-logo"
                       className="img-fluid"
                     />
-                   O1 Coding Club
+                    O1 Coding Club
                   </a>
                   {/* <p className="tagline">A product of O1 Coding Club.</p> */}
                 </div>
               </div>
-            
+              <div className="col-md-2"></div>
+              <div className="col-md-2"></div>
               <div className="col-md-3">
                 <h4>Contact</h4>
                 <ul className="footer-link">
@@ -77,7 +78,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-5">
                 <p className="copyright pt-3">
-                  O(1) Official Website  &reg; {new Date().getFullYear()}
+                  O(1) Official Website &reg; {new Date().getFullYear()}
                 </p>
               </div>
             </div>
@@ -94,7 +95,7 @@ const Footerwrap = styled.div`
     min-height: max-content;
   }
   .company-detail {
-    margin-right: 13rem;
+    margin-right: 10rem;
   }
 
   .img-fluid {
