@@ -27,7 +27,7 @@ function KeepMountedModal() {
 
   return (
     <div>
-      <div className="btn-container">
+      {/* <div className="btn-container">
       <button className="btn-giveTest" onClick={handleOpen}>
         Give Test
       </button>
@@ -45,7 +45,7 @@ function KeepMountedModal() {
         <Box >
           <RegisterForm handleClose={handleClose}/>
         </Box>
-      </Modal>
+      </Modal> */}
     </div>
   );
 }

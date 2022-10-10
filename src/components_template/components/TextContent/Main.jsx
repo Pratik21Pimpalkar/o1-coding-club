@@ -7,12 +7,12 @@ import ModalForm from "../Modal/Modal";
 import { Container, Grid } from "@mui/material";
 
 
-function Main() {
+function Main(prop) {
   return (
     <Container maxWidth={"lg"} className="content" style={{ marginTop: "46px" }}>
       <Grid container alignItems={"center"} justifyContent={"center"} wrap={'wrap-reverse'}>
         <Grid item md={8} sm={7} xs={12} style={{ zIndex: "1" }}>
-          <Heading />
+          <Heading  name={prop.name}/>
           <List />
           <ModalForm />
         </Grid>

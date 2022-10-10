@@ -7,6 +7,8 @@ import coresubjects from "../Assets/events/coresubjects.png";
 import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
 import super30 from "../Assets/events/super30.png";
+
+import { Outlet, Link } from "react-router-dom";
 const FeaturePosition = {
   color: "white",
   //   marginBottom: "4rem",
@@ -19,6 +21,7 @@ const FeatureParagraph = {
   padding: "3rem 2rem",
   fontSize: "1.18rem",
 };
+
 const OurEvents = () => {
   return (
     <Events>
@@ -51,7 +54,8 @@ const OurEvents = () => {
                   latest test format.
                 </p>
               </div>
-              <button className="btn">Explore More</button>
+              {/* <button className="btn"><Link to="/DSA">Explore More</Link> </button> */}
+              <Link to="/dsa">Explore More</Link>
             </Box>
           </Grid>
         </Grid>

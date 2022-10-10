@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import Stackbargraph from "../../../Analysis/components/Stackbargraph";
-import Data from "../../../Analysis/redux/DummyData/Data";
-import LineGraph from "../../../Analysis/components/LineGraph";
-import PieChart from "../../../Analysis/components/PieChart";
+// import Stackbargraph from "../../../Analysis/components/Stackbargraph";
+// import Data from "../../../Analysis/redux/DummyData/Data";
+// import LineGraph from "../../../Analysis/components/LineGraph";
+// import PieChart from "../../../Analysis/components/PieChart";
 
 const FeaturePosition = {
   color: "white",
@@ -21,13 +21,15 @@ const gridStyle = {
   height: "8vh",
   margin: " 20rem 0",
 };
-const dummyData = Data[0];
+// const dummyData = Data[0];
 const gridOrder = { order: "-1" };
 
 const FeatureSection = () => {
   return (
+    <div></div>
+    /*
     <>
-      <Container maxWidth="lg" style={FeaturePosition}>
+     <Container maxWidth="lg" style={FeaturePosition}>
         <Typography
           variant="h2"
           gutterBottom={true}
@@ -44,7 +46,7 @@ const FeatureSection = () => {
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
 
           <Grid item xs={12} sm={12} md={5}>
-{/* <h3 className="heading-desktop" style={{textAlign:"center"}} > No of Correct and Incorrect Answers</h3>  */}
+
             <Stackbargraph
               StackBarLabel={dummyData.stackgraph.labels}
               StackBarSeries={dummyData.stackgraph.series}
@@ -67,7 +69,6 @@ const FeatureSection = () => {
           columnSpacing={5}
           wrap={"wrap-reverse"}
         >  
-          {/* <h3  className="heading-desktop" >Subject-wise Performance</h3> */}
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
         
             <Box sx={{ height: "max-content" }}>
@@ -105,7 +106,8 @@ const FeatureSection = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+      </>
+      */
   );
 };
 
