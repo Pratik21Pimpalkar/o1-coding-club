@@ -8,14 +8,15 @@ import {
   Backdrop,
   CircularProgress,
 } from "@mui/material";
-import axios from "axios";
+// import axios from "axios";
 import React, { useEffect, useState } from "react";
 import login from "../../images/login.svg";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 
 const RegisterForm = (props) => {
+ 
   const [userData, setUserData] = useState({
     name: "",
     email: "",
@@ -30,6 +31,14 @@ const RegisterForm = (props) => {
   ]);
   const [testlink, setTestLink] = useState("");
   let navigate = useNavigate();
+
+  const handleInputs = (e) => {
+
+  };
+  const submitData = (e) => {
+
+  };
+     /*
   const getCollegeName = async () => {
     const fetchNames = await axios.get(
       `https://o1apti.herokuapp.com/college_list`
@@ -52,7 +61,7 @@ const RegisterForm = (props) => {
     setUserData({ ...userData, [key]: value });
   };
 
-  const submitData = (e) => {
+ const submitData = (e) => {
     e.preventDefault();
     setLoading(true);
     if (
@@ -92,7 +101,7 @@ const RegisterForm = (props) => {
       });
     }
   };
-
+*/
   return (
     <>
       <Container
@@ -222,7 +231,7 @@ const RegisterForm = (props) => {
             </Button>
           </Grid>
         </Grid>
-      <ToastContainer
+      {/* <ToastContainer
         position="bottom-right"
         autoClose={2000}
         hideProgressBar={false}
@@ -232,7 +241,7 @@ const RegisterForm = (props) => {
         pauseOnFocusLoss
         draggable
         theme="colored"
-      />
+      /> */}
       </Container>
     </>
   );

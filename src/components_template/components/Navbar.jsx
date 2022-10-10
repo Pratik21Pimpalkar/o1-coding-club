@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Toolbar from "@mui/material/Toolbar";
 import { AppBar, Box, Button, Modal } from "@mui/material";
 import { styled } from "@mui/material";
-import logo from '../../Analysis/Assets/Logo/logo2.svg'
+import logo from "../../Assets/logo.svg";
 import LoginForm from "./Modal/RegisterationForm";
 import { Link } from "react-router-dom";
 

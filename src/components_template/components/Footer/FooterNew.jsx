@@ -2,12 +2,12 @@ import React from "react";
 // import { SocialIcon } from "react-social-icons";
 import "./footerNew.css";
 
-import logo from "../../../Analysis/Assets/Logo/logo2.svg";
+import logo from "../../../Assets/logo.svg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
-const FooterNew = () => {
+const FooterNew = (prop) => {
   return (
     <div id="footer-wrap">
       <footer className="footer">
@@ -22,7 +22,7 @@ const FooterNew = () => {
                     alt="O(1)-logo"
                     className="img-fluid"
                   />
-                  Know Your Prep
+                  {prop.name}
                 </a>
                 <p className="tagline">A product of O1 Coding Club.</p>
               </div>
@@ -87,7 +87,7 @@ const FooterNew = () => {
           <div className="row">
             <div className="col-md-5">
               <p className="copyright pt-3">
-                O(1) Know Your Prep &reg; {new Date().getFullYear()}
+                O(1)   {prop.name} &reg; {new Date().getFullYear()}
               </p>
             </div>
           </div>
