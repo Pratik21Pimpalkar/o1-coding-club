@@ -25,12 +25,12 @@ const Hero = () => {
             <Typography variant="h5" style={{ opacity: "0.7" }}>
               Closer to your AMBITIONS,a step at a time.
             </Typography>
-            <Typography variant="h5" className="short-line">
+            {/* <Typography variant="h5" className="short-line">
               Not just a coding school, but a complete placement ecosystem with
               strong emphasis on high quality placement training & support, not
-              only equipping you with relevant job market skills but providing
+              only equipping you with relevant job mark.et skills but providing
               every help to land your dream job.
-            </Typography>
+            </Typography> */}
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>

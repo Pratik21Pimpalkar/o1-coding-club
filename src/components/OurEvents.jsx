@@ -54,8 +54,8 @@ const OurEvents = () => {
                   latest test format.
                 </p>
               </div>
+              <Link className="explore-btn" to="/dsa">Explore More</Link>
               {/* <button className="btn"><Link to="/DSA">Explore More</Link> </button> */}
-              <Link to="/dsa">Explore More</Link>
             </Box>
           </Grid>
         </Grid>
@@ -77,6 +77,7 @@ const OurEvents = () => {
                   beginners in coding wanting to grab high paying IT jobs
                 </p>
               </div>
+              <Link className="explore-btn left" to="/dsa">Explore More</Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
@@ -97,6 +98,7 @@ const OurEvents = () => {
                   days and get even closer to your Super Dream Placement.
                 </p>
               </div>
+              <Link className="explore-btn" to="/super50">Explore More</Link>
             </Box>
           </Grid>
         </Grid>
@@ -119,6 +121,7 @@ const OurEvents = () => {
                   through placements
                 </p>
               </div>
+              <Link className="explore-btn left" to="/dsa">Explore More</Link>  
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
@@ -133,6 +136,21 @@ const Events = styled.div`
   height: max-content;
   position: relative;
 
+
+  .explore-btn{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding:5px;
+    border-radius:10px;
+    opacity: 0.8;
+    /* margin-top: 2rem; */
+    margin-left:2rem;
+
+    }
+     .left{
+      margin-right:2rem;
+  }
   h3 {
     font-size: 2.25rem;
     margin-bottom: 3rem;
