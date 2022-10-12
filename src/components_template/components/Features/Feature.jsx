@@ -1,10 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-// import Stackbargraph from "../../../Analysis/components/Stackbargraph";
-// import Data from "../../../Analysis/redux/DummyData/Data";
-// import LineGraph from "../../../Analysis/components/LineGraph";
-// import PieChart from "../../../Analysis/components/PieChart";
-
+import img from "../../images/login.svg";
+import styled from "styled-components";
 const FeaturePosition = {
   color: "white",
   marginBottom: "4rem",
@@ -16,6 +13,7 @@ const FeatureParagraph = {
   WebkitTextFillColor: "transparent",
   padding: "5rem 2rem",
   fontSize: "19px",
+
 };
 const gridStyle = {
   height: "8vh",
@@ -26,9 +24,8 @@ const gridOrder = { order: "-1" };
 
 const FeatureSection = () => {
   return (
-    <div></div>
-    /*
     <>
+    <AboutProgram>
      <Container maxWidth="lg" style={FeaturePosition}>
         <Typography
           variant="h2"
@@ -39,7 +36,7 @@ const FeatureSection = () => {
           }}
         >
           <div className="section-title">
-            <h2 style={{ fontSize: "2.5rem" }}>Features</h2>
+            <h2 style={{ fontSize: "2.5rem" }}>About the Program</h2>
             <span className="section-separator"></span>
           </div>
         </Typography>
@@ -47,17 +44,14 @@ const FeatureSection = () => {
 
           <Grid item xs={12} sm={12} md={5}>
 
-            <Stackbargraph
-              StackBarLabel={dummyData.stackgraph.labels}
-              StackBarSeries={dummyData.stackgraph.series}
-            />
+       <img src={img} alt="" srcset="" />
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box sx={{ height: "max-content" }}>
               <div  style={FeatureParagraph}>
-                <h3 className="heading-desktop" > No of Correct and Incorrect Answers</h3> 
-                Analysis the number of correct and incorrect answers per subject and get to
-                know where you need to work on.
+                <h3 className="heading-desktop" > About Instructer</h3> 
+                <h3 className="heading-desktop2" > Instructer Name</h3> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque pariatur, doloremque voluptates vel deleniti culpa voluptatibus repudiandae distinctio, ea, incidunt commodi alias voluptatem ducimus facilis
               </div>
             </Box>
           </Grid>
@@ -73,21 +67,18 @@ const FeatureSection = () => {
         
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3  className="heading-desktop" >Subject-wise Performance</h3>
-                Graphically track your strongest and weakest subject based on
-                your performance in the test so that you always have a chance to
-                improve and work on your weak topics.
+                <h3  className="price-desktop" >Pricing</h3>
+                <h3  className="price-desktop" >4000</h3>
+                <h3  className="price-desktop2" >2000</h3>
+              
               </div>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-            <LineGraph
-              LineGraphLabel={dummyData.linegraph.labels}
-              LineGraphSeries={dummyData.linegraph.series}
-            />
+          <img src={img} alt="" srcset="" />
           </Grid>
         </Grid>
-        <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
+      {/* <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
             <PieChart
               PieChartLabel={dummyData.piechart.labels}
@@ -104,11 +95,35 @@ const FeatureSection = () => {
               </div>
             </Box>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
+
+      </AboutProgram>
       </>
-      */
   );
 };
 
 export default FeatureSection;
+
+
+const AboutProgram = styled.div`
+.heading-desktop{
+  font-size: 2rem;
+
+}
+
+.heading-desktop2{
+  font-size: 1.7rem;
+}
+
+.price-desktop{
+  font-size: 4rem;
+  text-decoration: line-through;
+  text-align: center;
+}
+.price-desktop2{
+  font-size: 3rem;
+  text-align: center;
+
+}
+`

@@ -27,13 +27,13 @@ function KeepMountedModal() {
 
   return (
     <div>
-      {/* <div className="btn-container">
+     <div className="btn-container">
       <button className="btn-giveTest" onClick={handleOpen}>
-        Give Test
+       Register
       </button>
-      <button className="btn-giveTest" onClick={event =>  window.location.href='/dashboard'}>
+      {/* <button className="btn-giveTest" onClick={event =>  window.location.href='/dashboard'}>
         Check Results
-      </button>
+      </button> */}
 </div>
       <Modal
         keepMounted
@@ -45,7 +45,7 @@ function KeepMountedModal() {
         <Box >
           <RegisterForm handleClose={handleClose}/>
         </Box>
-      </Modal> */}
+      </Modal> 
     </div>
   );
 }
