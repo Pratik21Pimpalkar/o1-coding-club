@@ -108,7 +108,6 @@ export default FeatureSection;
 
 const AboutProgram = styled.div`
 .heading-desktop{
-  font-size: 2rem;
 
 }
 
