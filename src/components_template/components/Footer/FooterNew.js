@@ -12,6 +12,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 import mail from '../../../Assets/email.png'
 import './footer.css'
+import { Link } from 'react-router-dom';
 const FooterNew = () => {
     return (
 
@@ -72,10 +73,10 @@ const FooterNew = () => {
                                 </div>
                                 <div className="footer-social-icon">
                                     <span>Follow us</span>
-                                    <a href="#"><YouTubeIcon/></a>
-                                    <a href="#"><InstagramIcon/></a>
-                                    <a href="#"><TelegramIcon/></a>
-                                    <a href="#"><LinkedInIcon/></a>
+                                    <Link to='/'><YouTubeIcon/></Link>
+                                    <Link to='/'><InstagramIcon/></Link>
+                                    <Link to='/'><TelegramIcon/></Link>
+                                    <Link to='/'><LinkedInIcon/></Link>
                                 </div>
                             </div>
                         </Grid>
@@ -85,10 +86,10 @@ const FooterNew = () => {
                                     <h3>Useful Links</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Know Your Prep</a></li>
-                                    <li><a href="#">Our Events</a></li>
-                                    <li><a href="#">Contact Us</a></li>
+                                    <li><Link >Home</Link></li>
+                                    <li><Link >Know Your Prep</Link></li>
+                                    <li><Link >Our Events</Link></li>
+                                    <li><Link >Contact Us</Link></li>
                                 </ul>
                             </div>
                         </Grid>
