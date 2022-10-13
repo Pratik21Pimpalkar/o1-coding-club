@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import img from "../../images/login.svg";
+import rupee from '../../../Assets/rupee.gif'
 import styled from "styled-components";
 const FeaturePosition = {
   color: "white",
@@ -75,7 +76,7 @@ const FeatureSection = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-          <img src={img} alt="" srcset="" />
+          <img src={rupee} alt="" srcset="" />
           </Grid>
         </Grid>
       {/* <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>

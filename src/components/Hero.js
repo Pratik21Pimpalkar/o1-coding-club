@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Container, Typography } from "@mui/material";
 import bg from "../Assets/3.svg";
 import styled from "styled-components";
-import tab from "../Assets/tab.png";
+import tab from "../Assets/tab3.png";
 import bluebubble from "../Assets/Bubble-blue.svg";
 import purplebubble from "../Assets/Bubble-purple.svg";
 import lappyimg from "../Assets/lappy_img.png";
@@ -73,8 +73,8 @@ const HeroWrapper = styled.div`
   }
   .tabimg {
     z-index: 52;
-    height: 33rem;
-    margin-top: 4rem;
+    height: 46rem;
+    margin-top: 0rem;
   }
 
   @media screen and (min-width: 576px) {
@@ -148,7 +148,8 @@ const HeroWrapper = styled.div`
 
     /* padding: 0 36px; */
     /* margin: 0 auto; */
-    top: 3rem;
+    top: 0rem;
+    left:2rem;
     position: relative;
     /* height: calc(100% - 202px); */
     /* margin-top: 202px; */
