@@ -17,16 +17,14 @@ const YouWillGet = ({ data }) => {
                   <img src={beginLogo} alt="" />
                 </div>
                 <div className="contentdetails">
+                  {data.youwillget.map((item, key) => {
+                    return (
+                      <ul key={key}>
               
-                    {data.youwillget.map((item, key) => {
-                      return (
-                        <ul key={key}>
-                          {" "}
-                          <li className="items">{item}</li>{" "}
-                        </ul>
-                      );
-                    })}
-          
+                        <li className="items">{item}</li>{" "}
+                      </ul>
+                    );
+                  })}
                 </div>
               </div>
             </Grid>
@@ -64,12 +62,20 @@ const FeaturesCardWrapper = styled.div`
     .contentdetails {
       color: #ffffff;
       text-align: left;
-      
-        margin:1rem 0rem;
-          opacity: 70%;
-          font-size: 1.5rem;
-        line-height: 2rem;
-      
+
+      margin: 1rem 0rem;
+      opacity: 70%;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      .heading {
+        font-size: 3rem;
+      }
+      .contentdetails {
+        font-size: 1.2rem;
+      }
     }
   }
 `;

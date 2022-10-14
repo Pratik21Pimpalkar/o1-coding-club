@@ -110,6 +110,7 @@ const AboutProgram = styled.div`
 }
 .instructerimg{
   height: 40vh;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
+ margin: 0 auto;
 }
 `
