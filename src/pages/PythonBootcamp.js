@@ -8,8 +8,8 @@ import Timeline from "../components/Timeline";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData"
-const Super50 = () => {
-  
+const Pythonbootcamp = () => {
+    
   return (
     <>
       <div //Background Code
@@ -19,17 +19,18 @@ const Super50 = () => {
           userSelect: "none",
         }}
       >
-        <Home name={PagesData.Super50} />
-        <Stats data={PagesData.Super50}/>
-        <FeaturesCard  data={PagesData.Super50}/>
-        <AboutProgram data={PagesData.Super50} />
+        <Home name={"Pythonbootcamp"} />
+        <Stats />
+        <FeaturesCard />
+        {/* <Events /> */}
+        <AboutProgram data={PagesData.Pythonbootcamp} />
         <Timeline />
         <CompanySlider />
         <Testimonial />
-        <FooterNew name={"SUPER50"} />
+        <FooterNew name={"Pythonbootcamp"} />
       </div>
     </>
   );
 };
 
-export default Super50;
+export default Pythonbootcamp;

@@ -12,6 +12,7 @@ function App() {
           <Route path="/" element={<MainHomePage />}/>
             <Route path="/dsa" element={<DSA />} />
             <Route path="/super50" element={<Super50/>} />
+            <Route path="/pythonbootcamp" element={<Super50/>} />
             {/* <Route path="*" element={<NoPage/>} />  */}
          
         </Routes>

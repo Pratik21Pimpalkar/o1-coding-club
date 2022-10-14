@@ -1,7 +1,6 @@
 import React from "react";
 // import { SocialIcon } from "react-social-icons";
 import "./footerNew.css";
-
 import logo from "../../../Assets/logo.svg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";

@@ -8,7 +8,7 @@ import Timeline from "../components/Timeline";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData"
-const Super50 = () => {
+const DSA = () => {
   
   return (
     <>
@@ -19,17 +19,18 @@ const Super50 = () => {
           userSelect: "none",
         }}
       >
-        <Home name={PagesData.Super50} />
-        <Stats data={PagesData.Super50}/>
-        <FeaturesCard  data={PagesData.Super50}/>
-        <AboutProgram data={PagesData.Super50} />
+        <Home name={"DSA"} />
+        <Stats />
+        <FeaturesCard />
+        {/* <Events /> */}
+        <AboutProgram data={PagesData.dsa} />
         <Timeline />
         <CompanySlider />
         <Testimonial />
-        <FooterNew name={"SUPER50"} />
+        <FooterNew name={"DSA"} />
       </div>
     </>
   );
 };
 
-export default Super50;
+export default DSA;

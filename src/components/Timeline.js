@@ -5,15 +5,15 @@ import styled from "styled-components";
 const Timeline = () => {
   return (
     <TimeLineStyled>
-      <div class="timeline">
-        <div class="container left">
-          <div class="content">
+      <div className="timeline">
+        <div className="container left">
+          <div className="content">
             <h2>Pay Upfront Fees</h2>
             <p>Pay the upfront fees to the upi id - nvidyabhanu30@oksbi and take a screenshot for Payment proof.</p>
           </div>
         </div>
-        <div class="container right">
-          <div class="content">
+        <div className="container right">
+          <div className="content">
             <h2>
 Submit Application</h2>
             <p>Submit your application in Google Form

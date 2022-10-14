@@ -13,7 +13,7 @@ function Main(prop) {
       <Grid container alignItems={"center"} justifyContent={"center"} wrap={'wrap-reverse'}>
         <Grid item md={8} sm={7} xs={12} style={{ zIndex: "1" }}>
           <Heading  name={prop.name}/>
-          <List />
+          <List desc={prop.name}/>
           <ModalForm />
         </Grid>
         <Grid item md={4} sm={5} xs={6}>

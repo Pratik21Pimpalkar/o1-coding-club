@@ -7,7 +7,7 @@ import keepItSimplelogo from '../Assets/33.png'
 import domainLogo from '../Assets/44.png'
 import { Container } from '@mui/system'
 
-const FeaturesCard = () => {
+const FeaturesCard = ({data}) => {
     return (
         <FeaturesCardWrapper>
             <Container>
@@ -17,7 +17,7 @@ const FeaturesCard = () => {
                             <div className='imgdiv'><img src={beginLogo} alt="" /></div>
                             <div className='contentdetails'>
                                 <h4>Beginner Friendly</h4>
-                                <p>Our programs are tailor made and are beginner friendly. We want all to prosper and none to be left behind.</p>
+                                <p>{data.features.first?data.features.first: "Our programs are tailor made and are beginner friendly. We want all to prosper and none to be left behind."}</p>
                             </div>
                         </div>
                     </Grid>

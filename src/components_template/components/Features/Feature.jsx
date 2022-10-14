@@ -23,7 +23,7 @@ const gridStyle = {
 // const dummyData = Data[0];
 const gridOrder = { order: "-1" };
 
-const FeatureSection = () => {
+const FeatureSection = ({data}) => {
   return (
     <>
     <AboutProgram>
@@ -45,14 +45,14 @@ const FeatureSection = () => {
 
           <Grid item xs={12} sm={12} md={5}>
 
-       <img src={img} alt="" srcset="" />
+       <img src={data.instructer.instructerimg?data.instructer.instructerimg:img} alt="" className="instructerimg"/>
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box sx={{ height: "max-content" }}>
               <div  style={FeatureParagraph}>
                 <h3 className="heading-desktop" > About Instructer</h3> 
-                <h3 className="heading-desktop2" > Instructer Name</h3> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque pariatur, doloremque voluptates vel deleniti culpa voluptatibus repudiandae distinctio, ea, incidunt commodi alias voluptatem ducimus facilis
+                <h3 className="heading-desktop2" >{data.instructer.name}</h3> 
+                {data.instructer.about}
               </div>
             </Box>
           </Grid>
@@ -69,34 +69,16 @@ const FeatureSection = () => {
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
                 <h3  className="price-desktop" >Pricing</h3>
-                <h3  className="price-desktop" >4000</h3>
                 <h3  className="price-desktop2" >2000</h3>
               
               </div>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-          <img src={rupee} alt="" srcset="" />
+          <img src={rupee}  alt="" className="instructerimg" />
           </Grid>
         </Grid>
-      {/* <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
-          <Grid item xs={12} sm={12} md={5}>
-            <PieChart
-              PieChartLabel={dummyData.piechart.labels}
-              PieChartSeries={dummyData.piechart.series}
-            />
-          </Grid>
-          <Grid item xs={12} sm={12} md={7}>
-            <Box>
-              <div style={FeatureParagraph}>
-                <h3  className="heading-desktop" >Overall Analysis:</h3>
-                Analyse your contribution per subject based upon the questions
-                you solved in
-                <pre>● DAA ● DSA ● DBMS ● SE ● OS</pre>{" "}
-              </div>
-            </Box>
-          </Grid>
-        </Grid> */}
+
       </Container>
 
       </AboutProgram>
@@ -125,5 +107,9 @@ const AboutProgram = styled.div`
   font-size: 3rem;
   text-align: center;
 
+}
+.instructerimg{
+  height: 40vh;
+  margin-left: 5rem;
 }
 `
