@@ -1,9 +1,7 @@
 import pythoninstructer from "../Assets/rishabh1.jpg";
 
 const programData = {
-
   homepage:{
-
     stats: {
       placements: "100%",
       companycracked: "50+",
@@ -23,7 +21,7 @@ const programData = {
     desc:"",
     linktoregister:"",
     instructer: {
-      name: "Twinshu Parmar",
+      name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
@@ -41,6 +39,7 @@ const programData = {
       placedinamazon: "50+",
       studentplaced: "500+",
     },
+    youwillget:["An impressive project on your resume","A trending skill to enhance your resume"," Course Certification", " Lifetime Access"," Internship offer to top performers"],
   },
   Pythonbootcamp: {
     instructer: {

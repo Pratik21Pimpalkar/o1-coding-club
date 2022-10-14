@@ -7,9 +7,10 @@ import Stats from "../components/Stats";
 import Timeline from "../components/Timeline";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
-import PagesData from "./PagesData"
+import PagesData from "./PagesData";
+import YouWillGet from "../components_template/components/YouWillGet";
 const Super50 = () => {
-  
+  const programdata = PagesData.Super50;
   return (
     <>
       <div //Background Code
@@ -19,14 +20,15 @@ const Super50 = () => {
           userSelect: "none",
         }}
       >
-        <Home name={PagesData.Super50} />
-        <Stats data={PagesData.Super50}/>
-        <FeaturesCard  data={PagesData.Super50}/>
-        <AboutProgram data={PagesData.Super50} />
+        <Home name={programdata} />
+        <Stats data={programdata} />
+        <FeaturesCard data={programdata} />
+        <AboutProgram data={programdata} />
+        <YouWillGet data={programdata}/>
         <Timeline />
         <CompanySlider />
         <Testimonial />
-        <FooterNew name={"SUPER50"} />
+        <FooterNew name={programdata} />
       </div>
     </>
   );
