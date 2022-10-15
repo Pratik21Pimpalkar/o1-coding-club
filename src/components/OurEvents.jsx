@@ -54,8 +54,7 @@ const OurEvents = () => {
                   latest test format.
                 </p>
               </div>
-              <Link className="explore-btn" to="/dsa">Explore More</Link>
-              {/* <button className="btn"><Link to="/DSA">Explore More</Link> </button> */}
+              <Link className="explore-btn" to="/aptitudeseries">Explore More</Link>
             </Box>
           </Grid>
         </Grid>
@@ -77,11 +76,11 @@ const OurEvents = () => {
                   beginners in coding wanting to grab high paying IT jobs
                 </p>
               </div>
-              <Link className="explore-btn left" to="/dsa">Explore More</Link>
+              <Link className="explore-btn left" to="/pythonbootcamp">Explore More</Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-            <img src={coderun} alt="" width={"100%"} height={340} />
+            <img src={pythonbootcamp} alt="" width={"100%"} height={340} />
           </Grid>
         </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
@@ -110,7 +109,6 @@ const OurEvents = () => {
           columnSpacing={5}
           wrap={"wrap-reverse"}
         >
-          {/* <h3  className="heading-desktop" >Subject-wise Performance</h3> */}
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
@@ -121,11 +119,11 @@ const OurEvents = () => {
                   through placements
                 </p>
               </div>
-              <Link className="explore-btn left" to="/dsa">Explore More</Link>  
+              <Link className="explore-btn left" to="/coresubjects">Explore More</Link>  
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-            <img src={sdebootcamp} alt="" width={"100%"} />
+            <img src={coresubjects} alt="" width={"100%"} />
           </Grid>
         </Grid>
       </Container>
@@ -146,8 +144,17 @@ const Events = styled.div`
     opacity: 0.8;
     /* margin-top: 2rem; */
     margin-left:2rem;
+    transition: all 0.3s;
+ 
+    &:hover {
+      background-color: white;
+  color:black;
+
+  }
 
     }
+
+ 
      .left{
       margin-right:2rem;
   }
