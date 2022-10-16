@@ -23,7 +23,7 @@ const Hero = () => {
               O(1) Coding Club
             </Typography>
             <Typography variant="h5" style={{ opacity: "0.7" }}>
-              Closer to your AMBITIONS,a step at a time.
+              Closer to your AMBITIONS, a step at a time.
             </Typography>
             {/* <Typography variant="h5" className="short-line">
               Not just a coding school, but a complete placement ecosystem with

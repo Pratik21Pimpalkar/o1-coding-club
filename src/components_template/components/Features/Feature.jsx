@@ -112,5 +112,6 @@ const AboutProgram = styled.div`
   height: 40vh;
   /* margin-left: 5rem; */
  margin: 0 auto;
+ border-radius: 10px;
 }
 `
