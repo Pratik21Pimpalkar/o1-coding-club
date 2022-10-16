@@ -7,6 +7,8 @@ import coresubjects from "../Assets/events/coresubjects.png";
 import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
 import super30 from "../Assets/events/super30.png";
+
+import { Outlet, Link } from "react-router-dom";
 const FeaturePosition = {
   color: "white",
   //   marginBottom: "4rem",
@@ -19,6 +21,7 @@ const FeatureParagraph = {
   padding: "3rem 2rem",
   fontSize: "1.18rem",
 };
+
 const OurEvents = () => {
   return (
     <Events>
@@ -51,6 +54,7 @@ const OurEvents = () => {
                   latest test format.
                 </p>
               </div>
+              <Link className="explore-btn" to="/aptitudeseries">Explore More</Link>
             </Box>
           </Grid>
         </Grid>
@@ -72,10 +76,11 @@ const OurEvents = () => {
                   beginners in coding wanting to grab high paying IT jobs
                 </p>
               </div>
+              <Link className="explore-btn left" to="/pythonbootcamp">Explore More</Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-            <img src={coderun} alt="" width={"100%"} height={340} />
+            <img src={pythonbootcamp} alt="" width={"100%"} height={340} />
           </Grid>
         </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
@@ -92,6 +97,7 @@ const OurEvents = () => {
                   days and get even closer to your Super Dream Placement.
                 </p>
               </div>
+              <Link className="explore-btn" to="/super50">Explore More</Link>
             </Box>
           </Grid>
         </Grid>
@@ -103,7 +109,6 @@ const OurEvents = () => {
           columnSpacing={5}
           wrap={"wrap-reverse"}
         >
-          {/* <h3  className="heading-desktop" >Subject-wise Performance</h3> */}
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
@@ -114,10 +119,11 @@ const OurEvents = () => {
                   through placements
                 </p>
               </div>
+              <Link className="explore-btn left" to="/coresubjects">Explore More</Link>  
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-            <img src={sdebootcamp} alt="" width={"100%"} />
+            <img src={coresubjects} alt="" width={"100%"} />
           </Grid>
         </Grid>
       </Container>
@@ -128,6 +134,30 @@ const Events = styled.div`
   height: max-content;
   position: relative;
 
+
+  .explore-btn{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding:5px;
+    border-radius:10px;
+    opacity: 0.8;
+    /* margin-top: 2rem; */
+    margin-left:2rem;
+    transition: all 0.3s;
+ 
+    &:hover {
+      background-color: white;
+  color:black;
+
+  }
+
+    }
+
+ 
+     .left{
+      margin-right:2rem;
+  }
   h3 {
     font-size: 2.25rem;
     margin-bottom: 3rem;
@@ -147,6 +177,9 @@ const Events = styled.div`
     margin-top: 0.2rem;
     font-size: 1.4rem;
   }
+  }
+  .btn{
+    
   }
 `;
 

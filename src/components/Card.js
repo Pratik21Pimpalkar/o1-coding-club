@@ -7,7 +7,7 @@ const Card = ({ data }) => {
             <div className='card-wrapper'>
                 <div className="layer"></div>
                 <div className="content">
-                    <div className='details'>
+                    <div className='details' style={{fontSize:"1rem" ,fontWeight:"400"}}>
                         <FormatQuoteIcon />
                         {data.content}
                         <FormatQuoteIcon />

@@ -14,7 +14,6 @@ export default function Navbar() {
     } else {
       setNavbarColor(false);
     }
-    console.log(navbarColor + "color");
   }
   useEffect(() => {
     changeBackground();

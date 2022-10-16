@@ -21,7 +21,7 @@ const Testimonial2 = () => {
           }}>Stories to Inspire</p>
             </div>
             <Swiper grabCursor={true} autoplay={{
-                delay: 1500,
+                delay: 5500,
                 disableOnInteraction: false,
             }} effect={'coverflow'} loop={true} centeredSlides={true} slidesPerView={3}
                 coverflowEffect={{

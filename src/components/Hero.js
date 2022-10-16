@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Container, Typography } from "@mui/material";
 import bg from "../Assets/3.svg";
 import styled from "styled-components";
-import tab from "../Assets/tab.png";
+import tab from "../Assets/tab3.png";
 import bluebubble from "../Assets/Bubble-blue.svg";
 import purplebubble from "../Assets/Bubble-purple.svg";
 import lappyimg from "../Assets/lappy_img.png";
@@ -25,12 +25,12 @@ const Hero = () => {
             <Typography variant="h5" style={{ opacity: "0.7" }}>
               Closer to your AMBITIONS,a step at a time.
             </Typography>
-            <Typography variant="h5" className="short-line">
+            {/* <Typography variant="h5" className="short-line">
               Not just a coding school, but a complete placement ecosystem with
               strong emphasis on high quality placement training & support, not
-              only equipping you with relevant job market skills but providing
+              only equipping you with relevant job mark.et skills but providing
               every help to land your dream job.
-            </Typography>
+            </Typography> */}
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>
@@ -38,7 +38,7 @@ const Hero = () => {
               <img
                 src={tab}
                 alt=""
-                style={{ filter: " drop-shadow(15px 11px 24px #5471B7)" }}
+         
                 className="tabimg"
               />
               <div className="css-ucfc1 e1foku9a4">
@@ -73,7 +73,8 @@ const HeroWrapper = styled.div`
   }
   .tabimg {
     z-index: 52;
-    height: 45rem;
+    height: 46rem;
+    margin-top: 0rem;
   }
 
   @media screen and (min-width: 576px) {
@@ -93,6 +94,9 @@ const HeroWrapper = styled.div`
         /* top: 3rem; */
         z-index: 5;
         top: 8rem;
+      }
+      .tabimg{
+        display: none;
       }
     }
 
@@ -144,7 +148,8 @@ const HeroWrapper = styled.div`
 
     /* padding: 0 36px; */
     /* margin: 0 auto; */
-    top: 3rem;
+    top: 0rem;
+    right:2rem;
     position: relative;
     /* height: calc(100% - 202px); */
     /* margin-top: 202px; */
