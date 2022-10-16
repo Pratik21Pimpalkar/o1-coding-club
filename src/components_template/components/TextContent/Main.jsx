@@ -8,6 +8,16 @@ import { Container, Grid } from "@mui/material";
 
 
 function Main(prop) {
+  const styles = (theme) => ({
+    root: {
+      backgroundColor: 'blue',
+      // Match [sm, md)
+      //       [600px, 900px)
+      [theme.breakpoints.between('sm', 'md')]: {
+        backgroundColor: 'red',
+      },
+    },
+  });
   return (
     <Container maxWidth={"lg"} className="content" style={{ marginTop: "46px" }}>
       <Grid container alignItems={"center"} justifyContent={"center"} wrap={'wrap-reverse'}>

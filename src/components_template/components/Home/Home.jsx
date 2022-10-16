@@ -3,6 +3,7 @@ import Navbar from "../Navbar";
 import SocialMedia from "../SocialMedia";
 import Main from "../TextContent/Main";
 import bg_final from "../../images/bg_homepage.png";
+import Navbar2 from "../../../components/Navbar";
 const Home = (prop) => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = (prop) => {
         }}
       >
         <Navbar />
+        <Navbar2/>
         <Main name={prop.name}/>
         
         {/* Main content contains Start btn, modal, form */}

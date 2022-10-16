@@ -71,7 +71,7 @@ export default function Navbar() {
                 <a href="#testimonial"> Testimonial</a>
               </li>
               <li>
-                <a href="#about"> About</a>
+                <a href="#about" > About</a>
               </li>
             </ul>
           </div>
