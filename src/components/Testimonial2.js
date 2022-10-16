@@ -10,7 +10,7 @@ import Card from './Card';
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 const Testimonial2 = () => {
     return (
-        <TestimonialWrapper>
+        <TestimonialWrapper id="testimonial">
             <div className='testimonial-head'>
                 <p style={{
             textAlign: "center",
@@ -21,7 +21,7 @@ const Testimonial2 = () => {
           }}>Stories to Inspire</p>
             </div>
             <Swiper grabCursor={true} autoplay={{
-                delay: 1500,
+                delay: 5500,
                 disableOnInteraction: false,
             }} effect={'coverflow'} loop={true} centeredSlides={true} slidesPerView={3}
                 coverflowEffect={{

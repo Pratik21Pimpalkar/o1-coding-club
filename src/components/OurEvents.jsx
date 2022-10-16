@@ -24,7 +24,7 @@ const FeatureParagraph = {
 
 const OurEvents = () => {
   return (
-    <Events>
+    <Events id="events">
       <Container maxWidth="lg" style={FeaturePosition}>
         <Typography
           variant="h1"

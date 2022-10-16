@@ -149,7 +149,7 @@ const HeroWrapper = styled.div`
     /* padding: 0 36px; */
     /* margin: 0 auto; */
     top: 0rem;
-    left:2rem;
+    right:2rem;
     position: relative;
     /* height: calc(100% - 202px); */
     /* margin-top: 202px; */

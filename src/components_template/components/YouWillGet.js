@@ -2,6 +2,7 @@ import React from "react";
 import { Grid } from "@mui/material";
 import styled from "styled-components";
 import beginLogo from "../images/benefits.jpg";
+import benefits from '../../Assets/benefits.png'
 import { Container } from "@mui/system";
 const YouWillGet = ({ data }) => {
   return (
@@ -14,7 +15,7 @@ const YouWillGet = ({ data }) => {
             <Grid item xs={12} md={6}>
               <div className="card">
                 <div className="imgdiv">
-                  <img src={beginLogo} alt="" />
+                  <img src={benefits} alt="" />
                 </div>
                 <div className="contentdetails">
                   {data.youwillget.map((item, key) => {
@@ -45,8 +46,9 @@ const FeaturesCardWrapper = styled.div`
     color: white;
   }
   .card {
+    margin-top: 2rem;
     width: 100%;
-    height: 25rem;
+    min-height: 25rem;
     display: flex;
     padding: 2rem;
     background-color: #140230;
@@ -54,8 +56,9 @@ const FeaturesCardWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     .imgdiv {
-      width: 7rem;
+      width: 13rem;
       img {
+        object-fit: cover;
         width: 100%;
       }
     }
