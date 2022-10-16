@@ -1,6 +1,7 @@
 import { Container } from "@mui/system";
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.svg";
 
@@ -58,19 +59,19 @@ export default function Navbar() {
           >
             <ul>
               <li>
-                <a href="/home">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/about">Stats</a>
+                <a href="#stats">Stats</a>
               </li>
               <li>
-                <a href="/contact"> Our Events</a>
+                <a href="#events"> Our Events</a>
               </li>
               <li>
-                <a href="/contact"> Testimonial</a>
+                <a href="#testimonial"> Testimonial</a>
               </li>
               <li>
-                <a href="/contact"> About</a>
+                <a href="#about"> About</a>
               </li>
             </ul>
           </div>

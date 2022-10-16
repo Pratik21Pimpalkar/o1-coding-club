@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 const FooterNew = () => {
     return (
 
-        <footer className="footer-section" style={{ marginTop: "15rem" }}>
+        <footer className="footer-section" style={{ marginTop: "15rem" }} id="footer">
             <Container maxWidth={'xl'}>
                 <div className="footer-cta pt-5 pb-5">
                     <Grid container justifyContent={'center'}>
@@ -54,7 +54,7 @@ const FooterNew = () => {
                                     </div>
                                     <div className="cta-text">
                                         <h4>Mail us</h4>
-                                        <span>mail@info.com</span>
+                                        <span>o1codingclub@gmail.com</span>
                                     </div>
                                 </div>
                             </div>
@@ -73,10 +73,10 @@ const FooterNew = () => {
                                 </div>
                                 <div className="footer-social-icon">
                                     <span>Follow us</span>
-                                    <Link to='/'><YouTubeIcon/></Link>
-                                    <Link to='/'><InstagramIcon/></Link>
-                                    <Link to='/'><TelegramIcon/></Link>
-                                    <Link to='/'><LinkedInIcon/></Link>
+                                    <a href="https://www.linkedin.com/in/o-1-coding-club/" target="_blank"><LinkedInIcon/></a>
+                                    <a href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg" target="_blank"><YouTubeIcon/></a>
+                                    <a href="https://www.instagram.com/o1codingclub/" target="_blank"><InstagramIcon/></a>
+                                    <a href="" target="_blank"><TelegramIcon/></a>
                                 </div>
                             </div>
                         </Grid>
@@ -86,10 +86,10 @@ const FooterNew = () => {
                                     <h3>Useful Links</h3>
                                 </div>
                                 <ul>
-                                    <li><Link >Home</Link></li>
-                                    <li><Link >Know Your Prep</Link></li>
-                                    <li><Link >Our Events</Link></li>
-                                    <li><Link >Contact Us</Link></li>
+                                    <li><a href='#'>Home</a></li>
+                                    <li><a href="https://knowyourprep.o1codingclub.in/" target="_blank" >Know Your Prep</a></li>
+                                    <li><a href="#events">Our Events</a></li>
+                                    <li><a href="#footer">Contact Us</a></li>
                                 </ul>
                             </div>
                         </Grid>
@@ -120,7 +120,7 @@ const FooterNew = () => {
 
                     <Grid item xl={6} lg={6} >
                         <div className="copyright-text">
-                            <p style={{ textAlign: "center" }}>Copyright &copy; 2018, All Right Reserved <a href="https://o1codingclub.in">O(1) Coding Club</a></p>
+                            <p style={{ textAlign: "center" }}>Copyright &copy; 2022, All Right Reserved <a href="https://o1codingclub.in">O(1) Coding Club</a></p>
                         </div>
                     </Grid>
                 </Container>

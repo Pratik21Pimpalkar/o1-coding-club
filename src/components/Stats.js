@@ -13,7 +13,7 @@ const StatsBackground = {
 }
 const Stats = ({data}) => {
     return (
-        <Container maxWidth='xl' style={StatsBackground}>
+        <Container maxWidth='xl' style={StatsBackground} id="stats">
             <Container maxWidth="xl">
                 <Grid container spacing={5}>    
                     <Grid item md={3} sm={6} xs={12}>

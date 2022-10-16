@@ -10,7 +10,7 @@ import Card from './Card';
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 const Testimonial2 = () => {
     return (
-        <TestimonialWrapper>
+        <TestimonialWrapper id="testimonial">
             <div className='testimonial-head'>
                 <p style={{
             textAlign: "center",

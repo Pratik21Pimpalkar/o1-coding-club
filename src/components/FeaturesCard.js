@@ -9,7 +9,7 @@ import { Container } from '@mui/system'
 
 const FeaturesCard = ({data}) => {
     return (
-        <FeaturesCardWrapper>
+        <FeaturesCardWrapper id="about">
             <Container>
                 <Grid container maxWidth={'lg'} justifyContent={'center'} spacing={5}>
                     <Grid item xs={12} md={3}>
