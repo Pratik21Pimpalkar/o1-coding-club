@@ -1,12 +1,13 @@
 import React from "react";
 import { Grid, Container, Typography } from "@mui/material";
-import bg from "../Assets/3.svg";
+import { HashLink } from "react-router-hash-link";
+
 import styled from "styled-components";
 import tab from "../Assets/tab3.png";
 import bluebubble from "../Assets/Bubble-blue.svg";
 import purplebubble from "../Assets/Bubble-purple.svg";
 import lappyimg from "../Assets/lappy_img.png";
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <HeroWrapper
@@ -16,31 +17,34 @@ const Hero = () => {
       }}
     >
       {/* <img src={bg} alt="" /> */}
-      <Container maxWidth={"lg"}>
+      <Container>
         <Grid container className="main-grid">
           <Grid item xs={12} md={8} lg={4} className="inside-grid">
-            <Typography className=" ejyuya510 css-130rcti" variant="h1" >
+            <Typography className=" ejyuya510 css-130rcti" variant="h1">
               O(1) Coding Club
             </Typography>
-            <Typography variant="h5" style={{ opacity: "0.7" }}>
+            <Typography className="head2" style={{ opacity: "0.7" }}>
               Closer to your AMBITIONS, a step at a time.
             </Typography>
-            {/* <Typography variant="h5" className="short-line">
-              Not just a coding school, but a complete placement ecosystem with
-              strong emphasis on high quality placement training & support, not
-              only equipping you with relevant job mark.et skills but providing
-              every help to land your dream job.
-            </Typography> */}
+            <Typography className="head3" style={{ opacity: "0.7" }}>
+              10,000 Students from 31 colleges have trusted us
+            </Typography>
+
+            <HashLink
+                smooth
+                to="#events"
+              >
+               <button className="btn-giveTest btn fullwidthbtn">
+                  Explore Our Programs
+                  </button>
+              </HashLink>
+
+         
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>
             <div className="animation css-1o807li">
-              <img
-                src={tab}
-                alt=""
-         
-                className="tabimg"
-              />
+              <img src={tab} alt="" className="tabimg" />
               <div className="css-ucfc1 e1foku9a4">
                 <div className="css-18q3wgh">
                   <img src={bluebubble} />
@@ -61,13 +65,43 @@ const Hero = () => {
 const HeroWrapper = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
-
   @media screen and (min-width: 992px) {
     .css-ygum12 .ejyuya510 {
       white-space: pre;
     }
   }
+  .fullwidthbtn{
+    width: auto;
+    padding: 5px 15px;
+  }
+  .head2 {
+    font-size: 1.3rem;
+    white-space: pre;
+  }
 
+  .head3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "muli";
+    letter-spacing: 1px;
+    white-space: pre;
+    margin-top: 5rem;
+  }
+  .explore-btn {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(270deg, #f96b24, #ff9100);
+    transition: all 0.3s;
+
+    &:hover {
+      color: black;
+    }
+  }
   .headingtext {
     font-size: 5vw;
   }
@@ -88,19 +122,16 @@ const HeroWrapper = styled.div`
       /* text-align: center; */
       /* font-size: 15vw; */
     }
-    .main-grid{
-
-        .inside-grid {
+    .main-grid {
+      .inside-grid {
         /* top: 3rem; */
         z-index: 5;
         top: 8rem;
       }
-      .tabimg{
+       .tabimg {
         display: none;
       }
     }
-
-
   }
   @media screen and (min-width: 992px) {
     .ejyuya510 {
@@ -132,7 +163,7 @@ const HeroWrapper = styled.div`
   .inside-grid {
     position: absolute;
     top: 13rem;
-    z-index:2;
+    z-index: 2;
     font-weight: 500;
   }
   .short-line {
@@ -149,7 +180,7 @@ const HeroWrapper = styled.div`
     /* padding: 0 36px; */
     /* margin: 0 auto; */
     top: 0rem;
-    right:2rem;
+    right: 2rem;
     position: relative;
     /* height: calc(100% - 202px); */
     /* margin-top: 202px; */
