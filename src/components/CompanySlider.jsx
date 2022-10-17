@@ -22,12 +22,12 @@ const CompanySlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1700,
+    speed: 2000,
     slidesToShow: 6,
     cssEase: 'linear',
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: -0,
+    autoplaySpeed: 2,
     arrows: false,
     dots: false,
     responsive: [
