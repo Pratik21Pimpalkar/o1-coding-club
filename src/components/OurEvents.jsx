@@ -29,13 +29,16 @@ const OurEvents = () => {
         <Typography
           variant="h1"
           gutterBottom={true}
-          style={{
+          sx={{
             textAlign: "center",
             color: "white",
             fontSize: "3.0rem",
             fontWeight: "bold",
             marginBottom: "3rem",
             marginTop: "5rem",
+            '@media (max-width:480px)': {
+              fontSize: '2.3rem',
+            }
           }}
         >
           Our Events

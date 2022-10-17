@@ -16,7 +16,7 @@ const Testimonial2 = () => {
                 <Typography variant="h3" sx={{
                     textAlign: "center", color: "white", fontSize: "3.0rem", fontWeight: "bold",
                     '@media (max-width:480px)': {
-                        fontSize: '3rem',
+                        fontSize: '2rem',
                     }
                 }}>Stories to Inspire</Typography>
             </div>

@@ -3,8 +3,6 @@ import { Container } from '@mui/system'
 import React from 'react'
 import logo from "../../../Assets/logo.svg";
 import phone from '../../../Assets/phone.png'
-import locIcon from '../../../Assets/fu.png'
-import Iframe from 'react-iframe'
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -13,14 +11,15 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import mail from '../../../Assets/email.png'
 import './footer.css'
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 const FooterNew = () => {
     return (
 
-        <footer className="footer-section" style={{ marginTop: "15rem" }} id="footer">
+        <footer className="footer-section" style={{ marginTop: "5rem" }} id="footer">
             <Container maxWidth={'xl'}>
                 <div className="footer-cta pt-5 pb-5">
-                    <Grid container justifyContent={'center'}>
-                        <Grid item xl={4} md={4} >
+                    <Grid container justifyContent={'center'} alignItems={"center"} alignContent={"center"}>
+                        {/* <Grid item xl={4} md={4} >
                             <div style={{ padding: "0.9rem 0.6rem" }}>
                                 <div className="single-cta">
                                     <div className='WidgetIcon'>
@@ -32,8 +31,8 @@ const FooterNew = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Grid>
-                        <Grid item xl={4} md={4} >
+                        </Grid> */}
+                        <Grid item xl={6} md={4} sm={12}>
                             <div style={{ padding: "0.9rem 0.6rem" }}>
                                 <div className="single-cta">
                                     <div className='WidgetIcon'>
@@ -46,7 +45,7 @@ const FooterNew = () => {
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xl={4} md={4} >
+                        <Grid item xl={4} md={4} sm={12}>
                             <div style={{ padding: "0.9rem 0.6rem" }}>
                                 <div className="single-cta">
                                     <div className='WidgetIcon'>
@@ -62,8 +61,8 @@ const FooterNew = () => {
                     </Grid>
                 </div>
                 <div style={{ padding: '3rem' }}>
-                    <Grid container >
-                        <Grid item xl={4} md={4} >
+                    <Grid container  spacing={5}>
+                        <Grid item xl={6} md={4} >
                             <div className="footer-widget">
                                 <div className="footer-logo" style={{ width: "5rem" }}>
                                     <a href="index.html"><img src={logo} className="img-fluid" alt="logo" style={{ width: "100%", objectFit: "contain" }} /></a>
@@ -80,36 +79,16 @@ const FooterNew = () => {
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xl={4} md={4} >
+                        <Grid item xl={6} md={4} >
                             <div className="footer-widget">
                                 <div className="footer-widget-heading">
                                     <h3>Useful Links</h3>
                                 </div>
                                 <ul>
-                                    <li><a href='#'>Home</a></li>
-                                    <li><a href="https://knowyourprep.o1codingclub.in/" target="_blank" >Know Your Prep</a></li>
-                                    <li><a href="#events">Our Events</a></li>
-                                    <li><a href="#footer">Contact Us</a></li>
+                                    <li><HashLink to='/'>Home</HashLink></li>
+                                    <li><HashLink to="https://knowyourprep.o1codingclub.in/" target="_blank" >Know Your Prep</HashLink></li>
+                                    <li><HashLink to="#footer">Contact Us</HashLink></li>
                                 </ul>
-                            </div>
-                        </Grid>
-                        <Grid item xl={4} md={4} >
-                            <div className="footer-widget1">
-                                <div className="footer-widget-heading">
-                                    <h3>Explore Us</h3>
-                                </div>
-                                <div className="footer-text mb-25">
-                                    <p>Find us here</p>
-                                </div>
-                                <div className="subscribe-form">
-                                    <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.3909907251495!2d79.05943361473419!3d21.176621385918473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1a8970c08e9%3A0xfe4a9c97e7e671cb!2sShri%20Ramdeobaba%20College%20of%20Engineering%20and%20Management!5e0!3m2!1sen!2sin!4v1665673346821!5m2!1sen!2sin"
-                                        id=""
-                                        width='100%'
-                                        height='100%'
-                                        className=""
-                                        display="block"
-                                        position="relative" />
-                                </div>
                             </div>
                         </Grid>
                     </Grid>
