@@ -15,16 +15,18 @@ ul {
 }
 .single-cta{
   display: flex;
+  width: 19rem;
   align-items: center;
+    justify-content: flex-start;
 }
 .single-cta .WidgetIcon {
- width: 8rem;}
+ width: 3rem;}
 .single-cta .WidgetIcon img {
  width: 100%;
 object-fit: cover;}
 .cta-text {
-  padding-left: 15px;
-  display: inline-block;
+  padding: 0.5rem 1rem;
+    display: inline-block;
 }
 .cta-text h4 {
   color: #fff;

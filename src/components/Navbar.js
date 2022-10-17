@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.svg";
-
+import { HashLink } from "react-router-hash-link";
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [navbarColor, setNavbarColor] = useState(false);
@@ -25,59 +25,59 @@ export default function Navbar() {
   });
 
   return (
-    
-      <Navwrap>
-        <nav className={navbarColor ? "navigation scrolled" : "navigation"} style={{ color: "white" }}>
-          
-          <a href="#" className="brand-name" title="O1 Analysis">
-            <img src={logo} width="50" alt="O(1)-logo" className="img-fluid" />
-          </a>
 
-          <button
-            className="hamburger"
-            onClick={() => {
-              setIsNavExpanded(!isNavExpanded);
-            }}
+    <Navwrap>
+      <nav className={navbarColor ? "navigation scrolled" : "navigation"} style={{ color: "white" }}>
+
+        <a href="#" className="brand-name" title="O1 Analysis">
+          <img src={logo} width="50" alt="O(1)-logo" className="img-fluid" />
+        </a>
+
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="white"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="white"
-            >
-              <path
-                fillRule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-          <div
-            className={
-              isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-            }
-          >
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <a href="#stats">Stats</a>
-              </li>
-              <li>
-                <a href="#events"> Our Events</a>
-              </li>
-              <li>
-                <a href="#testimonial"> Testimonial</a>
-              </li>
-              <li>
-                <a href="#about" > About</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </Navwrap>
-    
+            <path
+              fillRule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+        <div
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }
+        >
+          <ul>
+            <li>
+              <HashLink smooth to='/' onClick={()=>setIsNavExpanded(false)}>Home</HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="#stats" onClick={()=>setIsNavExpanded(false)}>Stats</HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="#events" onClick={()=>setIsNavExpanded(false)}> Our Events</HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="#testimonial" onClick={()=>setIsNavExpanded(false)}> Testimonial</HashLink>
+            </li>
+            <li >
+              <HashLink smooth to="#about" onClick={()=>setIsNavExpanded(false)}> About</HashLink>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </Navwrap>
+
   );
 }
 
@@ -173,7 +173,7 @@ const Navwrap = styled.div`
       width: 100%;
       height: calc(100vh);
       background-color: white;
-      border-top: 1px solid black;
+      
     }
     .navigation-menu li {
       // centers link text and strips off margin

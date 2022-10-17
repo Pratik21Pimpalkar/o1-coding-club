@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Typography } from "@mui/material";
 
 const images = () => {
   const path = require.context("../../public/companies_logo", false, /\.png$/);
@@ -21,13 +22,13 @@ const CompanySlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1300,
+    speed: 1700,
     slidesToShow: 6,
+    cssEase: 'linear',
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: -0,
     arrows: false,
-
     dots: false,
     responsive: [
       {
@@ -39,7 +40,7 @@ const CompanySlider = () => {
       {
         breakpoint: 520,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
     ],
@@ -55,12 +56,19 @@ const CompanySlider = () => {
 
   return (
     <CompanySlider_main>
-      <h1>Our students are placed at</h1>
+
+      <Typography variant="h3" sx={{
+        margin: "3rem 0",
+        textAlign: "center", color: "white", fontSize: "3.0rem", fontWeight: "bold",
+        '@media (max-width:480px)': {
+          fontSize: '1.8rem',
+        }
+      }}>Our students are placed at</Typography>
       <Slider {...settings}>
         {/* {fnames.map(fname)} */}
         {fnames.map((fname) => (
-          <div key={fname}>
-            <img src={fname} style={{ margin: "1rem" }} alt="" height={100} />{" "}
+          <div key={fname} style={{ width: '2rem' }}>
+            <img src={fname} style={{ objectFit: "contained", width: '100%' }} alt="" />
           </div>
         ))}
       </Slider>
@@ -77,6 +85,14 @@ const CompanySlider_main = styled.div`
     margin: 3rem 0;
     font-size: 3rem;
   }
+  .slick-slide {
+  &:focus, a {
+    outline: none;
+  }
+}
+.slick-slide div {
+    outline: none;
+}
 
 
   @media screen and (max-width: 576px) {

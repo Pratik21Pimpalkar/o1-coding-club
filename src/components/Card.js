@@ -40,9 +40,17 @@ display: flex;
 margin:0 auto;
 justify-content: center;
 background-color: #252525;
-@media screen and (max-width:400px){
+@media screen and (max-width:700px){
     width: 25rem;
 }
+@media screen and (max-width:400px){
+    width: 23rem;
+}
+@media screen and (max-width:390px){
+    width: 22rem;
+}
+@media screen and (max-width:380px){
+    width: 21.5rem;}
 .card-wrapper{
 position: relative;
 gap: 2rem;
@@ -70,7 +78,7 @@ justify-content: center;
     transition: 0.45s all ease-in-out;
 }
 .content{
-    display: flex;
+    display:flex;
     flex-direction: column;
     gap: 1rem;
     position: relative;

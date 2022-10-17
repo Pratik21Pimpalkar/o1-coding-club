@@ -12,8 +12,9 @@ const FeatureParagraph = {
   WebkitBackgroundClip: "text",
   // webkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
-  padding: "5rem 2rem",
+  padding: "1rem 2rem",
   fontSize: "19px",
+  marginBottom:"1rem"
 
 };
 const gridStyle = {
@@ -43,7 +44,7 @@ const FeatureSection = ({ data }) => {
           </Typography>
           <Grid container alignItems={"center"} justifyContent={'center'} rowSpacing={1} columnSpacing={5}>
 
-            <Grid item xs={12} sm={12} md={3}>
+            <Grid item md={3}>
               <img src={data.instructer.instructerimg ? data.instructer.instructerimg : img} alt="" className="instructerimg" />
             </Grid>
             <Grid item xs={12} sm={12} md={5}>
@@ -59,8 +60,7 @@ const FeatureSection = ({ data }) => {
           <Grid
             container
             alignItems={"center"}
-            rowSpacing={1}
-            columnSpacing={5}
+            justifyContent={'center'}
             wrap={"wrap-reverse"}
           >
             <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
@@ -73,13 +73,11 @@ const FeatureSection = ({ data }) => {
                 </div>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
+            <Grid item md={5} order={{ md: 1, lg: 2 }}>
               <img src={rupee} alt="" className="rupeeimg" />
             </Grid>
           </Grid>
-
         </Container>
-
       </AboutProgram>
     </>
   );

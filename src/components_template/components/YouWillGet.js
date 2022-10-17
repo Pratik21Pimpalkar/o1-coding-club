@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import styled from "styled-components";
 import beginLogo from "../images/benefits.jpg";
 import benefits from '../../Assets/benefits.png'
@@ -9,7 +9,11 @@ const YouWillGet = ({ data }) => {
     <FeaturesCardWrapper>
       <div>
         <Container>
-          <h1 className="heading">YOU GET !</h1>
+          <Typography variant="h2" sx={{
+            color: 'white', textAlign: "center", '@media screen and (max-width:480px)':{
+              fontSize:"2.2rem"
+            }
+        }}>YOU GET !</Typography>
 
           <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
             <Grid item xs={12} md={6}>
@@ -21,7 +25,7 @@ const YouWillGet = ({ data }) => {
                   {data.youwillget.map((item, key) => {
                     return (
                       <ul key={key}>
-              
+
                         <li className="items">{item}</li>{" "}
                       </ul>
                     );
@@ -73,9 +77,7 @@ const FeaturesCardWrapper = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-      .heading {
-        font-size: 3rem;
-      }
+     
       .contentdetails {
         font-size: 1.2rem;
       }
