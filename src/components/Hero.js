@@ -6,8 +6,7 @@ import styled from "styled-components";
 import tab from "../Assets/tab3.png";
 import bluebubble from "../Assets/Bubble-blue.svg";
 import purplebubble from "../Assets/Bubble-purple.svg";
-import lappyimg from "../Assets/lappy_img.png";
-import { Link } from "react-router-dom";
+import coding from "../Assets/coding.json";
 const Hero = () => {
   return (
     <HeroWrapper
@@ -45,6 +44,8 @@ const Hero = () => {
           <Grid item xs={12} md={8} lg={8}>
             <div className="animation css-1o807li">
               <img src={tab} alt="" className="tabimg" />
+              {/* <img src= {require("../Assets/coding.json")} alt="" /> */}
+              <lottie-player src={coding} background="transparent"  speed="1"  style={{width: "300px", height: "300px"}} loop controls autoplay></lottie-player>
               <div className="css-ucfc1 e1foku9a4">
                 <div className="css-18q3wgh">
                   <img src={bluebubble} />
@@ -72,6 +73,7 @@ const HeroWrapper = styled.div`
   }
   .fullwidthbtn{
     width: auto;
+    
     padding: 5px 15px;
   }
   .head2 {
@@ -106,7 +108,7 @@ const HeroWrapper = styled.div`
     font-size: 5vw;
   }
   .tabimg {
-    z-index: 52;
+    z-index: 2;
     height: 46rem;
     margin-top: 0rem;
   }
