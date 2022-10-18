@@ -108,14 +108,14 @@ const AboutProgram = styled.div`
 
 }
 .instructerimg{
-  width: 15rem;
+  width: 20rem;
   /* margin-left: 5rem; */
   border-radius:1rem;
   border: 4px double #9874ff;
+  
   margin: 0 auto;
 }
 .rupeeimg{
   width: 20rem;
-
 }
 `

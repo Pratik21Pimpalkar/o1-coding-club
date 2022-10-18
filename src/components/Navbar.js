@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.svg";
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [navbarColor, setNavbarColor] = useState(false);
@@ -15,22 +15,20 @@ export default function Navbar() {
     } else {
       setNavbarColor(false);
     }
-  }
+  };
   useEffect(() => {
     // changeBackground();
     // adding the event when scroll change Logo
     window.addEventListener("scroll", changeBackground);
-
   });
 
   return (
-
     <Navwrap>
       <nav className={navbarColor ? "navigation scrolled" : "navigation"} style={{ color: "white" }}>
 
-        <NavHashLink smooth to="\#" className="brand-name" title="O1 Analysis">
+        <HashLink smooth to="/#" className="brand-name" title="O1 Analysis">
           <img src={logo} width="50" alt="O(1)-logo" className="img-fluid" />
-        </NavHashLink>
+        </HashLink>
 
         <button
           className="hamburger"
@@ -77,7 +75,6 @@ export default function Navbar() {
         </div>
       </nav>
     </Navwrap>
-
   );
 }
 
@@ -87,7 +84,6 @@ const Navwrap = styled.div`
     color: white;
   }
   .navigation {
-   
     z-index: 9999;
     color: white !important;
     height: 5rem;
@@ -173,7 +169,6 @@ const Navwrap = styled.div`
       width: 100%;
       height: calc(100vh);
       background-color: white;
-      
     }
     .navigation-menu li {
       // centers link text and strips off margin
@@ -217,12 +212,12 @@ const Navwrap = styled.div`
   }
   .scrolled {
     /* How it will look when scrolled */
-    
+
     background-color: #fff !important;
-    li{
-      a{
-        color:black;
-        font-weight: 600; 
+    li {
+      a {
+        color: black;
+        font-weight: 600;
       }
     }
   }
