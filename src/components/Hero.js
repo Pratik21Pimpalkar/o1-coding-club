@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Container, Typography } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
-
 import styled from "styled-components";
 import tab from "../Assets/tab3.png";
 import bluebubble from "../Assets/Bubble-blue.svg";
@@ -22,23 +21,25 @@ const Hero = () => {
             <Typography className=" ejyuya510 css-130rcti" variant="h1">
               O(1) Coding Club
             </Typography>
-            <Typography className="head2" style={{ opacity: "0.7" }}>
+            <Typography variant='body1' className="head2" style={{ opacity: "0.7" }}>
               Closer to your AMBITIONS, a step at a time.
             </Typography>
-            <Typography className="head3" style={{ opacity: "0.7" }}>
+            <Typography variant='body1' className="head3" style={{ opacity: "0.7" }}>
               10,000 Students from 31 colleges have trusted us
             </Typography>
 
             <HashLink
-                smooth
-                to="#events"
-              >
-               <button className="btn-giveTest btn fullwidthbtn">
+              smooth
+              to="\#events"
+            >
+              <div>
+                <button className="btn-giveTest btn fullwidthbtn">
                   Explore Our Programs
-                  </button>
-              </HashLink>
+                </button>
+              </div>
+            </HashLink>
 
-         
+
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>
@@ -50,7 +51,6 @@ const Hero = () => {
                 <div className="css-18q3wgh">
                   <img src={bluebubble} />
                 </div>
-
                 <div className="css-19fx3dz">
                   <img src={purplebubble} />
                 </div>
@@ -75,10 +75,12 @@ const HeroWrapper = styled.div`
     width: auto;
     
     padding: 5px 15px;
+    position:static;
   }
+
   .head2 {
     font-size: 1.3rem;
-    white-space: pre;
+    /* white-space: pre; */
   }
 
   .head3 {
@@ -86,7 +88,7 @@ const HeroWrapper = styled.div`
     font-weight: bold;
     font-family: "muli";
     letter-spacing: 1px;
-    white-space: pre;
+    /* white-space: pre; */
     margin-top: 5rem;
   }
   .explore-btn {
@@ -94,7 +96,6 @@ const HeroWrapper = styled.div`
     color: white;
     padding: 15px;
     border-radius: 6px;
-
     font-size: 1.2rem;
     margin-top: 2rem;
     background-image: linear-gradient(270deg, #f96b24, #ff9100);
@@ -128,7 +129,7 @@ const HeroWrapper = styled.div`
       .inside-grid {
         /* top: 3rem; */
         z-index: 5;
-        top: 8rem;
+        /* top: 8rem; */
       }
        .tabimg {
         display: none;

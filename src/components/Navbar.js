@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.svg";
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [navbarColor, setNavbarColor] = useState(false);
@@ -25,9 +25,9 @@ export default function Navbar() {
     <Navwrap>
       <nav className={navbarColor ? "navigation scrolled" : "navigation"} style={{ color: "white" }}>
 
-        <NavHashLink smooth to="\#" className="brand-name" title="O1 Analysis">
+        <HashLink smooth to="/#" className="brand-name" title="O1 Analysis">
           <img src={logo} width="50" alt="O(1)-logo" className="img-fluid" />
-        </NavHashLink>
+        </HashLink>
 
         <button
           className="hamburger"
