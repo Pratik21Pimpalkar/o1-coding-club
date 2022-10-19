@@ -6,6 +6,7 @@ import bg_final from "../../images/bg_homepage.png";
 import Navbar2 from "../../../components/Navbar";
 import styled from "styled-components";
 const Home = (prop) => {
+
   return (
     <>
       <MainWrapper>

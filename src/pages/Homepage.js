@@ -9,11 +9,10 @@ import FeaturesCard from "../components/FeaturesCard";
 import Navbar from "../components/Navbar";
 import FooterNew from "../components_template/components/Footer/FooterNew";
 import PagesData from "./PagesData"
+
 const Homepage = () => {
   return (
     <div>
-  
-        <Navbar />
         <Hero />
         <FeaturesCard  data={PagesData.homepage} />
         <Stats data={PagesData.homepage}/>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Container, Typography } from "@mui/material";
+import { Grid, Container, Typography, Box } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import tab from "../Assets/tab3.png";
@@ -34,6 +34,14 @@ const Hero = () => {
               <Typography variant="body1" className="head2">
                 Closer to your AMBITIONS, a step at a time.
               </Typography>
+              <Box sx={{
+                display: {
+                  xs: "block", md: "none"
+                },
+                width: "100%  "
+              }}>
+                <Lottie options={defaultOptions} className="lottieimg" />
+              </Box>
               <Typography variant="body1" className="head3">
                 10,000 Students from 31 colleges have trusted us
               </Typography>
@@ -51,8 +59,6 @@ const Hero = () => {
           <Grid item xs={12} md={8} lg={8}>
             <div className="animationclass">
               <img src={tab} alt="" className="tabimg" />
-
-              <Lottie options={defaultOptions} className="lottieimg" />
               <div className="css-ucfc1">
                 <div className="css-18q3wgh">
                   <img src={bluebubble} />
@@ -65,7 +71,7 @@ const Hero = () => {
           </Grid>
         </Grid>
       </Container>
-    </HeroWrapper>
+    </HeroWrapper >
   );
 };
 
@@ -95,7 +101,7 @@ const HeroWrapper = styled.div`
     font-family: "muli";
     letter-spacing: 1px;
     /* white-space: pre; */
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .explore-btn {
     text-decoration: none;
@@ -118,9 +124,7 @@ const HeroWrapper = styled.div`
     z-index: 2;
     height: 46rem;
   }
-  .lottieimg{
-    display:none;
-  }
+
 
   @media screen and (min-width: 576px) {
     .css-130rcti {
@@ -130,9 +134,7 @@ const HeroWrapper = styled.div`
 
     .animationclass{
 
-      .lottieimg {
-        display: none !important;
-      }
+     
     }
 
     .text-position {
@@ -221,10 +223,10 @@ const HeroWrapper = styled.div`
 
   .css-ucfc1 {
     z-index: -1;
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 50%;
-    top: 40vh;
+    top: -23rem;
     margin-left: 20rem;
     /* left: 25vw; */
     pointer-events: none;

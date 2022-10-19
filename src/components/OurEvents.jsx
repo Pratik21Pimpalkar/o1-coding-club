@@ -45,7 +45,7 @@ const OurEvents = () => {
         </Typography>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
-            <img src={aptitudeseries} alt="" height={340} />
+            <img src={aptitudeseries} alt=""  style={{width:"100%",padding:" 0 2rem"}}/>
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box sx={{ height: "max-content" }}>
