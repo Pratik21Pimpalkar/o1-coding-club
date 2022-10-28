@@ -19,7 +19,7 @@ const programData = {
   Super50: {
     programName:"Super50",
     desc:"",
-    linktoregister:"",
+    linktoregister:"https://www.google.com/intl/en-GB/forms/about/",
     instructer: {
       name: "Rishabh Rathi",
       about:
