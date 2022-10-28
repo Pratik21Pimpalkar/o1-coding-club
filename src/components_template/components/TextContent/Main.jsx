@@ -6,9 +6,7 @@ import "./textStyle.css";
 import ModalForm from "../Modal/Modal";
 import { Container, Grid } from "@mui/material";
 
-
 function Main(prop) {
-  
   const styles = (theme) => ({
     root: {
       backgroundColor: "blue",
@@ -20,23 +18,35 @@ function Main(prop) {
     },
   });
   return (
-      <Container maxWidth={"lg"} className="content">
-        <Grid
-          container
-          alignItems={"center"}
-          justifyContent={"center"}
-          wrap={"wrap-reverse"}
-        >
-          <Grid item md={8} sm={7} xs={12} style={{ zIndex: "1" }}>
-            <Heading name={prop.name} />
-            <List desc={prop.name} />
-            <ModalForm />
-          </Grid>
-          <Grid item md={4} sm={5} xs={6}>
-            <Circle />
-          </Grid>
+    <Container maxWidth={"lg"} className="content">
+      <Grid
+        container
+        alignItems={"center"}
+        justifyContent={"center"}
+        wrap={"wrap-reverse"}
+      >
+        <Grid item md={8} sm={7} xs={12} style={{ zIndex: "1" }}>
+          <Heading name={prop.name} />
+          <List desc={prop.name} />
+          {/* <ModalForm /> */}
+          {prop.name.linktoregister ? (
+            <div className="btn-container">
+              <button
+                className="btn-giveTest"
+                onClick={() =>
+                  (window.location.href = prop.name.linktoregister)
+                }
+              >
+                Register
+              </button>
+            </div>
+          ) : null}
         </Grid>
-      </Container>
+        <Grid item md={4} sm={5} xs={6}>
+          <Circle />
+        </Grid>
+      </Grid>
+    </Container>
   );
 }
 
