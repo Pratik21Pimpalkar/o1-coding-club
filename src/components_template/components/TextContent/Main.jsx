@@ -41,8 +41,9 @@ function Main(prop) {
               </button>
             </div>
           ) : null}
+        
         </Grid>
-        <Grid item md={4} sm={5} xs={6}>
+        <Grid item md={4} sm={5} xs={6} >
           <Circle />
         </Grid>
       </Grid>
