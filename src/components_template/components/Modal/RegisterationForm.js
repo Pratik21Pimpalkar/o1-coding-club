@@ -8,16 +8,16 @@ import {
   Backdrop,
   CircularProgress,
 } from "@mui/material";
-import axios from "axios";
+/*
+// import axios from "axios";
 import React, { useEffect, useState } from "react";
 import login from "../../images/login.svg";
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
-
+*/
 const RegisterForm = (props) => {
-
-  const [userData, setUserData] = useState({
+/* const [userData, setUserData] = useState({
     name: "",
     email: "",
     mobile: "",
@@ -47,7 +47,6 @@ const RegisterForm = (props) => {
     );
     setClgList(fetchNames.data.clg_names);
   };
-  /*
 const getTestlink = async () => {
   const link = await axios.get(`https://o1apti.herokuapp.com/testlink`);
   setTestLink(link.data.link);
@@ -100,7 +99,7 @@ const submitData = (e) => {
     });
   }
 };
-*/
+*//*
   return (
     <>
       <Container
@@ -138,6 +137,7 @@ const submitData = (e) => {
               }
             }}>
               {/* Register Here */}
+              /*
               Newly registered users will be redirected to another page where they can give their test.
             </Typography>
             <TextField
@@ -233,7 +233,7 @@ const submitData = (e) => {
               )}
             </Button>
           </Grid>
-        </Grid>
+        </Grid>*/
         {/* <ToastContainer
         position="bottom-right"
         autoClose={2000}
@@ -244,10 +244,11 @@ const submitData = (e) => {
         pauseOnFocusLoss
         draggable
         theme="colored"
-      /> */}
+      />
       </Container>
     </>
   );
 };
 
 export default RegisterForm;
+ */}

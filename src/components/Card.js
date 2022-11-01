@@ -21,8 +21,11 @@ const Card = ({ data }) => {
                         <p className='name'>{data.name}</p>
                         <p className='role'> {data.role}</p>
                     </div>
-                    <div>
-                        <LinkedInIcon sx={{fontSize:"2rem"}}/>
+                    <div>{
+                        data.linkedin?
+                        <a href={ data.linkedin}>
+                            <LinkedInIcon sx={{ fontSize: "2rem" }} />
+                        </a>:""}
                     </div>
 
                 </div>
