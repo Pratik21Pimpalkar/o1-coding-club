@@ -5,7 +5,7 @@ const testimonialData = [
     content:
       "CPL and various knowledge sessions helped me in my competitive coding and interview preparation.CPL was quite helpful as it helped to improve competitive coding in a funway and it also improved coding culture. It would help beginners to kickstart their coding journey. Various off-campus opportunities were also posted which can help to avoid missing on opportunities.",
     img: "https://drive.google.com/uc?export=view&id=1jim9ohyTPg7ryA8uz6pY9o8MpiZrzDfj",
-    linkedin:"https://www.linkedin.com/in/pranav-manbhekar/"
+    linkedin: "https://www.linkedin.com/in/pranav-manbhekar/"
   },
 
   {
@@ -14,7 +14,7 @@ const testimonialData = [
     content:
       "My first experience with O(1) coding club was from their first seminar and since then, I have nothing but good things to say. From their guidance relating to placements, both on and off campus,to their CPL, everything important was explained and helped in becoming better programmers. I was fortunate enough lead a team in CPL, and watching me, my classmates, and juniors improve every contest was a great experience.",
     img: "https://drive.google.com/uc?export=view&id=13g6hgR9zMoInK4bJli1S_u7eCQyuWVYr",
-    linkedin:"https://www.linkedin.com/in/shrey-agrawal63/"
+    linkedin: "https://www.linkedin.com/in/shrey-agrawal63/"
   },
 
   {
@@ -23,7 +23,7 @@ const testimonialData = [
     content:
       "I took part in Coding Premier League and multiple Competitive Coding Streak contests organised by O(1) Coding Club.Before attending those events I was not able to solve even very simplecoding problems on Codechef and Codeforces but after receiving proper guidance on resources and improving thought process for solving problems by O(1) Coding Club, I improved a lot in few months. None of the interviews I gave had gone without solving a coding problem, so I would suggest to improve your competitive coding skill if you are not good in it and I would highly recommend to be part of O(1) Coding Club and take active participation in various contests and sessions organized by them.",
     img: "https://drive.google.com/uc?export=view&id=1_YS_O8uI77QSc8p9FzDqrhV3hCOxptpu ",
-    linkedin:"https://www.linkedin.com/in/sudhanshu-bhogal/"
+    linkedin: "https://www.linkedin.com/in/sudhanshu-bhogal/"
   },
   {
     name: "Yavar Vazir",
@@ -31,7 +31,7 @@ const testimonialData = [
     content:
       "My preparation for Placements started with CPL organised by O(1) Coding Club.It was the best learning experience for me because it had coding problems of all levels, starting right from basics and going up to difficult problems to be solved in 2.5 - 3 hours. It made a good habit of solving problems on daily basis and helped us to have a grip on competitive coding questions. As far as the interviews are concerned, the videos uploaded by O(1) were very helpful particular to each company, where they told us what exactly do they expect and how to prepare for it. I would recommend to anyone who is looking for mentorship, guidance about placements, go for O(1).",
     img: "https://drive.google.com/uc?export=view&id=1SXQ8LZOURmr8dG5ggTUhNYMEd-ubk8uN",
-    linkedin:"https://www.linkedin.com/in/yavar-vazir-a0843a182/"
+    linkedin: "https://www.linkedin.com/in/yavar-vazir-a0843a182/"
   },
   {
     name: "Rajat Bhanarkar",
@@ -39,8 +39,8 @@ const testimonialData = [
     content:
       "I attended the React.js workshop by O(1) Coding Club in Jan. It was a really informative, interactive and organized workshop.Everything was developed from scratch with proper stepwise explanation.I would highly recommend O(1) Workshops.",
     img: "https://drive.google.com/uc?export=view&id=1QlQvcfj4pItD0hTKp3toZxxEycsQYPOc",
-    linkedin:"https://www.linkedin.com/in/rajat-bhanarkar-11a859176/",
-  },{
+    linkedin: "https://www.linkedin.com/in/rajat-bhanarkar-11a859176/",
+  }, {
     name: "Aditya Sharma ",
     role: " SE @ Akamai Tech",
     content: `I am associated with O(1) coding club for a long time and gained a lot of knowledge regarding coding and placements through it.
@@ -50,14 +50,14 @@ const testimonialData = [
     img: "https://drive.google.com/uc?export=view&id=1ici6-DvAE-I7Aqwwn7K77BRaeH8psmIR ",
     linkedin: "https://www.linkedin.com/in/aditya-sharma-0b21a3197/",
   },
-  
+
   {
     name: "Nidhi Sharma",
     role: "SD  at Bank of New York Mellon",
     content:
       "O(1) has guided us, gave us great tips for making resume and ways to crack off-campus opportunities",
     img: "https://drive.google.com/uc?export=view&id=14VJyh5KDLWyvrGsZuZ7-ujRZXzuH2PKJ",
-    linkedin:"https://www.linkedin.com/in/nidhivsharma10/"
+    linkedin: "https://www.linkedin.com/in/nidhivsharma10/"
   },
   {
     name: "Akshay Mishra ",
@@ -72,7 +72,7 @@ const testimonialData = [
     content: `I participated in CPL organized by O(1) Coding Club in May 2020 and I was team leader of my team. As, CPL was a team game it not only helped me to enhance my codingskills but also helped me to understand- 1. How to collaboratively solve a problem as a team. 2. Other better approaches for the same problem that you find out after discussing with your team mates. I would highly recommend to participate in CPL contest organized by O(1) coding club.`,
     img: "https://drive.google.com/uc?export=view&id=1kTdUi_T-7qOBCkc8NKcBKGwCdec3iMrK",
     linkedin: "https://www.linkedin.com/in/amarkumar-m-48b08a172/",
-  },{
+  }, {
     name: "Tejas Tapas ",
     role: " SDE @ ULA",
     content: `I was a part of the O(1) Coding Club for the last 1 year where I participated in some of their initiatives like CPL, coderun and aptitude series.
@@ -121,8 +121,8 @@ const testimonialData = [
     img: "https://drive.google.com/uc?export=view&id=1yyhfu73rOkLmg3NCLYBqLoWbp6A8XSV5",
     linkedin: "https://www.linkedin.com/in/monica-dholwani/",
   },
-  
-  
+
+
   {
     name: "Ashwin Walunj ",
     role: " PP @ Infosys",
@@ -153,7 +153,7 @@ const testimonialData = [
 
     img: "https://drive.google.com/uc?export=view&id=1-AgwTQPuItrD5Y9OxgcRMkP04ETVU49a",
     linkedin: "https://www.linkedin.com/in/vighnesh-pathak-4018b7192/",
-  },{
+  }, {
     name: "Rohit Doshi ",
     role: " SDE @ Amazon",
     content: `Back in my 2nd year, I was clueless about what skills were needed to be in a good company.
