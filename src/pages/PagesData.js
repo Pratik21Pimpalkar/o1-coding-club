@@ -243,9 +243,9 @@ const programData = {
       third: "",
       forth: "",
     },
-    showtimeline: false,
-    showpricing: false,
-    showyouwillget: false,
+    showtimeline: true,
+    showpricing: true,
+    showyouwillget: true,
     stats: {
       placements: "100%",
       companycracked: "50+",
@@ -259,6 +259,7 @@ const programData = {
       " Lifetime Access",
       " Internship offer to top performers",
     ],
+    timelineformlink: "https://docs.google.com/forms/u/0"
   },
 };
 
