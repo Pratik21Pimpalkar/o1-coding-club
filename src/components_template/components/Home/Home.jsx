@@ -31,7 +31,13 @@ const MainWrapper = styled.div`
   }
   @media screen and (max-width: 600px) {
     .home {
-      height: 100vh;
+      min-height: 100vh; 
+    }
+  }
+  @media screen and (min-device-width:380px) and (max-device-width:900px)  {
+    .home{
+      height: 75vh !important;
+      min-height: initial;
     }
   }
 `;

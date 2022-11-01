@@ -14,7 +14,7 @@ const FeatureParagraph = {
   WebkitTextFillColor: "transparent",
   padding: "1rem 2rem",
   fontSize: "19px",
-  marginBottom:"1rem"
+  marginBottom: "1rem"
 
 };
 const gridStyle = {
@@ -38,7 +38,7 @@ const FeatureSection = ({ data }) => {
             }}
           >
             <div className="section-title">
-              <h2 style={{ fontSize: "2.5rem" }}>About the Program</h2>
+              <h2 style={{ fontSize: "2.5rem",marginBottom:"2rem" }}>About the Program</h2>
               <span className="section-separator"></span>
             </div>
           </Typography>
@@ -108,12 +108,14 @@ const AboutProgram = styled.div`
 
 }
 .instructerimg{
-  width: 20rem;
+  width: 16rem;
   /* margin-left: 5rem; */
   border-radius:1rem;
   border: 4px double #9874ff;
-  
   margin: 0 auto;
+  @media screen and (max-width:400px) {
+    width: 12rem;
+  }
 }
 .rupeeimg{
   width: 20rem;

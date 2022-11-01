@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Card = ({ data }) => {
     return (
         <CardWrapper>
             <div className='card-wrapper'>
                 <div className="layer"></div>
                 <div className="content">
-                    <div className='details' style={{fontSize:"1rem" ,fontWeight:"400"}}>
+                    <div className='details' style={{ fontSize: "1rem", fontWeight: "400" }}>
                         <FormatQuoteIcon />
                         {data.content}
                         <FormatQuoteIcon />
@@ -19,6 +20,9 @@ const Card = ({ data }) => {
                     <div className="nameBox">
                         <p className='name'>{data.name}</p>
                         <p className='role'> {data.role}</p>
+                    </div>
+                    <div>
+                        <LinkedInIcon sx={{fontSize:"2rem"}}/>
                     </div>
 
                 </div>

@@ -85,8 +85,8 @@ const FooterNew = () => {
                                     <h3>Useful Links</h3>
                                 </div>
                                 <ul>
-                                    <li><HashLink to='/'>Home</HashLink></li>
-                                    <li><HashLink to="https://knowyourprep.o1codingclub.in/" target="_blank" >Know Your Prep</HashLink></li>
+                                    <li><HashLink to='/#'>Home</HashLink></li>
+                                    <li><a href="https://knowyourprep.o1codingclub.in" target="_blank" >Know Your Prep</a></li>
                                     <li><HashLink to="#footer">Contact Us</HashLink></li>
                                 </ul>
                             </div>

@@ -67,9 +67,9 @@ export default function Navbar() {
             <li>
               <HashLink smooth to="#testimonial" onClick={() => setIsNavExpanded(false)}> Testimonial</HashLink>
             </li>
-            <li >
+            {/* <li >
               <HashLink smooth to="#about" onClick={() => setIsNavExpanded(false)}> About</HashLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

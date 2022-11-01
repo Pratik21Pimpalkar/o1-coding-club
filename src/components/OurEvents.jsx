@@ -6,7 +6,7 @@ import coderun from "../Assets/events/coderun.png";
 import coresubjects from "../Assets/events/coresubjects.png";
 import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
-import super30 from "../Assets/events/super30.png";
+import super50 from "../Assets/events/super50.png";
 
 import { Outlet, Link } from "react-router-dom";
 const FeaturePosition = {
@@ -88,7 +88,7 @@ const OurEvents = () => {
         </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
-            <img src={super30} alt="" width={"100%"} />
+            <img src={super50} alt="" width={"100%"} />
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box>
@@ -136,8 +136,6 @@ const OurEvents = () => {
 const Events = styled.div`
   height: max-content;
   position: relative;
-
-
   .explore-btn{
     text-decoration: none;
     color: white;

@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <HeroWrapper
       style={{
-        minHeight: "100vh",
+        // minHeight: "100vh",
         color: "white",
       }}
     >
