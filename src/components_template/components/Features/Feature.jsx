@@ -57,6 +57,9 @@ const FeatureSection = ({ data }) => {
               </Box>
             </Grid>
           </Grid>
+          {data.showpricing?
+        
+
           <Grid
             container
             alignItems={"center"}
@@ -77,6 +80,7 @@ const FeatureSection = ({ data }) => {
               <img src={rupee} alt="" className="rupeeimg" />
             </Grid>
           </Grid>
+                  :<div></div>}
         </Container>
       </AboutProgram>
     </>

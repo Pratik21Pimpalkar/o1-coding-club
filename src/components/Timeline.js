@@ -16,9 +16,10 @@ const Timeline = () => {
           <div className="content">
             <h2>
               Submit Application</h2>
-            <p>Submit your application in Google Form
-
-              Ps. You will need Payment Proof to proceed.</p>
+            <p>Submit your application in 
+            <a href="" className="explore-btn ">Google Form</a>  
+<br></br>
+              Ps.  You will need Payment Proof to proceed.</p>
           </div>
         </div>
       </div>
@@ -30,7 +31,23 @@ export default Timeline;
 
 const TimeLineStyled = styled.div`
 /* position: re; */
+.explore-btn {
+    text-decoration: none;
+font-size: 0.8rem;
+    border: 2px solid black;
+    padding: 1px;
+    border-radius: 10px;
+    opacity: 0.8;
 
+    /* margin-top: 2rem; */
+    margin-left: 0.2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
 .timeline {
   position: relative;
   max-width: 1200px;

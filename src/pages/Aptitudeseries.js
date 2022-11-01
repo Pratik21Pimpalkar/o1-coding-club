@@ -24,7 +24,9 @@ const Aptitudeseries = () => {
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
+        {programdata.youwillget?
         <YouWillGet data={programdata}/>
+        :<div></div>}
         <Timeline />
         <CompanySlider />
         <Testimonial />
