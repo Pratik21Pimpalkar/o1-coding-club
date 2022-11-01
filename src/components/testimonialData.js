@@ -9,7 +9,7 @@ const testimonialData = [
         name: "Amarkumar Mishra",
         role: "BackEnd Developer  at HackerEarth",
         content: "I participated in CPL organized by O(1) Coding Club in May 2020 and I was team leader of my team. As, CPL was a team game it not only helped me to enhance my codingskills but also helped me to understand- 1. How to collaboratively solve a problem as a team. 2. Other better approaches for the same problem that you find out after discussing with your team mates. I would highly recommend to participate in CPL contest organized by O(1) coding club.",
-        img: "https://drive.google.com/uc?export=view&id=1ge-6zmMLWXlSkuHZM1FhHIi0EnB93fCH",
+        img: "https://drive.google.com/uc?export=view&id=1kTdUi_T-7qOBCkc8NKcBKGwCdec3iMrK",
     },
     {
         name: "Sakshi Thakur",
@@ -81,7 +81,7 @@ const testimonialData = [
         name: "Sakshi Thakur ",
         role:" R&D @ VMware",
         content: `I have been helped a lot from O(1) club! Right from the first seminar, we have been guided in almost everything related to placements. I started participating rigorously in CPL aore subjects. As a fresher guidance and resources helped me to learn and grow.`,
-        img: "images/SakshiThakur.png",
+        img: "https://drive.google.com/uc?export=view&id=1-AgwTQPuItrD5Y9OxgcRMkP04ETVU49a",
         linkedin: "https://www.linkedin.com/in/sakshithakur1612",
       },
       {
