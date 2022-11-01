@@ -13,18 +13,20 @@ const testimonialData = [
         name: "Shrey Agrawal",
         role: "Power Programmer at Infosys",
         content: 'My first experience with O(1) coding club was from their first seminar and since then, I have nothing but good things to say. From their guidance relating to placements, both on and off campus,to their CPL, everything important was explained and helped in becoming better programmers. I was fortunate enough lead a team in CPL, and watching me, my classmates, and juniors improve every contest was a great experience.',
-        img: "https://drive.google.com/uc?export=view&id=10guXYDqvOmpcAuW1f36kCyGpnKOEghEJ"
+        img: "https://drive.google.com/file/d/1xrZXG698XAPH2Qg3RvEppeUfvS4Kv3OS/view?usp=share_link"
+    
     },
   
     {
         name: "Sudhanshu Bhogal", role: "SDE-T at Amazon",
         content: "I took part in Coding Premier League and multiple Competitive Coding Streak contests organised by O(1) Coding Club.Before attending those events I was not able to solve even very simplecoding problems on Codechef and Codeforces but after receiving proper guidance on resources and improving thought process for solving problems by O(1) Coding Club, I improved a lot in few months. None of the interviews I gave had gone without solving a coding problem, so I would suggest to improve your competitive coding skill if you are not good in it and I would highly recommend to be part of O(1) Coding Club and take active participation in various contests and sessions organized by them.",
-        img: "https://drive.google.com/uc?export=view&id=1B-S0rnTjTB7bGj6gU3VSoUYAoTZTiv7k"
+        img: "https://drive.google.com/file/d/1_YS_O8uI77QSc8p9FzDqrhV3hCOxptpu/view?usp=share_link"
+
     }, {
         name: "Yavar Vazir",
         role: "R&D  at VMware",
         content: 'My preparation for Placements started with CPL organised by O(1) Coding Club.It was the best learning experience for me because it had coding problems of all levels, starting right from basics and going up to difficult problems to be solved in 2.5 - 3 hours. It made a good habit of solving problems on daily basis and helped us to have a grip on competitive coding questions. As far as the interviews are concerned, the videos uploaded by O(1) were very helpful particular to each company, where they told us what exactly do they expect and how to prepare for it. I would recommend to anyone who is looking for mentorship, guidance about placements, go for O(1).',
-        img: "https://drive.google.com/uc?export=view&id=1VvkH0OgcXXCDH0Q4PBXiC0oPmLA_XRL0"
+        img: "https://drive.google.com/file/d/1SXQ8LZOURmr8dG5ggTUhNYMEd-ubk8uN/view?usp=share_link"
     },
     {
         name: "Rajat Bhanarkar",
@@ -63,7 +65,7 @@ const testimonialData = [
         name: "Vishal Kriplani ",
         role:" Software Engineer @ Fivetran",
         content: `The CPL helped me to maintain the speed and accuracy of problem-solving. Senior-Junior interaction was increased during these events. The Knowledge sessions were quite informative.`,
-        img: "images/VishalKriplani.png",
+        img: "https://drive.google.com/file/d/1X-e43fWcbJUrGYfoWuJrEYdjUVNyr7dP/view?usp=share_link",
         linkedin: "https://www.linkedin.com/in/vishal-kriplani-a33181190/",
       },
       {
@@ -93,7 +95,7 @@ const testimonialData = [
       },
       {
         name: "Aditya Sharma ",
-        role:" SDE @ Kickdrum",
+        role:" SDE @ Akamie",
         content: `I am associated with O(1) coding club for a long time and gained a lot of knowledge regarding coding and placements through it.
         With the help of different sessions conducted by O(1) coding club, I was able to bag dream package placements with offers like SDE at Persistent Systems and SDE-T at ZS associates.
         O1 also helped me in my second year to bag summer internship at Microland Ltd. with their guidance.
@@ -117,7 +119,7 @@ const testimonialData = [
         content: `I was a part of the O(1) Coding Club for the last 1 year where I participated in some of their initiatives like CPL, coderun and aptitude series.
         I got to learn in a competitive environment with like-minded students and improve DSA and CP skills.
         The coding question which I solved during the CodeRun program highly benefited me in all companies Online Assessment and Interview rounds.`,
-        img: "images/tejas.jpeg",
+        img: "https://drive.google.com/file/d/1X-e43fWcbJUrGYfoWuJrEYdjUVNyr7dP/view?usp=share_link",
         linkedin: "https://www.linkedin.com/in/tejas-sudhir-tapas/",
       },
     
@@ -132,7 +134,7 @@ const testimonialData = [
         name: "Swaraj Chaudhari ",
         role:" FSE @ Accenture",
         content: `Observing myself before & after doing Coderun with  O(1) Coding Club, Now I am very confident. Now I know how exactly to proceed with a given problem. I would seriously recommend you to join the course. Coderun and the aptitude series helped a lot during the placement season.`,
-        img: "images/swaraj.jpg",
+        img: "https://drive.google.com/file/d/1X-e43fWcbJUrGYfoWuJrEYdjUVNyr7dP/view?usp=share_link",
         linkedin: "https://in.linkedin.com/in/swaraj-chaudhari-860803180",
       },
       {
@@ -146,7 +148,7 @@ const testimonialData = [
         name: "Vignesh Pathak ",
         role:" FSE @ Accenture",
         content: `O1 Coding Club opened a new exciting world for me .  Without their training it would never been that friendly or postive entrance into the world of coding that helped me to get this far . It had played a crucial role in my academic life and my first successful Placement . Thank you for your invaluable help , you have opened new horizons for me !`,
-        img: "./images/vignesh.jpg",
+        img: "https://drive.google.com/file/d/1X-e43fWcbJUrGYfoWuJrEYdjUVNyr7dP/view?usp=share_link",
         linkedin: "https://www.linkedin.com/in/vighnesh-pathak-4018b7192/",
       },
 ]

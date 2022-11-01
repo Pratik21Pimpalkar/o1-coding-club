@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import RegisterForm from "./RegisterationForm";
+// import RegisterForm from "./RegisterationForm";
 
 
 // const style = {
@@ -36,7 +36,7 @@ function KeepMountedModal() {
         aria-describedby="keep-mounted-modal-description"
       >
         <Box >
-          <RegisterForm handleClose={handleClose}/>
+          {/* <RegisterForm handleClose={handleClose}/> */}
         </Box>
       </Modal> 
     </div>
