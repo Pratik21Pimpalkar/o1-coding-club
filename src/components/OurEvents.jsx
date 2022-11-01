@@ -36,16 +36,20 @@ const OurEvents = () => {
             fontWeight: "bold",
             marginBottom: "3rem",
             marginTop: "5rem",
-            '@media (max-width:480px)': {
-              fontSize: '2.3rem',
-            }
+            "@media (max-width:480px)": {
+              fontSize: "2.3rem",
+            },
           }}
         >
           Our Events
         </Typography>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
-            <img src={aptitudeseries} alt=""  style={{width:"100%",padding:" 0 2rem"}}/>
+            <img
+              src={aptitudeseries}
+              alt=""
+              style={{ width: "100%", padding: " 0 2rem" }}
+            />
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box sx={{ height: "max-content" }}>
@@ -57,7 +61,9 @@ const OurEvents = () => {
                   latest test format.
                 </p>
               </div>
-              <Link className="explore-btn" to="/aptitudeseries">Explore More</Link>
+              <Link className="explore-btn" to="/aptitudeseries">
+                Explore More
+              </Link>
             </Box>
           </Grid>
         </Grid>
@@ -79,7 +85,9 @@ const OurEvents = () => {
                   beginners in coding wanting to grab high paying IT jobs
                 </p>
               </div>
-              <Link className="explore-btn left" to="/pythonbootcamp">Explore More</Link>
+              <Link className="explore-btn left" to="/pythonbootcamp">
+                Explore More
+              </Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
@@ -100,7 +108,9 @@ const OurEvents = () => {
                   days and get even closer to your Super Dream Placement.
                 </p>
               </div>
-              <Link className="explore-btn" to="/super50">Explore More</Link>
+              <Link className="explore-btn" to="/super50">
+                Explore More
+              </Link>
             </Box>
           </Grid>
         </Grid>
@@ -122,7 +132,9 @@ const OurEvents = () => {
                   through placements
                 </p>
               </div>
-              <Link className="explore-btn left" to="/coresubjects">Explore More</Link>  
+              <Link className="explore-btn left" to="/coresubjects">
+                Explore More
+              </Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
@@ -136,28 +148,25 @@ const OurEvents = () => {
 const Events = styled.div`
   height: max-content;
   position: relative;
-  .explore-btn{
+  .explore-btn {
     text-decoration: none;
     color: white;
     border: 2px solid white;
-    padding:5px;
-    border-radius:10px;
+    padding: 5px;
+    border-radius: 10px;
     opacity: 0.8;
     /* margin-top: 2rem; */
-    margin-left:2rem;
+    margin-left: 2rem;
     transition: all 0.3s;
- 
+
     &:hover {
       background-color: white;
-  color:black;
-
+      color: black;
+    }
   }
 
-    }
-
- 
-     .left{
-      margin-right:2rem;
+  .left {
+    margin-right: 2rem;
   }
   h3 {
     font-size: 2.25rem;
@@ -170,17 +179,15 @@ const Events = styled.div`
     font-size: 1.55rem;
   }
   @media screen and (max-width: 576px) {
-    
-  h3 {
-    font-size: 2rem;
+    h3 {
+      font-size: 2rem;
+    }
+    div p {
+      margin-top: 0.2rem;
+      font-size: 1.4rem;
+    }
   }
-  div p {
-    margin-top: 0.2rem;
-    font-size: 1.4rem;
-  }
-  }
-  .btn{
-    
+  .btn {
   }
 `;
 

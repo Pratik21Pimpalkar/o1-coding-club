@@ -1,7 +1,7 @@
 import pythoninstructer from "../Assets/rishabh1.jpg";
 
 const programData = {
-  homepage:{
+  homepage: {
     stats: {
       placements: "100%",
       companycracked: "50+",
@@ -17,9 +17,9 @@ const programData = {
   },
 
   Super50: {
-    programName:"Super50",
-    desc:"",
-    linktoregister:"",
+    programName: "Super50",
+    desc: "",
+    linktoregister: "",
     instructer: {
       name: "Rishabh Rathi",
       about:
@@ -33,18 +33,27 @@ const programData = {
       third: "",
       forth: "",
     },
+    showtimeline: false,
+    showpricing: false,
+    showyouwillget: false,
     stats: {
       placements: "100%",
       companycracked: "50+",
       placedinamazon: "50+",
       studentplaced: "500+",
     },
-    youwillget:["An impressive project on your resume","A trending skill to enhance your resume"," Course Certification", " Lifetime Access"," Internship offer to top performers"],
+    youwillget: [
+      "An impressive project on your resume",
+      "A trending skill to enhance your resume",
+      " Course Certification",
+      " Lifetime Access",
+      " Internship offer to top performers",
+    ],
   },
   dsa: {
-    programName:"DSA",
-    desc:"",
-    linktoregister:"",
+    programName: "DSA",
+    desc: "",
+    linktoregister: "",
     instructer: {
       name: "Rishabh Rathi",
       about:
@@ -58,24 +67,34 @@ const programData = {
       third: "",
       forth: "",
     },
+    showtimeline: false,
+    showpricing: false,
+    showyouwillget: false,
     stats: {
       placements: "100%",
       companycracked: "50+",
       placedinamazon: "50+",
       studentplaced: "500+",
     },
-    youwillget:["An impressive project on your resume","A trending skill to enhance your resume"," Course Certification", " Lifetime Access"," Internship offer to top performers"],
+    youwillget: [
+      "An impressive project on your resume",
+      "A trending skill to enhance your resume",
+      " Course Certification",
+      " Lifetime Access",
+      " Internship offer to top performers",
+    ],
   },
   coderun: {
-    programName:"Coderun",
-    desc:"",
-    linktoregister:"",
+    programName: "Coderun",
+    desc: "",
+    linktoregister: "",
     instructer: {
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
     },
+   
     pricing: "2000",
     features: {
       first: "",
@@ -89,18 +108,30 @@ const programData = {
       placedinamazon: "50+",
       studentplaced: "500+",
     },
-    youwillget:["An impressive project on your resume","A trending skill to enhance your resume"," Course Certification", " Lifetime Access"," Internship offer to top performers"],
+    showtimeline: false,
+    showpricing: false,
+    showyouwillget: false,
+    youwillget: [
+      "An impressive project on your resume",
+      "A trending skill to enhance your resume",
+      " Course Certification",
+      " Lifetime Access",
+      " Internship offer to top performers",
+    ],
   },
   coresubjects: {
-    programName:"CORE SUBJECTS",
-    desc:"",
-    linktoregister:"",
+    programName: "CORE SUBJECTS",
+    desc: "",
+    linktoregister: "",
     instructer: {
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
     },
+    showtimeline: false,
+    showpricing: false,
+    showyouwillget: false,
     pricing: "2000",
     features: {
       first: "",
@@ -114,12 +145,19 @@ const programData = {
       placedinamazon: "50+",
       studentplaced: "500+",
     },
-    youwillget:["An impressive project on your resume","A trending skill to enhance your resume"," Course Certification", " Lifetime Access"," Internship offer to top performers"],
+ 
+    youwillget: [
+      "An impressive project on your resume",
+      "A trending skill to enhance your resume",
+      " Course Certification",
+      " Lifetime Access",
+      " Internship offer to top performers",
+    ],
   },
-    pythonbootcamp: {
-    programName:"PythonBootcamp",
-    desc:"",
-    linktoregister:"",
+  pythonbootcamp: {
+    programName: "PythonBootcamp",
+    desc: "",
+    linktoregister: "",
     instructer: {
       name: "Rishabh Rathi",
       about:
@@ -133,64 +171,95 @@ const programData = {
       third: "",
       forth: "",
     },
+    showtimeline: false,
+    showpricing: false,
+    showyouwillget: false,
     stats: {
       placements: "100%",
       companycracked: "50+",
       placedinamazon: "50+",
       studentplaced: "500+",
     },
-    youwillget:["An impressive project on your resume","A trending skill to enhance your resume"," Course Certification", " Lifetime Access"," Internship offer to top performers"],
+    youwillget: [
+      "An impressive project on your resume",
+      "A trending skill to enhance your resume",
+      " Course Certification",
+      " Lifetime Access",
+      " Internship offer to top performers",
+    ],
   },
+  showtimeline: false,
+  showpricing: false,
+  showyouwillget: false,
   sdebootcamp: {
-    programName:"sdebootcamp",
-    desc:"",
-    linktoregister:"",
+    programName: "sdebootcamp",
+    desc: "",
+    linktoregister: "",
     instructer: {
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
     },
-    pricing: "2000",
-    features: {
-      first: "",
-      second: "",
-      third: "",
-      forth: "",
-    },
-    stats: {
-      placements: "100%",
-      companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "500+",
-    },
-    youwillget:["An impressive project on your resume","A trending skill to enhance your resume"," Course Certification", " Lifetime Access"," Internship offer to top performers"],
-  },  aptitudeseries: {
-    programName:"APTITUDE SERIES",
-    desc:"",
-    linktoregister:"",
-    instructer: {
-      name: "Rishabh Rathi",
-      about:
-        "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
-      instructerimg: pythoninstructer,
-    },
-    pricing: "2000",
-    features: {
-      first: "",
-      second: "",
-      third: "",
-      forth: "",
-    },
-    stats: {
-      placements: "100%",
-      companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "500+",
-    },
-    youwillget:["An impressive project on your resume","A trending skill to enhance your resume"," Course Certification", " Lifetime Access"," Internship offer to top performers"],
-  },
 
+    pricing: "2000",
+    features: {
+      first: "",
+      second: "",
+      third: "",
+      forth: "",
+    },
+    stats: {
+      placements: "100%",
+      companycracked: "50+",
+      placedinamazon: "50+",
+      studentplaced: "500+",
+    },
+    showtimeline: false,
+    showpricing: false,
+    showyouwillget: false,
+    youwillget: [
+      "An impressive project on your resume",
+      "A trending skill to enhance your resume",
+      " Course Certification",
+      " Lifetime Access",
+      " Internship offer to top performers",
+    ],
+  },
+  aptitudeseries: {
+    programName: "APTITUDE SERIES",
+    desc: "",
+    linktoregister: "",
+    instructer: {
+      name: "Rishabh Rathi",
+      about:
+        "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
+      instructerimg: pythoninstructer,
+    },
+    pricing: "2000",
+    features: {
+      first: "",
+      second: "",
+      third: "",
+      forth: "",
+    },
+    showtimeline: false,
+    showpricing: false,
+    showyouwillget: false,
+    stats: {
+      placements: "100%",
+      companycracked: "50+",
+      placedinamazon: "50+",
+      studentplaced: "500+",
+    },
+    youwillget: [
+      "An impressive project on your resume",
+      "A trending skill to enhance your resume",
+      " Course Certification",
+      " Lifetime Access",
+      " Internship offer to top performers",
+    ],
+  },
 };
 
 export default programData;
@@ -200,4 +269,4 @@ export default programData;
 // coresubjects
 // pythonbootcamp
 // sdebootcamp
-// super30
+// super50
