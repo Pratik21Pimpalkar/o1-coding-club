@@ -10,6 +10,7 @@ import Navbar from "../components/Navbar";
 import FooterNew from "../components_template/components/Footer/FooterNew";
 import PagesData from "./PagesData"
 
+
 const Homepage = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Homepage = () => {
         <Stats data={PagesData.homepage}/>
         <OurEvents />
         <CompanySlider />
+        {/* <ComSlider/> */}
         <Testimonial2 />
         <FooterNew/>
         {/* <Footer />   */}
