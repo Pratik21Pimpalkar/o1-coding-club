@@ -27,7 +27,7 @@ const testimonialData = [
   },
   {
     name: "Yavar Vazir",
-    role: "R&D  at VMware",
+    role: "MTS at VMware",
     content:
       "My preparation for Placements started with CPL organised by O(1) Coding Club.It was the best learning experience for me because it had coding problems of all levels, starting right from basics and going up to difficult problems to be solved in 2.5 - 3 hours. It made a good habit of solving problems on daily basis and helped us to have a grip on competitive coding questions. As far as the interviews are concerned, the videos uploaded by O(1) were very helpful particular to each company, where they told us what exactly do they expect and how to prepare for it. I would recommend to anyone who is looking for mentorship, guidance about placements, go for O(1).",
     img: "https://drive.google.com/uc?export=view&id=1SXQ8LZOURmr8dG5ggTUhNYMEd-ubk8uN",
