@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const Timeline = () => {
+const Timeline = (props) => {
   return (
     <TimeLineStyled>
       <div className="timeline">
@@ -17,7 +17,7 @@ const Timeline = () => {
             <h2>
               Submit Application</h2>
             <p>Submit your application in 
-            <a href="" className="explore-btn ">Google Form</a>  
+            <a href={props.data.timelineformlink} className="explore-btn ">Google Form</a>  
 <br></br>
               Ps.  You will need Payment Proof to proceed.</p>
           </div>
@@ -34,7 +34,7 @@ const TimeLineStyled = styled.div`
 .explore-btn {
     text-decoration: none;
 font-size: 0.8rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 1px;
     border-radius: 10px;
     opacity: 0.8;
@@ -43,10 +43,6 @@ font-size: 0.8rem;
     margin-left: 0.2rem;
     transition: all 0.3s;
 
-    &:hover {
-      background-color: black;
-      color: white;
-    }
   }
 .timeline {
   position: relative;

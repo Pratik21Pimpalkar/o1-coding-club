@@ -27,7 +27,7 @@ const Aptitudeseries = () => {
         {programdata.youwillget?
         <YouWillGet data={programdata}/>
         :<div></div>}
-        <Timeline />
+        <Timeline   data={programdata}/>
         <CompanySlider />
         <Testimonial />
         <FooterNew name={programdata} />
