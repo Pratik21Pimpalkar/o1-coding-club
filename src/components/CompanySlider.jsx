@@ -22,7 +22,7 @@ const CompanySlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 2000,
+    speed: 5500,
     slidesToShow: 6,
     
     cssEase: 'linear',
