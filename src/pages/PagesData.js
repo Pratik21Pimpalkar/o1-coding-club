@@ -49,6 +49,7 @@ const programData = {
       " Lifetime Access",
       " Internship offer to top performers",
     ],
+    timelineformlink: "https://docs.google.com/forms/u/0"
   },
   dsa: {
     programName: "DSA",
@@ -83,6 +84,7 @@ const programData = {
       " Lifetime Access",
       " Internship offer to top performers",
     ],
+    timelineformlink: "https://docs.google.com/forms/u/0"
   },
   coderun: {
     programName: "Coderun",
@@ -118,6 +120,7 @@ const programData = {
       " Lifetime Access",
       " Internship offer to top performers",
     ],
+    timelineformlink: "https://docs.google.com/forms/u/0"
   },
   coresubjects: {
     programName: "CORE SUBJECTS",
@@ -153,6 +156,7 @@ const programData = {
       " Lifetime Access",
       " Internship offer to top performers",
     ],
+    timelineformlink: "https://docs.google.com/forms/u/0"
   },
   pythonbootcamp: {
     programName: "PythonBootcamp",
@@ -187,10 +191,8 @@ const programData = {
       " Lifetime Access",
       " Internship offer to top performers",
     ],
+    timelineformlink: "https://docs.google.com/forms/u/0",
   },
-  showtimeline: false,
-  showpricing: false,
-  showyouwillget: false,
   sdebootcamp: {
     programName: "sdebootcamp",
     desc: "",
@@ -225,6 +227,7 @@ const programData = {
       " Lifetime Access",
       " Internship offer to top performers",
     ],
+    timelineformlink: "https://docs.google.com/forms/u/0"
   },
   aptitudeseries: {
     programName: "APTITUDE SERIES",

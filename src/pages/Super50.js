@@ -24,7 +24,7 @@ const Super50 = () => {
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
-        {programdata.showpricing?
+        {programdata.youwillget?
         <YouWillGet data={programdata}/>
         :<div></div>}
         {programdata.showtimeline?
