@@ -23,8 +23,8 @@ const Card = ({ data }) => {
                     </div>
                     <div>{
                         data.linkedin?
-                        <a href={ data.linkedin}>
-                            <LinkedInIcon sx={{ fontSize: "2rem" }} />
+                        <a href={ data.linkedin} style={{textDecoration:"none"}} >
+                            <LinkedInIcon sx={{ fontSize: "2rem" ,color:"white"}} />
                         </a>:""}
                     </div>
 

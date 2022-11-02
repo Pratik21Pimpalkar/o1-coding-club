@@ -24,6 +24,7 @@ const CompanySlider = () => {
     infinite: true,
     speed: 5500,
     slidesToShow: 6,
+    
     cssEase: 'linear',
     slidesToScroll: 1,
     autoplay: true,
@@ -86,11 +87,12 @@ const CompanySlider_main = styled.div`
     font-size: 3rem;
   }
   .slick-slide {
+    
   &:focus, a {
     outline: none;
   }
 }
-.slick-slide div {
+.slick-slide div {transition-timing-function: linear!important;
     outline: none;
 }
 

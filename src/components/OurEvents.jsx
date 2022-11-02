@@ -54,7 +54,7 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={7}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Afraid of aptitude tests?</h3>
+                <h3 className="heading-desktop">Afraid of <span>aptitude</span>  tests?</h3>
                 <p>
                   Our test series offers company specific tests designed by
                   experts, consisting of all previous years questions with the
@@ -78,7 +78,7 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Not confident about coding?</h3>
+                <h3 className="heading-desktop">Not confident about <span>coding</span>?</h3>
                 <p>
                   Start Learning Python with us. Get trained by Industry Experts
                   with our highly rated training program. This bootcamp is for
@@ -101,7 +101,7 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={7}>
             <Box>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Stuck on DSA?</h3>
+                <h3 className="heading-desktop">Stuck on <span>DSA</span>? </h3>
                 <p>
                   DSA & Problem Solving is the most important skill when it
                   comes to placements in the IT industry. Master it in just 45
@@ -125,7 +125,7 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Placements starting soon?</h3>
+                <h3 className="heading-desktop"><span>Placements</span> starting soon?</h3>
                 <p>
                   Strengthen all your core subjects within just 15 days with the
                   help of our Superdream placed experts & be ready to ace
@@ -148,15 +148,17 @@ const OurEvents = () => {
 const Events = styled.div`
   height: max-content;
   position: relative;
-  .explore-btn {
+  .explore-btn{
+    -webkit-text-decoration: none;
     text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
+    color: #91d2ff;
+    border: 2px solid #bb4fff;
+    padding: 11px 15px;
+    border-radius: 9px;
     opacity: 0.8;
-    /* margin-top: 2rem; */
     margin-left: 2rem;
+    font-weight: 800;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 
     &:hover {
@@ -188,6 +190,17 @@ const Events = styled.div`
     }
   }
   .btn {
+  }
+  .heading-desktop{
+   
+      color:#0088ff;
+    -webkit-text-fill-color:initial !important ;
+    background:initial;
+    span{
+      color:#be69fa;
+    }
+    
+
   }
 `;
 
