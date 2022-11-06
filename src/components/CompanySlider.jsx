@@ -13,13 +13,12 @@ const CompanySlider = () => {
   };
   
   const settings = {
-    infinite: true,
     speed: 5500,
     autoplay: true,
-    autoplaySpeed: 5500,
+    infinite: true,
+    autoplaySpeed:0,
     slidesToShow: 6,
-    // cssEase: 'linear',
-    slidesToScroll: 1,
+    cssEase: 'linear',
     arrows: false,
     dots: false,
     responsive: [

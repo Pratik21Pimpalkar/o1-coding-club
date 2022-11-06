@@ -8,6 +8,7 @@ import Sdebootcamp from "./pages/Sdebootcamp";
 import Coresubjects from "./pages/CoreSubjects";
 import Coderun from "./pages/Coderun";
 import Navbar from "./components/Navbar";
+import ThousandX from "./pages/ThousandX";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />
         <Route path="/coresubjects" element={<Coresubjects />} />
         <Route path="/coderun" element={<Coderun />} />
+        <Route path="/1000x" element={<ThousandX />} />
         {/* <Route path="*" element={<NoPage/>} />  */}
 
       </Routes>

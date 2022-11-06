@@ -43,6 +43,35 @@ const OurEvents = () => {
         >
           Our Events
         </Typography>
+        
+        <Grid
+          container
+          alignItems={"center"}
+          rowSpacing={1}
+          columnSpacing={5}
+          wrap={"wrap-reverse"}
+        >
+          <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
+            <Box sx={{ height: "max-content" }}>
+              <div style={FeatureParagraph}>
+                <h3 className="heading-desktop"><span>1000x</span> Placement Program</h3>
+                <p>
+                India's biggest and most exclusive placement program. 
+
+Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.
+
+100% Refund if we fail to!
+                </p>
+              </div>
+              <Link className="explore-btn left" to="/1000x">
+                Explore More
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
+            <img src={sdebootcamp} alt="" width={"100%"} />
+          </Grid>
+        </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
             <img

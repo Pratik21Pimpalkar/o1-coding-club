@@ -16,6 +16,40 @@ const programData = {
     },
   },
 
+  ThousandX: {
+    programName: "1000x Placement Program",
+    desc: " India's biggest and most exclusive placement program. Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.100% Refund if we fail to!",
+    linktoregister: "link",
+    instructer: {
+      name: "", //if empty, show nothing about instructer
+      about:
+        "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
+      instructerimg: pythoninstructer,
+    },
+    pricing: "1000 Rs",
+    features: {
+      first: "",
+      second: "",
+      third: "",
+      forth: "",
+    },
+    showtimeline: true,
+    showpricing: true,
+    showyouwillget: true,
+    stats: {
+      placements: "100%",
+      companycracked: "50+",
+      placedinamazon: "50+",
+      studentplaced: "500+",
+    },
+    youwillget: [
+      "An impressive project on your resume",
+      "A trending skill to enhance your resume",
+      " Course Certification",
+      " Lifetime Access",
+    ],
+    timelineformlink: "https://docs.google.com/forms/u/0"
+  },
   Super50: {
     programName: "Super50",
     desc: "",
