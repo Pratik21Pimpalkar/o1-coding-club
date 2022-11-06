@@ -5,30 +5,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Typography } from "@mui/material";
 
-const images = () => {
-  const path = require.context("../../public/companies_logo", false, /\.png$/);
-  return path.keys();
-};
 
 const CompanySlider = () => {
-  const settings2 = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+  const images = () => {
+    const path = require.context("../../public/companies_logo", false, /\.png$/);
+    return path.keys();
   };
-
+  
   const settings = {
-    dots: true,
     infinite: true,
     speed: 5500,
-    slidesToShow: 6,
-    
-    cssEase: 'linear',
-    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2,
+    autoplaySpeed: 5500,
+    slidesToShow: 6,
+    // cssEase: 'linear',
+    slidesToScroll: 1,
     arrows: false,
     dots: false,
     responsive: [
