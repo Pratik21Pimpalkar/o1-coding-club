@@ -36,7 +36,7 @@ const Hero = () => {
               </Typography>
               <Box sx={{
                 display: {
-                  xs: "block", md: "none"
+                  xs: "block", sm: "none"
                 },
                 width: "100%  "
               }}>
