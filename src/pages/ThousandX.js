@@ -9,8 +9,8 @@ import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData";
 import YouWillGet from "../components_template/components/YouWillGet";
-const Sdebootcamp = () => {
-  const programdata = PagesData.sdebootcamp;
+const ThousandX = () => {
+  const programdata = PagesData.ThousandX;
   return (
     <>
       <div //Background Code
@@ -24,7 +24,7 @@ const Sdebootcamp = () => {
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
-        {programdata.youwillget?
+        {programdata.showyouwillget?
         <YouWillGet data={programdata}/>
         :<div></div>}
         {programdata.showtimeline?
@@ -38,4 +38,4 @@ const Sdebootcamp = () => {
   );
 };
 
-export default Sdebootcamp;
+export default ThousandX;

@@ -42,6 +42,8 @@ const FeatureSection = ({ data }) => {
               <span className="section-separator"></span>
             </div>
           </Typography>
+
+          {data.instructer.name ?
           <Grid container alignItems={"center"} justifyContent={'center'} rowSpacing={1} columnSpacing={5}>
 
             <Grid item md={3}>
@@ -57,6 +59,7 @@ const FeatureSection = ({ data }) => {
               </Box>
             </Grid>
           </Grid>
+:<div></div> }
           {data.showpricing?
         
 
