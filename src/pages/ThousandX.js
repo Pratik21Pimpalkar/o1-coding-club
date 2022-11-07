@@ -9,6 +9,7 @@ import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData";
 import YouWillGet from "../components_template/components/YouWillGet";
+import Eligibility from "../components_template/components/Eligiblity";
 const ThousandX = () => {
   const programdata = PagesData.ThousandX;
   return (
@@ -24,6 +25,7 @@ const ThousandX = () => {
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
+        <Eligibility  data={programdata}/>
         {programdata.showyouwillget?
         <YouWillGet data={programdata}/>
         :<div></div>}

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import beginLogo from "../images/benefits.jpg";
 import benefits from '../../Assets/benefits.png'
 import { Container } from "@mui/system";
-const YouWillGet = ({ data }) => {
+const Eligibility = ({ data }) => {
   return (
     <FeaturesCardWrapper>
       <div>
@@ -13,16 +13,17 @@ const YouWillGet = ({ data }) => {
             color: 'white', textAlign: "center", '@media screen and (max-width:480px)':{
               fontSize:"2.2rem"
             }
-        }}>YOU GET !</Typography>
+        }}>Eligibility</Typography>
 
           <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
             <Grid item xs={12} md={6}>
               <div className="card">
                 <div className="imgdiv">
-                  <img src={benefits} alt="" />
+                    {/* <p></p> */}
+                  {/* <img src={benefits} alt="" /> */}
                 </div>
                 <div className="contentdetails">
-                  {data.youwillget.map((item, key) => {
+                  {data.Eligibility.map((item, key) => {
                     return (
                       <ul key={key}>
 
@@ -40,7 +41,7 @@ const YouWillGet = ({ data }) => {
   );
 };
 
-export default YouWillGet;
+export default Eligibility;
 
 const FeaturesCardWrapper = styled.div`
   margin: 5rem 0;
@@ -52,10 +53,9 @@ const FeaturesCardWrapper = styled.div`
   .card {
     margin-top: 2rem;
     width: 100%;
-    min-height: 25rem;
+    min-height: 15rem;
     display: flex;
-    padding: 2rem;
-    padding-left: 3rem;
+    padding: 3.3rem;
     background-color: #140230;
     align-items: center;
     flex-direction: column;

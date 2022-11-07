@@ -43,7 +43,7 @@ const OurEvents = () => {
         >
           Our Events
         </Typography>
-        
+
         <Grid
           container
           alignItems={"center"}
@@ -54,13 +54,11 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop"><span>1000x</span> Placement Program</h3>
+                <h3 className="heading-desktop">
+                  <span>1000x</span>  your placement preparations
+                </h3>
                 <p>
-                India's biggest and most exclusive placement program. 
-
-Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.
-
-100% Refund if we fail to!
+                Exclusive placement program to make you a warrior in placement battlefield. 
                 </p>
               </div>
               <Link className="explore-btn left" to="/1000x">
@@ -83,7 +81,9 @@ Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.
           <Grid item xs={12} sm={12} md={7}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Afraid of <span>aptitude</span>  tests?</h3>
+                <h3 className="heading-desktop">
+                  Afraid of <span>aptitude</span> tests?
+                </h3>
                 <p>
                   Our test series offers company specific tests designed by
                   experts, consisting of all previous years questions with the
@@ -107,7 +107,9 @@ Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Not confident about <span>coding</span>?</h3>
+                <h3 className="heading-desktop">
+                  Not confident about <span>coding</span>?
+                </h3>
                 <p>
                   Start Learning Python with us. Get trained by Industry Experts
                   with our highly rated training program. This bootcamp is for
@@ -130,7 +132,9 @@ Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.
           <Grid item xs={12} sm={12} md={7}>
             <Box>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Stuck on <span>DSA</span>? </h3>
+                <h3 className="heading-desktop">
+                  Stuck on <span>DSA</span>?{" "}
+                </h3>
                 <p>
                   DSA & Problem Solving is the most important skill when it
                   comes to placements in the IT industry. Master it in just 45
@@ -154,7 +158,9 @@ Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop"><span>Placements</span> starting soon?</h3>
+                <h3 className="heading-desktop">
+                  <span>Placements</span> starting soon?
+                </h3>
                 <p>
                   Strengthen all your core subjects within just 15 days with the
                   help of our Superdream placed experts & be ready to ace
@@ -177,7 +183,7 @@ Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.
 const Events = styled.div`
   height: max-content;
   position: relative;
-  .explore-btn{
+  .explore-btn {
     -webkit-text-decoration: none;
     text-decoration: none;
     color: #91d2ff;
@@ -220,16 +226,13 @@ const Events = styled.div`
   }
   .btn {
   }
-  .heading-desktop{
-   
-      color:#0088ff;
-    -webkit-text-fill-color:initial !important ;
-    background:initial;
-    span{
-      color:#be69fa;
+  .heading-desktop {
+    color: #0088ff;
+    -webkit-text-fill-color: initial !important ;
+    background: initial;
+    span {
+      color: #be69fa;
     }
-    
-
   }
 `;
 
