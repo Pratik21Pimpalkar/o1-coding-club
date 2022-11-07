@@ -17,7 +17,7 @@ const programData = {
   },
 
   ThousandX: {
-    programName: "1000x Placement Program",
+    programName: "1000x Placement Preparations",
     desc: " India's biggest and most exclusive placement program. Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.100% Refund if we fail to!",
     linktoregister: "link",
     instructer: {
@@ -43,11 +43,18 @@ const programData = {
       studentplaced: "500+",
     },
     youwillget: [
-      "An impressive project on your resume",
-      "A trending skill to enhance your resume",
-      " Course Certification",
-      " Lifetime Access",
+      "360 placement program of your dreams.",
+      "Structured DSA preparation. ",
+      "Complete Core subjects bootcamp. ",
+      "Aptitude preparation for placements. ",  
+      "Interview Ready",
     ],
+    Eligibility:
+    [
+     " Exclusive program for top students from different colleges",
+    "Fight hard to earn your spot!!"
+    ],
+    
     timelineformlink: "https://docs.google.com/forms/u/0"
   },
   Super50: {

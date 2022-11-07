@@ -38,7 +38,7 @@ const FeatureSection = ({ data }) => {
             }}
           >
             <div className="section-title">
-              <h2 style={{ fontSize: "2.5rem",marginBottom:"2rem" }}>About the Program</h2>
+              <h2 style={{ fontSize: "3.5rem",marginBottom:"2rem" }}>About the Program</h2>
               <span className="section-separator"></span>
             </div>
           </Typography>
