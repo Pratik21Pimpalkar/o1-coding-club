@@ -4,8 +4,8 @@ import laptopImg from "../images/laptop_for_webpage.png";
 
 const Circle = () => {
   return (
-    <CircleStyle>
-      <img src={laptopImg} alt="" />
+    <CircleStyle className="circle">
+      <img src={laptopImg} alt="" className="laptopimg" />
     </CircleStyle>
   );
 };
@@ -30,6 +30,13 @@ const CircleStyle = styled.div`
     animation: MoveUpDown 1s linear infinite;
   }
 
+  @media screen and (max-width: 600px) {
+   
+  }
+  @media screen and (min-device-width:380px) and (max-device-width:900px)  {
+    
+  }
+
   @keyframes MoveUpDown {
     0% ,100%{
 transform: translateY(0)
@@ -51,6 +58,7 @@ transform: translateY(0)
   }
   @media screen and (max-width: 600px) {
     animation: none;
+    /* margin-top: 5rem; */
     transform: scale(0.5) !important;
     right: 10rem;
   }

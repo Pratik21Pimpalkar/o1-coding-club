@@ -16,7 +16,7 @@ const FeaturesCard = ({data}) => {
                         <div className="card">
                             <div className='imgdiv'><img src={beginLogo} alt="" /></div>
                             <div className='contentdetails'>
-                                <h4>Beginner Friendly</h4>
+                                <h4>{data.features.firstheading?data.features.firstheading: "Beginner Friendly"}</h4>
                                 <p>{data.features.first?data.features.first: "Our programs are tailor made and are beginner friendly. We want all to prosper and none to be left behind."}</p>
                             </div>
                         </div>
@@ -25,8 +25,8 @@ const FeaturesCard = ({data}) => {
                         <div className="card">
                             <div className='imgdiv'><img src={handsOnLogo} alt="" /></div>
                             <div className='contentdetails'>
-                                <h4>Hands On</h4>
-                                <p>Create from your learning. We focus on hands on. We believe practical knowledge is as important as conceptual knowledge.</p>
+                                <h4>{data.features.second?data.features.secondheading: "Hands On"}</h4>
+                                <p>{data.features.second?data.features.second: "Create from your learning. We focus on hands on. We believe practical knowledge is as important as conceptual knowledge."}</p>
                             </div>
                         </div>
                     </Grid>
@@ -34,8 +34,8 @@ const FeaturesCard = ({data}) => {
                         <div className="card">
                             <div className='imgdiv'><img src={keepItSimplelogo} alt="" /></div>
                             <div className='contentdetails'>
-                                <h4>Keep it Simple</h4>
-                                <p>We believe in simplicity. Learning can be very simple if you have the right approach. Keep simple, learn more.</p>
+                                <h4>{data.features.thirdheading?data.features.thirdheading:"Keep it Simple"}</h4>
+                                <p>{data.features.third?data.features.third: "We believe in simplicity. Learning can be very simple if you have the right approach. Keep simple, learn more."}</p>
                             </div>
                         </div>
                     </Grid>
@@ -77,7 +77,7 @@ margin: 5rem 0;
         text-align: center;
        h4{
         font-size: 1.8rem;
-    line-height: 3.2rem;
+    line-height: -1rem;
        }
        p{
         opacity: 70%;

@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
     /* z-index: 10; */
     /* min-width: 400px; */
 }
@@ -20,7 +21,7 @@
     height: auto;
     width: auto;
     color: rgb(255, 255, 255);
-    line-height: 83px;
+    /* line-height: 83px; */
     letter-spacing: -2px;
     margin-top: 0.3rem;
     visibility: visible;
@@ -122,6 +123,7 @@
     .firsthead{
         font-size: 2.5rem;
         margin-right: 0.4rem;
+        margin-top: -2rem;
     }
     .secondhead{
         font-size: 2.5rem;
@@ -129,16 +131,15 @@
     .para{
         position: relative;
         text-align: center;
-        bottom: 15rem;
+        bottom: 13rem;
         width: auto;
     }
     .btn-giveTest{
         position:relative;
-        bottom: 13rem;
+        bottom: 12rem;
         left: 7rem;
         outline: none;
         border: none;
-       
       }
    
 }
@@ -155,7 +156,7 @@
         bottom: 31rem;
     }
     .firsthead{
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-right: 0.4rem;
     }
     .secondhead{
@@ -164,15 +165,19 @@
     .para{
         position: relative;
         text-align: center;
-        bottom: 15rem;
+        bottom: 13rem;
         width: auto;
     }
     .btn-giveTest{
         position:relative;
         bottom: 13rem;
-        left: 6rem;
+        /* left: 8rem; */
+
+        width: 8rem;
+        text-align: center;
         outline: none;
         border: none;
+        margin: 1rem 0 0 auto;
        
       }
 }
