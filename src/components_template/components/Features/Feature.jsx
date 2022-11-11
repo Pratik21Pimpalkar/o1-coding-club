@@ -6,14 +6,14 @@ import styled from "styled-components";
 import { textAlign } from "@mui/system";
 const FeaturePosition = {
   color: "white",
-  marginBottom: "4rem",
+  marginBottom: "2rem",
 };
 const FeatureParagraph = {
   background: "-webkit-linear-gradient(38deg, #ffffff, #c5c5c5, #4e4747)",
   WebkitBackgroundClip: "text",
   // webkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
-  padding: "1rem 2rem",
+  padding: "0.5rem 2rem",
   fontSize: "19px",
   marginBottom: "1rem",
 };
@@ -31,14 +31,14 @@ const FeatureSection = ({ data }) => {
       <AboutProgram>
         <Container maxWidth="lg" style={FeaturePosition}>
           <div className="section-title ">
-            <h2 style={{ fontSize: "3.5rem", marginBottom: "2rem" }}>
+            <h2 className="main-heading">
               About the Program
             </h2>
           </div>
 
           {data.instructer[0].name ? (
             <>
-              <h3 className="heading-desktop"> About Instructer</h3>
+              <h3 className="heading-desktop"> About Instructor</h3>
 
               {instructerData.map((item, key) => {
                 return (
@@ -53,11 +53,12 @@ const FeatureSection = ({ data }) => {
                     >
                       {/* <li className="items">{item}</li> */}
                       <Grid item md={3}>
+                        <div className="image">
                         <img
                           src={item.instructerimg ? item.instructerimg : img}
                           alt=""
                           className="instructerimg"
-                        />
+                        /></div>
                       </Grid>
                       <Grid item xs={12} sm={12} md={5}>
                         <Box sx={{ height: "max-content" }}>
@@ -86,7 +87,6 @@ const FeatureSection = ({ data }) => {
                 <Box sx={{ height: "max-content" }}>
                   <div style={FeatureParagraph}>
                     <h3 className="price-desktop">Pricing</h3>
-
                     <h3 className="price-desktop2">{data.pricing}</h3>
                   </div>
                 </Box>
@@ -110,6 +110,11 @@ const AboutProgram = styled.div`
   .section-title {
     text-align: center;
   }
+  .main-heading{
+    font-size :3.2rem;
+    margin-bottom: 2rem;
+  }
+
   .heading-desktop {
     text-align: center;
     font-size: 2.5rem;
@@ -123,12 +128,12 @@ const AboutProgram = styled.div`
   }
 
   .price-desktop {
-    font-size: 4rem;
+    font-size: 2.8rem;
     text-decoration: line-through;
     text-align: center;
   }
   .price-desktop2 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
   }
   .instructerimg {
@@ -137,6 +142,9 @@ const AboutProgram = styled.div`
     border-radius: 1rem;
     border: 4px double #9874ff;
     margin: 0 auto;
+      height: 15rem;
+    
+    object-fit: cover;
     @media screen and (max-width: 400px) {
       width: 12rem;
     }
@@ -144,4 +152,18 @@ const AboutProgram = styled.div`
   .rupeeimg {
     width: 20rem;
   }
+
+    @media screen and (max-width: 576px) {
+    .main-heading{
+    
+    font-size: 2.2rem;
+  }
+  .heading-desktop{
+    font-size: 2rem;
+  }
+  .heading-desktop2{
+    text-align:center;
+  }
+  } 
+
 `;

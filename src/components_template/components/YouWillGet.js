@@ -7,13 +7,13 @@ import { Container } from "@mui/system";
 const YouWillGet = ({ data }) => {
   return (
     <FeaturesCardWrapper>
-      <div>
+    
         <Container>
-          <Typography variant="h2" sx={{
+          {/* <Typography variant="h2" sx={{
             color: 'white', textAlign: "center", '@media screen and (max-width:480px)':{
               fontSize:"2.2rem"
             }
-        }}>YOU GET !</Typography>
+        }}>YOU GET !</Typography> */}
 
           <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
             <Grid item xs={12} md={6}>
@@ -25,17 +25,17 @@ const YouWillGet = ({ data }) => {
                   {data.youwillget.map((item, key) => {
                     return (
                       <ul key={key}>
-
                         <li className="items">{item}</li>{" "}
                       </ul>
                     );
                   })}
                 </div>
+                <div id="timeline"></div>
               </div>
             </Grid>
           </Grid>
         </Container>
-      </div>
+   
     </FeaturesCardWrapper>
   );
 };
@@ -43,14 +43,14 @@ const YouWillGet = ({ data }) => {
 export default YouWillGet;
 
 const FeaturesCardWrapper = styled.div`
-  margin: 5rem 0;
+ 
   .heading {
     text-align: center;
     font-size: 5rem;
     color: white;
   }
   .card {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     width: 100%;
     min-height: 25rem;
     display: flex;

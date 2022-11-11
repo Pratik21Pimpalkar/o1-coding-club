@@ -3,17 +3,20 @@ import styled from "styled-components";
 
 const Timeline = (props) => {
   return (
-    <TimeLineStyled id="timeline">
+    <TimeLineStyled>
+      <h3 className="heading-desktop">How to Apply</h3>
       <div className="timeline">
         <div className="container left">
           <div className="content">
             <h2>Join Whatsapp Group</h2>
             <p>
-              Join the following{" "}
-              <a href={props.data.timelineformlink} className="explore-btn ">
-                WhatsApp
-              </a>{" "}
-              group and attend program details briefing meet.
+              Join the following Whatsapp group and attend program details
+              briefing meet.<br></br>{" "}
+              <button className="explore-btn">
+                <a href={props.data.timelineformlink} className="explore-btn ">
+                  Group Link
+                </a>{" "}
+              </button>
             </p>
           </div>
         </div>
@@ -27,7 +30,7 @@ const Timeline = (props) => {
           <div className="content">
             <h2>Shortlisting Process</h2>
             <p>
-           Appear for the shortlisting and selection process, all the best.
+              Appear for the shortlisting and selection process, all the best.
             </p>
           </div>
         </div>
@@ -39,18 +42,29 @@ const Timeline = (props) => {
 export default Timeline;
 
 const TimeLineStyled = styled.div`
+  .heading-desktop {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
   /* position: re; */
   .explore-btn {
     text-decoration: none;
     font-size: 0.8rem;
-    /* border: 2px solid black; */
     padding: 1px;
     border-radius: 10px;
-    opacity: 0.8;
-
-    /* margin-top: 2rem; */
-    margin-left: 0.2rem;
+   
+    margin-top: 0.2rem;
+    /* margin-left: 0.2rem; */
     transition: all 0.3s;
+
+    color:black;
+  }
+  .explore-btn :hover {
+    /* background-color: #bb4fff; */
+    transform:scale(1.1);
   }
   .timeline {
     position: relative;

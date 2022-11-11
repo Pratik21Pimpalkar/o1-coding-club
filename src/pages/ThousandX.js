@@ -26,7 +26,7 @@ const ThousandX = () => {
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
-        <Eligibility  data={programdata}/>
+        {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget?
         <YouWillGet data={programdata}/>
         :<div></div>}
