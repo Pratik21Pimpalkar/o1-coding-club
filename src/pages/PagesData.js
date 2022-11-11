@@ -17,15 +17,28 @@ const programData = {
   },
 
   ThousandX: {
-    programName: "1000x Placement Preparations",
+    programName: "1000x Placement Program",
     desc: " India's biggest and most exclusive placement program. Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.100% Refund if we fail to!",
-    linktoregister: "link",
-    instructer: {
-      name: "", //if empty, show nothing about instructer
+    linktoregister: "applybtn",
+    registertoapply:true,
+    instructer: [{
+      name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
     },
+    {
+      name: "Rishabh Rathi",
+      about:
+        "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
+      instructerimg: pythoninstructer,
+    },
+    {
+      name: "Rishabh Rathi",
+      about:
+        "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
+      instructerimg: pythoninstructer,
+    }],
     pricing: "1000 Rs",
     features: {
       first: "",
@@ -61,12 +74,24 @@ const programData = {
     programName: "Super50",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
     },
+    {
+      name: "Rishabh Rathi",
+      about:
+        "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
+      instructerimg: pythoninstructer,
+    },
+    {
+      name: "Rishabh Rathi",
+      about:
+        "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
+      instructerimg: pythoninstructer,
+    }],
     pricing: "2000",
     features: {
       first: "",

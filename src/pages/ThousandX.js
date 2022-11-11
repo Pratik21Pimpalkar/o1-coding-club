@@ -1,10 +1,11 @@
 import React from "react";
-import Home from "../components_template/components/Home/Home";
+import Home1000x from "../components_template/components/Home/Home1000x";
 import FooterNew from "../components_template/components/Footer/FooterNew";
 import Testimonial from "../components/Testimonial2";
 import CompanySlider from "../components/CompanySlider";
 import Stats from "../components/Stats";
 import Timeline from "../components/Timeline";
+import TimelineFor1000x from "../components/TimelineFor1000x";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData";
@@ -21,7 +22,7 @@ const ThousandX = () => {
           userSelect: "none",
         }}
       >
-        <Home name={programdata} />
+        <Home1000x name={programdata} />
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
@@ -30,7 +31,7 @@ const ThousandX = () => {
         <YouWillGet data={programdata}/>
         :<div></div>}
         {programdata.showtimeline?
-        <Timeline data={programdata}/>
+        <TimelineFor1000x  data={programdata}/>
         :<div></div>}
         <CompanySlider />
         <Testimonial />
