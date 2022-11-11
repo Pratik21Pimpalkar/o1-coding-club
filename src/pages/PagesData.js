@@ -45,6 +45,13 @@ const programData = {
         "Full Stack Engineer at Accenture, Hi, I'm R.S. Agrawal, not only do I have the experience of training over 500 students for Aptitude tests of various IT companies but have myself aced through every aptitude test that I appeared for & ultimately landed a superdream job. I'm here to guide you for the same.",
       instructerimg: "https://drive.google.com/thumbnail?id=1gKqITyYY3_gaq_eiAefhbO1cCwORTKa4",
     },
+    {
+      name: "Bharat Thakur",
+      about:
+        "Hi, I'm Bharat Thakur, a Candidate Master on Codeforces. Competitive programming improved my grip over DSA & Problem Solving and helped me land a dream job. I'm here to mentor you for the same.",
+      instructerimg: "https://drive.google.com/thumbnail?id=1bgCdJIwEmEiluQG-wEuTFc5GAfQ0PFg1",
+      
+    },
   ],
     pricing: "1000 Rs",
     features: {
