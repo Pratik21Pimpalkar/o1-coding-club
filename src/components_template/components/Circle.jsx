@@ -34,10 +34,7 @@ const CircleStyle = styled.div`
    
   }
   @media screen and (min-device-width:380px) and (max-device-width:900px)  {
-    .home{
-      height: 77vh !important;
-      min-height: initial;
-    }
+    
   }
 
   @keyframes MoveUpDown {
