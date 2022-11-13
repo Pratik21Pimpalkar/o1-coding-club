@@ -23,7 +23,7 @@ const Timeline = (props) => {
         <div className="container right">
           <div className="content">
             <h2>Fill Google Form</h2>
-            <p>Fill google form circulated in the meet and apply.</p>
+            <p>Fill google form circulated in the meet & group to apply.</p>
           </div>
         </div>
         <div className="container left">

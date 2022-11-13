@@ -139,12 +139,12 @@ const programData = {
     programName: "DSA",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
     pricing: "2000",
     features: {
       first: "",
@@ -174,12 +174,12 @@ const programData = {
     programName: "Coderun",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
    
     pricing: "2000",
     features: {
@@ -210,12 +210,12 @@ const programData = {
     programName: "CORE SUBJECTS",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
     showtimeline: false,
     showpricing: false,
     showyouwillget: false,
@@ -246,12 +246,12 @@ const programData = {
     programName: "PythonBootcamp",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
     pricing: "2000",
     features: {
       first: "",
@@ -281,12 +281,12 @@ const programData = {
     programName: "sdebootcamp",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
 
     pricing: "2000",
     features: {
@@ -317,12 +317,12 @@ const programData = {
     programName: "APTITUDE SERIES",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
     pricing: "2000",
     features: {
       first: "",
