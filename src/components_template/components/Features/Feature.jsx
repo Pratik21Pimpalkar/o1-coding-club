@@ -129,7 +129,6 @@ const AboutProgram = styled.div`
 
   .price-desktop {
     font-size: 2.8rem;
-    text-decoration: line-through;
     text-align: center;
   }
   .price-desktop2 {
