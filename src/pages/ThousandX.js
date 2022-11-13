@@ -4,13 +4,13 @@ import FooterNew from "../components_template/components/Footer/FooterNew";
 import Testimonial from "../components/Testimonial2";
 import CompanySlider from "../components/CompanySlider";
 import Stats from "../components/Stats";
-import Timeline from "../components/Timeline";
 import TimelineFor1000x from "../components/TimelineFor1000x";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData";
 import YouWillGet from "../components_template/components/YouWillGet";
-import Eligibility from "../components_template/components/Eligiblity";
+// import Eligibility from "../components_template/components/Eligiblity";
+import ApplyNowBtn from "../components/ApplyNowBtn";
 const ThousandX = () => {
   const programdata = PagesData.ThousandX;
   return (
@@ -26,6 +26,7 @@ const ThousandX = () => {
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
+        <ApplyNowBtn  data={programdata}/>
         {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget?
         <YouWillGet data={programdata}/>
@@ -43,9 +44,3 @@ const ThousandX = () => {
 
 export default ThousandX;
 
-// https://drive.google.com/thumbnail?id=1HYlkYNE0zhMo908KOo06pfun3Rp2esLW
-// https://drive.google.com/thumbnail?id=1JWNuP2qLLq2g2IdggbX4_ZjyrQva2f0G
-// https://drive.google.com/thumbnail?id=1grmxrzueVBiriqQrhli1Ej9dqPgDfquf
-// https://drive.google.com/thumbnail?id=1zXGr6t9JEi8mmyzIH1TSXddwjlCRStJP
-
-// https://drive.google.com/thumbnail?id=1HYlkYNE0zhMo908KOo06pfun3Rp2esLW

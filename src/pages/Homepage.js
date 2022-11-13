@@ -9,7 +9,7 @@ import FeaturesCard from "../components/FeaturesCard";
 import Navbar from "../components/Navbar";
 import FooterNew from "../components_template/components/Footer/FooterNew";
 import PagesData from "./PagesData"
-
+import OnGoingEvents from "../components/OnGoingEvents"
 
 const Homepage = () => {
   return (
@@ -17,11 +17,12 @@ const Homepage = () => {
         <Hero />
         <FeaturesCard  data={PagesData.homepage} />
         <Stats data={PagesData.homepage}/>
-        <OurEvents />
+        {/* <OurEvents /> */}
+        < OnGoingEvents  data={PagesData.homepage}/>
         <CompanySlider />
         {/* <ComSlider/> */}
         <Testimonial2 />
-        <FooterNew/>
+        <FooterNew name={PagesData.homepage}/>
         {/* <Footer />   */}
 
     </div>

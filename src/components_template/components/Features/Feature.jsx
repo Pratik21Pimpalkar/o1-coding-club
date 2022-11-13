@@ -6,7 +6,6 @@ import styled from "styled-components";
 import { textAlign } from "@mui/system";
 const FeaturePosition = {
   color: "white",
-  marginBottom: "2rem",
 };
 const FeatureParagraph = {
   background: "-webkit-linear-gradient(38deg, #ffffff, #c5c5c5, #4e4747)",
@@ -17,12 +16,6 @@ const FeatureParagraph = {
   fontSize: "19px",
   marginBottom: "1rem",
 };
-const gridStyle = {
-  height: "8vh",
-  margin: " 20rem 0",
-};
-// const dummyData = Data[0];
-const gridOrder = { order: "-1" };
 
 const FeatureSection = ({ data }) => {
   const instructerData = Array.from(data.instructer);
@@ -64,7 +57,8 @@ const FeatureSection = ({ data }) => {
                         <Box sx={{ height: "max-content" }}>
                           <div style={FeatureParagraph}>
                             <h3 className="heading-desktop2">{item.name}</h3>
-                            {item.about}
+                            <h4 >{item.desig}</h4>
+                            <p>{item.about}</p>
                           </div>
                         </Box>
                       </Grid>
@@ -83,7 +77,7 @@ const FeatureSection = ({ data }) => {
               justifyContent={"center"}
               wrap={"wrap-reverse"}
             >
-              <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
+              <Grid item xs={12} sm={12} md={5} order={{ md: 2, lg: 1 }}>
                 <Box sx={{ height: "max-content" }}>
                   <div style={FeatureParagraph}>
                     <h3 className="price-desktop">Pricing</h3>
@@ -92,7 +86,7 @@ const FeatureSection = ({ data }) => {
                 </Box>
               </Grid>
               <Grid item md={5} order={{ md: 1, lg: 2 }}>
-                <img src={rupee} alt="" className="rupeeimg" />
+                <img src={rupee}  alt="" className="rupeeimg" />
               </Grid>
             </Grid>
           ) : (
@@ -149,7 +143,7 @@ const AboutProgram = styled.div`
     }
   }
   .rupeeimg {
-    width: 20rem;
+    width: 25rem;
   }
 
     @media screen and (max-width: 576px) {

@@ -43,8 +43,6 @@ const CompanySlider = () => {
   };
   const name = images();
   const fnames = name.map(changefilename);
-  console.log(fnames);
-
   return (
     <CompanySlider_main>
 

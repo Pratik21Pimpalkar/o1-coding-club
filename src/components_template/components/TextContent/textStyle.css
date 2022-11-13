@@ -89,6 +89,7 @@
     border-radius: 300px;
     /* filter: brightness(100%); */
     visibility: visible;
+    cursor: pointer;
 }
 .btn-giveTest:hover{
     transform: scale(1.09);
@@ -134,7 +135,7 @@
         bottom: 13rem;
         width: auto;
     }
-    .btn-giveTest{
+    .btn-giveTest-responsive{
         position:relative;
         bottom: 12rem;
         left: 7rem;
@@ -168,7 +169,7 @@
         bottom: 13rem;
         width: auto;
     }
-    .btn-giveTest{
+    .btn-giveTest-responsive{
         position:relative;
         bottom: 13rem;
         /* left: 8rem; */

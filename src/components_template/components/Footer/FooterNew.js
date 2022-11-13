@@ -12,7 +12,7 @@ import mail from '../../../Assets/email.png'
 import './footer.css'
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-const FooterNew = () => {
+const FooterNew = (props) => {
     return (
 
         <footer className="footer-section" style={{ marginTop: "5rem" }} id="footer">
@@ -40,7 +40,7 @@ const FooterNew = () => {
                                     </div>
                                     <div className="cta-text">
                                         <h4>Call us</h4>
-                                        <span>9876543210 0</span>
+                                        <span>9850314506, 9970780928</span>
                                     </div>
                                 </div>
                             </div>
@@ -75,12 +75,13 @@ const FooterNew = () => {
                                     <a href="https://www.linkedin.com/in/o-1-coding-club/" target="_blank"><LinkedInIcon/></a>
                                     <a href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg" target="_blank"><YouTubeIcon/></a>
                                     <a href="https://www.instagram.com/o1codingclub/" target="_blank"><InstagramIcon/></a>
-                                    <a href="" target="_blank"><TelegramIcon/></a>
+                                    <a href="https://t.me/+diEKUu4Y-oY3NDFl" target="_blank"><TelegramIcon/></a>
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xl={6} md={4} >
-                            <div className="footer-widget">
+                         <Grid item xl={6} md={4} className="footer-text">
+                           <p  > {props.name.footerbottomtext?props.name.footerbottomtext:""}</p>
+                            {/* <div className="footer-widget">
                                 <div className="footer-widget-heading">
                                     <h3>Useful Links</h3>
                                 </div>
@@ -89,8 +90,9 @@ const FooterNew = () => {
                                     <li><a href="https://knowyourprep.o1codingclub.in" target="_blank" >Know Your Prep</a></li>
                                     <li><HashLink to="#footer">Contact Us</HashLink></li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </Grid>
+
                     </Grid>
                 </div>
             </Container>
@@ -99,7 +101,7 @@ const FooterNew = () => {
 
                     <Grid item xl={6} lg={6} >
                         <div className="copyright-text">
-                            <p style={{ textAlign: "center" }}>Copyright &copy; 2022, All Right Reserved <a href="https://o1codingclub.in">O(1) Coding Club</a></p>
+                            <p style={{ textAlign: "center" }}>Copyright &copy; 2022, All Right Reserved <a href="/">O(1) Coding Club</a></p>
                         </div>
                     </Grid>
                 </Container>

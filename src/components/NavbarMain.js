@@ -59,13 +59,13 @@ export default function Navbar() {
               <HashLink smooth to='#' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
             </li>
             <li>
-              <HashLink smooth to="/#stats" onClick={() => setIsNavExpanded(false)}>Stats</HashLink>
+              <HashLink smooth to="#stats" onClick={() => setIsNavExpanded(false)}>Stats</HashLink>
             </li>
             <li>
-              <HashLink smooth to="/#events" onClick={() => setIsNavExpanded(false)}>Ongoing Program </HashLink>
+              <HashLink smooth to="#events" onClick={() => setIsNavExpanded(false)}>Ongoing Events</HashLink>
             </li>
             <li>
-              <HashLink smooth to="/#testimonial" onClick={() => setIsNavExpanded(false)}> Testimonial</HashLink>
+              <HashLink smooth to="#testimonial" onClick={() => setIsNavExpanded(false)}> Testimonial</HashLink>
             </li>
             {/* <li >
               <HashLink smooth to="#about" onClick={() => setIsNavExpanded(false)}> About</HashLink>
