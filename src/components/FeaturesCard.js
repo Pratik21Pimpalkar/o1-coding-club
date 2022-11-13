@@ -85,6 +85,14 @@ margin: 5rem 0;
     line-height: 1.6rem;
        }
     }
+
+    @media screen and (max-width:   706px) {
+        margin: 1rem 0;
+        .card{
+            height: 150rem;
+
+        }
+  } 
 }
 `
 

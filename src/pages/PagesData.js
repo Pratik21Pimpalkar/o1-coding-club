@@ -24,7 +24,7 @@ const programData = {
     instructer: [{
       name: "Aditya Sharma      ",
       about:
-        "SDE at Kickdrum, Hi, I'm Aditya and I have experience of training more than 200 students for DSA and have my self aced many coding rounds of top IT companies. I have landaded multiple superdream offers through regular and systematic practice of DSA. I am here to guide you for the same.",
+        "SDE at Akamai Tech, Hi, I'm Aditya and I have experience of training more than 200 students for DSA and have my self aced many coding rounds of top IT companies. I have landaded multiple superdream offers through regular and systematic practice of DSA. I am here to guide you for the same.",
       instructerimg: "https://drive.google.com/thumbnail?id=1ici6-DvAE-I7Aqwwn7K77BRaeH8psmIR",
     },
     {
@@ -53,13 +53,13 @@ const programData = {
       
     },
   ],
-    pricing: "1000 Rs",
+    pricing: "₹1000/-",
     features: {
       firstheading: " Exclusive",
       first: "Exclusive program for top students from different colleges.",
-      secondheading: "360 placement program",
+      secondheading: "360 Placement Program",
       second: "Tailored program to make you prepare in every aspect of off campus and on campus placements",
-      thirdheading: "1000x or refund",
+      thirdheading: "1000x or Refund*",
       third: "Get guaranteed 10 LPA+ offer or 100% refund",
       forth: "",
       forthheading: "",
@@ -139,12 +139,12 @@ const programData = {
     programName: "DSA",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
     pricing: "2000",
     features: {
       first: "",
@@ -174,12 +174,12 @@ const programData = {
     programName: "Coderun",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
    
     pricing: "2000",
     features: {
@@ -210,12 +210,12 @@ const programData = {
     programName: "CORE SUBJECTS",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
     showtimeline: false,
     showpricing: false,
     showyouwillget: false,
@@ -246,12 +246,12 @@ const programData = {
     programName: "PythonBootcamp",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
     pricing: "2000",
     features: {
       first: "",
@@ -281,12 +281,12 @@ const programData = {
     programName: "sdebootcamp",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
 
     pricing: "2000",
     features: {
@@ -317,12 +317,12 @@ const programData = {
     programName: "APTITUDE SERIES",
     desc: "",
     linktoregister: "",
-    instructer: {
+    instructer: [{
       name: "Rishabh Rathi",
       about:
         "React Developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima expedita commodi id dolor ut ipsum officia numquam eius, quidem doloribus",
       instructerimg: pythoninstructer,
-    },
+    }],
     pricing: "2000",
     features: {
       first: "",
