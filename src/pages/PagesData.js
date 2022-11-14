@@ -25,7 +25,7 @@ const programData = {
     instructer: [
       {
         name: "Aditya Sharma      ",
-        desig:"SDE at Akamai Tech",
+        desig:"SWE at Akamai Tech",
         about:
           " Hi, I'm Aditya and I have experience of training more than 200 students for DSA and have my self aced many coding rounds of top IT companies. I have landaded multiple superdream offers through regular and systematic practice of DSA. I am here to guide you for the same.",
         instructerimg:
