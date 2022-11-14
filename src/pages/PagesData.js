@@ -20,7 +20,7 @@ const programData = {
   ThousandX: {
     programName: "1000x Placement Program",
     desc: " India's biggest and most exclusive placement program. Pay ₹1000 and get a ₹10 Lakh IT Job Guarantee.100% Refund if we fail to!",
-    linktoregister: "applybtn",
+    linktoregister: "https://chat.whatsapp.com/FmCT9fesL5v9Y1VYBAXrdS",
     registertoapply: true,
     instructer: [
       {
@@ -109,7 +109,7 @@ const programData = {
       "Fight hard to earn your spot!!",
     ],
 
-    timelineformlink: "https://docs.google.com/forms/u/0",
+    timelineformlink: "https://chat.whatsapp.com/FmCT9fesL5v9Y1VYBAXrdS",
     footerbottomtext: "*T&C: Guaranteed package will depend on college",
   },
   Super50: {

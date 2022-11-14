@@ -54,7 +54,7 @@ const OurEvents = () => {
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
                 <h3 className="heading-desktop">
-                  <span>1000x</span>  your placement preparations
+                  <span>1000x</span>   placement program
                 </h3>
                 <p>
                 Exclusive placement program to make you a warrior in placement battlefield. 

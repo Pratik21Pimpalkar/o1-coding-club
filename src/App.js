@@ -12,16 +12,16 @@ import ThousandX from "./pages/ThousandX";
 function App() {
   return (
     <>
-      <Navbar />
+      
       <Routes>
         <Route path="/" element={<MainHomePage />} />
-        <Route path="/dsa" element={<DSA />} />
+        {/* <Route path="/dsa" element={<DSA />} />
         <Route path="/super50" element={<Super50 />} />
         <Route path="/pythonbootcamp" element={<Pythonbootcamp />} />
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />
         <Route path="/coresubjects" element={<Coresubjects />} />
-        <Route path="/coderun" element={<Coderun />} />
+        <Route path="/coderun" element={<Coderun />} /> */}
         <Route path="/1000x" element={<ThousandX />} />
         {/* <Route path="*" element={<NoPage/>} />  */}
 

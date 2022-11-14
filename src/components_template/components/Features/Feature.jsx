@@ -21,7 +21,7 @@ const FeatureSection = ({ data }) => {
   const instructerData = Array.from(data.instructer);
   return (
     <>
-      <AboutProgram>
+      <AboutProgram id="aboutprogram">
         <Container maxWidth="lg" style={FeaturePosition}>
           <div className="section-title ">
             <h2 className="main-heading">

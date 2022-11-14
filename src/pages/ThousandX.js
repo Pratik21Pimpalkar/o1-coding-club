@@ -11,6 +11,7 @@ import PagesData from "./PagesData";
 import YouWillGet from "../components_template/components/YouWillGet";
 // import Eligibility from "../components_template/components/Eligiblity";
 import ApplyNowBtn from "../components/ApplyNowBtn";
+import Navbar from "../components/Navbar";
 const ThousandX = () => {
   const programdata = PagesData.ThousandX;
   return (
@@ -22,6 +23,7 @@ const ThousandX = () => {
           userSelect: "none",
         }}
       >
+        <Navbar/>
         <Home1000x name={programdata} />
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
