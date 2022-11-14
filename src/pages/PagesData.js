@@ -54,7 +54,7 @@ const programData = {
         desig:"Full Stack Engineer at Accenture",
 
         about:
-          " Hi, I'm R.S. Agrawal, not only do I have the experience of training over 500 students for Aptitude tests of various IT companies but have myself aced through every aptitude test that I appeared for & ultimately landed a superdream job. I'm here to guide you for the same.",
+          " Hi, I'm Rajat Agrawal, not only do I have the experience of training over 1000 students for Aptitude tests of various tech companies but have myself aced through various aptitude tests that I appeared for & ultimately landed a superdream job. I'm here to guide you all for your placements.",
         instructerimg:
           "https://drive.google.com/thumbnail?id=1gKqITyYY3_gaq_eiAefhbO1cCwORTKa4",
       },
