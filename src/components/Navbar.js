@@ -66,6 +66,9 @@ export default function Navbar() {
                Apply Now
               </HashLink>
             </li>
+            <li>
+              <HashLink smooth to='/' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
+            </li>
           
             {/* <li>
               <HashLink smooth to='/' onClick={() => setIsNavExpanded(false)}>Home</HashLink>

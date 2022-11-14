@@ -51,10 +51,11 @@ const FooterNew = (props) => {
                                     <div className='WidgetIcon'>
                                         <img src={mail} alt="" />
                                     </div>
+                                    <a href="mailto:o1codingclub@gmail.com">
                                     <div className="cta-text">
                                         <h4>Mail us</h4>
                                         <span>o1codingclub@gmail.com</span>
-                                    </div>
+                                    </div></a>
                                 </div>
                             </div>
                         </Grid>
@@ -65,7 +66,7 @@ const FooterNew = (props) => {
                         <Grid item xl={6} md={4} >
                             <div className="footer-widget">
                                 <div className="footer-logo" style={{ width: "5rem" }}>
-                                    <a href="index.html"><img src={logo} className="img-fluid" alt="logo" style={{ width: "100%", objectFit: "contain" }} /></a>
+                                    <a href="/"><img src={logo} className="img-fluid" alt="logo" style={{ width: "100%", objectFit: "contain" }} /></a>
                                 </div>
                                 <div className="footer-text">
                                     <p>Not just a coding school, but a complete placement ecosystem with strong emphasis on high quality placement training & support, not only equipping you with relevant job market skills but providing every help to land your dream job.</p>
@@ -80,7 +81,7 @@ const FooterNew = (props) => {
                             </div>
                         </Grid>
                          <Grid item xl={6} md={4} className="footer-text ">
-                           <p className="tandc" style={{fontSize:"12px"}} > {props.name.footerbottomtext?props.name.footerbottomtext:""}</p>
+                           <p className="tandc" style={{fontSize:"11px"}} > {props.name.footerbottomtext?props.name.footerbottomtext:""}</p>
                             {/* <div className="footer-widget">
                                 <div className="footer-widget-heading">
                                     <h3>Useful Links</h3>
