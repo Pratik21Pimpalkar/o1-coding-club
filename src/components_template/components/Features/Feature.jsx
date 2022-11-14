@@ -56,8 +56,8 @@ const FeatureSection = ({ data }) => {
                       <Grid item xs={12} sm={12} md={5}>
                         <Box sx={{ height: "max-content" }}>
                           <div style={FeatureParagraph}>
-                            <h3 className="heading-desktop2">{item.name}</h3>
-                            <h4 >{item.desig}</h4>
+                            <h2 className="heading-desktop2">{item.name}</h2>
+                            <h3 >{item.desig}</h3>
                             <p>{item.about}</p>
                           </div>
                         </Box>

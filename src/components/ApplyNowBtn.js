@@ -1,12 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-
+import { HashLink } from "react-router-hash-link";
 const ApplyNowBtn = (props) => {
   return (
     <ApplyNowBtnStyled>
-      <a href={props.data.timelineformlink} className="explore-btn ">
-        <button className="btn-giveTest mobileres">Apply Now</button>
-      </a>
+        <HashLink
+                  smooth
+                  to="/1000x/#timeline"
+             
+                
+                >
+     
+        <button className="btn-giveTest mobileres explore-btn">Apply Now</button>
+      </HashLink>
     </ApplyNowBtnStyled>
   );
 };

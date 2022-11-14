@@ -79,8 +79,8 @@ const FooterNew = (props) => {
                                 </div>
                             </div>
                         </Grid>
-                         <Grid item xl={6} md={4} className="footer-text">
-                           <p  > {props.name.footerbottomtext?props.name.footerbottomtext:""}</p>
+                         <Grid item xl={6} md={4} className="footer-text ">
+                           <p className="tandc" style={{fontSize:"12px"}} > {props.name.footerbottomtext?props.name.footerbottomtext:""}</p>
                             {/* <div className="footer-widget">
                                 <div className="footer-widget-heading">
                                     <h3>Useful Links</h3>

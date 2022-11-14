@@ -55,6 +55,15 @@ export default function Navbar() {
           }
         >
           <ul>
+          <li>
+              <HashLink
+                smooth
+                to="/1000x/#timeline"
+                onClick={() => setIsNavExpanded(false)}
+              >
+               Apply Now
+              </HashLink>
+            </li>
             <li>
               <HashLink smooth to='#' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
             </li>

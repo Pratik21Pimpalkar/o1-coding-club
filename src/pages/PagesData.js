@@ -50,8 +50,8 @@ const programData = {
           "https://drive.google.com/thumbnail?id=15elP-zNzlXvNBqwhLCC5-kTIIbyHZHNz",
       },
       {
-        name: "R.S. Agrawal",
-        desig:"Full Stack Engineer at Accenture",
+        name: "Rajat Agrawal",
+        desig:"SWE-2 at Takeoff Technologies",
 
         about:
           " Hi, I'm Rajat Agrawal, not only do I have the experience of training over 1000 students for Aptitude tests of various tech companies but have myself aced through various aptitude tests that I appeared for & ultimately landed a superdream job. I'm here to guide you all for your placements.",
