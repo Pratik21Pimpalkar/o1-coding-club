@@ -1,25 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+import ApplyNowBtn from "./ApplyNowBtn";
 
 const Timeline = (props) => {
   return (
     <TimeLineStyled>
       <h3 className="heading-desktop">How to Apply</h3>
       <div className="timeline">
+      <a href={props.data.timelineformlink} className="explore-btn ">
         <div className="container left">
           <div className="content">
             <h2>Join Whatsapp Group</h2>
             <p>
               Join the following Whatsapp group and attend program details
               briefing meet.<br></br>{" "}
-              <button className="explore-btn">
-                <a href={props.data.timelineformlink} className="explore-btn ">
-                  Group Link
-                </a>{" "}
+              <button className="btn-giveTest mobileres">
+                
+                Join Now
+               
               </button>
             </p>
           </div>
-        </div>
+        </div></a>
+                
         <div className="container right">
           <div className="content">
             <h2>Fill Google Form</h2>
@@ -42,6 +45,11 @@ const Timeline = (props) => {
 export default Timeline;
 
 const TimeLineStyled = styled.div`
+
+a{
+  text-decoration: none;
+  color: black;
+}
   .heading-desktop {
     margin: 2rem 0;
     text-align: center;
@@ -49,23 +57,8 @@ const TimeLineStyled = styled.div`
     color: white;
     margin-bottom: 1rem;
   }
-  /* position: re; */
-  .explore-btn {
-    text-decoration: none;
-    font-size: 0.8rem;
-    padding: 1px;
-    border-radius: 10px;
-   
-    margin-top: 0.2rem;
-    /* margin-left: 0.2rem; */
-    transition: all 0.3s;
 
-    color:black;
-  }
-  .explore-btn :hover {
-    /* background-color: #bb4fff; */
-    transform:scale(1.1);
-  }
+ 
   .timeline {
     position: relative;
     max-width: 1200px;
@@ -168,7 +161,12 @@ const TimeLineStyled = styled.div`
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
+    .mobileres{
+    transform: scale(0.7);
+  }
+
     /* Place the timelime to the left */
+
     .timeline::after {
       left: 31px;
     }

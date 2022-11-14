@@ -80,8 +80,7 @@ const testimonialData = [
     content: `I was a part of the O(1) Coding Club for the last 1 year where I participated in some of their initiatives like CPL, coderun and aptitude series.
         I got to learn in a competitive environment with like-minded students and improve DSA and CP skills.
         The coding question which I solved during the CodeRun program highly benefited me in all companies Online Assessment and Interview rounds.`,
-    img: "https://drive.google.com/thumbnail?id=1n7D8hJnd4J-dwLOnKDi6Ej8TLG_EnaYL",
-
+    img: "https://drive.google.com/thumbnail?id=1Q7wl6PZ2juNKgHn9SMhpHNvYbgdIXpBY",
     linkedin: "https://www.linkedin.com/in/tejas-sudhir-tapas/",
   },
 

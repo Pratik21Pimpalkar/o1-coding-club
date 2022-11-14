@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import styled from "styled-components";
 import aptitudeseries from "../Assets/events/aptitudeseries.png";
-import coderun from "../Assets/events/coderun.png";
+// import coderun from "../Assets/events/coderun.png";
 import coresubjects from "../Assets/events/coresubjects.png";
 import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
@@ -11,7 +11,6 @@ import super50 from "../Assets/events/super50.png";
 import { Outlet, Link } from "react-router-dom";
 const FeaturePosition = {
   color: "white",
-  //   marginBottom: "4rem",
   fontFamily: "muli",
 };
 const FeatureParagraph = {
@@ -55,7 +54,7 @@ const OurEvents = () => {
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
                 <h3 className="heading-desktop">
-                  <span>1000x</span>  your placement preparations
+                  <span>1000x</span>   placement program
                 </h3>
                 <p>
                 Exclusive placement program to make you a warrior in placement battlefield. 

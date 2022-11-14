@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.svg";
 import { HashLink } from "react-router-hash-link";
-import CancelSharpIcon from '@mui/icons-material/CancelSharp';
-import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [navbarColor, setNavbarColor] = useState(false);
@@ -25,10 +23,8 @@ export default function Navbar() {
 
   return (
     <Navwrap>
-      <nav
-        className={navbarColor ? "navigation scrolled" : "navigation"}
-        style={{ color: "white" }}
-      >
+      <nav className={navbarColor ? "navigation scrolled" : "navigation"} style={{ color: "white" }}>
+
         <HashLink smooth to="/#" className="brand-name" title="O1 Analysis">
           <img src={logo} width="50" alt="O(1)-logo" className="img-fluid" />
         </HashLink>
@@ -40,23 +36,18 @@ export default function Navbar() {
             setNavbarColor(true);
           }}
         >
-          {
-            !isNavExpanded ?
-              // <svg
-              //   xmlns="http://www.w3.org/2000/svg"
-              //   className="h-5 w-5"
-              //   viewBox="0 0 20 20"
-              //   fill="white"
-              // >
-              //   <path
-              //     fillRule="evenodd"
-              //     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-              //     clipRule="evenodd"
-              //   />
-              // </svg> :
-              
-              <MenuSharpIcon sx={{color:'white'}}/>:<CancelSharpIcon sx={{color:'white'}}/>
-          }
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="white"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clipRule="evenodd"
+            />
+          </svg>
         </button>
         <div
           className={
@@ -74,39 +65,16 @@ export default function Navbar() {
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to='/' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
-            </li>
-          
-            {/* <li>
-              <HashLink smooth to='/' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
-            </li> */}
-            <li>
-              <HashLink
-                smooth
-                to="/1000x/#stats"
-                onClick={() => setIsNavExpanded(false)}
-              >
-                Stats
-              </HashLink>
+              <HashLink smooth to='#' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
             </li>
             <li>
-              <HashLink
-                smooth
-                to="/1000x/#aboutprogram"
-                onClick={() => setIsNavExpanded(false)}
-              >
-                About Program
-              </HashLink>
+              <HashLink smooth to="#stats" onClick={() => setIsNavExpanded(false)}>Stats</HashLink>
             </li>
             <li>
-              <HashLink
-                smooth
-                to="/1000x/#testimonial"
-                onClick={() => setIsNavExpanded(false)}
-              >
-                {" "}
-                Testimonial
-              </HashLink>
+              <HashLink smooth to="#events" onClick={() => setIsNavExpanded(false)}>Ongoing Events</HashLink>
+            </li>
+            <li>
+              <HashLink smooth to="#testimonial" onClick={() => setIsNavExpanded(false)}> Testimonial</HashLink>
             </li>
             {/* <li >
               <HashLink smooth to="#about" onClick={() => setIsNavExpanded(false)}> About</HashLink>

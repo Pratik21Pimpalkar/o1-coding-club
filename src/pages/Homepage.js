@@ -6,22 +6,24 @@ import Stats from "../components/Stats";
 import Footer from "../components/Footer";
 import Testimonial2 from "../components/Testimonial2";
 import FeaturesCard from "../components/FeaturesCard";
-import Navbar from "../components/Navbar";
+import NavbarMain from "../components/NavbarMain";
 import FooterNew from "../components_template/components/Footer/FooterNew";
 import PagesData from "./PagesData"
-
+import OnGoingEvents from "../components/OnGoingEvents"
 
 
 const Homepage = () => {
   return (
     <div>
+      <NavbarMain />
         <Hero />
         <FeaturesCard  data={PagesData.homepage} />
         <Stats data={PagesData.homepage}/>
-        <OurEvents />
+        {/* <OurEvents /> */}
+        < OnGoingEvents  data={PagesData.homepage}/>
         <CompanySlider />
         <Testimonial2 />
-        <FooterNew/>
+        <FooterNew name={PagesData.homepage}/>
         {/* <Footer />   */}
 
     </div>
