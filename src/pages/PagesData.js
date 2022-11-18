@@ -109,7 +109,7 @@ const programData = {
       "Fight hard to earn your spot!!",
     ],
 
-    timelineformlink: "https://chat.whatsapp.com/FmCT9fesL5v9Y1VYBAXrdS",
+    timelineformlink: "https://chat.whatsapp.com/By0cdzBRfZD8pmk9rLsKR6",
     footerbottomtext: "*T&C: Guaranteed package will depend on college",
   },
   Super50: {
