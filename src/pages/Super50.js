@@ -1,14 +1,19 @@
 import React from "react";
-import Home from "../components_template/components/Home/Home";
+import Home1000x from "../components_template/components/Home/Home1000x";
 import FooterNew from "../components_template/components/Footer/FooterNew";
 import Testimonial from "../components/Testimonial2";
 import CompanySlider from "../components/CompanySlider";
 import Stats from "../components/Stats";
+import TimelineFor1000x from "../components/TimelineFor1000x";
+import TimelineforSuper40 from "../components/TimelineForSuper40";
 import Timeline from "../components/Timeline";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData";
 import YouWillGet from "../components_template/components/YouWillGet";
+// import Eligibility from "../components_template/components/Eligiblity";
+import ApplyNowBtn from "../components/ApplyNowBtn";
+import Navbar from "../components/Navbar";
 const Super50 = () => {
   const programdata = PagesData.Super50;
   return (
@@ -20,16 +25,24 @@ const Super50 = () => {
           userSelect: "none",
         }}
       >
-        <Home name={programdata} />
+        <Navbar />
+        <Home1000x name={programdata} />
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
-        {programdata.youwillget?
-        <YouWillGet data={programdata}/>
-        :<div></div>}
-        {programdata.showtimeline?
-        <Timeline data={programdata}/>
-        :<div></div>}
+        <ApplyNowBtn data={programdata} />
+        {/* <Eligibility  data={programdata}/> */}
+        {programdata.showyouwillget ? (
+          <YouWillGet data={programdata} />
+        ) : (
+          <div></div>
+        )}
+        {programdata.showtimeline ? (
+          <TimelineforSuper40 data={programdata} />
+        ) : (
+          // <TimelineFor1000x  data={programdata}/>
+          <div></div>
+        )}
         <CompanySlider />
         <Testimonial />
         <FooterNew name={programdata} />
@@ -38,4 +51,4 @@ const Super50 = () => {
   );
 };
 
-export default Super50;
+export default Super50; 

@@ -5,7 +5,7 @@ import styled from "styled-components";
 // import coderun from "../Assets/events/coderun.png";
 // import coresubjects from "../Assets/events/coresubjects.png";
 // import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
-// import super50 from "../Assets/events/super50.png";
+import super40 from "../Assets/events/super40.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
 
 import { Outlet, Link } from "react-router-dom";
@@ -69,7 +69,28 @@ const OurEvents = () => {
             <img src={sdebootcamp} alt="" width={"80%"} />
           </Grid>
           </Grid>
-         
+          <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
+          <Grid item xs={12} sm={12} md={5}>
+            <img src={super40} alt="" width={"100%"} />
+          </Grid>
+          <Grid item xs={12} sm={12} md={7}>
+            <Box>
+              <div style={FeatureParagraph}>
+                <h3 className="heading-desktop">
+                  <span>Super 40</span> Program 
+                </h3>
+                <p>
+                  DSA & Problem Solving is the most important skill when it
+                  comes to placements in the IT industry. Master it in just 45
+                  days and get even closer to your Super Dream Placement.
+                </p>
+              </div>
+              <Link className="explore-btn" to="/super40">
+                Explore More
+              </Link>
+            </Box>
+          </Grid>
+        </Grid>
       </Container>
     </Events>
   );
