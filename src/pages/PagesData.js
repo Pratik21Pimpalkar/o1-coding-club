@@ -5,8 +5,8 @@ const programData = {
     stats: {
       placements: "100%",
       companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "1000+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
     },
     features: {
       first: "",
@@ -94,8 +94,8 @@ const programData = {
     stats: {
       placements: "100%",
       companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "1000+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
     },
     youwillget: [
       "360 placement program of your dreams.",
@@ -108,13 +108,13 @@ const programData = {
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
-    applyNowURL:"/1000x/#timeline",
+    applyNowURL: "/1000x/#timeline",
     timelineformlink: "https://chat.whatsapp.com/By0cdzBRfZD8pmk9rLsKR6",
     footerbottomtext: "*T&C: Guaranteed package will depend on college",
   },
   Super50: {
     programName: "Super40",
-    desc: "   Exclusive program curated for student of diffrent colleges.",
+    desc: " Exclusive program with a cap of max 40 students per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
     linktoregister: "https://chat.whatsapp.com/FmCT9fesL5v9Y1VYBAXrdS",
     registertoapply: true,
     instructer: [
@@ -163,7 +163,7 @@ const programData = {
           "https://drive.google.com/thumbnail?id=1bgCdJIwEmEiluQG-wEuTFc5GAfQ0PFg1",
       },
     ],
-    pricing: "Option A: Rs. 6000 upfront + ISA* Option B:  Rs 7000 upfront",
+    pricing: "Option A:  Rs 7000 upfront ",
     features: {
       firstimg:
         "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
@@ -175,7 +175,10 @@ const programData = {
       second:
         "Tailored program to help you prepare in every aspect of off-campus and on-campus placements.",
       thirdimg:
-        "https://drive.google.com/thumbnail?id=11vYLiscmCtj_tuh9S0qPS_ihm7QoPiUp",
+        // "https://drive.google.com/thumbnail?id=11vYLiscmCtj_tuh9S0qPS_ihm7QoPiUp",
+        // "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
+        "https://i.postimg.cc/8PZgpCvz/44.png",
+
       thirdheading: "Guaranteed placement or refund",
       third: " Get a guaranteed placement offer or 100% refund.",
       forthimg:
@@ -189,8 +192,8 @@ const programData = {
     stats: {
       placements: "100%",
       companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "1000+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
     },
     youwillget: [
       "360 placement program of your dreams.",
@@ -204,9 +207,9 @@ const programData = {
       "Fight hard to earn your spot!!",
     ],
 
-    timelineformlink: "https://chat.whatsapp.com/By0cdzBRfZD8pmk9rLsKR6",
+    timelineformlink: "https://chat.whatsapp.com/Hji0a3CB45V30n2R3a1v3E",
     footerbottomtext: "",
-    applyNowURL:"/super40/#timeline"
+    applyNowURL: "/super40/#timeline"
   },
   dsa: {
     programName: "DSA",
@@ -234,7 +237,7 @@ const programData = {
       placements: "100%",
       companycracked: "50+",
       placedinamazon: "50+",
-      studentplaced: "1000+",
+      studentplaced: "2000+",
     },
     youwillget: [
       "An impressive project on your resume",
@@ -269,8 +272,8 @@ const programData = {
     stats: {
       placements: "100%",
       companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "1000+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
     },
     showtimeline: false,
     showpricing: false,
@@ -310,8 +313,8 @@ const programData = {
     stats: {
       placements: "100%",
       companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "1000+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
     },
 
     youwillget: [
@@ -349,8 +352,8 @@ const programData = {
     stats: {
       placements: "100%",
       companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "1000+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
     },
     youwillget: [
       "An impressive project on your resume",
@@ -385,8 +388,8 @@ const programData = {
     stats: {
       placements: "100%",
       companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "1000+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
     },
     showtimeline: false,
     showpricing: false,
@@ -426,8 +429,8 @@ const programData = {
     stats: {
       placements: "100%",
       companycracked: "50+",
-      placedinamazon: "50+",
-      studentplaced: "1000+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
     },
     youwillget: [
       "An impressive project on your resume",

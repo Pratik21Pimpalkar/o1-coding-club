@@ -47,11 +47,11 @@ const FeatureSection = ({ data }) => {
                       {/* <li className="items">{item}</li> */}
                       <Grid item md={3}>
                         <div className="image">
-                        <img
-                          src={item.instructerimg ? item.instructerimg : img}
-                          alt=""
-                          className="instructerimg"
-                        /></div>
+                          <img
+                            src={item.instructerimg ? item.instructerimg : img}
+                            alt=""
+                            className="instructerimg"
+                          /></div>
                       </Grid>
                       <Grid item xs={12} sm={12} md={5}>
                         <Box sx={{ height: "max-content" }}>
@@ -81,12 +81,13 @@ const FeatureSection = ({ data }) => {
                 <Box sx={{ height: "max-content" }}>
                   <div style={FeatureParagraph}>
                     <h3 className="price-desktop">Pricing</h3>
-                    <h3 className="price-desktop2">{data.pricing}</h3>
+                    {data.programName === "Super40" ? <h3 className="price-desktop2">{data.pricing} <br />Option B: Rs. 5000 upfront +
+                      <a href={require("../../../Assets/ISCFORM.pdf")} download={"ISC_FORM"} className="DownloadISA"><span> ISA*</span> </a></h3> : <h3 className="price-desktop2">{data.pricing}</h3>}
                   </div>
                 </Box>
               </Grid>
               <Grid item md={5} order={{ md: 1, lg: 2 }}>
-                <img src={rupee}  alt="" className="rupeeimg" />
+                <img src={rupee} alt="" className="rupeeimg" />
               </Grid>
             </Grid>
           ) : (
@@ -103,6 +104,11 @@ export default FeatureSection;
 const AboutProgram = styled.div`
   .section-title {
     text-align: center;
+  }
+  .DownloadISA{
+    color: #ad85ff;
+    -webkit-text-fill-color: initial;
+    text-decoration: underline;
   }
   .main-heading{
     font-size :3.2rem;
@@ -126,7 +132,7 @@ const AboutProgram = styled.div`
     text-align: center;
   }
   .price-desktop2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   .instructerimg {

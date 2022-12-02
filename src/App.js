@@ -17,7 +17,8 @@ function App() {
         <Route path="/" element={<MainHomePage />} />
         <Route path="/dsa" element={<DSA />} />
         <Route path="/super40" element={<Super50 />} />
-    {/*     <Route path="/pythonbootcamp" element={<Pythonbootcamp />} />
+        <Route path="/pythonbootcamp" element={<Pythonbootcamp />} />
+    {/*     
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />
         <Route path="/coresubjects" element={<Coresubjects />} />

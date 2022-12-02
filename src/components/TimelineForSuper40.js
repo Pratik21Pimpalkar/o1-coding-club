@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ApplyNowBtn from "./ApplyNowBtn";
-import DownloadLink from "react-download-link";
 const Timeline = (props) => {
   const downloadTxtFile = () => {
     const element = document.createElement("a");
@@ -15,21 +14,21 @@ const Timeline = (props) => {
   return (
     <TimeLineStyled>
       <h3 className="heading-desktop">How to Apply</h3>
-      <div className="timeline">
-        {/* <a href={props.data.timelineformlink} className="explore-btn "> */}
-          <div className="container left">
-            <div className="content">
-              <h2>Enroll  </h2>
-              <p>
-                Enroll in the program by choosing one of the payment option.<br></br>{" "}
-                <button className="btn-giveTest mobileres" onClick={downloadTxtFile}>
-                  <a href={require("../Assets/ISCFORM.pdf")} download={"ISC_FORM"}>ISA Form Download</a>
-                </button>
+      {/* <div className="timeline">
 
-              </p>
-            </div>
+        <div className="container left">
+          <div className="content">
+            <h2>Enroll  </h2>
+            <p>
+              Enroll in the program by choosing one of the payment option.<br></br>{" "}
+              <button className="btn-giveTest mobileres" onClick={downloadTxtFile}>
+                <a href={require("../Assets/ISCFORM.pdf")} download={"ISC_FORM"}>ISA Form Download</a>
+              </button>
+
+            </p>
           </div>
-        {/* </a> */}
+        </div>
+
 
         <div className="container right">
           <div className="content">
@@ -43,6 +42,38 @@ const Timeline = (props) => {
             <h2>Fill google form </h2>
             <p>
               Fill google form circulated in the meet & group to apply.
+            </p>
+          </div>
+        </div>
+      </div> */}
+      <div className="timeline">
+        <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
+          <div className="container left">
+            <div className="content">
+              <h2>Join Whatsapp Group</h2>
+              <p>
+                Join the following Whatsapp group and attend program details
+                briefing meet.<br></br>{" "}
+                <button className="btn-giveTest mobileres" >
+
+                  Join Now
+
+                </button>
+              </p>
+            </div>
+          </div></a>
+
+        <div className="container right">
+          <div className="content">
+            <h2>Fill Google Form</h2>
+            <p>Fill google form circulated in the meet & group to apply.</p>
+          </div>
+        </div>
+        <div className="container left">
+          <div className="content">
+            <h2>Shortlisting Process</h2>
+            <p>
+              Appear for the shortlisting and selection process, all the best.
             </p>
           </div>
         </div>

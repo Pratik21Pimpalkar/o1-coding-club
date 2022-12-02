@@ -80,9 +80,7 @@ const OurEvents = () => {
                   <span>Super 40</span> Program 
                 </h3>
                 <p>
-                  DSA & Problem Solving is the most important skill when it
-                  comes to placements in the IT industry. Master it in just 45
-                  days and get even closer to your Super Dream Placement.
+                Exclusive program curated for student of diffrent colleges.
                 </p>
               </div>
               <Link className="explore-btn" to="/super40">

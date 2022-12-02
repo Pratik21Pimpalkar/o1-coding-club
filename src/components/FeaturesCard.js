@@ -15,12 +15,12 @@ const FeaturesCard = ({ data }) => {
           <Grid item xs={12} md={3}>
             <div className="card">
               <div className="imgdiv">
-              <img
+                <img
                   src={
-                   
-                       data.features.firstimg? data.features.firstimg:beginLogo
-                    
-                  } 
+
+                    data.features.firstimg ? data.features.firstimg : beginLogo
+
+                  }
                   alt=""
                 />
               </div>
@@ -43,10 +43,8 @@ const FeaturesCard = ({ data }) => {
               <div className="imgdiv">
                 <img
                   src={
-                   
-                       data.features.secondimg? data.features.secondimg:handsOnLogo
-                    
-                  } 
+                    data.features.secondimg ? data.features.secondimg : handsOnLogo
+                  }
                   alt=""
                 />
               </div>
@@ -67,10 +65,10 @@ const FeaturesCard = ({ data }) => {
           <Grid item xs={12} md={3}>
             <div className="card">
               <div className="imgdiv">
-              <img
+                <img
                   src={
-                       data.features.thirdimg? data.features.thirdimg:keepItSimplelogo
-                  } 
+                    data.features.thirdimg ? data.features.thirdimg : keepItSimplelogo
+                  }
                   alt=""
                 />
               </div>
@@ -91,12 +89,12 @@ const FeaturesCard = ({ data }) => {
           <Grid item xs={12} md={3}>
             <div className="card">
               <div className="imgdiv">
-              <img
+                <img
                   src={
-                   
-                       data.features.forthimg? data.features.forthimg:domainLogo
-                    
-                  } 
+
+                    data.features.forthimg ? data.features.forthimg : domainLogo
+
+                  }
                   alt=""
                 />
               </div>
