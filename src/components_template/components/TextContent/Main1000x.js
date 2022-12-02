@@ -9,6 +9,7 @@ import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 
 function Main(prop) {
+  console.log(prop.name);
   const styles = (theme) => ({
     root: {
       backgroundColor: "blue",
@@ -36,7 +37,7 @@ function Main(prop) {
               <div className="btn-container">
                 <HashLink
                   smooth
-                  to="/1000x/#timeline"
+                  to={prop.name?.applyNowURL}
                   className="brand-name"
                   title="O1 Analysis"
                 >

@@ -6,7 +6,7 @@ const ApplyNowBtn = (props) => {
     <ApplyNowBtnStyled>
         <HashLink
                   smooth
-                  to="/1000x/#timeline"
+                  to={props.data.applyNowURL}
              
                 
                 >

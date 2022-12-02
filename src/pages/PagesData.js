@@ -14,7 +14,7 @@ const programData = {
       third: "",
       forth: "",
     },
-    footerbottomtext:"" 
+    footerbottomtext: ""
   },
 
   ThousandX: {
@@ -25,7 +25,7 @@ const programData = {
     instructer: [
       {
         name: "Aditya Sharma      ",
-        desig:"SWE at Akamai Tech",
+        desig: "SWE at Akamai Tech",
         about:
           " Hi, I'm Aditya and I have experience of training more than 200 students for DSA and have my self aced many coding rounds of top IT companies. I have landaded multiple superdream offers through regular and systematic practice of DSA. I am here to guide you for the same.",
         instructerimg:
@@ -33,7 +33,7 @@ const programData = {
       },
       {
         name: "Rohit Doshi",
-        desig:"SDE at Amazon | 2x ICPC Regionalist",
+        desig: "SDE at Amazon | 2x ICPC Regionalist",
 
         about:
           " Hi, I'm Rohit Doshi, and I had recieved multiple dream and super dream offers because of my DSA and problem solving skills. Also I have a great passion for teaching and making other people good at problem solving skills. I am here to help you develop one of the most important skills in acing any interviews.",
@@ -42,7 +42,7 @@ const programData = {
       },
       {
         name: "Nikeshsingh Baghel",
-        desig:"SDE-T at ZS Associates",
+        desig: "SDE-T at ZS Associates",
 
         about:
           " Hi, I'm Nikeshsingh Baghel, I have appeared and cracked the Interviews for various IT companies, and this experience has landed me a super dream Job. According to my experience, acing the interview requires an in-depth knowledge of Core Subjects, and to get that knowledge we need to enjoy learning.",
@@ -51,7 +51,7 @@ const programData = {
       },
       {
         name: "Rajat Agrawal",
-        desig:"SWE-2 at Takeoff Technologies",
+        desig: "SWE-2 at Takeoff Technologies",
 
         about:
           " Hi, I'm Rajat Agrawal, not only do I have the experience of training over 1000 students for Aptitude tests of various tech companies but have myself aced through various aptitude tests that I appeared for & ultimately landed a superdream job. I'm here to guide you all for your placements.",
@@ -60,7 +60,7 @@ const programData = {
       },
       {
         name: "Bharat Thakur",
-        desig:"Candidate Master on Codeforces",
+        desig: "Candidate Master on Codeforces",
 
         about:
           "Hi, I'm Bharat Thakur, a Candidate Master on Codeforces. Competitive programming improved my grip over DSA & Problem Solving and helped me land a dream job. I'm here to mentor you for the same.",
@@ -108,7 +108,7 @@ const programData = {
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
-
+    applyNowURL:"/1000x/#timeline",
     timelineformlink: "https://chat.whatsapp.com/By0cdzBRfZD8pmk9rLsKR6",
     footerbottomtext: "*T&C: Guaranteed package will depend on college",
   },
@@ -120,7 +120,7 @@ const programData = {
     instructer: [
       {
         name: "Aditya Sharma      ",
-        desig:"SWE at Akamai Tech",
+        desig: "SWE at Akamai Tech",
         about:
           " Hi, I'm Aditya and I have experience of training more than 200 students for DSA and have my self aced many coding rounds of top IT companies. I have landaded multiple superdream offers through regular and systematic practice of DSA. I am here to guide you for the same.",
         instructerimg:
@@ -128,7 +128,7 @@ const programData = {
       },
       {
         name: "Rohit Doshi",
-        desig:"SDE at Amazon | 2x ICPC Regionalist",
+        desig: "SDE at Amazon | 2x ICPC Regionalist",
 
         about:
           " Hi, I'm Rohit Doshi, and I had recieved multiple dream and super dream offers because of my DSA and problem solving skills. Also I have a great passion for teaching and making other people good at problem solving skills. I am here to help you develop one of the most important skills in acing any interviews.",
@@ -137,7 +137,7 @@ const programData = {
       },
       {
         name: "Nikeshsingh Baghel",
-        desig:"SDE-T at ZS Associates",
+        desig: "SDE-T at ZS Associates",
 
         about:
           " Hi, I'm Nikeshsingh Baghel, I have appeared and cracked the Interviews for various IT companies, and this experience has landed me a super dream Job. According to my experience, acing the interview requires an in-depth knowledge of Core Subjects, and to get that knowledge we need to enjoy learning.",
@@ -146,7 +146,7 @@ const programData = {
       },
       {
         name: "Rajat Agrawal",
-        desig:"SWE-2 at Takeoff Technologies",
+        desig: "SWE-2 at Takeoff Technologies",
 
         about:
           " Hi, I'm Rajat Agrawal, not only do I have the experience of training over 1000 students for Aptitude tests of various tech companies but have myself aced through various aptitude tests that I appeared for & ultimately landed a superdream job. I'm here to guide you all for your placements.",
@@ -155,7 +155,7 @@ const programData = {
       },
       {
         name: "Bharat Thakur",
-        desig:"Candidate Master on Codeforces",
+        desig: "Candidate Master on Codeforces",
 
         about:
           "Hi, I'm Bharat Thakur, a Candidate Master on Codeforces. Competitive programming improved my grip over DSA & Problem Solving and helped me land a dream job. I'm here to mentor you for the same.",
@@ -206,6 +206,7 @@ const programData = {
 
     timelineformlink: "https://chat.whatsapp.com/By0cdzBRfZD8pmk9rLsKR6",
     footerbottomtext: "",
+    applyNowURL:"/super40/#timeline"
   },
   dsa: {
     programName: "DSA",
@@ -436,7 +437,7 @@ const programData = {
       " Internship offer to top performers",
     ],
     timelineformlink: "https://docs.google.com/forms/u/0",
-    footerbottomtext: "" 
+    footerbottomtext: ""
   },
 };
 
