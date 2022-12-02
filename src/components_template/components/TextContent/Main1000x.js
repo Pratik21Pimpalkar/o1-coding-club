@@ -9,7 +9,6 @@ import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 
 function Main(prop) {
-  console.log(prop.name);
   const styles = (theme) => ({
     root: {
       backgroundColor: "blue",

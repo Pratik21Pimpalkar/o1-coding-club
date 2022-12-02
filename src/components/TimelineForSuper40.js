@@ -1,29 +1,40 @@
 import React from "react";
 import styled from "styled-components";
 import ApplyNowBtn from "./ApplyNowBtn";
-
+import DownloadLink from "react-download-link";
 const Timeline = (props) => {
+  const downloadTxtFile = () => {
+    const element = document.createElement("a");
+    const file = new Blob([document.getElementById("input").value], {
+      type: "text/plain;charset=utf-8}"
+    });
+    element.href = "../Assets/one.csv";
+    element.download = "one.csv";
+    element.click();
+  };
   return (
     <TimeLineStyled>
       <h3 className="heading-desktop">How to Apply</h3>
       <div className="timeline">
-      <a href={props.data.timelineformlink} className="explore-btn ">
-        <div className="container left">
-          <div className="content">
-            <h2>Enroll  </h2>
-            <p>
-            Enroll in the program by choosing one of the payment option.<br></br>{" "}
-              <button className="btn-giveTest mobileres"> 
-               ISA Form link               
-              </button>
-            </p>
+        {/* <a href={props.data.timelineformlink} className="explore-btn "> */}
+          <div className="container left">
+            <div className="content">
+              <h2>Enroll  </h2>
+              <p>
+                Enroll in the program by choosing one of the payment option.<br></br>{" "}
+                <button className="btn-giveTest mobileres" onClick={downloadTxtFile}>
+                  <a href={require("../Assets/ISCFORM.pdf")} download={"ISC_FORM"}>ISA Form Download</a>
+                </button>
+
+              </p>
+            </div>
           </div>
-        </div></a>
-                
+        {/* </a> */}
+
         <div className="container right">
           <div className="content">
             <h2>Pay Fees</h2>
-            <p>Do the specified payment to the given UPI id @oksbi. 
+            <p>Do the specified payment to the given UPI id @oksbi.
             </p>
           </div>
         </div>
@@ -31,7 +42,7 @@ const Timeline = (props) => {
           <div className="content">
             <h2>Fill google form </h2>
             <p>
-            Fill google form circulated in the meet & group to apply.
+              Fill google form circulated in the meet & group to apply.
             </p>
           </div>
         </div>
@@ -156,6 +167,29 @@ a{
     padding: 0.2rem 0.7rem;
     font-size: 1.32rem;
   }
+  .btn-giveTest {
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(229, 0, 255) 0%, rgb(130, 0, 255) 100%) repeat scroll 0% 0%;
+    font-family: "Poppins";
+    margin-top: 0.9rem;
+    margin-right: 0.6rem;
+    text-transform: uppercase;
+    height: auto;
+    color: white !important;
+    transition: all ease 0.5s;
+    text-decoration: none;
+    white-space: normal;
+    width: initial !important;
+    text-align: center;
+    /* line-height: 35px; */
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgb(103 0 255 / 40%) 0px 10px 60px 0px;
+    padding: 4px 26px;
+    border-radius: 300px;
+    /* filter: brightness(100%); */
+    visibility: visible;
+    cursor: pointer;}
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
