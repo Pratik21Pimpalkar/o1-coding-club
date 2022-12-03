@@ -4,6 +4,7 @@ import img from "../../images/login.svg";
 import rupee from "../../../Assets/rupee.png";
 import styled from "styled-components";
 import { textAlign } from "@mui/system";
+import IncomeAgreement from "../../../components/PlanAPlanB";
 const FeaturePosition = {
   color: "white",
 };
@@ -12,8 +13,10 @@ const FeatureParagraph = {
   WebkitBackgroundClip: "text",
   // webkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
-  padding: "0.5rem 2rem",
+  // padding: "0.5rem 2rem",
   fontSize: "19px",
+  display: 'flex',
+  flexDirection: "column",
   marginBottom: "1rem",
 };
 
@@ -53,7 +56,7 @@ const FeatureSection = ({ data }) => {
                             className="instructerimg"
                           /></div>
                       </Grid>
-                      <Grid item xs={12} sm={12} md={5}>
+                      <Grid item xs={12} sm={12} md={4}>
                         <Box sx={{ height: "max-content" }}>
                           <div style={FeatureParagraph}>
                             <h2 className="heading-desktop2">{item.name}</h2>
@@ -77,12 +80,25 @@ const FeatureSection = ({ data }) => {
               justifyContent={"center"}
               wrap={"wrap-reverse"}
             >
-              <Grid item xs={12} sm={12} md={5} order={{ md: 2, lg: 1 }}>
+              <Grid item xs={12} sm={12} md={12} order={{ md: 2, lg: 1 }}>
                 <Box sx={{ height: "max-content" }}>
                   <div style={FeatureParagraph}>
                     <h3 className="price-desktop">Pricing</h3>
-                    {data.programName === "Super40" ? <h3 className="price-desktop2">{data.pricing} <br />Option B: Rs. 5000 upfront +
-                      <a href={require("../../../Assets/ISCFORM.pdf")} download={"ISC_FORM"} className="DownloadISA"><span> ISA*</span> </a></h3> : <h3 className="price-desktop2">{data.pricing}</h3>}
+                    {data.programName === "Super40" ?
+                      // <table className="pricing">
+                      //   <tr>
+                      //     <td>Option A</td>
+                      //     <td>₹ 7000 Upfront</td>
+                      //   </tr>
+                      //   <tr>
+                      //     <td>Option B</td>
+                      //     <td>₹ 5000 Upfront + ISA*
+                      //        {/* <a href={require("../../../Assets/ISCFORM.pdf")} download={"ISC_FORM"} className="DownloadISA"><span> ISA*</span> </a> */}
+                      //        </td>
+                      //   </tr>
+                      // </table>
+                    <IncomeAgreement/>
+                      : <h3 className="price-desktop2">{data.pricing}</h3>}
                   </div>
                 </Box>
               </Grid>
@@ -134,6 +150,21 @@ const AboutProgram = styled.div`
   .price-desktop2 {
     font-size: 1.5rem;
     text-align: center;
+  }
+  .pricing{
+    text-align: center;
+    margin-top: 1.5rem;
+    border:4px double #c930ff;
+    td{
+      -webkit-text-fill-color: #3902cd;
+      background:#e6ddff;
+      border-radius: 0.1rem;
+      border:white 1px solid;
+      
+     font-size: 1.35rem;
+      padding:0.5rem 0.32rem;
+      margin: 0.5rem 1rem;
+    }
   }
   .instructerimg {
     width: 16rem;
