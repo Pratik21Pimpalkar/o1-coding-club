@@ -50,6 +50,13 @@
     letter-spacing: 1px;
     font-weight: 300;
     font-size: 1rem;
+}
+
+@media screen and (max-width:500px) {
+    .para{
+
+        margin:2.6rem 0 0 0 !important;
+    }
     
 }
 

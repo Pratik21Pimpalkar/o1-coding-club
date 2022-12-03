@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.svg";
 import { HashLink } from "react-router-hash-link";
@@ -17,6 +17,7 @@ export default function Navbar() {
       setNavbarColor(false);
     }
   };
+  const params = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1');
   useEffect(() => {
     // changeBackground();
     // adding the event when scroll change Logo
@@ -54,8 +55,8 @@ export default function Navbar() {
               //     clipRule="evenodd"
               //   />
               // </svg> :
-              
-              <MenuSharpIcon sx={{color:'white'}}/>:<CancelSharpIcon sx={{color:'white'}}/>
+
+              <MenuSharpIcon sx={{ color: 'white' }} /> : <CancelSharpIcon sx={{ color: 'white' }} />
           }
         </button>
         <div
@@ -64,19 +65,19 @@ export default function Navbar() {
           }
         >
           <ul>
-          <li>
+            <li>
               <HashLink
                 smooth
-                to="/1000x/#timeline"
+                to={`/${params}/#timeline`}
                 onClick={() => setIsNavExpanded(false)}
               >
-               Apply Now
+                Apply Now
               </HashLink>
             </li>
             <li>
               <HashLink smooth to='/' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
             </li>
-          
+
             {/* <li>
               <HashLink smooth to='/' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
             </li> */}
