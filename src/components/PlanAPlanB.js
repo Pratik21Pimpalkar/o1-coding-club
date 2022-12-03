@@ -81,10 +81,55 @@ export default function IncomeAgreement() {
     return (
         <Wrapper>
             <Grid container justifyContent="center" spacing={9}>
-                <Grid item sm={6}>
+            <Grid item sm={6}>
                     <Card className="root">
                         <CardContent>
                             <Typography className="title">PLAN A</Typography>
+                            <hr />
+                            <Typography
+                                style={{ marginTop: "25px", fontSize: "45px", fontWeight: "550" }}
+                                variant="h5"
+                                component="h2"
+                            >
+                                ₹ 5000
+                            </Typography>
+                            <Typography className="pos" color="textSecondary">
+                                Upfront Registration Fees
+                            </Typography>
+                            <hr />
+                            <Typography
+                                style={{ marginTop: "25px", fontSize: "25px", fontWeight: "550" }}
+                                variant="h5"
+                                component="h2"
+                            >
+                                Income Sharing Percentage
+                            </Typography>
+
+                            <table className="table" border="1">
+                                <tr className="tr">
+                                    <th className="th1">If You Get</th>
+                                    <th className="th">You Pay</th>
+                                </tr>
+                                <tr className="tr">
+                                    <td className="td1">Internship Offer</td>
+                                    <td className="td">
+                                        20% of monthly salary for 1 month
+                                    </td>
+                                </tr>
+                                <tr className="tr">
+                                    <td className="td1">Full-Time Offer</td>
+                                    <td className="td">
+                                        20% of monthly salary for 1 month
+                                    </td>
+                                </tr>
+                            </table>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item sm={6}>
+                    <Card className="root">
+                        <CardContent>
+                            <Typography className="title">PLAN B</Typography>
                             <hr />
                             <Typography
                                 style={{ marginTop: "25px", fontSize: "45px", fontWeight: "550" }}
@@ -127,51 +172,7 @@ export default function IncomeAgreement() {
                     </Card>
                 </Grid>
 
-                <Grid item sm={6}>
-                    <Card className="root">
-                        <CardContent>
-                            <Typography className="title">PLAN B</Typography>
-                            <hr />
-                            <Typography
-                                style={{ marginTop: "25px", fontSize: "45px", fontWeight: "550" }}
-                                variant="h5"
-                                component="h2"
-                            >
-                                ₹ 5000
-                            </Typography>
-                            <Typography className="pos" color="textSecondary">
-                                Upfront Registration Fees
-                            </Typography>
-                            <hr />
-                            <Typography
-                                style={{ marginTop: "25px", fontSize: "25px", fontWeight: "550" }}
-                                variant="h5"
-                                component="h2"
-                            >
-                                Income Sharing Percentage
-                            </Typography>
-
-                            <table className="table" border="1">
-                                <tr className="tr">
-                                    <th className="th1">If You Get</th>
-                                    <th className="th">You Pay</th>
-                                </tr>
-                                <tr className="tr">
-                                    <td className="td1">Internship Offer</td>
-                                    <td className="td">
-                                        20% of monthly salary for 1 month
-                                    </td>
-                                </tr>
-                                <tr className="tr">
-                                    <td className="td1">Full-Time Offer</td>
-                                    <td className="td">
-                                        20% of monthly salary for 1 month
-                                    </td>
-                                </tr>
-                            </table>
-                        </CardContent>
-                    </Card>
-                </Grid>
+              
             </Grid>
         </Wrapper>
     );
