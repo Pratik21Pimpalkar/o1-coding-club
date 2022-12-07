@@ -84,7 +84,7 @@ export default function Navbar() {
             <li>
               <HashLink
                 smooth
-                to="/1000x/#stats"
+                to={`/${params}/#stats`}
                 onClick={() => setIsNavExpanded(false)}
               >
                 Stats
@@ -93,7 +93,7 @@ export default function Navbar() {
             <li>
               <HashLink
                 smooth
-                to="/1000x/#aboutprogram"
+                to={`/${params}/#aboutprogram`}
                 onClick={() => setIsNavExpanded(false)}
               >
                 About Program
@@ -102,7 +102,7 @@ export default function Navbar() {
             <li>
               <HashLink
                 smooth
-                to="/1000x/#testimonial"
+                to={`/${params}/#testimonial`}
                 onClick={() => setIsNavExpanded(false)}
               >
                 {" "}
