@@ -80,7 +80,7 @@ const OurEvents = () => {
                   <span>Super 40</span> Program 
                 </h3>
                 <p>
-                Exclusive program curated for student of diffrent colleges.
+                Exclusive program curated for student of different colleges.
                 </p>
               </div>
               <Link className="explore-btn" to="/super40">

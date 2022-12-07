@@ -114,7 +114,7 @@ const programData = {
   },
   Super50: {
     programName: "Super40",
-    desc: " Exclusive program with a cap of max 40 students per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
+    desc: " Exclusive program with a cap of max 40 students, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
     linktoregister: "https://chat.whatsapp.com/FmCT9fesL5v9Y1VYBAXrdS",
     registertoapply: true,
     instructer: [

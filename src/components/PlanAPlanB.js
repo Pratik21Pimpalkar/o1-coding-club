@@ -147,7 +147,7 @@ export default function IncomeAgreement() {
                                 variant="h5"
                                 component="h2"
                             >
-                                No Income Sharing Percentage Required.
+                                No Income Sharing Required
                             </Typography>
 
                             {/* <table className="table" border="1">

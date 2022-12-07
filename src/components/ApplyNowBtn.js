@@ -10,8 +10,8 @@ const ApplyNowBtn = (props) => {
              
                 
                 >
-     
-        <button className="btn-giveTest mobileres explore-btn">Apply Now</button>
+    <p style={{color:'#9874ff',fontWeight:'bold',fontSize:'20px'}}>Note : The program is free if we fail to land you the job that we guarantee. 100% refund, no questions asked.</p>
+        <button className="btn-giveTest mobileres explore-btn" style={{marginTop:'30px'}}>Apply Now</button>
       </HashLink>
     </ApplyNowBtnStyled>
   );
