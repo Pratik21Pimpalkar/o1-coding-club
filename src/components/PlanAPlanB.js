@@ -91,8 +91,9 @@ export default function IncomeAgreement() {
                                 variant="h5"
                                 component="h2"
                             >
-                                ₹ 5000
+                                ₹ 5000      <span style={{ lineHeight:"50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
                             </Typography>
+                        
                             <Typography className="pos" color="textSecondary">
                                 Upfront Registration Fees
                             </Typography>
