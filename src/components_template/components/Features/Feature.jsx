@@ -97,8 +97,8 @@ const FeatureSection = ({ data }) => {
                       //        </td>
                       //   </tr>
                       // </table>
-                    <IncomeAgreement/>
-                      : <h3 className="price-desktop2">{data.pricing}</h3>}
+                      <IncomeAgreement />
+                      : <h3 className="price-desktop2">{data.pricing} <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span></h3>}
                   </div>
                 </Box>
               </Grid>
@@ -149,6 +149,9 @@ const AboutProgram = styled.div`
   }
   .price-desktop2 {
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
   .pricing{

@@ -81,19 +81,19 @@ export default function IncomeAgreement() {
     return (
         <Wrapper>
             <Grid container justifyContent="center" spacing={9}>
-            <Grid item sm={6}>
+                <Grid item sm={6}>
                     <Card className="root">
                         <CardContent>
                             <Typography className="title">PLAN A</Typography>
                             <hr />
                             <Typography
-                                style={{ marginTop: "25px", fontSize: "45px", fontWeight: "550" }}
+                                style={{ marginTop: "25px", fontSize: "45px", fontWeight: "550", display: 'flex', justifyContent: "center", alignItems: "center" }}
                                 variant="h5"
                                 component="h2"
                             >
-                                ₹ 5000      <span style={{ lineHeight:"50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
+                                ₹ 5000  <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
                             </Typography>
-                        
+
                             <Typography className="pos" color="textSecondary">
                                 Upfront Registration Fees
                             </Typography>
@@ -133,11 +133,11 @@ export default function IncomeAgreement() {
                             <Typography className="title">PLAN B</Typography>
                             <hr />
                             <Typography
-                                style={{ marginTop: "25px", fontSize: "45px", fontWeight: "550" }}
+                                style={{ marginTop: "25px", fontSize: "45px", fontWeight: "550", display: 'flex', justifyContent: "center", alignItems: "center" }}
                                 variant="h5"
                                 component="h2"
                             >
-                                ₹ 7000
+                                ₹ 7000 <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
                             </Typography>
                             <Typography className="pos" color="textSecondary">
                                 Upfront Registration Fees
@@ -173,7 +173,7 @@ export default function IncomeAgreement() {
                     </Card>
                 </Grid>
 
-              
+
             </Grid>
         </Wrapper>
     );

@@ -12,6 +12,7 @@ import YouWillGet from "../components_template/components/YouWillGet";
 // import Eligibility from "../components_template/components/Eligiblity";
 import ApplyNowBtn from "../components/ApplyNowBtn";
 import Navbar from "../components/Navbar";
+import YoutubeVideo from "../components/YoutubeVideo";
 const ThousandX = () => {
   const programdata = PagesData.ThousandX;
   return (
@@ -25,6 +26,7 @@ const ThousandX = () => {
       >
         <Navbar/>
         <Home1000x name={programdata} />
+        <YoutubeVideo/>
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
