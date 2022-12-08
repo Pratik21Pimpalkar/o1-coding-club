@@ -5,11 +5,12 @@ const YoutubeVideo = () => {
     <YoutubeWrapper>
       <div className="embeded-video">
         <iframe
-          src="https://www.youtube.com/embed/ylVJ4mP6sTc"
+          src="https://www.youtube.com/embed/ylVJ4mP6sTc?autoplay=1&mute=1"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
+          autoPlay="1"
         ></iframe>
       </div>
     </YoutubeWrapper>
