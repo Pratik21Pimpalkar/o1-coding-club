@@ -26,8 +26,8 @@ const ThousandX = () => {
       >
         <Navbar/>
         <Home1000x name={programdata} />
-        <YoutubeVideo/>
         <Stats data={programdata} />
+        <YoutubeVideo/>
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
         <ApplyNowBtn  data={programdata}/>
