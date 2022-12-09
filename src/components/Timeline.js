@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 
-const Timeline = () => {
+const Timeline = (props) => {
   return (
     <TimeLineStyled>
       <div className="timeline">
@@ -15,10 +15,11 @@ const Timeline = () => {
         <div className="container right">
           <div className="content">
             <h2>
-Submit Application</h2>
-            <p>Submit your application in Google Form
-
-Ps. You will need Payment Proof to proceed.</p>
+              Submit Application</h2>
+            <p>Submit your application in 
+            <a href={props.data?.timelineformlink} className="explore-btn ">Google Form</a>  
+<br></br>
+              Ps.  You will need Payment Proof to proceed.</p>
           </div>
         </div>
       </div>
@@ -30,7 +31,19 @@ export default Timeline;
 
 const TimeLineStyled = styled.div`
 /* position: re; */
+.explore-btn {
+    text-decoration: none;
+font-size: 0.8rem;
+    /* border: 2px solid black; */
+    padding: 1px;
+    border-radius: 10px;
+    opacity: 0.8;
 
+    /* margin-top: 2rem; */
+    margin-left: 0.2rem;
+    transition: all 0.3s;
+
+  }
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -116,11 +129,19 @@ const TimeLineStyled = styled.div`
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
+ padding: 1rem;
   background-color: white;
   position: relative;
   border-radius: 6px;
   font-size: 0.9rem;  
+}
+.content p{
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+}
+.content h2{
+  padding: 0.2rem 0.7rem;
+  font-size: 1.32rem;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -130,6 +151,14 @@ const TimeLineStyled = styled.div`
     left: 31px;
   }
 
+  .content p{
+  font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+}
+.content h2{
+  padding: 0.2rem 0.7rem;
+    font-size: 1rem;
+}
 /* Full-width containers */
   .container {
     width: 100%;

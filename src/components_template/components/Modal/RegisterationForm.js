@@ -8,16 +8,16 @@ import {
   Backdrop,
   CircularProgress,
 } from "@mui/material";
+/*
 // import axios from "axios";
 import React, { useEffect, useState } from "react";
 import login from "../../images/login.svg";
 // import { ToastContainer, toast } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
-
+*/
 const RegisterForm = (props) => {
- 
-  const [userData, setUserData] = useState({
+/* const [userData, setUserData] = useState({
     name: "",
     email: "",
     mobile: "",
@@ -38,70 +38,68 @@ const RegisterForm = (props) => {
   const submitData = (e) => {
 
   };
-     /*
+  useEffect(() => {
+    getCollegeName();
+  }, []);
   const getCollegeName = async () => {
     const fetchNames = await axios.get(
       `https://o1apti.herokuapp.com/college_list`
     );
     setClgList(fetchNames.data.clg_names);
   };
-  const getTestlink = async () => {
-    const link = await axios.get(`https://o1apti.herokuapp.com/testlink`);
-    setTestLink(link.data.link);
-  };
-  useEffect(() => {
-    getTestlink();
-    getCollegeName();
-  }, []);
+const getTestlink = async () => {
+  const link = await axios.get(`https://o1apti.herokuapp.com/testlink`);
+  setTestLink(link.data.link);
+};
 
-  let key, value;
-  const handleInputs = (e) => {
-    key = e.target.name;
-    value = e.target.value;
-    setUserData({ ...userData, [key]: value });
-  };
+let key, value;
+const handleInputs = (e) => {
+  key = e.target.name;
+  value = e.target.value;
+  setUserData({ ...userData, [key]: value });
+};
 
- const submitData = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    if (
-      userData.name.length == 0 ||
-      userData.email.length == 0 ||
-      userData.mobile.length != 10 ||
-      userData.college.length == 0 ||
-      userData.key.length == 0
-    ) {
+const submitData = (e) => {
+  e.preventDefault();
+  setLoading(true);
+  if (
+    userData.name.length == 0 ||
+    userData.email.length == 0 ||
+    userData.mobile.length != 10 ||
+    userData.college.length == 0 ||
+    userData.key.length == 0
+  ) {
+    setLoading(false);
+    toast.error("Fields Empty");
+  }
+  else{
+  axios
+    .post(`https://o1apti.herokuapp.com/auth/register`, userData)
+    .then((res) => {
       setLoading(false);
-      toast.error("Fields Empty");
-    }
-    else{
-    axios
-      .post(`https://o1apti.herokuapp.com/auth/register`, userData)
-      .then((res) => {
-        setLoading(false);
-        toast.success("User Register Successfully");
-        setUserData({ name: "", email: "", mobile: "", key: "", college: "" });
-        window.location = testlink;
-        props.handleClose();
+      toast.success("User Register Successfully");
+      setUserData({ name: "", email: "", mobile: "", key: "", college: "" });
+      window.location = testlink;
+      props.handleClose();
 
-      })
-      .catch(function (error) {
-        setLoading(false);
-        if (error.response.data === "EMAIL ALREADY EXIST")
-          toast.error("Email Already Exist.");
-        else if (error.response.data === "INVALID DATA")
-          toast.warn("Please fill all the fields.");
-        else if (error.response.data === "WRONG KEY")
-          toast.warn("Wrong Key.");
-        else {
-          // console.log(error.response);
-          toast.warn("Something goes wrong. Please try again.");
-        }
-        // props.handleClose();
-      });
-    }
-  };
-*/
+    })
+    .catch(function (error) {
+      setLoading(false);
+      if (error.response.data === "EMAIL ALREADY EXIST")
+        toast.error("Email Already Exist.");
+      else if (error.response.data === "INVALID DATA")
+        toast.warn("Please fill all the fields.");
+      else if (error.response.data === "WRONG KEY")
+        toast.warn("Wrong Key.");
+      else {
+        // console.log(error.response);
+        toast.warn("Something goes wrong. Please try again.");
+      }
+      // props.handleClose();
+    });
+  }
+};
+*//*
   return (
     <>
       <Container
@@ -133,8 +131,13 @@ const RegisterForm = (props) => {
           </Grid>
 
           <Grid item md={6} xs={12}>
-            <Typography variant={"h4"} marginBottom={2}>
+            <Typography variant={"h3"} marginBottom={2} sx={{
+              fontSize: {
+                xs: "1.2rem", md: "1.42rem"
+              }
+            }}>
               {/* Register Here */}
+              /*
               Newly registered users will be redirected to another page where they can give their test.
             </Typography>
             <TextField
@@ -230,8 +233,8 @@ const RegisterForm = (props) => {
               )}
             </Button>
           </Grid>
-        </Grid>
-      {/* <ToastContainer
+        </Grid>*/
+        {/* <ToastContainer
         position="bottom-right"
         autoClose={2000}
         hideProgressBar={false}
@@ -241,10 +244,11 @@ const RegisterForm = (props) => {
         pauseOnFocusLoss
         draggable
         theme="colored"
-      /> */}
+      />
       </Container>
     </>
   );
 };
 
 export default RegisterForm;
+ */}

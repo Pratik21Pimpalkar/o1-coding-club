@@ -3,27 +3,41 @@ import Navbar from "../Navbar";
 import SocialMedia from "../SocialMedia";
 import Main from "../TextContent/Main";
 import bg_final from "../../images/bg_homepage.png";
+import Navbar2 from "../../../components/Navbar";
+import styled from "styled-components";
 const Home = (prop) => {
+
   return (
     <>
-      <div
-        style={{
-          minHeight: "100vh",
-          backgroundImage:  "url(" + bg_final + ")",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center center",
-        }}
-      >
-        <Navbar />
-        <Main name={prop.name}/>
-        
-        {/* Main content contains Start btn, modal, form */}
-        <SocialMedia />
-      </div>
+      <MainWrapper>
+        <div className="home">
+          <Navbar />
+          <Navbar2 />
+          <Main name={prop.name} />
+
+          {/* Main content contains Start btn, modal, form */}
+          <SocialMedia />
+        </div>
+      </MainWrapper>
     </>
   );
 };
 
 export default Home;
+
+const MainWrapper = styled.div`
+  .home {
+    height: 100vh;
+  }
+  @media screen and (max-width: 600px) {
+    .home {
+      min-height: 100vh; 
+    }
+  }
+  @media screen and (min-device-width:380px) and (max-device-width:900px)  {
+    .home{
+      height: 81vh !important;
+      min-height: initial;
+    }
+  }
+`;

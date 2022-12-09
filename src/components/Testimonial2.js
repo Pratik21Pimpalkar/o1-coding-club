@@ -7,18 +7,18 @@ import 'swiper/css';
 import 'swiper/css/bundle'
 import testimonialData from './testimonialData';
 import Card from './Card';
+import { Typography } from '@mui/material';
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay]);
 const Testimonial2 = () => {
     return (
-        <TestimonialWrapper>
+        <TestimonialWrapper id="testimonial">
             <div className='testimonial-head'>
-                <p style={{
-            textAlign: "center",
-            color: "white",
-            fontSize: "3.0rem",
-            fontWeight:"bold",
-     
-          }}>Stories to Inspire</p>
+                <Typography variant="h3" sx={{
+                    textAlign: "center", color: "white", fontSize: "3.0rem", fontWeight: "bold",
+                    '@media (max-width:480px)': {
+                        fontSize: '2rem',
+                    }
+                }}>Stories to Inspire</Typography>
             </div>
             <Swiper grabCursor={true} autoplay={{
                 delay: 5500,
@@ -62,7 +62,7 @@ const Testimonial2 = () => {
 const TestimonialWrapper = styled.div`  
 position:relative;
 margin: 3rem 0;
--webkit-box-reflect: below 0.1px linear-gradient(transparent 70%,#000900);
+/* -webkit-box-reflect: below 0.1px linear-gradient(transparent 70%,#000900); */
 max-width: 100vw;
 .swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right{
     background-image: none;

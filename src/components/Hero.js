@@ -1,51 +1,68 @@
 import React from "react";
-import { Grid, Container, Typography } from "@mui/material";
-import bg from "../Assets/3.svg";
+import { Grid, Container, Typography, Box } from "@mui/material";
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 import tab from "../Assets/tab3.png";
 import bluebubble from "../Assets/Bubble-blue.svg";
 import purplebubble from "../Assets/Bubble-purple.svg";
-import lappyimg from "../Assets/lappy_img.png";
-
+import codingLottie from "../Assets/coding.json";
+import Lottie from "react-lottie";
 const Hero = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: codingLottie,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <HeroWrapper
       style={{
-        minHeight: "100vh",
+        // minHeight: "100vh",
         color: "white",
       }}
     >
       {/* <img src={bg} alt="" /> */}
-      <Container maxWidth={"lg"}>
+      <Container>
         <Grid container className="main-grid">
           <Grid item xs={12} md={8} lg={4} className="inside-grid">
-            <Typography className=" ejyuya510 css-130rcti" variant="h1" >
-              O(1) Coding Club
-            </Typography>
-            <Typography variant="h5" style={{ opacity: "0.7" }}>
-              Closer to your AMBITIONS,a step at a time.
-            </Typography>
-            {/* <Typography variant="h5" className="short-line">
-              Not just a coding school, but a complete placement ecosystem with
-              strong emphasis on high quality placement training & support, not
-              only equipping you with relevant job mark.et skills but providing
-              every help to land your dream job.
-            </Typography> */}
+            <div className="text-position">
+              <Typography className="  css-130rcti" variant="h1">
+                O(1) Coding Club
+              </Typography>
+              <Typography variant="body1" className="head2">
+                Closer to your AMBITIONS, a step at a time.
+              </Typography>
+              <Box sx={{
+                display: {
+                  xs: "block", sm: "none"
+                },
+                width: "100%  "
+              }}>
+                <Lottie options={defaultOptions} className="lottieimg" />
+              </Box>
+              <Typography variant="body1" className="head3">
+                10,000 Students from 31 colleges have trusted us
+              </Typography>
+
+              <HashLink smooth to="\#events">
+                <div>
+                  <button className="btn-giveTest btn fullwidthbtn">
+                    Explore Our Programs
+                  </button>
+                </div>
+              </HashLink>
+            </div>
           </Grid>
 
           <Grid item xs={12} md={8} lg={8}>
-            <div className="animation css-1o807li">
-              <img
-                src={tab}
-                alt=""
-         
-                className="tabimg"
-              />
-              <div className="css-ucfc1 e1foku9a4">
+            <div className="animationclass">
+              <img src={tab} alt="" className="tabimg" />
+              <div className="css-ucfc1">
                 <div className="css-18q3wgh">
                   <img src={bluebubble} />
                 </div>
-
                 <div className="css-19fx3dz">
                   <img src={purplebubble} />
                 </div>
@@ -54,57 +71,116 @@ const Hero = () => {
           </Grid>
         </Grid>
       </Container>
-    </HeroWrapper>
+    </HeroWrapper >
   );
 };
 
 const HeroWrapper = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
-
   @media screen and (min-width: 992px) {
-    .css-ygum12 .ejyuya510 {
+    .ejyuya510 {
       white-space: pre;
     }
   }
+  .fullwidthbtn {
+    width: auto;
 
+    padding: 5px 15px;
+    position: static;
+  }
+
+  .head2 {
+    font-size: 1.3rem;
+    /* white-space: pre; */
+  }
+
+  .head3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "muli";
+    letter-spacing: 1px;
+    /* white-space: pre; */
+    margin-top: 2rem;
+  }
+  .explore-btn {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(270deg, #f96b24, #ff9100);
+    transition: all 0.3s;
+
+    &:hover {
+      color: black;
+    }
+  }
   .headingtext {
     font-size: 5vw;
   }
   .tabimg {
-    z-index: 52;
+    z-index: 2;
     height: 46rem;
-    margin-top: 0rem;
   }
+
 
   @media screen and (min-width: 576px) {
     .css-130rcti {
       font-size: 6rem;
       line-height: 6.4rem;
     }
+
+    .animationclass{
+
+     
+    }
+
+    .text-position {
+      /* position:absolute; */
+      margin-top: 14rem;
+      position: absolute;
+      z-index: 500;
+    }
   }
   @media screen and (max-width: 576px) {
-    .headingtext {
-      /* text-align: center; */
-      /* font-size: 15vw; */
-    }
-    .main-grid{
-
-        .inside-grid {
+    .main-grid {
+      .inside-grid {
         /* top: 3rem; */
         z-index: 5;
-        top: 8rem;
+        /* top: 8rem; */
       }
-      .tabimg{
+      .tabimg {
         display: none;
       }
     }
+    .animationclass{
 
+      .lottieimg svg {
+        display: none !important;
+        
+        /* width:50%; */
+        /* margin: 0 auto; */
+      }
+    }
+   
+    .text-position {
+      /* position:absolute; */
+      margin-top: 5rem;
+      text-align: center;
+      .css-130rcti {
+        font-size: 2.45rem;
+        font-weight:900;
+        font-family: muli;
+      }
+      .head2{
+        /* font-size: 1.5rem; */
+      }
+    }
 
-  }
-  @media screen and (min-width: 992px) {
-    .ejyuya510 {
-      white-space: pre;
+    .css-ucfc1 {
+      display: none;
     }
   }
 
@@ -126,13 +202,13 @@ const HeroWrapper = styled.div`
     }
   }
 
-  .main-grid {
-    position: relative;
-  }
   .inside-grid {
-    position: absolute;
-    top: 13rem;
-    z-index:2;
+    /* position: relative; */
+  }
+  .text-position {
+    /* position:absolute; */
+    /* margin-top:5rem; */
+    z-index: 2;
     font-weight: 500;
   }
   .short-line {
@@ -143,30 +219,16 @@ const HeroWrapper = styled.div`
     font-weight: lighter;
   }
 
-  .css-1o807li {
-    /* width: 1320px; */
-
-    /* padding: 0 36px; */
-    /* margin: 0 auto; */
-    top: 0rem;
-    right:2rem;
-    position: relative;
-    /* height: calc(100% - 202px); */
-    /* margin-top: 202px; */
-    -webkit-transform: translateX(50%);
-    -moz-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(50%);
-    /* overflow-y:visible; */
-  }
+ 
 
   .css-ucfc1 {
     z-index: -1;
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 50%;
-    top: 40vh;
-    left: 25vw;
+    top: -23rem;
+    margin-left: 20rem;
+    /* left: 25vw; */
     pointer-events: none;
   }
   .css-18q3wgh {

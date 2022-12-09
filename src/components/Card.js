@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Card = ({ data }) => {
     return (
         <CardWrapper>
             <div className='card-wrapper'>
                 <div className="layer"></div>
                 <div className="content">
-                    <div className='details' style={{fontSize:"1rem" ,fontWeight:"400"}}>
+                    <div className='details' style={{ fontSize: "1rem", fontWeight: "400" }}>
                         <FormatQuoteIcon />
                         {data.content}
                         <FormatQuoteIcon />
@@ -19,6 +20,12 @@ const Card = ({ data }) => {
                     <div className="nameBox">
                         <p className='name'>{data.name}</p>
                         <p className='role'> {data.role}</p>
+                    </div>
+                    <div>{
+                        data.linkedin?
+                        <a href={ data.linkedin} style={{textDecoration:"none"}} >
+                            <LinkedInIcon sx={{ fontSize: "2rem" ,color:"white"}} />
+                        </a>:""}
                     </div>
 
                 </div>
@@ -40,9 +47,17 @@ display: flex;
 margin:0 auto;
 justify-content: center;
 background-color: #252525;
-@media screen and (max-width:400px){
+@media screen and (max-width:700px){
     width: 25rem;
 }
+@media screen and (max-width:400px){
+    width: 23rem;
+}
+@media screen and (max-width:390px){
+    width: 22rem;
+}
+@media screen and (max-width:380px){
+    width: 21.5rem;}
 .card-wrapper{
 position: relative;
 gap: 2rem;
@@ -70,7 +85,7 @@ justify-content: center;
     transition: 0.45s all ease-in-out;
 }
 .content{
-    display: flex;
+    display:flex;
     flex-direction: column;
     gap: 1rem;
     position: relative;

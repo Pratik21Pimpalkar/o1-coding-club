@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import RegisterForm from "./RegisterationForm";
+// import RegisterForm from "./RegisterationForm";
 
 
 // const style = {
@@ -27,14 +27,7 @@ function KeepMountedModal() {
 
   return (
     <div>
-     <div className="btn-container">
-      <button className="btn-giveTest" onClick={handleOpen}>
-       Register
-      </button>
-      {/* <button className="btn-giveTest" onClick={event =>  window.location.href='/dashboard'}>
-        Check Results
-      </button> */}
-</div>
+   
       <Modal
         keepMounted
         open={open}
@@ -43,7 +36,7 @@ function KeepMountedModal() {
         aria-describedby="keep-mounted-modal-description"
       >
         <Box >
-          <RegisterForm handleClose={handleClose}/>
+          {/* <RegisterForm handleClose={handleClose}/> */}
         </Box>
       </Modal> 
     </div>

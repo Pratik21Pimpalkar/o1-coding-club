@@ -2,16 +2,15 @@ import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import styled from "styled-components";
 import aptitudeseries from "../Assets/events/aptitudeseries.png";
-import coderun from "../Assets/events/coderun.png";
+// import coderun from "../Assets/events/coderun.png";
 import coresubjects from "../Assets/events/coresubjects.png";
 import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
-import super30 from "../Assets/events/super30.png";
+import super50 from "../Assets/events/super50.png";
 
 import { Outlet, Link } from "react-router-dom";
 const FeaturePosition = {
   color: "white",
-  //   marginBottom: "4rem",
   fontFamily: "muli",
 };
 const FeatureParagraph = {
@@ -24,37 +23,75 @@ const FeatureParagraph = {
 
 const OurEvents = () => {
   return (
-    <Events>
+    <Events id="events">
       <Container maxWidth="lg" style={FeaturePosition}>
         <Typography
           variant="h1"
           gutterBottom={true}
-          style={{
+          sx={{
             textAlign: "center",
             color: "white",
             fontSize: "3.0rem",
             fontWeight: "bold",
             marginBottom: "3rem",
             marginTop: "5rem",
+            "@media (max-width:480px)": {
+              fontSize: "2.3rem",
+            },
           }}
         >
           Our Events
         </Typography>
+
+        <Grid
+          container
+          alignItems={"center"}
+          rowSpacing={1}
+          columnSpacing={5}
+          wrap={"wrap-reverse"}
+        >
+          <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
+            <Box sx={{ height: "max-content" }}>
+              <div style={FeatureParagraph}>
+                <h3 className="heading-desktop">
+                  <span>1000x</span>   placement program
+                </h3>
+                <p>
+                Exclusive placement program to make you a warrior in placement battlefield. 
+                </p>
+              </div>
+              <Link className="explore-btn left" to="/1000x">
+                Explore More
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
+            <img src={sdebootcamp} alt="" width={"100%"} />
+          </Grid>
+        </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
-            <img src={aptitudeseries} alt="" height={340} />
+            <img
+              src={aptitudeseries}
+              alt=""
+              style={{ width: "100%", padding: " 0 2rem" }}
+            />
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Afraid of aptitude tests?</h3>
+                <h3 className="heading-desktop">
+                  Afraid of <span>aptitude</span> tests?
+                </h3>
                 <p>
                   Our test series offers company specific tests designed by
                   experts, consisting of all previous years questions with the
                   latest test format.
                 </p>
               </div>
-              <Link className="explore-btn" to="/aptitudeseries">Explore More</Link>
+              <Link className="explore-btn" to="/aptitudeseries">
+                Explore More
+              </Link>
             </Box>
           </Grid>
         </Grid>
@@ -69,14 +106,18 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Not confident about coding?</h3>
+                <h3 className="heading-desktop">
+                  Not confident about <span>coding</span>?
+                </h3>
                 <p>
                   Start Learning Python with us. Get trained by Industry Experts
                   with our highly rated training program. This bootcamp is for
                   beginners in coding wanting to grab high paying IT jobs
                 </p>
               </div>
-              <Link className="explore-btn left" to="/pythonbootcamp">Explore More</Link>
+              <Link className="explore-btn left" to="/pythonbootcamp">
+                Explore More
+              </Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
@@ -85,19 +126,23 @@ const OurEvents = () => {
         </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
-            <img src={super30} alt="" width={"100%"} />
+            <img src={super50} alt="" width={"100%"} />
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Stuck on DSA?</h3>
+                <h3 className="heading-desktop">
+                  Stuck on <span>DSA</span>?{" "}
+                </h3>
                 <p>
                   DSA & Problem Solving is the most important skill when it
                   comes to placements in the IT industry. Master it in just 45
                   days and get even closer to your Super Dream Placement.
                 </p>
               </div>
-              <Link className="explore-btn" to="/super50">Explore More</Link>
+              <Link className="explore-btn" to="/super50">
+                Explore More
+              </Link>
             </Box>
           </Grid>
         </Grid>
@@ -112,14 +157,18 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">Placements starting soon?</h3>
+                <h3 className="heading-desktop">
+                  <span>Placements</span> starting soon?
+                </h3>
                 <p>
                   Strengthen all your core subjects within just 15 days with the
                   help of our Superdream placed experts & be ready to ace
                   through placements
                 </p>
               </div>
-              <Link className="explore-btn left" to="/coresubjects">Explore More</Link>  
+              <Link className="explore-btn left" to="/coresubjects">
+                Explore More
+              </Link>
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
@@ -133,30 +182,27 @@ const OurEvents = () => {
 const Events = styled.div`
   height: max-content;
   position: relative;
-
-
-  .explore-btn{
+  .explore-btn {
+    -webkit-text-decoration: none;
     text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    padding:5px;
-    border-radius:10px;
+    color: #91d2ff;
+    border: 2px solid #bb4fff;
+    padding: 11px 15px;
+    border-radius: 9px;
     opacity: 0.8;
-    /* margin-top: 2rem; */
-    margin-left:2rem;
+    margin-left: 2rem;
+    font-weight: 800;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
- 
+
     &:hover {
       background-color: white;
-  color:black;
-
+      color: black;
+    }
   }
 
-    }
-
- 
-     .left{
-      margin-right:2rem;
+  .left {
+    margin-right: 2rem;
   }
   h3 {
     font-size: 2.25rem;
@@ -169,17 +215,23 @@ const Events = styled.div`
     font-size: 1.55rem;
   }
   @media screen and (max-width: 576px) {
-    
-  h3 {
-    font-size: 2rem;
+    h3 {
+      font-size: 2rem;
+    }
+    div p {
+      margin-top: 0.2rem;
+      font-size: 1.4rem;
+    }
   }
-  div p {
-    margin-top: 0.2rem;
-    font-size: 1.4rem;
+  .btn {
   }
-  }
-  .btn{
-    
+  .heading-desktop {
+    color: #0088ff;
+    -webkit-text-fill-color: initial !important ;
+    background: initial;
+    span {
+      color: #be69fa;
+    }
   }
 `;
 
