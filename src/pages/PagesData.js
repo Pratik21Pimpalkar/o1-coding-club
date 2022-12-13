@@ -207,7 +207,7 @@ const programData = {
       "Fight hard to earn your spot!!",
     ],
 
-    timelineformlink: "https://chat.whatsapp.com/Hji0a3CB45V30n2R3a1v3E",
+    timelineformlink: "https://forms.gle/UEps7hN2L5mpcYwH8",
     footerbottomtext: "",
     applyNowURL: "/super40/#timeline"
   },

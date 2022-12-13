@@ -43,7 +43,7 @@ const OurEvents = () => {
           Ongoing Events
         </Typography>
 
-        <Grid
+        {/* <Grid
           container
           alignItems={"center"}
           rowSpacing={1}
@@ -57,7 +57,7 @@ const OurEvents = () => {
                   <span>1000x</span>   Placement Program
                 </h3>
                 <p>
-                Exclusive placement program to make you a warrior in placement battlefield. 
+                  Exclusive placement program to make you a warrior in placement battlefield.
                 </p>
               </div>
               <Link className="explore-btn left" to="/1000x">
@@ -68,8 +68,8 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
             <img src={sdebootcamp} alt="" width={"80%"} />
           </Grid>
-          </Grid>
-          <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
+        </Grid> */}
+        <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
             <img src={super40} alt="" width={"100%"} />
           </Grid>
@@ -77,10 +77,10 @@ const OurEvents = () => {
             <Box>
               <div style={FeatureParagraph}>
                 <h3 className="heading-desktop">
-                  <span>Super 40</span> Program 
+                  <span>Super 40</span> Program
                 </h3>
                 <p>
-                Exclusive program curated for student of different colleges.
+                  Exclusive program curated for student of different colleges.
                 </p>
               </div>
               <Link className="explore-btn" to="/super40">

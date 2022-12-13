@@ -50,28 +50,27 @@ const Timeline = (props) => {
         <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
           <div className="container left">
             <div className="content">
-              <h2>Join Whatsapp Group</h2>
-              <p>
-                Join the following Whatsapp group and attend program details
-                briefing meet.<br></br>{" "}
+              <h2 style={{ marginLeft: 10 }}>Fill Application Form</h2>
+              <div style={{display:'flex',flexDirection:'column', alignItems: "center"}}>
+                <p>
+                  Fill the following google form to apply for Super40 shortlisting process<br></br>{" "}
+                </p>
                 <button className="btn-giveTest mobileres" >
-
-                  Join Now
-
+                  Application Form
                 </button>
-              </p>
+              </div>
             </div>
           </div></a>
 
-        <div className="container right">
+        {/* <div className="container right">
           <div className="content">
             <h2>Fill Google Form</h2>
             <p>Fill google form circulated in the meet & group to apply.</p>
           </div>
-        </div>
-        <div className="container left">
+        </div> */}
+        <div className="container right">
           <div className="content">
-            <h2>Shortlisting Process</h2>
+            <h2 style={{ marginLeft: 10 }}>Shortlisting Process</h2>
             <p>
               Appear for the shortlisting and selection process, all the best.
             </p>
@@ -217,6 +216,7 @@ a{
     font-size: 14px;
     box-shadow: rgb(103 0 255 / 40%) 0px 10px 60px 0px;
     padding: 4px 26px;
+    padding: 4px 14px;
     border-radius: 300px;
     /* filter: brightness(100%); */
     visibility: visible;
