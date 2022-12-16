@@ -164,6 +164,8 @@ const programData = {
       },
     ],
     pricing: "Option A:  Rs 7000 upfront ",
+    priceplanA:"5000",
+    priceplanB:"7000",
     features: {
       firstimg:
         "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
@@ -209,7 +211,8 @@ const programData = {
 
     timelineformlink: "https://forms.gle/UEps7hN2L5mpcYwH8",
     footerbottomtext: "",
-    applyNowURL: "/super40/#timeline"
+    applyNowURL: "/super40/#timeline",
+    shownote:true,
   },
   PlacePrep360: {
     programName: "PlacePrep 360",
@@ -263,6 +266,8 @@ const programData = {
       },
     ],
     pricing: "Option A:  Rs 7000 upfront ",
+    priceplanA:"2500",
+    priceplanB:"3500",
     features: {
       firstimg:
         "https://i.postimg.cc/8PZgpCvz/44.png",
