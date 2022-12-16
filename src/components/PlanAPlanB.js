@@ -91,7 +91,7 @@ export default function IncomeAgreement() {
                                 variant="h5"
                                 component="h2"
                             >
-                                ₹ 5000  <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
+                              ₹ 2500  <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
                             </Typography>
 
                             <Typography className="pos" color="textSecondary">
@@ -137,7 +137,7 @@ export default function IncomeAgreement() {
                                 variant="h5"
                                 component="h2"
                             >
-                                ₹ 7000 <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
+                                ₹ 3500 <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
                             </Typography>
                             <Typography className="pos" color="textSecondary">
                                 Upfront Registration Fees

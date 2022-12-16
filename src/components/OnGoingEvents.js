@@ -43,7 +43,7 @@ const OurEvents = () => {
           Ongoing Events
         </Typography>
 
-        {/* <Grid
+         <Grid
           container
           alignItems={"center"}
           rowSpacing={1}
@@ -54,13 +54,13 @@ const OurEvents = () => {
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
                 <h3 className="heading-desktop">
-                  <span>1000x</span>   Placement Program
+                  <span>PlacePrep </span> 360
                 </h3>
                 <p>
-                  Exclusive placement program to make you a warrior in placement battlefield.
+                Exclusive program curated for selected students wanting to ace through placements.
                 </p>
               </div>
-              <Link className="explore-btn left" to="/1000x">
+              <Link className="explore-btn left" to="/placeprep360">
                 Explore More
               </Link>
             </Box>
@@ -68,7 +68,7 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
             <img src={sdebootcamp} alt="" width={"80%"} />
           </Grid>
-        </Grid> */}
+        </Grid> 
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
             <img src={super40} alt="" width={"100%"} />

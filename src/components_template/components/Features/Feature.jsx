@@ -84,7 +84,7 @@ const FeatureSection = ({ data }) => {
                 <Box sx={{ height: "max-content" }}>
                   <div style={FeatureParagraph}>
                     <h3 className="price-desktop">Pricing</h3>
-                    {data.programName === "Super40" ?
+                    {(data.programName === "Super40" ||  data.programName === "PlacePrep 360")?
                       // <table className="pricing">
                       //   <tr>
                       //     <td>Option A</td>

@@ -4,6 +4,7 @@ import DSA from "./pages/DSA";
 import Super50 from "./pages/Super50";
 import Aptitudeseries from "./pages/Aptitudeseries";
 import Pythonbootcamp from "./pages/Pythonbootcamp";
+import PlacePrep360 from "./pages/PlacePrep360";
 import Sdebootcamp from "./pages/Sdebootcamp";
 import Coresubjects from "./pages/CoreSubjects";
 import Coderun from "./pages/Coderun";
@@ -17,7 +18,9 @@ function App() {
         <Route path="/" element={<MainHomePage />} />
         <Route path="/dsa" element={<DSA />} />
         <Route path="/super40" element={<Super50 />} />
+        <Route path="/placeprep360" element={<PlacePrep360 />} />
         <Route path="/pythonbootcamp" element={<Pythonbootcamp />} />
+        
     {/*     
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />
