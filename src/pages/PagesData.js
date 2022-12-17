@@ -208,7 +208,9 @@ const programData = {
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
-
+    timeline:{
+      first:"Fill the following google form to apply for Super 40 shortlisting process",
+    },
     timelineformlink: "https://forms.gle/UEps7hN2L5mpcYwH8",
     footerbottomtext: "",
     applyNowURL: "/super40/#timeline",
@@ -216,7 +218,7 @@ const programData = {
   },
   PlacePrep360: {
     programName: "PlacePrep 360",
-    desc: " Exclusive program with a cap of max 40 students, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
+    desc: " Exclusive program with a cap of max 30-40 students per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
     linktoregister: "https://chat.whatsapp.com/FmCT9fesL5v9Y1VYBAXrdS",
     registertoapply: true,
     instructer: [
@@ -302,15 +304,17 @@ const programData = {
     youwillget: [
       "360 placement program of your dreams.",
       "Structured DSA preparation. ",
-      "Complete Core subjects bootcamp. ",
-      "Aptitude preparation for placements. ",
+      "Core subjects practice & analysis ",
+      "Aptitude practice & analysis ",
       "Interview Ready.",
     ],
     Eligibility: [
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
-
+    timeline:{
+      first:"Fill the following google form to apply for PlacePrep 360 shortlisting process",
+    },
     timelineformlink: "https://forms.gle/UEps7hN2L5mpcYwH8",
     footerbottomtext: "",
     applyNowURL: "/placeprep360/#timeline",

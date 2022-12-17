@@ -53,7 +53,7 @@ const Timeline = (props) => {
               <h2 style={{ marginLeft: 10 }}>Fill Application Form</h2>
               <div style={{display:'flex',flexDirection:'column', alignItems: "center"}}>
                 <p>
-                  Fill the following google form to apply for Super40 shortlisting process<br></br>{" "}
+                  {props.data.timeline.first}<br></br>
                 </p>
                 <button className="btn-giveTest mobileres" >
                   Application Form
