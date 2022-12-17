@@ -115,7 +115,7 @@ const programData = {
   Super50: {
     programName: "Super40",
     desc: " Exclusive program with a cap of max 40 students, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
-    linktoregister: "https://chat.whatsapp.com/FmCT9fesL5v9Y1VYBAXrdS",
+    linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,
     instructer: [
       {
@@ -211,7 +211,7 @@ const programData = {
     timeline:{
       first:"Fill the following google form to apply for Super 40 shortlisting process",
     },
-    timelineformlink: "https://forms.gle/UEps7hN2L5mpcYwH8",
+    timelineformlink: "https://forms.gle/dN9yDA3GTXPbXCFJ9",
     footerbottomtext: "",
     applyNowURL: "/super40/#timeline",
     shownote:true,
