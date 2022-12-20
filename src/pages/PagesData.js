@@ -218,7 +218,7 @@ const programData = {
   },
   PlacePrep360: {
     programName: "PlacePrep 360",
-    desc: " Exclusive program with a cap of max 30-40 students per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
+    desc: " Exclusive program with very few seats per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
     linktoregister: "https://chat.whatsapp.com/FmCT9fesL5v9Y1VYBAXrdS",
     registertoapply: true,
     instructer: [
