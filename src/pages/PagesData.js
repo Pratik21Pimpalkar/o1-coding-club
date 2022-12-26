@@ -114,7 +114,7 @@ const programData = {
   },
   Super50: {
     programName: "Super40",
-    desc: " Exclusive program with a cap of max 40 students, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
+    desc: " Exclusive program with a cap of max 40 students per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
     linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,
     instructer: [
@@ -164,13 +164,13 @@ const programData = {
       },
     ],
     pricing: "Option A:  Rs 7000 upfront ",
-    priceplanA:"5000",
-    priceplanB:"7000",
+    priceplanA: "5000",
+    priceplanB: "7000",
     features: {
       firstimg:
         "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
-      firstheading: " Exclusive",
-      first: "Exclusive program for top students from different colleges.",
+      firstheading: " Referrals Provided ",
+      first: "Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
       secondimg:
         "https://drive.google.com/thumbnail?id=1FhdoY9khrv1p2eIyuJ6Zihvhp-iwdNVw",
       secondheading: "360 Placement Program",
@@ -181,8 +181,8 @@ const programData = {
         // "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
         "https://i.postimg.cc/8PZgpCvz/44.png",
 
-      thirdheading: "Guaranteed placement or refund",
-      third: " Get a guaranteed placement offer or 100% refund.",
+      thirdheading: "Guaranteed min. 7LPA placement or refund",
+      third: " Get a guaranteed placement offer of min. 7LPA or  get 100% refund.",
       forthimg:
         "https://drive.google.com/thumbnail?id=1aw2BXLq2SmSngxE8OtgCv6ebeaubo-JU",
       forth: "",
@@ -203,18 +203,19 @@ const programData = {
       "Complete Core subjects bootcamp. ",
       "Aptitude preparation for placements. ",
       "Interview Ready.",
+      "Referral of MNCs provided based on openings."
     ],
     Eligibility: [
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
-    timeline:{
-      first:"Fill the following google form to apply for Super 40 shortlisting process",
+    timeline: {
+      first: "Fill the following google form to apply for Super 40 shortlisting process",
     },
     timelineformlink: "https://forms.gle/dN9yDA3GTXPbXCFJ9",
     footerbottomtext: "",
     applyNowURL: "/super40/#timeline",
-    shownote:true,
+    shownote: true,
   },
   PlacePrep360: {
     programName: "PlacePrep 360",
@@ -268,8 +269,8 @@ const programData = {
       },
     ],
     pricing: "Option A:  Rs 7000 upfront ",
-    priceplanA:"2500",
-    priceplanB:"3500",
+    priceplanA: "2500",
+    priceplanB: "3500",
     features: {
       firstimg:
         "https://i.postimg.cc/8PZgpCvz/44.png",
@@ -312,8 +313,8 @@ const programData = {
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
-    timeline:{
-      first:"Fill the following google form to apply for PlacePrep 360 shortlisting process",
+    timeline: {
+      first: "Fill the following google form to apply for PlacePrep 360 shortlisting process",
     },
     timelineformlink: "https://forms.gle/UEps7hN2L5mpcYwH8",
     footerbottomtext: "",

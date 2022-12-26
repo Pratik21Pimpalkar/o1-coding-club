@@ -1,8 +1,16 @@
+import { Typography } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 const YoutubeVideo = () => {
   return (
     <YoutubeWrapper>
+      <div>
+        <Typography variant="h3" sx={{
+          color: "white", margin: "2rem 0", textAlign: "center", '@media screen and (max-width: 400px)': {
+            fontSize: "2rem", margin:"1rem 0"
+          },
+        }}>Our SuperHero Platforms</Typography>
+      </div>
       <div className="embeded-video">
         <iframe
           src="https://www.youtube.com/embed/ylVJ4mP6sTc?autoplay=1&mute=1"
