@@ -3,7 +3,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import styled from "styled-components";
 // import aptitudeseries from "../Assets/events/aptitudeseries.png";
 // import coderun from "../Assets/events/coderun.png";
-// import coresubjects from "../Assets/events/coresubjects.png";
+import coresubjects from "../Assets/events/coresubjects.png";
 // import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import super40 from "../Assets/events/super40.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
@@ -66,7 +66,7 @@ const OurEvents = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-            <img src={sdebootcamp} alt="" width={"80%"} />
+            <img src={coresubjects} alt="" width={"80%"} />
           </Grid>
         </Grid> 
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
