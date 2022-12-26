@@ -10,23 +10,25 @@ import Coresubjects from "./pages/CoreSubjects";
 import Coderun from "./pages/Coderun";
 import Navbar from "./components/Navbar";
 import ThousandX from "./pages/ThousandX";
+import PlaceKit from "./pages/PlaceKit";
 function App() {
   return (
     <>
     
       <Routes>
         <Route path="/" element={<MainHomePage />} />
-        <Route path="/dsa" element={<DSA />} />
         <Route path="/super40" element={<Super50 />} />
         <Route path="/placeprep360" element={<PlacePrep360 />} />
-        <Route path="/pythonbootcamp" element={<Pythonbootcamp />} />
-        
+       
+        <Route path="/placekit" element={<PlaceKit />} />
+        <Route path="/1000x" element={<ThousandX />} />
     {/*     
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />
         <Route path="/coresubjects" element={<Coresubjects />} />
-        <Route path="/coderun" element={<Coderun />} /> */}
-        <Route path="/1000x" element={<ThousandX />} />
+        <Route path="/coderun" element={<Coderun />} /> 
+        <Route path="/dsa" element={<DSA />} />
+        <Route path="/pythonbootcamp" element={<Pythonbootcamp />} />*/}
         {/* <Route path="*" element={<NoPage/>} />  */}
 
       </Routes>

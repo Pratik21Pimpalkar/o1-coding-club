@@ -216,6 +216,111 @@ const programData = {
     applyNowURL: "/super40/#timeline",
     shownote:true,
   },
+ placekit: {
+    programName: "PlaceKit",
+    desc: " The Complete Placement Preparation Kit designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.",
+    linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
+    registertoapply: true,
+    instructer: [
+      {
+        name: "Aditya Sharma      ",
+        desig: "SWE at Akamai Tech",
+        about:
+          " Hi, I'm Aditya and I have experience of training more than 200 students for DSA and have my self aced many coding rounds of top IT companies. I have landaded multiple superdream offers through regular and systematic practice of DSA. I am here to guide you for the same.",
+        instructerimg:
+          "https://drive.google.com/thumbnail?id=1ici6-DvAE-I7Aqwwn7K77BRaeH8psmIR",
+      },
+      {
+        name: "Rohit Doshi",
+        desig: "SDE at Amazon | 2x ICPC Regionalist",
+
+        about:
+          " Hi, I'm Rohit Doshi, and I had recieved multiple dream and super dream offers because of my DSA and problem solving skills. Also I have a great passion for teaching and making other people good at problem solving skills. I am here to help you develop one of the most important skills in acing any interviews.",
+        instructerimg:
+          "https://drive.google.com/thumbnail?id=1_FiJk_IAz6ocACXWnVH9HFWzYncVVlZw",
+      },
+      {
+        name: "Nikeshsingh Baghel",
+        desig: "SDE-T at ZS Associates",
+
+        about:
+          " Hi, I'm Nikeshsingh Baghel, I have appeared and cracked the Interviews for various IT companies, and this experience has landed me a super dream Job. According to my experience, acing the interview requires an in-depth knowledge of Core Subjects, and to get that knowledge we need to enjoy learning.",
+        instructerimg:
+          "https://drive.google.com/thumbnail?id=15elP-zNzlXvNBqwhLCC5-kTIIbyHZHNz",
+      },
+      {
+        name: "Rajat Agrawal",
+        desig: "SWE-2 at Takeoff Technologies",
+
+        about:
+          " Hi, I'm Rajat Agrawal, not only do I have the experience of training over 1000 students for Aptitude tests of various tech companies but have myself aced through various aptitude tests that I appeared for & ultimately landed a superdream job. I'm here to guide you all for your placements.",
+        instructerimg:
+          "https://drive.google.com/thumbnail?id=1gKqITyYY3_gaq_eiAefhbO1cCwORTKa4",
+      },
+      {
+        name: "Bharat Thakur",
+        desig: "Candidate Master on Codeforces",
+
+        about:
+          "Hi, I'm Bharat Thakur, a Candidate Master on Codeforces. Competitive programming improved my grip over DSA & Problem Solving and helped me land a dream job. I'm here to mentor you for the same.",
+        instructerimg:
+          "https://drive.google.com/thumbnail?id=1bgCdJIwEmEiluQG-wEuTFc5GAfQ0PFg1",
+      },
+    ],
+    pricing: "₹ 900  ",
+    priceplanA:"5000",
+    priceplanB:"7000",
+    features: {
+      firstimg:
+        "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
+        firstheading: "Referrals Provided ",
+        first: " Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
+      secondimg:
+        "https://drive.google.com/thumbnail?id=1FhdoY9khrv1p2eIyuJ6Zihvhp-iwdNVw",
+      secondheading: "360 Placement Program",
+      second:
+        "Tailored program to help you prepare in every aspect of off-campus and on-campus placements.",
+      thirdimg:
+        // "https://drive.google.com/thumbnail?id=11vYLiscmCtj_tuh9S0qPS_ihm7QoPiUp",
+        // "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
+        "https://i.postimg.cc/8PZgpCvz/44.png",
+
+      thirdheading: "Live Guidance Sessions",
+      third: "  20+ hours of live guidance sessions on DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
+      forthimg:
+        "https://drive.google.com/thumbnail?id=1aw2BXLq2SmSngxE8OtgCv6ebeaubo-JU",
+      forth: "",  //default lines already written in component
+      forthheading: "",
+    },
+    showtimeline: true,
+    showpricing: true,
+    showyouwillget: true,
+    stats: {
+      placements: "100%",
+      companycracked: "50+",
+      placedinamazon: "70+",
+      studentplaced: "2000+",
+    },
+    youwillget: [
+      
+      "Tailormade platform for core subjects & aptitude",
+      "Tailormade platform for DSA & Problem Solving",
+      "Referrals of Top MNCs provided based on openings",
+      "20+ hours of live guidance sessions on:- DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
+
+    ],
+    Eligibility: [
+      " Exclusive program for top students from different colleges",
+      "Fight hard to earn your spot!!",
+    ],
+    timeline:{
+      first:"Fill the following google form to apply for PlaceKit shortlisting process",
+    },
+    timelineformlink: "https://forms.gle/dN9yDA3GTXPbXCFJ9",
+    footerbottomtext: "",
+    applyNowURL: "/placekit/#timeline",
+    shownote:true,
+  },
   PlacePrep360: {
     programName: "PlacePrep 360",
     desc: " Exclusive program with very few seats per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
