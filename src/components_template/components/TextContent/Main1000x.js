@@ -40,7 +40,7 @@ function Main(prop) {
                   className="brand-name"
                   title="O1 Analysis"
                 >
-                  <button className="btn-giveTest btn-giveTest-responsive">Apply</button>{" "}
+                  <button className="btn-giveTest btn-giveTest-responsive">{prop.name.programName==="PlaceKit"?"Enroll" : "Apply"}</button>{" "}
                 </HashLink>
               </div>
             ) : null}
