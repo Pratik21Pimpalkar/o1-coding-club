@@ -84,7 +84,7 @@ const FeatureSection = ({ data }) => {
                 <Box sx={{ height: "max-content" }}>
                   <div style={FeatureParagraph}>
                     <h3 className="price-desktop">Pricing</h3>
-                    {data.programName === "Super40" ?
+                    {(data.programName === "Super40" ||  data.programName === "PlacePrep 360")?
                       // <table className="pricing">
                       //   <tr>
                       //     <td>Option A</td>
@@ -97,7 +97,7 @@ const FeatureSection = ({ data }) => {
                       //        </td>
                       //   </tr>
                       // </table>
-                      <IncomeAgreement />
+                      <IncomeAgreement pricedata={data} />
                       : <h3 className="price-desktop2">{data.pricing} <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span></h3>}
                   </div>
                 </Box>

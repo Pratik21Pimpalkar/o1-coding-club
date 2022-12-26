@@ -3,7 +3,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import styled from "styled-components";
 // import aptitudeseries from "../Assets/events/aptitudeseries.png";
 // import coderun from "../Assets/events/coderun.png";
-// import coresubjects from "../Assets/events/coresubjects.png";
+import coresubjects from "../Assets/events/coresubjects.png";
 // import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import super40 from "../Assets/events/super40.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
@@ -43,6 +43,52 @@ const OurEvents = () => {
           Ongoing Events
         </Typography>
 
+         <Grid
+          container
+          alignItems={"center"}
+          rowSpacing={1}
+          columnSpacing={5}
+          wrap={"wrap-reverse"}
+        >
+          <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
+            <Box sx={{ height: "max-content" }}>
+              <div style={FeatureParagraph}>
+                <h3 className="heading-desktop">
+                  <span>Place </span> Kit
+                </h3>
+                <p>
+                The Complete Placement Preparation Kit designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.
+                </p>
+              </div>
+              <Link className="explore-btn left" to="/placekit">
+                Explore More
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
+            <img src={coresubjects} alt="" width={"80%"} />
+          </Grid>
+        </Grid> 
+        <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
+          <Grid item xs={12} sm={12} md={5}>
+            <img src={super40} alt="" width={"100%"} />
+          </Grid>
+          <Grid item xs={12} sm={12} md={7}>
+            <Box>
+              <div style={FeatureParagraph}>
+                <h3 className="heading-desktop">
+                  <span>Super 40</span> Program
+                </h3>
+                <p>
+                  Exclusive program curated for student of different colleges.
+                </p>
+              </div>
+              <Link className="explore-btn" to="/super40">
+                Explore More
+              </Link>
+            </Box>
+          </Grid>
+        </Grid>
         <Grid
           container
           alignItems={"center"}
@@ -54,13 +100,13 @@ const OurEvents = () => {
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
                 <h3 className="heading-desktop">
-                  <span>1000x</span>   Placement Program
+                  <span>PlacePrep </span> 360
                 </h3>
                 <p>
-                Exclusive placement program to make you a warrior in placement battlefield. 
+                Exclusive program curated for selected students wanting to ace through placements.
                 </p>
               </div>
-              <Link className="explore-btn left" to="/1000x">
+              <Link className="explore-btn left" to="/placeprep360">
                 Explore More
               </Link>
             </Box>
@@ -68,27 +114,7 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
             <img src={sdebootcamp} alt="" width={"80%"} />
           </Grid>
-          </Grid>
-          <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
-          <Grid item xs={12} sm={12} md={5}>
-            <img src={super40} alt="" width={"100%"} />
-          </Grid>
-          <Grid item xs={12} sm={12} md={7}>
-            <Box>
-              <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">
-                  <span>Super 40</span> Program 
-                </h3>
-                <p>
-                Exclusive program curated for student of different colleges.
-                </p>
-              </div>
-              <Link className="explore-btn" to="/super40">
-                Explore More
-              </Link>
-            </Box>
-          </Grid>
-        </Grid>
+        </Grid> 
       </Container>
     </Events>
   );
