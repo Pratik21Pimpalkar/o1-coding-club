@@ -307,7 +307,7 @@ const programData = {
       "Tailormade platform for core subjects & aptitude",
       "Tailormade platform for DSA & Problem Solving",
       "Referrals of Top MNCs provided based on openings",
-      "20+ hours of live guidance sessions on:- DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
+      "20+ hours of live guidance sessions on DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
 
     ],
     Eligibility: [
@@ -320,7 +320,7 @@ const programData = {
     timelineformlink: "https://forms.gle/dN9yDA3GTXPbXCFJ9",
     footerbottomtext: "",
     applyNowURL: "/placekit/#timeline",
-    shownote:true,
+    shownote:false,
   },
   PlacePrep360: {
     programName: "PlacePrep 360",
