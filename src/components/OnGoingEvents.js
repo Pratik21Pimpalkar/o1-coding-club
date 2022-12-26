@@ -54,13 +54,13 @@ const OurEvents = () => {
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
                 <h3 className="heading-desktop">
-                  <span>PlacePrep </span> 360
+                  <span>Place </span> Kit
                 </h3>
                 <p>
-                Exclusive program curated for selected students wanting to ace through placements.
+                The Complete Placement Preparation Kit designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.
                 </p>
               </div>
-              <Link className="explore-btn left" to="/placeprep360">
+              <Link className="explore-btn left" to="/placekit">
                 Explore More
               </Link>
             </Box>
@@ -89,6 +89,32 @@ const OurEvents = () => {
             </Box>
           </Grid>
         </Grid>
+        <Grid
+          container
+          alignItems={"center"}
+          rowSpacing={1}
+          columnSpacing={5}
+          wrap={"wrap-reverse"}
+        >
+          <Grid item xs={12} sm={12} md={7} order={{ md: 2, lg: 1 }}>
+            <Box sx={{ height: "max-content" }}>
+              <div style={FeatureParagraph}>
+                <h3 className="heading-desktop">
+                  <span>PlacePrep </span> 360
+                </h3>
+                <p>
+                Exclusive program curated for selected students wanting to ace through placements.
+                </p>
+              </div>
+              <Link className="explore-btn left" to="/placeprep360">
+                Explore More
+              </Link>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
+            <img src={sdebootcamp} alt="" width={"80%"} />
+          </Grid>
+        </Grid> 
       </Container>
     </Events>
   );
