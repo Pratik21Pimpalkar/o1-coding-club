@@ -49,7 +49,7 @@ const Timeline = (props) => {
       <div className="timeline">
         <div className="container left">
           <div className="content">
-            <h2 style={{ marginLeft: 10 }}>Fill Application Form</h2>
+            <h2 style={{ marginLeft: 10 }}>Transfer the Fees</h2>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
               <p>
                 Transfer ₹ 999 to given QR code using any UPI app.<br></br>
