@@ -7,6 +7,7 @@ import bluebubble from "../Assets/Bubble-blue.svg";
 import purplebubble from "../Assets/Bubble-purple.svg";
 import codingLottie from "../Assets/coding.json";
 import Lottie from "react-lottie";
+import ReferralSlider from "./ReferralSlider";
 const Hero = () => {
   const defaultOptions = {
     loop: true,
@@ -71,6 +72,7 @@ const Hero = () => {
           </Grid>
         </Grid>
       </Container>
+      <ReferralSlider/>
     </HeroWrapper >
   );
 };
