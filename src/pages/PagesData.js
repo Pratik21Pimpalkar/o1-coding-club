@@ -268,8 +268,9 @@ const programData = {
           "https://drive.google.com/thumbnail?id=1bgCdJIwEmEiluQG-wEuTFc5GAfQ0PFg1",
       },
     ],
-    pricing: "₹ 900  ",
+    pricing: "₹ 999  ",
     priceplanA:"5000",
+    cutPricing:"₹ 2999",
     priceplanB:"7000",
     features: {
       firstimg:
@@ -317,7 +318,7 @@ const programData = {
     timeline:{
       first:"Fill the following google form to apply for PlaceKit shortlisting process",
     },
-    timelineformlink: "https://forms.gle/dN9yDA3GTXPbXCFJ9",
+    timelineformlink: "https://forms.gle/Ue47rAfCg8A8Hstm6",
     footerbottomtext: "",
     applyNowURL: "/placekit/#timeline",
     shownote:false,

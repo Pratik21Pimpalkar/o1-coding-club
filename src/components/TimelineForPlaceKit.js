@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ApplyNowBtn from "./ApplyNowBtn";
-
 const Timeline = (props) => {
   const downloadTxtFile = () => {
     const element = document.createElement("a");
@@ -14,7 +13,7 @@ const Timeline = (props) => {
   };
   return (
     <TimeLineStyled>
-      <h3 className="heading-desktop">How to Apply</h3>
+      <h3 className="heading-desktop">How to Register</h3>
       {/* <div className="timeline">
 
         <div className="container left">
@@ -48,37 +47,42 @@ const Timeline = (props) => {
         </div>
       </div> */}
       <div className="timeline">
-        <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
-          <div className="container left">
-            <div className="content">
-              <h2 style={{ marginLeft: 10 }}>Fill Application Form</h2>
-              <div style={{display:'flex',flexDirection:'column', alignItems: "center"}}>
-                <p>
-                  {props.data.timeline.first}<br></br>
-                </p>
-                <button className="btn-giveTest mobileres" >
-                  Application Form
-                </button>
-              </div>
+        <div className="container left">
+          <div className="content">
+            <h2 style={{ marginLeft: 10 }}>Transfer the Fees</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
+              <p>
+                Transfer ₹ 999 to given QR code using any UPI app.<br></br>
+              </p>
+              <button className="btn-giveTest mobileres" >
+                <a href={require("../Assets/QR.pdf")} download={"QR_Code"}>QR Code</a>
+              </button>
             </div>
-          </div></a>
+          </div>
+        </div>
 
-        {/* <div className="container right">
+      {/* <div className="container right">
           <div className="content">
             <h2>Fill Google Form</h2>
             <p>Fill google form circulated in the meet & group to apply.</p>
           </div>
         </div> */}
-        <div className="container right">
-          <div className="content">
-            <h2 style={{ marginLeft: 10 }}>Shortlisting Process</h2>
+      <div className="container right">
+        <div className="content">
+          <h2 style={{ marginLeft: 10 }}>Fill Registration Form</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
             <p>
-              Appear for the shortlisting and selection process, all the best.
+              Fill the registration form with screenshot of payment proof.
             </p>
-          </div>
-        </div>
+            <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
+              <button className="btn-giveTest mobileres" >
+                Applcation Form
+              </button>
+            </a>
+          </div></div>
       </div>
-    </TimeLineStyled>
+    </div>
+    </TimeLineStyled >
   );
 };
 
@@ -88,7 +92,7 @@ const TimeLineStyled = styled.div`
 
 a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
   .heading-desktop {
     margin: 2rem 0;

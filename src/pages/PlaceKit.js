@@ -5,7 +5,7 @@ import Testimonial from "../components/Testimonial2";
 import CompanySlider from "../components/CompanySlider";
 import Stats from "../components/Stats";
 import TimelineFor1000x from "../components/TimelineFor1000x";
-import TimelineforSuper40 from "../components/TimelineForSuper40";
+import TimelineforSuper40 from "../components/TimelineForPlaceKit";
 import Timeline from "../components/Timeline";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
