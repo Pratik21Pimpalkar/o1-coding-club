@@ -21,6 +21,7 @@ const FeatureParagraph = {
 };
 
 const FeatureSection = ({ data }) => {
+  console.log(data);
   const instructerData = Array.from(data.instructer);
   return (
     <>
@@ -84,7 +85,7 @@ const FeatureSection = ({ data }) => {
                 <Box sx={{ height: "max-content" }}>
                   <div style={FeatureParagraph}>
                     <h3 className="price-desktop">Pricing</h3>
-                    {(data.programName === "Super40" ||  data.programName === "PlacePrep 360")?
+                    {(data.programName === "Super40" || data.programName === "PlacePrep 360") ?
                       // <table className="pricing">
                       //   <tr>
                       //     <td>Option A</td>
@@ -98,7 +99,7 @@ const FeatureSection = ({ data }) => {
                       //   </tr>
                       // </table>
                       <IncomeAgreement pricedata={data} />
-                      : <h3 className="price-desktop2">{data.pricing} <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span></h3>}
+                      : <h3 className="price-desktop2">{data.pricing} <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>{data.programName === "PlaceKit" ? "" : "+ GST"}</span></h3>}
                   </div>
                 </Box>
               </Grid>
