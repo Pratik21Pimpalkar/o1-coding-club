@@ -13,7 +13,7 @@ const Timeline = (props) => {
   };
   return (
     <TimeLineStyled>
-      <h3 className="heading-desktop">How to Apply</h3>
+      <h3 className="heading-desktop">How to Register</h3>
       {/* <div className="timeline">
 
         <div className="container left">

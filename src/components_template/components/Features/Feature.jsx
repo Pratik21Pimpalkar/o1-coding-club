@@ -99,7 +99,15 @@ const FeatureSection = ({ data }) => {
                       //   </tr>
                       // </table>
                       <IncomeAgreement pricedata={data} />
-                      : <h3 className="price-desktop2">{data.pricing} <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>{data.programName === "PlaceKit" ? "" : "+ GST"}</span></h3>}
+                      : <><h3 className="price-desktop2"><span style={{
+                        margin: " 0 1rem 0 0",
+                        fontSize: "1.3rem",
+                        "-webkit-text-fill-color": "#a2a2a2",
+                        textDecoration: "line-through",
+                      }}>{data?.cutPricing}</span>{data.pricing} <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>{data.programName === "PlaceKit" ? "" : "+ GST"}</span> </h3>
+                        <h3 className="limited">{data.programName === "PlaceKit" ? "Offer Expires Soon" : ""}</h3></>
+                    }
+
                   </div>
                 </Box>
               </Grid>
@@ -119,6 +127,12 @@ const FeatureSection = ({ data }) => {
 export default FeatureSection;
 
 const AboutProgram = styled.div`
+.limited{
+  margin-top: 1.1rem;
+    font-size: 1.3rem;
+    -webkit-text-fill-color: #cfaecf;
+    text-align: center;
+}
   .section-title {
     text-align: center;
   }

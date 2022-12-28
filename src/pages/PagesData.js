@@ -270,6 +270,7 @@ const programData = {
     ],
     pricing: "₹ 999  ",
     priceplanA:"5000",
+    cutPricing:"₹ 2999",
     priceplanB:"7000",
     features: {
       firstimg:
