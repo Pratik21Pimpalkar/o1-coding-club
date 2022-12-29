@@ -57,7 +57,7 @@ const OurEvents = () => {
                   <span>Place </span> Kit
                 </h3>
                 <p>
-                The Complete Placement Preparation Kit designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.
+                The Complete Placement Preparation Kit is a 5-6 month program designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.
                 </p>
               </div>
               <Link className="explore-btn left" to="/placekit">

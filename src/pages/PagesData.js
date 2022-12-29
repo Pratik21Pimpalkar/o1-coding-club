@@ -219,7 +219,7 @@ const programData = {
   },
  placekit: {
     programName: "PlaceKit",
-    desc: " The Complete Placement Preparation Kit designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.",
+    desc: " The Complete Placement Preparation Kit is a 5-6 month program designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.",
     linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,
     instructer: [

@@ -105,6 +105,7 @@ const FeatureSection = ({ data }) => {
                         "-webkit-text-fill-color": "#a2a2a2",
                         textDecoration: "line-through",
                       }}>{data?.cutPricing}</span>{data.pricing} <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>{data.programName === "PlaceKit" ? "" : "+ GST"}</span> </h3>
+                        <h3 className="limited">{data.programName === "PlaceKit" ? "Course Duration : 5-6 Months" : ""}</h3>
                         <h3 className="limited">{data.programName === "PlaceKit" ? "Offer Expires Soon" : ""}</h3></>
                     }
 
