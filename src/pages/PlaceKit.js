@@ -15,6 +15,7 @@ import YouWillGet from "../components_template/components/YouWillGet";
 import ApplyNowBtn from "../components/ApplyNowBtn";
 import Navbar from "../components/Navbar";
 import YoutubeVideo from "../components/YoutubeVideo";
+import PlaceKitPricing from "../components/PlaceKitPricing";
 const PlaceKit = () => {
   const programdata = PagesData.placekit;
   return (
@@ -32,6 +33,7 @@ const PlaceKit = () => {
         <YoutubeVideo/>
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
+        <PlaceKitPricing/>
         <ApplyNowBtn data={programdata} />
         {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget ? (

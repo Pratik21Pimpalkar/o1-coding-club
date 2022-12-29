@@ -11,12 +11,12 @@ const CompanySlider = () => {
     const path = require.context("../../public/referrals_logo", false, /\.png$/);
     return path.keys();
   };
-  
+
   const settings = {
     speed: 5500,
     autoplay: true,
     infinite: true,
-    autoplaySpeed:0,
+    autoplaySpeed: 0,
     slidesToShow: 6,
     cssEase: 'linear',
     arrows: false,
@@ -66,6 +66,8 @@ const CompanySlider = () => {
 };
 
 const CompanySlider_main = styled.div`
+
+margin-bottom: 2.5rem;
   h1 {
     text-align: center;
     font-family: "Muli";
@@ -86,8 +88,8 @@ const CompanySlider_main = styled.div`
 
 
   @media screen and (max-width: 576px) {
+    margin-top: 5rem;
     h1 {
-    
     font-size: 2rem;
   }
   } 
