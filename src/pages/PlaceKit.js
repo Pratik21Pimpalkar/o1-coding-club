@@ -15,6 +15,7 @@ import YouWillGet from "../components_template/components/YouWillGet";
 import ApplyNowBtn from "../components/ApplyNowBtn";
 import Navbar from "../components/Navbar";
 import YoutubeVideo from "../components/YoutubeVideo";
+import AlternativePaymentMethod from "./AlternativePayment";
 const PlaceKit = () => {
   const programdata = PagesData.placekit;
   return (
@@ -45,6 +46,7 @@ const PlaceKit = () => {
           // <TimelineFor1000x  data={programdata}/>
           <div></div>
         )}
+        <AlternativePaymentMethod/>
         <CompanySlider />
         <Testimonial />
         <FooterNew name={programdata} />

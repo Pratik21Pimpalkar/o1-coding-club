@@ -235,8 +235,7 @@ const HeroWrapper = styled.div`
   }
   .css-18q3wgh {
     position: absolute;
-    top: 0;
-    left: 0;
+
     -webkit-transform: translateX(-40%) translateY(-40%);
     -moz-transform: translateX(-40%) translateY(-40%);
     -ms-transform: translateX(-40%) translateY(-40%);
@@ -251,8 +250,7 @@ const HeroWrapper = styled.div`
 
   .css-19fx3dz {
     position: absolute;
-    top: 0;
-    right: 0;
+   
     -webkit-transform: translateX(40%) translateY(-40%);
     -moz-transform: translateX(40%) translateY(-40%);
     -ms-transform: translateX(40%) translateY(-40%);
