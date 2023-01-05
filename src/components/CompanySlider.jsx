@@ -43,6 +43,7 @@ const CompanySlider = () => {
   };
   const name = images();
   const fnames = name.map(changefilename);
+  
   return (
     <CompanySlider_main>
 
@@ -56,8 +57,10 @@ const CompanySlider = () => {
       <Slider {...settings}>
         {/* {fnames.map(fname)} */}
         {fnames.map((fname) => (
-          <div key={fname} style={{ width: '2rem' }}>
-            <img src={fname} style={{ objectFit: "contained", width: '100%' }} alt="" />
+          // <div key={fname} style={{ width: '2rem' }}>
+          //   <img src={fname} style={{ objectFit: "contained", width: '100%' }} alt="" />
+          <div>
+            <img  key={fname} src={fname} alt="" height={100} />{" "}
           </div>
         ))}
       </Slider>
