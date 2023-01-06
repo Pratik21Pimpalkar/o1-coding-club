@@ -54,13 +54,11 @@ const CompanySlider = () => {
           fontSize: '1.8rem',
         }
       }}>Our students are placed at</Typography>
-      <Slider {...settings}>
+     <Slider {...settings}>
         {/* {fnames.map(fname)} */}
         {fnames.map((fname) => (
-          // <div key={fname} style={{ width: '2rem' }}>
-          //   <img src={fname} style={{ objectFit: "contained", width: '100%' }} alt="" />
-          <div>
-            <img  key={fname} src={fname} alt="" height={100} />{" "}
+          <div key={fname} style={{ width: '2rem' }}>
+            <img src={fname} style={{ objectFit: "contained", width: '100%' }} alt="" />
           </div>
         ))}
       </Slider>
