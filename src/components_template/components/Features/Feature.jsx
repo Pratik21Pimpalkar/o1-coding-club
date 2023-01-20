@@ -5,6 +5,7 @@ import rupee from "../../../Assets/rupee.png";
 import styled from "styled-components";
 import { textAlign } from "@mui/system";
 import IncomeAgreement from "../../../components/PlanAPlanB";
+import Banner from "../../../components/Banner";
 const FeaturePosition = {
   color: "white",
 };
@@ -70,6 +71,8 @@ const FeatureSection = ({ data }) => {
                   </>
                 );
               })}
+              <Banner/>
+
             </>
           ) : (
             <div></div>

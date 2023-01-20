@@ -17,6 +17,7 @@ import Navbar from "../components/Navbar";
 import YoutubeVideo from "../components/YoutubeVideo";
 import PlaceKitPricing from "../components/PlaceKitPricing";
 import AlternativePaymentMethod from "./AlternativePayment";
+import Banner from "../components/Banner";
 const PlaceKit = () => {
   const programdata = PagesData.placekit;
   return (
@@ -31,10 +32,11 @@ const PlaceKit = () => {
         <Navbar />
         <Home1000x name={programdata} />
         <Stats data={programdata} />
-        <YoutubeVideo/>
+        <YoutubeVideo />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
-        <PlaceKitPricing/>
+        {/* <Banner/> */}
+        <PlaceKitPricing />
         <ApplyNowBtn data={programdata} />
         {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget ? (
@@ -48,7 +50,7 @@ const PlaceKit = () => {
           // <TimelineFor1000x  data={programdata}/>
           <div></div>
         )}
-        <AlternativePaymentMethod/>
+        <AlternativePaymentMethod />
         <CompanySlider />
         <Testimonial />
         <FooterNew name={programdata} />
