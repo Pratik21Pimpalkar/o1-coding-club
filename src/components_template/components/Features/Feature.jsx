@@ -1,11 +1,10 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import img from "../../images/login.svg";
 import rupee from "../../../Assets/rupee.png";
 import styled from "styled-components";
-import { textAlign } from "@mui/system";
 import IncomeAgreement from "../../../components/PlanAPlanB";
 import Banner from "../../../components/Banner";
+import AboutInstructor from "../../../components/AboutInstructor";
 const FeaturePosition = {
   color: "white",
 };
@@ -34,49 +33,9 @@ const FeatureSection = ({ data }) => {
             </h2>
           </div>
 
-          {data.instructer[0].name ? (
-            <>
-              <h3 className="heading-desktop"> About Instructor</h3>
+          <AboutInstructor data={data} />
+          <Banner />
 
-              {instructerData.map((item, key) => {
-                return (
-                  <>
-                    <Grid
-                      key={key}
-                      container
-                      alignItems={"center"}
-                      justifyContent={"center"}
-                      rowSpacing={1}
-                      columnSpacing={5}
-                    >
-                      {/* <li className="items">{item}</li> */}
-                      <Grid item md={3}>
-                        <div className="image">
-                          <img
-                            src={item.instructerimg ? item.instructerimg : img}
-                            alt=""
-                            className="instructerimg"
-                          /></div>
-                      </Grid>
-                      <Grid item xs={12} sm={12} md={4}>
-                        <Box sx={{ height: "max-content" }}>
-                          <div style={FeatureParagraph}>
-                            <h2 className="heading-desktop2">{item.name}</h2>
-                            <h3 >{item.desig}</h3>
-                            <p>{item.about}</p>
-                          </div>
-                        </Box>
-                      </Grid>
-                    </Grid>
-                  </>
-                );
-              })}
-              <Banner/>
-
-            </>
-          ) : (
-            <div></div>
-          )}
           {data.showpricing ? (
             <Grid
               container

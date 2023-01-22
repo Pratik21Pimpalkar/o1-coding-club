@@ -15,6 +15,8 @@ import YouWillGet from "../components_template/components/YouWillGet";
 import ApplyNowBtn from "../components/ApplyNowBtn";
 import Navbar from "../components/Navbar";
 import YoutubeVideo from "../components/YoutubeVideo";
+import AboutInstructor from "../components/AboutInstructor";
+import Pricing from "../components/Pricing";
 const Super50 = () => {
   const programdata = PagesData.PlacePrep360;
   return (
@@ -29,9 +31,11 @@ const Super50 = () => {
         <Navbar />
         <Home1000x name={programdata} />
         <Stats data={programdata} />
-        <YoutubeVideo/>
+        <YoutubeVideo />
         <FeaturesCard data={programdata} />
-        <AboutProgram data={programdata} />
+        {/* <AboutProgram data={programdata} /> */}
+        <AboutInstructor data={programdata} />
+        <Pricing data={programdata} />
         <ApplyNowBtn data={programdata} />
         {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget ? (

@@ -18,6 +18,8 @@ import YoutubeVideo from "../components/YoutubeVideo";
 import PlaceKitPricing from "../components/PlaceKitPricing";
 import AlternativePaymentMethod from "./AlternativePayment";
 import Banner from "../components/Banner";
+import AboutInstructor from "../components/AboutInstructor";
+import Pricing from "../components/Pricing";
 const PlaceKit = () => {
   const programdata = PagesData.placekit;
   return (
@@ -34,8 +36,10 @@ const PlaceKit = () => {
         <Stats data={programdata} />
         <YoutubeVideo />
         <FeaturesCard data={programdata} />
-        <AboutProgram data={programdata} />
-        {/* <Banner/> */}
+        {/* <AboutProgram data={programdata} /> */}
+        <AboutInstructor data={programdata} />
+        <Banner />
+        <Pricing data={programdata} />
         <PlaceKitPricing />
         <ApplyNowBtn data={programdata} />
         {/* <Eligibility  data={programdata}/> */}

@@ -29,6 +29,7 @@ display: flex;
 justify-content: center ;
 align-items: center;
 margin: 0 1rem;
+margin-top: 3rem;
 .priceInfo{
     background-color: white;
     border-radius: 1rem;
