@@ -13,6 +13,8 @@ import YouWillGet from "../components_template/components/YouWillGet";
 import ApplyNowBtn from "../components/ApplyNowBtn";
 import Navbar from "../components/Navbar";
 import YoutubeVideo from "../components/YoutubeVideo";
+import Pricing from "../components/Pricing";
+import AboutInstructor from "../components/AboutInstructor";
 const ThousandX = () => {
   const programdata = PagesData.ThousandX;
   return (
@@ -29,7 +31,9 @@ const ThousandX = () => {
         <Stats data={programdata} />
         <YoutubeVideo/>
         <FeaturesCard data={programdata} />
-        <AboutProgram data={programdata} />
+        {/* <AboutProgram data={programdata} /> */}
+        <AboutInstructor data={programdata} />
+        <Pricing data={programdata} />
         <ApplyNowBtn  data={programdata}/>
         {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget?

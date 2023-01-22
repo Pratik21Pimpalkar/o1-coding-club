@@ -11,7 +11,7 @@ import { Box, Container, Typography } from '@mui/material'
 const Banner = () => {
     return (
         <Container maxWidth='md' sx={{ marginTop: "3rem" }}>
-            <Typography variant='h4' sx={{ textAlign: "center",fontSize:"2.5rem", margin:"2rem 0",fontFamily: "Roboto,Helvetica,Arial,sans-serif" }}> Placekit Schedule</Typography>
+            <Typography variant='h4' sx={{ textAlign: "center", color: "white", fontSize: "2.5rem", margin: "2rem 0", fontFamily: "Roboto,Helvetica,Arial,sans-serif" }}> Placekit Schedule</Typography>
             <Swiper
                 spaceBetween={5}
                 slidesPerView={1}
