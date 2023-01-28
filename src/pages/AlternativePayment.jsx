@@ -3,7 +3,7 @@ import { Grid, Typography } from "@mui/material";
 import styled from "styled-components";
 import { Container } from "@mui/system";
 
-const AlternativePaymentMethod = () => {
+const AlternativePaymentMethod = (props) => {
   return (
     <FeaturesCardWrapper>
       <Container>
@@ -17,7 +17,7 @@ const AlternativePaymentMethod = () => {
               <div className="contentdetails">
                 <h4>
                   Use the bank account transfer feature of any UPI app &
-                  transfer ₹ 999 to following account :-
+                  transfer {props.data.alternativePrice} to following account :-
                 </h4>
               <br></br>
                 <p className="bankdetails">

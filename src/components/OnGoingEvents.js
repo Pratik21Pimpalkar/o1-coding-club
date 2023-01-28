@@ -7,7 +7,7 @@ import coresubjects from "../Assets/events/coresubjects.png";
 // import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import super40 from "../Assets/events/super40.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
-
+import core from '../Assets/events/programming.svg'
 import { Outlet, Link } from "react-router-dom";
 const FeaturePosition = {
   color: "white",
@@ -43,7 +43,27 @@ const OurEvents = () => {
           Ongoing Events
         </Typography>
 
-         <Grid
+        <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
+          <Grid item xs={12} sm={12} md={5}>
+            <img src={core} alt="" width={"100%"} />
+          </Grid>
+          <Grid item xs={12} sm={12} md={7}>
+            <Box>
+              <div style={FeatureParagraph}>
+                <h3 className="heading-desktop">
+                  <span>Core Subjects</span> For Placements
+                </h3>
+                <p>
+                  The complete placement preparation program for core subjects/CS fundamentals important for campus as well as off-campus placements
+                </p>
+              </div>
+              <Link className="explore-btn" to="/coresubjectsforplacements">
+                Explore More
+              </Link>
+            </Box>
+          </Grid>
+        </Grid>
+        <Grid
           container
           alignItems={"center"}
           rowSpacing={1}
@@ -57,7 +77,7 @@ const OurEvents = () => {
                   <span>Place </span> Kit
                 </h3>
                 <p>
-                The Complete Placement Preparation Kit is a 5-6 month program designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.
+                  The Complete Placement Preparation Kit is a 5-6 month program designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.
                 </p>
               </div>
               <Link className="explore-btn left" to="/placekit">
@@ -68,7 +88,7 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
             <img src={coresubjects} alt="" width={"80%"} />
           </Grid>
-        </Grid> 
+        </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
             <img src={super40} alt="" width={"100%"} />
@@ -100,13 +120,13 @@ const OurEvents = () => {
             <Box sx={{ height: "max-content" }}>
               <div style={FeatureParagraph}>
                 <h3 className="heading-desktop">
-                  <span>PlacePrep </span> 360
+                  <span>SDE </span> Bootcamp
                 </h3>
                 <p>
-                Exclusive program curated for selected students wanting to ace through placements.
+                  Exclusive program curated for selected students wanting to ace through placements.
                 </p>
               </div>
-              <Link className="explore-btn left" to="/placeprep360">
+              <Link className="explore-btn left" to="/sdebootcamp">
                 Explore More
               </Link>
             </Box>
@@ -114,7 +134,7 @@ const OurEvents = () => {
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
             <img src={sdebootcamp} alt="" width={"80%"} />
           </Grid>
-        </Grid> 
+        </Grid>
       </Container>
     </Events>
   );

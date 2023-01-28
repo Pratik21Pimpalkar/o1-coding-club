@@ -18,7 +18,8 @@ export default function IncomeAgreement({pricedata}) {
                                 variant="h5"
                                 component="h2"
                             >
-                              ₹ {pricedata.priceplanA }  <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
+                              ₹ {pricedata.priceplanA }  
+                              {/* <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span> */}
                             </Typography>
 
                             <Typography className="pos" color="textSecondary">
@@ -64,7 +65,8 @@ export default function IncomeAgreement({pricedata}) {
                                 variant="h5"
                                 component="h2"
                             >
-                            ₹ {pricedata.priceplanB }<span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
+                            ₹ {pricedata.priceplanB }
+                            {/* <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span> */}
                             </Typography>
                             <Typography className="pos" color="textSecondary">
                                 Upfront Registration Fees

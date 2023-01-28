@@ -40,7 +40,7 @@ const PlaceKit = () => {
         <AboutInstructor data={programdata} />
         <Banner />
         <Pricing data={programdata} />
-        <PlaceKitPricing />
+        <PlaceKitPricing data={programdata}/>
         <ApplyNowBtn data={programdata} />
         {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget ? (
@@ -54,7 +54,7 @@ const PlaceKit = () => {
           // <TimelineFor1000x  data={programdata}/>
           <div></div>
         )}
-        <AlternativePaymentMethod />
+        <AlternativePaymentMethod data={programdata} />
         <CompanySlider />
         <Testimonial />
         <FooterNew name={programdata} />

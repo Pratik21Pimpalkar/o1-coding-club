@@ -5,8 +5,8 @@ import Testimonial from "../components/Testimonial2";
 import CompanySlider from "../components/CompanySlider";
 import Stats from "../components/Stats";
 import TimelineFor1000x from "../components/TimelineFor1000x";
-import TimelineforSuper40 from "../components/TimelineForSuper40";
-// import Timeline from "../components/Timeline";
+import TimelineforSuper40 from "../components/TimelineForPlaceKit";
+import Timeline from "../components/TimelineForCoreSubjects";
 import FeaturesCard from "../components/FeaturesCard";
 import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData";
@@ -15,12 +15,13 @@ import YouWillGet from "../components_template/components/YouWillGet";
 import ApplyNowBtn from "../components/ApplyNowBtn";
 import Navbar from "../components/Navbar";
 import YoutubeVideo from "../components/YoutubeVideo";
-import Timeline from "../components/TimelineForSuper40QR";
+import PlaceKitPricing from "../components/PlaceKitPricing";
+import AlternativePaymentMethod from "./AlternativePayment";
+import Banner from "../components/Banner";
 import AboutInstructor from "../components/AboutInstructor";
 import Pricing from "../components/Pricing";
-import AlternativePaymentMethod from "./AlternativePayment";
-const Super50 = () => {
-  const programdata = PagesData.Super50;
+const CoreSubjectsForPlacements = () => {
+  const programdata = PagesData.coresubjectsforplacements;
   return (
     <>
       <div //Background Code
@@ -37,7 +38,9 @@ const Super50 = () => {
         <FeaturesCard data={programdata} />
         {/* <AboutProgram data={programdata} /> */}
         <AboutInstructor data={programdata} />
+        {/* <Banner /> */}
         <Pricing data={programdata} />
+        <PlaceKitPricing data={programdata}/>
         <ApplyNowBtn data={programdata} />
         {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget ? (
@@ -46,7 +49,6 @@ const Super50 = () => {
           <div></div>
         )}
         {programdata.showtimeline ? (
-          // <TimelineforSuper40 data={programdata} />
           <Timeline data={programdata} />
         ) : (
           // <TimelineFor1000x  data={programdata}/>
@@ -61,4 +63,4 @@ const Super50 = () => {
   );
 };
 
-export default Super50; 
+export default CoreSubjectsForPlacements; 

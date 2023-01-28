@@ -11,6 +11,7 @@ import Coderun from "./pages/Coderun";
 import Navbar from "./components/Navbar";
 import ThousandX from "./pages/ThousandX";
 import PlaceKit from "./pages/PlaceKit";
+import CoreSubjectsForPlacements from "./pages/CoreSubjectsForPlacements";
 function App() {
   return (
     <>
@@ -18,8 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<MainHomePage />} />
         <Route path="/super40" element={<Super50 />} />
-        <Route path="/placeprep360" element={<PlacePrep360 />} />
+        <Route path="/sdebootcamp" element={<PlacePrep360 />} />
        
+        <Route path="/coresubjectsforplacements" element={<CoreSubjectsForPlacements />} />
         <Route path="/placekit" element={<PlaceKit />} />
         <Route path="/1000x" element={<ThousandX />} />
     {/*     

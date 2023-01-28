@@ -21,7 +21,7 @@ const Timeline = (props) => {
             <h2 style={{ marginLeft: 10 }}>Transfer the Fees</h2>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
               <p>
-                Transfer ₹ 999 to given QR code using any UPI app.<br></br>
+                Transfer ₹ 3950 to given QR code using any UPI app.<br></br>
               </p>
               <button className="btn-giveTest mobileres" >
                 <a href={require("../Assets/QR.pdf")} download={"QR_Code"}>QR Code</a>
