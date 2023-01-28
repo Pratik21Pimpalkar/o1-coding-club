@@ -100,7 +100,7 @@ const OurEvents = () => {
                   <span>Super 40</span> Program
                 </h3>
                 <p>
-                  Exclusive program curated for student of different colleges.
+                  The most complete & our biggest program, with guaranteed dream placements & much more.
                 </p>
               </div>
               <Link className="explore-btn" to="/super40">
@@ -122,8 +122,7 @@ const OurEvents = () => {
                 <h3 className="heading-desktop">
                   <span>SDE </span> Bootcamp
                 </h3>
-                <p>
-                  Exclusive program curated for selected students wanting to ace through placements.
+                <p>Perfect program to master coding abilities for dream placements.Exclusive program curated for selected students wanting to ace through placements.
                 </p>
               </div>
               <Link className="explore-btn left" to="/sdebootcamp">

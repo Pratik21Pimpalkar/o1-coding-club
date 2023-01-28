@@ -143,7 +143,7 @@ const Wrap = styled.div`
 const AboutInstructor = ({ data }) => {
     const instructerData = data.instructer;
     return (
-        <Container maxWidth="lg" sx={{ marginBottom: "3rem" }}>
+        <Container maxWidth="lg" sx={{ marginBottom: "3rem" }} id="aboutprogram">
             <Typography variant='h4' sx={{ textAlign: "center", color: 'white' }}> Our Instructors</Typography>
 
             <Swiper

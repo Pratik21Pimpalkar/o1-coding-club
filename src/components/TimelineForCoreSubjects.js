@@ -39,7 +39,7 @@ const Timeline = (props) => {
               </p>
               <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
                 <button className="btn-giveTest mobileres" >
-                  Applcation Form
+                  Application Form
                 </button>
               </a>
             </div></div>

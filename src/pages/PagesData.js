@@ -432,7 +432,7 @@ const programData = {
     },
     timelineformlink: "https://forms.gle/Ue47rAfCg8A8Hstm6",
     footerbottomtext: "",
-    applyNowURL: "/placekit/#timeline",
+    applyNowURL: "/coresubjectsforplacements/#timeline",
     shownote: false,
   },
   PlacePrep360: {
@@ -493,6 +493,7 @@ const programData = {
     perDayPrice: "3950/180 = ₹21.9/day",
     item: "Snickers 🍫",
     itemPrice: "25",
+    alternativePrice: " transfer ₹ 3950 ",
     perDayPriceOnly: "₹21.9",
     features: {
       firstimg:

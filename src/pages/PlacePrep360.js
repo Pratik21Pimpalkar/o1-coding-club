@@ -18,6 +18,7 @@ import YoutubeVideo from "../components/YoutubeVideo";
 import AboutInstructor from "../components/AboutInstructor";
 import Pricing from "../components/Pricing";
 import PlaceKitPricing from "../components/PlaceKitPricing";
+import AlternativePaymentMethod from "./AlternativePayment";
 const Super50 = () => {
   const programdata = PagesData.PlacePrep360;
   return (
@@ -51,6 +52,7 @@ const Super50 = () => {
           // <TimelineFor1000x  data={programdata}/>
           <div></div>
         )}
+        <AlternativePaymentMethod data={programdata}/>
         <CompanySlider />
         <Testimonial />
         <FooterNew name={programdata} />
