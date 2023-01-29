@@ -20,6 +20,7 @@ import AlternativePaymentMethod from "./AlternativePayment";
 import Banner from "../components/Banner";
 import AboutInstructor from "../components/AboutInstructor";
 import Pricing from "../components/Pricing";
+import Offers from "../components/Offers";
 const PlaceKit = () => {
   const programdata = PagesData.placekit;
   return (
@@ -39,8 +40,9 @@ const PlaceKit = () => {
         {/* <AboutProgram data={programdata} /> */}
         <AboutInstructor data={programdata} />
         <Banner />
+        <Offers/>
         <Pricing data={programdata} />
-        <PlaceKitPricing data={programdata}/>
+        <PlaceKitPricing data={programdata} />
         <ApplyNowBtn data={programdata} />
         {/* <Eligibility  data={programdata}/> */}
         {programdata.showyouwillget ? (

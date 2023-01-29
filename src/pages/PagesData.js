@@ -214,7 +214,7 @@ const programData = {
     timeline: {
       first: "Fill the following google form to apply for Super 40 shortlisting process",
     },
-    timelineformlink: "https://forms.gle/dN9yDA3GTXPbXCFJ9",
+    timelineformlink: "https://forms.gle/TckUMuvqnXFvScM57",
     footerbottomtext: "",
     applyNowURL: "/super40/#timeline",
     shownote: true,
@@ -328,7 +328,7 @@ const programData = {
     shownote: false,
   },
   coresubjectsforplacements: {
-    programName: "Core Subjects for Placements",
+    programName: "CS Fundamentals for Placements",
     desc: " The complete placement preparation program for core subjects/CS fundamentals important for campus as well as off-campus placements covering technical aptitude, interviews to making you placement ready.    ",
     linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,
@@ -430,9 +430,9 @@ const programData = {
     timeline: {
       first: "Fill the following google form to apply for PlaceKit shortlisting process",
     },
-    timelineformlink: "https://forms.gle/Ue47rAfCg8A8Hstm6",
+    timelineformlink: "https://forms.gle/LPvv3VtVnBnhwKPJ7",
     footerbottomtext: "",
-    applyNowURL: "/coresubjectsforplacements/#timeline",
+    applyNowURL: "/csfundamentals/#timeline",
     shownote: false,
   },
   PlacePrep360: {
@@ -541,7 +541,7 @@ const programData = {
     timeline: {
       first: "Fill the following google form to apply for PlacePrep 360 shortlisting process",
     },
-    timelineformlink: "https://forms.gle/UEps7hN2L5mpcYwH8",
+    timelineformlink: "https://forms.gle/paNLiXkxcUTyKRAv8",
     footerbottomtext: "",
     applyNowURL: "/sdebootcamp/#timeline",
     shownote: false

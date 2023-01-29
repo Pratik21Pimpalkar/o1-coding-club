@@ -19,6 +19,7 @@ import Timeline from "../components/TimelineForSuper40QR";
 import AboutInstructor from "../components/AboutInstructor";
 import Pricing from "../components/Pricing";
 import AlternativePaymentMethod from "./AlternativePayment";
+import Offers from "../components/Offers";
 const Super50 = () => {
   const programdata = PagesData.Super50;
   return (
@@ -37,6 +38,7 @@ const Super50 = () => {
         <FeaturesCard data={programdata} />
         {/* <AboutProgram data={programdata} /> */}
         <AboutInstructor data={programdata} />
+        <Offers/>
         <Pricing data={programdata} />
         <ApplyNowBtn data={programdata} />
         {/* <Eligibility  data={programdata}/> */}

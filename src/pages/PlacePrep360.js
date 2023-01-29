@@ -19,6 +19,7 @@ import AboutInstructor from "../components/AboutInstructor";
 import Pricing from "../components/Pricing";
 import PlaceKitPricing from "../components/PlaceKitPricing";
 import AlternativePaymentMethod from "./AlternativePayment";
+import Offers from "../components/Offers";
 const Super50 = () => {
   const programdata = PagesData.PlacePrep360;
   return (
@@ -37,6 +38,7 @@ const Super50 = () => {
         <FeaturesCard data={programdata} />
         {/* <AboutProgram data={programdata} /> */}
         <AboutInstructor data={programdata} />
+        <Offers/>
         <Pricing data={programdata} />
         <PlaceKitPricing data={programdata} />
         <ApplyNowBtn data={programdata} />

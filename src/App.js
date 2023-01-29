@@ -21,7 +21,7 @@ function App() {
         <Route path="/super40" element={<Super50 />} />
         <Route path="/sdebootcamp" element={<PlacePrep360 />} />
        
-        <Route path="/coresubjectsforplacements" element={<CoreSubjectsForPlacements />} />
+        <Route path="/csfundamentals" element={<CoreSubjectsForPlacements />} />
         <Route path="/placekit" element={<PlaceKit />} />
         <Route path="/1000x" element={<ThousandX />} />
     {/*     

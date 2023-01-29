@@ -20,6 +20,7 @@ import AlternativePaymentMethod from "./AlternativePayment";
 import Banner from "../components/Banner";
 import AboutInstructor from "../components/AboutInstructor";
 import Pricing from "../components/Pricing";
+import Offers from "../components/Offers";
 const CoreSubjectsForPlacements = () => {
   const programdata = PagesData.coresubjectsforplacements;
   return (
@@ -39,6 +40,7 @@ const CoreSubjectsForPlacements = () => {
         {/* <AboutProgram data={programdata} /> */}
         <AboutInstructor data={programdata} />
         {/* <Banner /> */}
+        <Offers/>
         <Pricing data={programdata} />
         <PlaceKitPricing data={programdata}/>
         <ApplyNowBtn data={programdata} />

@@ -51,13 +51,13 @@ const OurEvents = () => {
             <Box>
               <div style={FeatureParagraph}>
                 <h3 className="heading-desktop">
-                  <span>Core Subjects</span> For Placements
+                  <span>CS Fundamentals</span> For Placements
                 </h3>
                 <p>
                   The complete placement preparation program for core subjects/CS fundamentals important for campus as well as off-campus placements
                 </p>
               </div>
-              <Link className="explore-btn" to="/coresubjectsforplacements">
+              <Link className="explore-btn" to="/csfundamentals">
                 Explore More
               </Link>
             </Box>
