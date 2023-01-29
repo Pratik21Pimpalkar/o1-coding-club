@@ -40,7 +40,7 @@ const PlaceKit = () => {
         {/* <AboutProgram data={programdata} /> */}
         <AboutInstructor data={programdata} />
         <Banner />
-        <Offers/>
+        {/* <Offers/> */}
         <Pricing data={programdata} />
         <PlaceKitPricing data={programdata} />
         <ApplyNowBtn data={programdata} />
