@@ -4,7 +4,7 @@ import laptopImg from "../images/laptop_for_webpage.png";
 
 const Circle = () => {
   return (
-    <CircleStyle className="circle">
+    <CircleStyle className="inside-circle">
       <img src={laptopImg} alt="" className="laptopimg" />
     </CircleStyle>
   );
@@ -31,7 +31,10 @@ const CircleStyle = styled.div`
   }
 
   @media screen and (max-width: 600px) {
-   
+    /* transform: scale(0.5) !important; */
+    right: 10rem;
+    animation: none;
+    
   }
   @media screen and (min-device-width:380px) and (max-device-width:900px)  {
     
@@ -65,7 +68,7 @@ transform: translateY(0)
 
   @media screen and (max-width: 400px) {
     transform: scale(0.5) !important;
-    right: 11rem;
+    right: 10rem;
     animation: none;
   }
 `;

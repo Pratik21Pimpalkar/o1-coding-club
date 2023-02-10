@@ -61,10 +61,16 @@ const Main1000xWrapper = styled.div`
     .circleComponent {
       margin-top: 5rem;
     }
+    .circle{
+    max-width: 45% !important;
+  }
   }
   @media screen and (min-device-width: 380px) and (max-device-width: 900px) {
     .circleComponent {
       margin-top: 50rem;
     }
   }
+
+  
+
 `;

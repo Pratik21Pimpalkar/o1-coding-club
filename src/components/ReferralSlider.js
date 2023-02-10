@@ -68,6 +68,9 @@ const CompanySlider = () => {
 const CompanySlider_main = styled.div`
 
 margin-bottom: 2.5rem;
+display: flex;
+flex-direction: column;
+position: relative;
   h1 {
     text-align: center;
     font-family: "Muli";
@@ -88,7 +91,7 @@ margin-bottom: 2.5rem;
 
 
   @media screen and (max-width: 576px) {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     h1 {
     font-size: 2rem;
   }
