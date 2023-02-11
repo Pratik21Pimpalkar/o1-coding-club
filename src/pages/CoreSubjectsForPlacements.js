@@ -30,6 +30,10 @@ const CoreSubjectsForPlacements = () => {
           backgroundColor: "#0b001a",
           scrollBehavior: "smooth",
           userSelect: "none",
+          overflowX: "hidden",
+          // display: "flex",
+          // flexDirection: "column",
+          // alignItems: "inherit",
         }}
       >
         <Navbar />

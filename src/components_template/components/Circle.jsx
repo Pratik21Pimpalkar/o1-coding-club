@@ -13,8 +13,8 @@ const Circle = () => {
 export default Circle;
 
 const CircleStyle = styled.div`
-  position: relative;
-  right: 8.3rem;
+  /* position: relative;
+  right: 8.3rem; */
   height: 34rem;
   width: 34rem;
   background: rgba(0, 0, 0, 0)

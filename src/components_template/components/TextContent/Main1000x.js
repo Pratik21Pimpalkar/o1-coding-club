@@ -40,7 +40,9 @@ function Main(prop) {
                   className="brand-name"
                   title="O1 Analysis"
                 >
-                  <button className="btn-giveTest btn-giveTest-responsive">{prop.name.programName==="PlaceKit"?"Enroll" : "Apply"}</button>{" "}
+                  <button className="btn-giveTest btn-giveTest-responsive">
+                    {prop.name.programName === "PlaceKit" ? "Enroll" : "Apply"}
+                  </button>{" "}
                 </HashLink>
               </div>
             ) : null}
@@ -61,16 +63,17 @@ const Main1000xWrapper = styled.div`
     .circleComponent {
       margin-top: 5rem;
     }
-    .circle{
-    max-width: 45% !important;
-  }
+    .circle {
+      max-width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   @media screen and (min-device-width: 380px) and (max-device-width: 900px) {
     .circleComponent {
       margin-top: 50rem;
     }
   }
-
-  
-
 `;
