@@ -7,8 +7,8 @@ export default function MainContent(props) {
     const s = "Not just a coding platform, but a complete placement ecosystem with strong  emphasis on high quality placement training & support, not only equipping  you with relevant job market skills but providing every help to land your  dream job.";
     return (
         <Container maxWidth='lg' sx={{
-            marginTop: { xs: '5rem', md: '5rem' },
-            padding: { xs: '0.75rem 0rem', md: '3rem 2rem', lg: '2rem 1rem' }
+            padding: { xs: '0.75rem 0rem', md: '3rem 2rem', lg: '2rem 1rem' },
+            paddingTop: { xs: '5.75rem', md: '8rem', lg: '7rem' }
         }}>
             <Box display={'flex'} flexDirection={{ xs: 'column', sm: 'row' }} width={'100%'}
                 sx={{
