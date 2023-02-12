@@ -39,22 +39,24 @@ export default function IncomeAgreement({ pricedata }) {
                             </Typography>
 
                             <table className="table" border="1">
-                                <tr className="tr">
-                                    <th className="th1">If You Get</th>
-                                    <th className="th">You Pay</th>
-                                </tr>
-                                <tr className="tr">
-                                    <td className="td1">Internship Offer</td>
-                                    <td className="td">
-                                        20% of monthly salary for 1 month
-                                    </td>
-                                </tr>
-                                <tr className="tr">
-                                    <td className="td1">Full-Time Offer</td>
-                                    <td className="td">
-                                        20% of monthly salary for 1 month
-                                    </td>
-                                </tr>
+                                <tbody>
+                                    <tr className="tr">
+                                        <th className="th1">If You Get</th>
+                                        <th className="th">You Pay</th>
+                                    </tr>
+                                    <tr className="tr">
+                                        <td className="td1">Internship Offer</td>
+                                        <td className="td">
+                                            20% of monthly salary for 1 month
+                                        </td>
+                                    </tr>
+                                    <tr className="tr">
+                                        <td className="td1">Full-Time Offer</td>
+                                        <td className="td">
+                                            20% of monthly salary for 1 month
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </CardContent>
                     </Card>

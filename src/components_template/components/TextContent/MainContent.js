@@ -7,8 +7,8 @@ export default function MainContent(props) {
     const s = "Not just a coding platform, but a complete placement ecosystem with strong  emphasis on high quality placement training & support, not only equipping  you with relevant job market skills but providing every help to land your  dream job.";
     return (
         <Container maxWidth='lg' sx={{
-            marginTop: { xs: '2rem', md: '5rem' },
-            padding: '3rem 0rem'
+            marginTop: { xs: '5rem', md: '5rem' },
+            padding: { xs: '0.75rem 0rem', md: '3rem 2rem', lg: '2rem 1rem' }
         }}>
             <Box display={'flex'} flexDirection={{ xs: 'column', sm: 'row' }} width={'100%'}
                 sx={{
@@ -23,27 +23,31 @@ export default function MainContent(props) {
                     <Box>
                         <Typography variant="h1" sx={{
                             color: 'white',
-                            fontWeight: 400,
-                            fontFamily: 'sans-serif',
+                            fontWeight: 600,
+                            fontFamily: 'Muli',
                             textAlign: { xs: 'center', md: 'start' },
-                            fontSize: props.size ? { xs: '3rem', md: '4.5rem' } : { xs: '3.5rem', md: '5rem' }
+                            fontSize: props.size ? { xs: '2.5rem', sm: '3.5rem', md: '6rem' } : { xs: '2.5rem', sm: '4rem', md: '6rem' }
                         }}>{props.name.programName}</Typography>
-
 
                         {nonMobileScreenSize && <Box sx={{
                             margin: '1.5rem 0rem',
-                            height: { xs: '16rem', sm: '25rem', md: '25rem', lg: '34rem' },
-                            width: { xs: '16rem', sm: '25rem', md: '25rem', lg: '34rem' },
-
+                            height: { xs: '16rem', sm: '25rem', md: '29rem', lg: '34rem' },
+                            width: { xs: '16rem', sm: '25rem', md: '29rem', lg: '34rem' },
                             marginLeft: 'auto',
                             marginRight: 'auto',
                         }}>
                             <Circle />
                         </Box>}
-
-                        <Typography margin={1} textAlign={{ xs: 'center', md: 'start' }} color={'white'}>
-                            {props.desc ? props.desc : s}
-                        </Typography>
+                        <Box sx={{
+                            maxWidth: '29rem'
+                        }}>
+                            <Typography margin={1} textAlign={{ xs: 'center', md: 'start' }} color={'rgba(255,255,255,0.5)'}
+                                sx={{
+                                    fontFamily: 'Roboto, Helvetica, Arial, sans-serif'
+                                }}>
+                                {props.desc ? props.desc : s}
+                            </Typography>
+                        </Box>
 
                         {props.name.linktoregister ? (
                             <Box display={'flex'} justifyContent={{ xs: 'center', md: 'flex-start' }}>

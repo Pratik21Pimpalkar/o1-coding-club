@@ -40,7 +40,7 @@ const Testimonial2 = () => {
 
                     },
                     1280: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                 }}
             >

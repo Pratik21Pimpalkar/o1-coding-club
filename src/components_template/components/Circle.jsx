@@ -7,7 +7,6 @@ const Circle = () => {
     <CircleStyle className="inside-circle" style={{
       width: '100%',
       height: '100%',
-      // backgroundColor: 'violet'
 }}>
       <img src={laptopImg} width='100%' alt="laptopImg" />
     </CircleStyle>
