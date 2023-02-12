@@ -17,6 +17,7 @@ const Homepage = () => {
     <div>
       <NavbarMain />
       <Hero />
+      {/* <MainHero /> */}
       <FeaturesCard data={PagesData.homepage} />
       <Stats data={PagesData.homepage} />
       {/* <OurEvents /> */}

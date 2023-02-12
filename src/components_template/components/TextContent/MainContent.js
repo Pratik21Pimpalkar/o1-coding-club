@@ -26,7 +26,7 @@ export default function MainContent(props) {
                             fontWeight: 400,
                             fontFamily: 'sans-serif',
                             textAlign: { xs: 'center', md: 'start' },
-                            fontSize: { xs: '3.5rem', md: '5rem' }
+                            fontSize: props.size ? { xs: '3rem', md: '4.5rem' } : { xs: '3.5rem', md: '5rem' }
                         }}>{props.name.programName}</Typography>
 
 

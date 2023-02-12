@@ -33,7 +33,7 @@ const CoreSubjectsForPlacements = () => {
         }}
       >
         <Navbar />
-        <MainContent name={programdata} />
+        <MainContent name={programdata} size={true} />
         <Stats data={programdata} />
         <YoutubeVideo />
         <FeaturesCard data={programdata} />

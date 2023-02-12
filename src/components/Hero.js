@@ -27,7 +27,7 @@ const Hero = () => {
       {/* <img src={bg} alt="" /> */}
       <Container>
         <Grid container className="main-grid">
-          <Grid item xs={12} md={8} lg={4} className="inside-grid">
+          <Grid item xs={12} md={4} lg={4} className="inside-grid">
             <div className="text-position">
               <Typography className="  css-130rcti" variant="h1">
                 O(1) Coding Club
@@ -62,10 +62,10 @@ const Hero = () => {
               <img src={tab} alt="" className="tabimg" />
               <div className="css-ucfc1">
                 <div className="css-18q3wgh">
-                  <img src={bluebubble} alt='bluebubble' />
+                  <img src={bluebubble} />
                 </div>
                 <div className="css-19fx3dz">
-                  <img src={purplebubble} alt='purplebubble' />
+                  <img src={purplebubble} />
                 </div>
               </div>
             </div>
