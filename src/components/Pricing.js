@@ -137,7 +137,7 @@ const Pricing = ({ data }) => {
                   : <><h3 className="price-desktop2"><span style={{
                     margin: " 0 1rem 0 0",
                     fontSize: "1.3rem",
-                    "-webkit-text-fill-color": "#a2a2a2",
+                    WebkitTextFillColor: "#a2a2a2",
                     textDecoration: "line-through",
                   }}>{data?.cutPricing}</span>{data.pricing}
                     {/* <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>{data.programName === "PlaceKit" ? "" : "+ GST"}</span> */}

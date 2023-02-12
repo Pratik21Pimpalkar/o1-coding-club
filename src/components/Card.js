@@ -4,7 +4,9 @@ import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Card = ({ data }) => {
     return (
-        <CardWrapper>
+        <CardWrapper style={{
+            borderRadius: '1rem'
+        }}>
             <div className='card-wrapper'>
                 <div className="layer"></div>
                 <div className="content">
@@ -22,10 +24,10 @@ const Card = ({ data }) => {
                         <p className='role'> {data.role}</p>
                     </div>
                     <div>{
-                        data.linkedin?
-                        <a href={ data.linkedin} style={{textDecoration:"none"}} >
-                            <LinkedInIcon sx={{ fontSize: "2rem" ,color:"white"}} />
-                        </a>:""}
+                        data.linkedin ?
+                            <a href={data.linkedin} style={{ textDecoration: "none" }} >
+                                <LinkedInIcon sx={{ fontSize: "2rem", color: "white" }} />
+                            </a> : ""}
                     </div>
 
                 </div>

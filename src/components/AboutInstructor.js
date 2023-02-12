@@ -6,7 +6,7 @@ import { Autoplay } from "swiper";
 // Import Swiper styles
 import 'swiper/css';
 import { Container } from '@mui/system';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 const Wrap = styled.div`
 .card{
     position: relative;
@@ -143,9 +143,8 @@ const Wrap = styled.div`
 const AboutInstructor = ({ data }) => {
     const instructerData = data.instructer;
     return (
-        <Container maxWidth="lg" sx={{ marginBottom: "3rem" }} id="aboutprogram">
+        <Container maxWidth="lg" sx={{ marginBottom: "3rem", flexDirection: 'column' }} id="aboutprogram">
             <Typography variant='h4' sx={{ textAlign: "center", color: 'white' }}> Our Instructors</Typography>
-
             <Swiper
                 spaceBetween={5}
                 slidesPerView={3}
@@ -173,23 +172,28 @@ const AboutInstructor = ({ data }) => {
             >
                 {
                     instructerData.map((card, index) => (<SwiperSlide key={index}>
-                        < Wrap >
-                            <div class="container">
-                                <div class=" content">
-                                    <div class=" card">
-                                        <div class="box3"></div>
-                                        <div class="card-content">
-                                            <div class="image">
+                        < Wrap style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: '100%'
+                        }}>
+                            <div className="container">
+                                <div className=" content">
+                                    <div className=" card">
+                                        <div className="box3"></div>
+                                        <div className="card-content">
+                                            <div className="image">
                                                 <img src={card.instructerimg} alt="" />
                                             </div>
-                                            {/* <div class="media-icons">
+                                            {/* <div className="media-icons">
                                     <LinkedInIcon />
                                 </div> */}
-                                            <div class="name-profession">
-                                                <span class="name">{card.name}</span>
-                                                <span class="profession">{card.desig}</span>
+                                            <div className="name-profession">
+                                                <span className="name">{card.name}</span>
+                                                <span className="profession">{card.desig}</span>
                                             </div>
-                                            <div class="about">
+                                            <div className="about">
                                                 <p>{card.about}</p>
                                             </div>
                                         </div>

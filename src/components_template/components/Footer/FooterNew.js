@@ -18,7 +18,7 @@ const FooterNew = (props) => {
         <footer className="footer-section" style={{ marginTop: "5rem" }} id="footer">
             <Container maxWidth={'xl'}>
                 <div className="footer-cta pt-5 pb-5">
-                    <Grid container justifyContent={'center'} alignItems={"center"} alignContent={"center"}>
+                    <Grid container justifyContent={'center'}>
                         {/* <Grid item xl={4} md={4} >
                             <div style={{ padding: "0.9rem 0.6rem" }}>
                                 <div className="single-cta">
@@ -33,36 +33,41 @@ const FooterNew = (props) => {
                             </div>
                         </Grid> */}
                         <Grid item xl={6} md={4} sm={12}>
-                            <div style={{ padding: "0.9rem 0.6rem" }}>
+                            <div style={{ padding: "0.9rem 0.6rem", display: 'flex', justifyContent: 'center' }}>
                                 <div className="single-cta">
                                     <div className='WidgetIcon'>
-                                        <img src={phone} alt="" />
+                                        <img src={phone} alt="phone" />
                                     </div>
                                     <div className="cta-text">
                                         <h4>Call us</h4>
-                                        <span>9850314506, 9970780928</span>
+                                        <a style={{
+                                            color: '#7e7e7e'
+                                        }} href='tel:9850314506' rel="noreferrer">9850314506</a>
+                                        <a style={{
+                                            color: '#7e7e7e'
+                                        }} href='tel:9970780928' rel="noreferrer">, 9970780928</a>
                                     </div>
                                 </div>
                             </div>
                         </Grid>
                         <Grid item xl={4} md={4} sm={12}>
-                            <div style={{ padding: "0.9rem 0.6rem" }}>
+                            <div style={{ padding: "0.9rem 0.6rem", display: 'flex', justifyContent: 'center' }}>
                                 <div className="single-cta">
                                     <div className='WidgetIcon'>
                                         <img src={mail} alt="" />
                                     </div>
-                                    <a href="mailto:o1codingclub@gmail.com">
-                                    <div className="cta-text">
-                                        <h4>Mail us</h4>
-                                        <span>o1codingclub@gmail.com</span>
-                                    </div></a>
+                                    <a href="mailto:o1codingclub@gmail.com" rel="noreferrer">
+                                        <div className="cta-text">
+                                            <h4>Mail us</h4>
+                                            <span>o1codingclub@gmail.com</span>
+                                        </div></a>
                                 </div>
                             </div>
                         </Grid>
                     </Grid>
                 </div>
                 <div style={{ padding: '3rem' }}>
-                    <Grid container  spacing={5}>
+                    <Grid container spacing={5}>
                         <Grid item xl={6} md={4} >
                             <div className="footer-widget">
                                 <div className="footer-logo" style={{ width: "5rem" }}>
@@ -73,15 +78,15 @@ const FooterNew = (props) => {
                                 </div>
                                 <div className="footer-social-icon">
                                     <span>Follow us</span>
-                                    <a href="https://www.linkedin.com/in/o-1-coding-club/" target="_blank"><LinkedInIcon/></a>
-                                    <a href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg" target="_blank"><YouTubeIcon/></a>
-                                    <a href="https://www.instagram.com/o1codingclub/" target="_blank"><InstagramIcon/></a>
-                                    <a href="https://t.me/+diEKUu4Y-oY3NDFl" target="_blank"><TelegramIcon/></a>
+                                    <a href="https://www.linkedin.com/in/o-1-coding-club/" target="_blank"><LinkedInIcon /></a>
+                                    <a href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg" target="_blank"><YouTubeIcon /></a>
+                                    <a href="https://www.instagram.com/o1codingclub/" target="_blank"><InstagramIcon /></a>
+                                    <a href="https://t.me/+diEKUu4Y-oY3NDFl" target="_blank"><TelegramIcon /></a>
                                 </div>
                             </div>
                         </Grid>
-                         <Grid item xl={6} md={4} className="footer-text ">
-                           <p className="tandc" style={{fontSize:"11px"}} > {props.name.footerbottomtext?props.name.footerbottomtext:""}</p>
+                        <Grid item xl={6} md={4} className="footer-text ">
+                            <p className="tandc" style={{ fontSize: "11px" }} > {props.name.footerbottomtext ? props.name.footerbottomtext : ""}</p>
                             {/* <div className="footer-widget">
                                 <div className="footer-widget-heading">
                                     <h3>Useful Links</h3>

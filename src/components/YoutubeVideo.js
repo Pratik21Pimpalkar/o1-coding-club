@@ -7,7 +7,7 @@ const YoutubeVideo = () => {
       <div>
         <Typography variant="h3" sx={{
           color: "white", margin: "2rem 0", textAlign: "center", '@media screen and (max-width: 400px)': {
-            fontSize: "2rem", margin:"1rem 0"
+            fontSize: "2rem", margin: "1rem 0"
           },
         }}>Our SuperHero Platforms</Typography>
       </div>

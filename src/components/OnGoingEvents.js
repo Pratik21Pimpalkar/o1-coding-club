@@ -45,7 +45,9 @@ const OurEvents = () => {
 
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
-            <img src={core} alt="" width={"100%"} />
+            <Box display={'flex'} justifyContent='center' marginTop={{ xs: '3rem', md: '0rem' }} marginBottom={{ xs: '-3rem', md: '0rem' }}>
+              <img src={core} alt="core" width={"90%"} />
+            </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box>
@@ -86,12 +88,16 @@ const OurEvents = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-            <img src={coresubjects} alt="" width={"80%"} />
+            <Box display={'flex'} justifyContent='center' marginTop={{ xs: '3rem', md: '0rem' }} marginBottom={{ xs: '-2rem', md: '0rem' }}>
+              <img src={coresubjects} alt="" width={"90%"} />
+            </Box>
           </Grid>
         </Grid>
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
-            <img src={super40} alt="" width={"100%"} />
+            <Box display={'flex'} justifyContent='center' marginBottom={{ xs: '-3rem', md: '0rem' }}>
+              <img src={super40} alt="super40" width={"100%"} />
+            </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={7}>
             <Box>
@@ -131,7 +137,9 @@ const OurEvents = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={5} order={{ md: 1, lg: 2 }}>
-            <img src={sdebootcamp} alt="" width={"80%"} />
+            <Box display={'flex'} justifyContent='center' marginTop={{ xs: '3rem', md: '0rem' }} marginBottom={{ xs: '-3rem', md: '0rem' }}>
+              <img src={sdebootcamp} alt="sdebootcamp" width={"80%"} />
+            </Box>
           </Grid>
         </Grid>
       </Container>

@@ -45,10 +45,13 @@ const CompanySlider = () => {
   const fnames = name.map(changefilename);
   
   return (
-    <CompanySlider_main>
+    <CompanySliderMain style={{
+      marginTop: '4rem'
+    }}>
 
       <Typography variant="h3" sx={{
         margin: "3rem 0",
+        padding: '0rem 1rem',
         textAlign: "center", color: "white", fontSize: "3.0rem", fontWeight: "bold",
         '@media (max-width:480px)': {
           fontSize: '1.8rem',
@@ -62,11 +65,11 @@ const CompanySlider = () => {
           </div>
         ))}
       </Slider>
-    </CompanySlider_main>
+    </CompanySliderMain>
   );
 };
 
-const CompanySlider_main = styled.div`
+const CompanySliderMain = styled.div`
   h1 {
     text-align: center;
     font-family: "Muli";

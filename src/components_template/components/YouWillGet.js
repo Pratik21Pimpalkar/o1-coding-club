@@ -7,35 +7,37 @@ import { Container } from "@mui/system";
 const YouWillGet = ({ data }) => {
   return (
     <FeaturesCardWrapper>
-    
-        <Container>
-          {/* <Typography variant="h2" sx={{
+
+      <Container>
+        {/* <Typography variant="h2" sx={{
             color: 'white', textAlign: "center", '@media screen and (max-width:480px)':{
               fontSize:"2.2rem"
             }
         }}>YOU GET !</Typography> */}
 
-          <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
-            <Grid item xs={12} md={6}>
-              <div className="card">
-                <div className="imgdiv">
-                  <img src={benefits} alt="" />
-                </div>
-                <div className="contentdetails">
-                  {data.youwillget.map((item, key) => {
-                    return (
-                      <ul key={key}>
-                        <li className="items">{item}</li>{" "}
-                      </ul>
-                    );
-                  })}
-                </div>
-                <div id="timeline"></div>
+        <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
+          <Grid item xs={12} md={6}>
+            <div className="card" style={{
+              borderRadius: '1rem'
+            }}>
+              <div className="imgdiv">
+                <img src={benefits} alt="" />
               </div>
-            </Grid>
+              <div className="contentdetails">
+                {data.youwillget.map((item, key) => {
+                  return (
+                    <ul key={key}>
+                      <li className="items">{item}</li>{" "}
+                    </ul>
+                  );
+                })}
+              </div>
+              <div id="timeline"></div>
+            </div>
           </Grid>
-        </Container>
-   
+        </Grid>
+      </Container>
+
     </FeaturesCardWrapper>
   );
 };

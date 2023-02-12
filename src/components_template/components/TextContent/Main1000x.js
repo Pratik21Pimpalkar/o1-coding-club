@@ -9,16 +9,16 @@ import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
 
 function Main(prop) {
-  const styles = (theme) => ({
-    root: {
-      backgroundColor: "blue",
-      // Match [sm, md)
-      //       [600px, 900px)
-      [theme.breakpoints.between("sm", "md")]: {
-        backgroundColor: "red",
-      },
-    },
-  });
+  // const styles = (theme) => ({
+  //   root: {
+  //     backgroundColor: "blue",
+  //     // Match [sm, md)
+  //     //       [600px, 900px)
+  //     [theme.breakpoints.between("sm", "md")]: {
+  //       backgroundColor: "red",
+  //     },
+  //   },
+  // });
   return (
     <Main1000xWrapper>
       <Container maxWidth={"lg"} className="content">
@@ -40,7 +40,7 @@ function Main(prop) {
                   className="brand-name"
                   title="O1 Analysis"
                 >
-                  <button className="btn-giveTest btn-giveTest-responsive">{prop.name.programName==="PlaceKit"?"Enroll" : "Apply"}</button>{" "}
+                  <button className="btn-giveTest btn-giveTest-responsive">{prop.name.programName === "PlaceKit" ? "Enroll" : "Apply"}</button>{" "}
                 </HashLink>
               </div>
             ) : null}
