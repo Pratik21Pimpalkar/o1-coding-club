@@ -1,20 +1,20 @@
 import React from 'react'
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import rupee from "../Assets/rupee.png";
 import styled from "styled-components";
 import IncomeAgreement from "../components/PlanAPlanB";
 
 
 const FeatureParagraph = {
-    background: "-webkit-linear-gradient(38deg, #ffffff, #c5c5c5, #4e4747)",
-    WebkitBackgroundClip: "text",
-    // webkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    // padding: "0.5rem 2rem",
-    fontSize: "19px",
-    display: 'flex',
-    flexDirection: "column",
-    marginBottom: "1rem",
+  background: "-webkit-linear-gradient(38deg, #ffffff, #c5c5c5, #4e4747)",
+  WebkitBackgroundClip: "text",
+  // webkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  // padding: "0.5rem 2rem",
+  fontSize: "19px",
+  display: 'flex',
+  flexDirection: "column",
+  marginBottom: "1rem",
 };
 const Wrap = styled.div`
 .limited{
@@ -88,7 +88,7 @@ const Wrap = styled.div`
     }
   }
   .rupeeimg {
-    width: 25rem;
+    width: 23rem;
   }
 
     @media screen and (max-width: 576px) {
@@ -107,57 +107,57 @@ const Wrap = styled.div`
 `;
 
 const Pricing = ({ data }) => {
-    return (
-        <Wrap>
-            {data.showpricing ? (
-                <Grid
-                    container
-                    alignItems={"center"}
-                    justifyContent={"center"}
-                    wrap={"wrap-reverse"}
-                >
-                    <Grid item xs={12} sm={12} md={12} order={{ md: 2, lg: 1 }}>
-                        <Box sx={{ height: "max-content" }}>
-                            <div style={FeatureParagraph}>
-                                <h3 className="price-desktop">Pricing</h3>
-                                {(data.programName === "Super40" || data.programName === "PlacePrep 360") ?
-                                    // <table className="pricing">
-                                    //   <tr>
-                                    //     <td>Option A</td>
-                                    //     <td>₹ 7000 Upfront</td>
-                                    //   </tr>
-                                    //   <tr>
-                                    //     <td>Option B</td>
-                                    //     <td>₹ 5000 Upfront + ISA*
-                                    //        {/* <a href={require("../../../Assets/ISCFORM.pdf")} download={"ISC_FORM"} className="DownloadISA"><span> ISA*</span> </a> */}
-                                    //        </td>
-                                    //   </tr>
-                                    // </table>
-                                    <IncomeAgreement pricedata={data} />
-                                    : <><h3 className="price-desktop2"><span style={{
-                                        margin: " 0 1rem 0 0",
-                                        fontSize: "1.3rem",
-                                        "-webkit-text-fill-color": "#a2a2a2",
-                                        textDecoration: "line-through",
-                                    }}>{data?.cutPricing}</span>{data.pricing} 
-                                    {/* <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>{data.programName === "PlaceKit" ? "" : "+ GST"}</span> */}
-                                     </h3>
-                                        <h3 className="limited">{data.programName === "PlaceKit" ? "Course Duration : 5-6 Months" : ""}</h3>
-                                        <h3 className="limited">{data.programName === "PlaceKit" ? "Offer Expires Soon" : ""}</h3></>
-                                }
+  return (
+    <Wrap>
+      {data.showpricing ? (
+        <Grid
+          container
+          alignItems={"center"}
+          justifyContent={"center"}
+          wrap={"wrap-reverse"}
+        >
+          <Grid item xs={12} sm={12} md={12} order={{ md: 2, lg: 1 }}>
+            <Box sx={{ height: "max-content" }}>
+              <div style={FeatureParagraph}>
+                <h3 className="price-desktop">Pricing</h3>
+                {(data.programName === "Super40" || data.programName === "PlacePrep 360") ?
+                  // <table className="pricing">
+                  //   <tr>
+                  //     <td>Option A</td>
+                  //     <td>₹ 7000 Upfront</td>
+                  //   </tr>
+                  //   <tr>
+                  //     <td>Option B</td>
+                  //     <td>₹ 5000 Upfront + ISA*
+                  //        {/* <a href={require("../../../Assets/ISCFORM.pdf")} download={"ISC_FORM"} className="DownloadISA"><span> ISA*</span> </a> */}
+                  //        </td>
+                  //   </tr>
+                  // </table>
+                  <IncomeAgreement pricedata={data} />
+                  : <><h3 className="price-desktop2"><span style={{
+                    margin: " 0 1rem 0 0",
+                    fontSize: "1.3rem",
+                    WebkitTextFillColor: "#a2a2a2",
+                    textDecoration: "line-through",
+                  }}>{data?.cutPricing}</span>{data.pricing}
+                    {/* <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>{data.programName === "PlaceKit" ? "" : "+ GST"}</span> */}
+                  </h3>
+                    <h3 className="limited">{data.programName === "PlaceKit" ? "Course Duration : 5-6 Months" : ""}</h3>
+                    <h3 className="limited">{data.programName === "PlaceKit" ? "Offer Expires Soon" : ""}</h3></>
+                }
 
-                            </div>
-                        </Box>
-                    </Grid>
-                    <Grid item order={{ md: 1, lg: 2 }}>
-                        <img src={rupee} alt="" className="rupeeimg" />
-                    </Grid>
-                </Grid>
-            ) : (
-                <div></div>
-            )}
-        </Wrap>
-    )
+              </div>
+            </Box>
+          </Grid>
+          <Grid item order={{ md: 1, lg: 2 }}>
+            <img src={rupee} alt="" className="rupeeimg" />
+          </Grid>
+        </Grid>
+      ) : (
+        <div></div>
+      )}
+    </Wrap>
+  )
 }
 
 export default Pricing

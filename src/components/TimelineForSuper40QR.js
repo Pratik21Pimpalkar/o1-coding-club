@@ -20,10 +20,10 @@ const Timeline = (props) => {
             <h2 style={{ marginLeft: 10 }}>Transfer the Fees</h2>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
               <p>
-              Transfer ₹ 5450 or 7450 according to your plan on the given QR code.<br></br>
+                Transfer ₹ 5450 or 7450 according to your plan on the given QR code.<br></br>
               </p>
               <button className="btn-giveTest mobileres" >
-                <a href={require("../Assets/QR.pdf")} download={"QR_Code"}>QR Code</a>
+                <a href={require("../Assets/QR.pdf")} rel="noreferrer" download={"QR_Code"}>QR Code</a>
               </button>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Timeline = (props) => {
               <p>
                 Fill the registration form with screenshot of payment proof.
               </p>
-              <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
+              <a href={props.data.timelineformlink} rel="noreferrer" className="explore-btn " target="_blank">
                 <button className="btn-giveTest mobileres" >
                   Applcation Form
                 </button>

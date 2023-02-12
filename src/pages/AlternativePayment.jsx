@@ -9,7 +9,9 @@ const AlternativePaymentMethod = (props) => {
       <Container>
         <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
           <Grid item xs={12} md={6}>
-            <div className="card">
+            <div className="card" style={{
+              borderRadius: '1rem'
+            }}>
               <h1 className="heading"> Alternative Payment Method</h1>
               <h3 className="heading2">
                 Use Only If Above Method Is Not Working

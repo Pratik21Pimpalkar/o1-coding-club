@@ -16,9 +16,9 @@ const Timeline = (props) => {
           <div className="content">
             <h2>
               Submit Application</h2>
-            <p>Submit your application in 
-            <a href={props.data?.timelineformlink} className="explore-btn ">Google Form</a>  
-<br></br>
+            <p>Submit your application in
+              <a href={props.data?.timelineformlink} rel="noreferrer" className="explore-btn ">Google Form</a>
+              <br></br>
               Ps.  You will need Payment Proof to proceed.</p>
           </div>
         </div>

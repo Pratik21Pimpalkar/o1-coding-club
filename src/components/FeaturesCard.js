@@ -9,11 +9,15 @@ import { Container } from "@mui/system";
 
 const FeaturesCard = ({ data }) => {
   return (
-    <FeaturesCardWrapper id="about">
+    <FeaturesCardWrapper id="about" style={{
+      marginTop: { xs: '1rem', md: '0rem' }
+    }}>
       <Container>
-        <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
+        <Grid container maxWidth={"lg"} spacing={{ xs: 3, md: 5 }} >
           <Grid item xs={12} md={3}>
-            <div className="card">
+            <div className="card" style={{
+              borderRadius: '1rem'
+            }}>
               <div className="imgdiv">
                 <img
                   src={
@@ -39,7 +43,9 @@ const FeaturesCard = ({ data }) => {
             </div>
           </Grid>
           <Grid item xs={12} md={3}>
-            <div className="card">
+            <div className="card" style={{
+              borderRadius: '1rem'
+            }}>
               <div className="imgdiv">
                 <img
                   src={
@@ -63,7 +69,9 @@ const FeaturesCard = ({ data }) => {
             </div>
           </Grid>
           <Grid item xs={12} md={3}>
-            <div className="card">
+            <div className="card" style={{
+              borderRadius: '1rem'
+            }}>
               <div className="imgdiv">
                 <img
                   src={
@@ -87,7 +95,9 @@ const FeaturesCard = ({ data }) => {
             </div>
           </Grid>
           <Grid item xs={12} md={3}>
-            <div className="card">
+            <div className="card" style={{
+              borderRadius: '1rem'
+            }}>
               <div className="imgdiv">
                 <img
                   src={
@@ -145,7 +155,7 @@ const FeaturesCardWrapper = styled.div`
     }
 
     @media screen and (max-width: 706px) {
-      margin: 1rem 0;
+      margin: 0.75rem 0;
       .card {
         height: 150rem;
       }

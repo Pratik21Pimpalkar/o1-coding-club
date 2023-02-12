@@ -14,7 +14,7 @@ const FooterNew = (prop) => {
           <div className="row">
             <div className="company-detail">
               <div className="footer-logo">
-                <a href="#" title="O1 Analysis">
+                <a href="#" rel="noreferrer" title="O1 Analysis">
                   <img
                     src={logo}
                     width="72"
@@ -32,7 +32,7 @@ const FooterNew = (prop) => {
               <h4>Contact</h4>
               <ul className="footer-link">
                 <li>
-                  <a href="mailto:o1codingclub@gmail.com" title="Contact">
+                  <a rel="noreferrer" href="mailto:o1codingclub@gmail.com" title="Contact">
                     o1codingclub@gmail.com
                   </a>
                 </li>
@@ -44,6 +44,7 @@ const FooterNew = (prop) => {
                       <a
                         href="https://www.linkedin.com/in/o-1-coding-club/?originalSubdomain=in"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <LinkedInIcon />
                       </a>

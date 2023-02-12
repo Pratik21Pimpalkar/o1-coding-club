@@ -5,7 +5,7 @@ import offer from '../Assets/Placekit/offer.png'
 const Offers = () => {
     return (
         <Container>
-            <img src={offer} alt="" style={{width:"100%"}} />
+            <img src={offer} alt="offer" style={{ width: "100%" }} />
         </Container>
     )
 }

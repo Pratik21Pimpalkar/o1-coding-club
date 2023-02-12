@@ -1,28 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-import ApplyNowBtn from "./ApplyNowBtn";
 
 const Timeline = (props) => {
   return (
     <TimeLineStyled>
       <h3 className="heading-desktop">How to Apply</h3>
       <div className="timeline">
-      <a href={props.data.timelineformlink} className="explore-btn ">
-        <div className="container left">
-          <div className="content">
-            <h2>Join Whatsapp Group</h2>
-            <p>
-              Join the following Whatsapp group and attend program details
-              briefing meet.<br></br>{" "}
-              <button className="btn-giveTest mobileres">
-                
-                Join Now
-               
-              </button>
-            </p>
-          </div>
-        </div></a>
-                
+        <a href={props.data.timelineformlink} rel="noreferrer" className="explore-btn ">
+          <div className="container left">
+            <div className="content">
+              <h2>Join Whatsapp Group</h2>
+              <p>
+                Join the following Whatsapp group and attend program details
+                briefing meet.<br></br>{" "}
+                <button className="btn-giveTest mobileres">
+
+                  Join Now
+
+                </button>
+              </p>
+            </div>
+          </div></a>
+
         <div className="container right">
           <div className="content">
             <h2>Fill Google Form</h2>

@@ -27,7 +27,7 @@ const Hero = () => {
       {/* <img src={bg} alt="" /> */}
       <Container>
         <Grid container className="main-grid">
-          <Grid item xs={12} md={8} lg={4} className="inside-grid">
+          <Grid item xs={12} md={4} lg={4} className="inside-grid">
             <div className="text-position">
               <Typography className="  css-130rcti" variant="h1">
                 O(1) Coding Club
@@ -72,7 +72,7 @@ const Hero = () => {
           </Grid>
         </Grid>
       </Container>
-      <ReferralSlider/>
+      <ReferralSlider />
     </HeroWrapper >
   );
 };
