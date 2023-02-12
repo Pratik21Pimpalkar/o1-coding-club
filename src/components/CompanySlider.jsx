@@ -5,14 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Typography } from "@mui/material";
 
-
 const CompanySlider = () => {
   const images = () => {
     const path = require.context("../../public/companies_logo", false, /\.png$/);
     return path.keys();
   };
-  
-  const settings = {
+
+const settings = {
     speed: 5500,
     autoplay: true,
     infinite: true,

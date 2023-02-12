@@ -8,7 +8,7 @@ import coresubjects from "../Assets/events/coresubjects.png";
 import super40 from "../Assets/events/super40.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
 import core from '../Assets/events/programming.svg'
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 const FeaturePosition = {
   color: "white",
   fontFamily: "muli",

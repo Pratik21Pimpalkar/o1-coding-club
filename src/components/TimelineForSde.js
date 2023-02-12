@@ -24,7 +24,7 @@ const Timeline = (props) => {
                 Transfer ₹ 3950 to given QR code using any UPI app.<br></br>
               </p>
               <button className="btn-giveTest mobileres" >
-                <a href={require("../Assets/QR.pdf")} download={"QR_Code"}>QR Code</a>
+                <a href={require("../Assets/QR.pdf")} rel="noreferrer" download={"QR_Code"}>QR Code</a>
               </button>
             </div>
           </div>
@@ -38,7 +38,7 @@ const Timeline = (props) => {
               <p>
                 Fill the registration form with screenshot of payment proof.
               </p>
-              <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
+              <a href={props.data.timelineformlink} rel="noreferrer" className="explore-btn " target="_blank">
                 <button className="btn-giveTest mobileres" >
                   Application Form
                 </button>

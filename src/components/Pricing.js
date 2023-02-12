@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import rupee from "../Assets/rupee.png";
 import styled from "styled-components";
 import IncomeAgreement from "../components/PlanAPlanB";

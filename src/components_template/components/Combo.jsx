@@ -39,7 +39,7 @@ export default function Combo() {
 
   return (
     <div className={classes.wrapper}>
-      <a href="https://www.o1codingclub.in/" target="_blank">
+      <a href="https://www.o1codingclub.in/" rel="noreferrer" target="_blank">
       <div className={classes.mar}>
         <img src={banner} className={classes.imgBig} />
       </div>

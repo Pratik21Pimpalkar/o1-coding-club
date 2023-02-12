@@ -1,14 +1,13 @@
 import React from "react";
-import Home1000x from "../components_template/components/Home/Home1000x";
 import FooterNew from "../components_template/components/Footer/FooterNew";
 import Testimonial from "../components/Testimonial2";
 import CompanySlider from "../components/CompanySlider";
 import Stats from "../components/Stats";
-import TimelineFor1000x from "../components/TimelineFor1000x";
+// import TimelineFor1000x from "../components/TimelineFor1000x";
 import TimelineforSuper40 from "../components/TimelineForPlaceKit";
-import Timeline from "../components/Timeline";
+// import Timeline from "../components/Timeline";
 import FeaturesCard from "../components/FeaturesCard";
-import AboutProgram from "../components_template/components/Features/Feature";
+// import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData";
 import YouWillGet from "../components_template/components/YouWillGet";
 // import Eligibility from "../components_template/components/Eligiblity";
@@ -20,7 +19,8 @@ import AlternativePaymentMethod from "./AlternativePayment";
 import Banner from "../components/Banner";
 import AboutInstructor from "../components/AboutInstructor";
 import Pricing from "../components/Pricing";
-import Offers from "../components/Offers";
+// import Offers from "../components/Offers";
+import MainContent from "../components_template/components/TextContent/MainContent";
 const PlaceKit = () => {
   const programdata = PagesData.placekit;
   return (
@@ -33,7 +33,8 @@ const PlaceKit = () => {
         }}
       >
         <Navbar />
-        <Home1000x name={programdata} />
+        {/* <Home1000x name={programdata} /> */}
+        <MainContent name={programdata} />
         <Stats data={programdata} />
         <YoutubeVideo />
         <FeaturesCard data={programdata} />

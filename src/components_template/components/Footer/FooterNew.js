@@ -10,8 +10,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 import mail from '../../../Assets/email.png'
 import './footer.css'
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
 const FooterNew = (props) => {
     return (
 
@@ -71,17 +69,17 @@ const FooterNew = (props) => {
                         <Grid item xl={6} md={4} >
                             <div className="footer-widget">
                                 <div className="footer-logo" style={{ width: "5rem" }}>
-                                    <a href="/"><img src={logo} className="img-fluid" alt="logo" style={{ width: "100%", objectFit: "contain" }} /></a>
+                                    <a href="/" rel="noreferrer"><img src={logo} className="img-fluid" alt="logo" style={{ width: "100%", objectFit: "contain" }} /></a>
                                 </div>
                                 <div className="footer-text">
                                     <p>Not just a coding school, but a complete placement ecosystem with strong emphasis on high quality placement training & support, not only equipping you with relevant job market skills but providing every help to land your dream job.</p>
                                 </div>
                                 <div className="footer-social-icon">
                                     <span>Follow us</span>
-                                    <a href="https://www.linkedin.com/in/o-1-coding-club/" target="_blank"><LinkedInIcon /></a>
-                                    <a href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg" target="_blank"><YouTubeIcon /></a>
-                                    <a href="https://www.instagram.com/o1codingclub/" target="_blank"><InstagramIcon /></a>
-                                    <a href="https://t.me/+diEKUu4Y-oY3NDFl" target="_blank"><TelegramIcon /></a>
+                                    <a href="https://www.linkedin.com/in/o-1-coding-club/" rel="noreferrer" target="_blank"><LinkedInIcon /></a>
+                                    <a href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg" rel="noreferrer" target="_blank"><YouTubeIcon /></a>
+                                    <a href="https://www.instagram.com/o1codingclub/" rel="noreferrer" target="_blank"><InstagramIcon /></a>
+                                    <a href="https://t.me/+diEKUu4Y-oY3NDFl" rel="noreferrer" target="_blank"><TelegramIcon /></a>
                                 </div>
                             </div>
                         </Grid>
@@ -107,7 +105,7 @@ const FooterNew = (props) => {
 
                     <Grid item xl={6} lg={6} >
                         <div className="copyright-text">
-                            <p style={{ textAlign: "center" }}>Copyright &copy; 2022, All Right Reserved <a href="/">O(1) Coding Club</a></p>
+                            <p style={{ textAlign: "center" }}>Copyright &copy; 2022, All Right Reserved <a href="/" rel="noreferrer">O(1) Coding Club</a></p>
                         </div>
                     </Grid>
                 </Container>

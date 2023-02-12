@@ -62,17 +62,17 @@ const Hero = () => {
               <img src={tab} alt="" className="tabimg" />
               <div className="css-ucfc1">
                 <div className="css-18q3wgh">
-                  <img src={bluebubble} />
+                  <img src={bluebubble} alt='bluebubble' />
                 </div>
                 <div className="css-19fx3dz">
-                  <img src={purplebubble} />
+                  <img src={purplebubble} alt='purplebubble' />
                 </div>
               </div>
             </div>
           </Grid>
         </Grid>
       </Container>
-      <ReferralSlider/>
+      <ReferralSlider />
     </HeroWrapper >
   );
 };
