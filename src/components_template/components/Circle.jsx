@@ -66,6 +66,11 @@ transform: translateY(0)
     right: 10rem;
   }
 
+  @media screen and (min-width: 600px) {
+    position: relative;
+    right: 8.3rem;
+  }
+
   @media screen and (max-width: 400px) {
     transform: scale(0.5) !important;
     right: 10rem;
