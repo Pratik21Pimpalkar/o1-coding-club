@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="row">
               <div className="company-detail">
                 <div className="footer-logo">
-                  <a href="#" title="O1 Analysis">
+                  <a href="#" rel="noreferrer" title="O1 Analysis">
                     <img
                       src={logo}
                       width="72"
@@ -34,7 +34,7 @@ const Footer = () => {
                 <h4>Contact</h4>
                 <ul className="footer-link">
                   <li>
-                    <a href="mailto:o1codingclub@gmail.com" title="Contact">
+                    <a rel="noreferrer" href="mailto:o1codingclub@gmail.com" title="Contact">
                       o1codingclub@gmail.com
                     </a>
                   </li>
@@ -46,24 +46,28 @@ const Footer = () => {
                         <a
                           href="https://www.linkedin.com/in/o-1-coding-club/?originalSubdomain=in"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <LinkedInIcon />
                         </a>
                         <a
                           href="https://t.me/+diEKUu4Y-oY3NDFl"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <TelegramIcon />
                         </a>
                         <a
                           href="https://www.instagram.com/o1codingclub/?hl=en"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <InstagramIcon />
                         </a>
                         <a
                           href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <YouTubeIcon />
                         </a>

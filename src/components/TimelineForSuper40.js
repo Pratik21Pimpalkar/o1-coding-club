@@ -48,11 +48,11 @@ const Timeline = (props) => {
         </div>
       </div> */}
       <div className="timeline">
-        <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
+        <a href={props.data.timelineformlink} rel="noreferrer" className="explore-btn " target="_blank">
           <div className="container left">
             <div className="content">
               <h2 style={{ marginLeft: 10 }}>Fill Application Form</h2>
-              <div style={{display:'flex',flexDirection:'column', alignItems: "center"}}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
                 <p>
                   {props.data.timeline.first}<br></br>
                 </p>

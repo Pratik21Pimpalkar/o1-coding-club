@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.svg";
 import { HashLink } from "react-router-hash-link";
@@ -39,13 +38,13 @@ export default function Navbar() {
             setNavbarColor(true);
           }}
         >
-         
-            {
-              !isNavExpanded ?
 
-                <MenuSharpIcon sx={{ color: 'white' }} /> : <CancelSharpIcon sx={{ color: 'white' }} />
-            }
-          
+          {
+            !isNavExpanded ?
+
+              <MenuSharpIcon sx={{ color: 'white' }} /> : <CancelSharpIcon sx={{ color: 'white' }} />
+          }
+
         </button>
         <div
           className={

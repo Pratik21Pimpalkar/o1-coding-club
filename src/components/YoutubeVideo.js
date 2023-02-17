@@ -7,13 +7,13 @@ const YoutubeVideo = () => {
       <div>
         <Typography variant="h3" sx={{
           color: "white", margin: "2rem 0", textAlign: "center", '@media screen and (max-width: 400px)': {
-            fontSize: "2rem", margin:"1rem 0"
+            fontSize: "2rem", margin: "1rem 0"
           },
         }}>Our SuperHero Platforms</Typography>
       </div>
       <div className="embeded-video">
         <iframe
-          src="https://www.youtube.com/embed/ylVJ4mP6sTc?autoplay=1&mute=1"
+          src="https://www.youtube.com/embed/ylVJ4mP6sTc?autoplay=0&mute=1"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

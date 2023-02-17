@@ -5,9 +5,8 @@ import p3 from '../Assets/Placekit/week 13 to 18 (o1).png'
 import p4 from '../Assets/Placekit/week 19 to 24 (o1).png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from "swiper";
-// Import Swiper styles
 import 'swiper/css';
-import { Box, Container, Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
 const Banner = () => {
     return (
         <Container maxWidth='md' sx={{ marginTop: "3rem" }}>

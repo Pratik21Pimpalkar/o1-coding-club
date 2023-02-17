@@ -328,7 +328,7 @@ const programData = {
     shownote: false,
   },
   coresubjectsforplacements: {
-    programName: "CS Fundamentals for Placements",
+    programName: "CS Fundamentals",
     desc: " The complete placement preparation program for core subjects/CS fundamentals important for campus as well as off-campus placements covering technical aptitude, interviews to making you placement ready.    ",
     linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,

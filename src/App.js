@@ -15,16 +15,15 @@ import CoreSubjectsForPlacements from "./pages/CoreSubjectsForPlacements";
 function App() {
   return (
     <>
-    
       <Routes>
         <Route path="/" element={<MainHomePage />} />
         <Route path="/super40" element={<Super50 />} />
         <Route path="/sdebootcamp" element={<PlacePrep360 />} />
-       
+
         <Route path="/csfundamentals" element={<CoreSubjectsForPlacements />} />
         <Route path="/placekit" element={<PlaceKit />} />
         <Route path="/1000x" element={<ThousandX />} />
-    {/*     
+        {/*     
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />
         <Route path="/coresubjects" element={<Coresubjects />} />

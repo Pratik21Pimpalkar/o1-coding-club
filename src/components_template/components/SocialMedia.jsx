@@ -27,6 +27,7 @@ const SocialMedia = () => {
         <a
           href="https://www.linkedin.com/in/o-1-coding-club/?originalSubdomain=in"
           target="_blank"
+          rel="noreferrer"
         >
           <LinkedInIcon sx={iconStyle} />
         </a>
@@ -34,12 +35,14 @@ const SocialMedia = () => {
         <a
           href="https://t.me/+diEKUu4Y-oY3NDFl"
           target="_blank"
+          rel="noreferrer"
         >
           <TelegramIcon sx={iconStyle} />
         </a>
         <a
           href="https://www.instagram.com/o1codingclub/?hl=en"
           target="_blank"
+          rel="noreferrer"
         >
           <InstagramIcon sx={iconStyle} />
         </a>
@@ -47,6 +50,7 @@ const SocialMedia = () => {
         <a
           href="https://www.youtube.com/channel/UCTLzD9A-M_ll2m7Wj45sHJg"
           target="_blank"
+          rel="noreferrer"
         >
           <YouTubeIcon sx={iconStyle} />
         </a>
