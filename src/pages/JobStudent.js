@@ -1,54 +1,79 @@
-import React from "react";
-import Home1000x from "../components_template/components/Home/Home1000x";
-import FooterNew from "../components_template/components/Footer/FooterNew";
-import Testimonial from "../components/Testimonial2";
-import CompanySlider from "../components/CompanySlider";
-import Stats from "../components/Stats";
-import TimelineFor1000x from "../components/TimelineFor1000x";
-import FeaturesCard from "../components/FeaturesCard";
-import AboutProgram from "../components_template/components/Features/Feature";
-import PagesData from "./PagesData";
-import YouWillGet from "../components_template/components/YouWillGet";
-// import Eligibility from "../components_template/components/Eligiblity";
-import ApplyNowBtn from "../components/ApplyNowBtn";
-import Navbar from "../components/Navbar";
-import YoutubeVideo from "../components/YoutubeVideo";
-import Pricing from "../components/Pricing";
-import AboutInstructor from "../components/AboutInstructor";
-const ThousandX = () => {
-  const programdata = PagesData.ThousandX;
+import React, { useState } from "react";
+import NavbarMain from "../components/NavbarMain";
+import JobCard from "../components/JobCard";
+import JobInformation from "../components/JobInformation";
+import styled from "styled-components";
+import { Jobdata } from "../components/JobData";
+import JobDeadLineCard from "../components/JobDeadLineCard";
+import JobAdditionalInfomationCard from "../components/JobAdditionalInfomationCard";
+const JobStudent = () => {
+  const [jobId, setJobId] = useState(1);
+
+  const handleOnClick = (id)=>{
+    setJobId(id)
+  }
+
   return (
     <>
-      <div //Background Code
+      <div
         style={{
           backgroundColor: "#0b001a",
           scrollBehavior: "smooth",
           userSelect: "none",
+          overflowX: "hidden",
         }}
       >
-        <Navbar/>
-        <Home1000x name={programdata} />
-        <Stats data={programdata} />
-        <YoutubeVideo/>
-        <FeaturesCard data={programdata} />
-        {/* <AboutProgram data={programdata} /> */}
-        <AboutInstructor data={programdata} />
-        <Pricing data={programdata} />
-        <ApplyNowBtn  data={programdata}/>
-        {/* <Eligibility  data={programdata}/> */}
-        {programdata.showyouwillget?
-        <YouWillGet data={programdata}/>
-        :<div></div>}
-        {programdata.showtimeline?
-        <TimelineFor1000x  data={programdata}/>
-        :<div></div>}
-        <CompanySlider />
-        <Testimonial />
-        <FooterNew name={programdata} />
+        <NavbarMain />
+        <JobContainer>
+          <div className="jobCardSidebar">
+            <div style={{ height: "100%" }}>
+              {Jobdata.map((job) => {
+                return (
+                  <JobCard
+                    onclick={()=> handleOnClick(job.id)}
+                    name={job.jobTitle}
+                    companyName={job.company}
+                    impressions={job.impressions}
+                    daysleft={job.daysleft}
+                  />
+                );
+              })}
+            </div>
+          </div>
+          <div className="jobInformationWindow">
+            <JobInformation id={jobId} />
+            <JobDeadLineCard id={jobId} />
+            <JobAdditionalInfomationCard id={jobId} />
+          </div>
+        </JobContainer>
       </div>
     </>
   );
 };
 
-export default ThousandX;
+const JobContainer = styled.div`
+  display: flex;
+  margin: 0 3rem;
+  margin-top: 6rem;
+  height: 100%;
+  justify-content: flex-end;
 
+  .jobCardSidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    overflow-y: auto;
+    height: 100vh;
+    position: fixed;
+    left: 5%;
+  }
+
+  .jobInformationWindow {
+    display: flex;
+    width: 60%;
+    margin-left: 40px;
+    flex-direction: column;
+  }
+`;
+
+export default JobStudent;

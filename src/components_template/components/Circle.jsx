@@ -49,7 +49,6 @@ transform: translateY(0)
     transform: scale(1.01);
     transition: 0.9s all ease-in-out;
   }
-<<<<<<< HEAD
   @media screen and (max-width: 900px) {
     animation: none;
     transform: scale(0.8) !important;
@@ -71,6 +70,4 @@ transform: translateY(0)
     right: 10rem;
     animation: none;
   }
-=======
->>>>>>> 5ba7966cdb22e8e7dbf1fc3d799c135824a8ab45
 `;
