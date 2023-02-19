@@ -12,6 +12,9 @@ import Navbar from "./components/Navbar";
 import ThousandX from "./pages/ThousandX";
 import PlaceKit from "./pages/PlaceKit";
 import CoreSubjectsForPlacements from "./pages/CoreSubjectsForPlacements";
+import ManageDashboard from "./pages/Company/ManageDashboard";
+import CreateJob from "./pages/Company/CreateJob";
+import CreateIntern from "./pages/Company/CreateIntern";
 function App() {
   return (
     <>
@@ -23,6 +26,11 @@ function App() {
         <Route path="/csfundamentals" element={<CoreSubjectsForPlacements />} />
         <Route path="/placekit" element={<PlaceKit />} />
         <Route path="/1000x" element={<ThousandX />} />
+        <Route path="/company">
+          <Route path="manage" element={<ManageDashboard />} />
+          <Route path="manage/jobs/new" element={<CreateJob />} />
+          <Route path="manage/intern/new" element={<CreateIntern />} />
+        </Route>
         {/*     
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />
