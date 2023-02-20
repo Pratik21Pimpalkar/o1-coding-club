@@ -8,9 +8,11 @@ import JobDeadLineCard from "../components/JobDeadLineCard";
 import JobAdditionalInfomationCard from "../components/JobAdditionalInfomationCard";
 const JobStudent = () => {
   const [jobId, setJobId] = useState(1);
+  const [border, setBorder] = useState("none");
 
   const handleOnClick = (id)=>{
     setJobId(id)
+    setBorder("1px solid #816797")
   }
 
   return (
@@ -31,6 +33,7 @@ const JobStudent = () => {
                 return (
                   <JobCard
                     onclick={()=> handleOnClick(job.id)}
+                    border={border}
                     name={job.jobTitle}
                     companyName={job.company}
                     impressions={job.impressions}

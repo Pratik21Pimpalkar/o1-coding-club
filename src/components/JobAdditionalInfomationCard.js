@@ -1,11 +1,8 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import styled from "styled-components";
-import { padding } from "@mui/system";
 import { Jobdata } from "../components/JobData";
 
 const SmallCard = ({ title, info }) => {
@@ -16,8 +13,8 @@ const SmallCard = ({ title, info }) => {
         // flexDirection: "column",
         justifyContent: "space-between",
         height: "100px",
-        backgroundColor: "rgb(11, 0, 26)",
-        color: "#fff",
+        backgroundColor: "#51557E",
+        color: "#e5e5e5",
         marginBottom: "35px",
         width: "40%",
       }}
@@ -71,8 +68,8 @@ const JobAdditionalInfomationCard = ({id}) => {
 export default JobAdditionalInfomationCard;
 
 const JobDescriptionContainer = styled.div`
-  background-color: #140230;
-  color: #fff;
+  background-color: #1B2430;
+  color: #e5e5e5;
   padding: 1.5rem;
   margin-top: 20px;
   margin-bottom: 20px;

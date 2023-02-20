@@ -55,8 +55,8 @@ const JobDescription = ({ id }) => {
 export default JobDescription;
 
 const JobDescriptionContainer = styled.div`
-  background-color: #140230;
-  color: #fff;
+  background-color: #1B2430;
+  color: #e5e5e5;
   padding: 1.5rem;
 
   .jobResponsibilities {

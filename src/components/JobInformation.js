@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import JobDescription from "./JobDescription";
 import { Jobdata } from "../components/JobData";
+import styled from "styled-components";
 
 const JobInformation = ({id}) => {
 
@@ -14,14 +15,14 @@ const JobInformation = ({id}) => {
   const selectedObject = filterById(Jobdata, id);
 
   return (
-    <div style={{ width: "100%" }}>
+    <JobInfromationContainer>
       <Card
         sx={{
           display: "flex",
           // flexDirection: "column",
           justifyContent: "space-between",
           height: "300px",
-          backgroundColor: "#140230",
+          backgroundColor: "#1B2430",
           color: "#ffffff",
           marginBottom: "30px",
         }}
@@ -68,19 +69,19 @@ const JobInformation = ({id}) => {
           </Box>
           <Box style={{ display: "flex", marginLeft: "20px" }}>
             <div>
-              <button className="btn-giveTest btn fullwidthbtn">Apply</button>
+              <button className="btn-giveTest btn fullwidthbtn styleInJobApplyButton">Apply</button>
             </div>
           </Box>
         </div>
         <div style={{ display: "flex" }}>
           <Box style={{ display: "flex", marginLeft: "20px" }}>
             <div>
-              <button className="btn-giveTest btn fullwidthbtn">
+              <button className="btn-giveTest btn fullwidthbtn styleInJobApplyButton">
                 Bookmark
               </button>
             </div>
             <div>
-              <button className="btn-giveTest btn fullwidthbtn">
+              <button className="btn-giveTest btn fullwidthbtn styleInJobApplyButton">
                 Calender
               </button>
             </div>
@@ -92,8 +93,17 @@ const JobInformation = ({id}) => {
       <Card>
         <JobDescription id={id} />
       </Card>
-    </div>
+    </JobInfromationContainer>
   );
 };
 
 export default JobInformation;
+
+const JobInfromationContainer = styled.div`
+  width: "100%";
+
+  .styleInJobApplyButton{
+    box-shadow: none;
+  }
+
+`;

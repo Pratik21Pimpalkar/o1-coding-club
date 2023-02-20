@@ -24,8 +24,8 @@ const JobDeadLineCard = ({id}) => {
 export default JobDeadLineCard;
 
 const JobDescriptionContainer = styled.div`
-  background-color: #140230;
-  color: #fff;
+  background-color: #1B2430;
+  color: #e5e5e5;
   padding: 1.5rem;
   margin-top: 20px;
   margin-bottom: 20px;
