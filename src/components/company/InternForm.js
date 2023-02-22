@@ -75,24 +75,27 @@ export default function FormIntern() {
             toast.error("Invalid End Date");
             return;
         }
-        if (formData.stipendType === 'Fixed' && activeStep >= 2) {
-            if (!formData.stipendAmount) {
-                toast.error('Stipend amount field required')
-                return
+        if (formData.stipend === 'Paid') {
+
+            if (formData.stipendType === 'Fixed' && activeStep >= 2) {
+                if (!formData.stipendAmount) {
+                    toast.error('Stipend amount field required')
+                    return
+                }
+                if (formData.stipendAmount < 0) {
+                    toast.error('Amount should not be negative')
+                    return
+                }
             }
-            if (formData.stipendAmount < 0) {
-                toast.error('Amount should not be negative')
-                return
-            }
-        }
-        if (formData.stipendType === 'Range' && activeStep >= 2) {
-            if (!formData.stipendMinAmount || !formData.stipendMaxAmount) {
-                toast.error('Stipend amount field required')
-                return
-            }
-            if (formData.stipendMinAmount < 0 || formData.stipendMaxAmount < 0) {
-                toast.error('Amount should not be negative')
-                return
+            if (formData.stipendType === 'Range' && activeStep >= 2) {
+                if (!formData.stipendMinAmount || !formData.stipendMaxAmount) {
+                    toast.error('Stipend amount field required')
+                    return
+                }
+                if (formData.stipendMinAmount < 0 || formData.stipendMaxAmount < 0) {
+                    toast.error('Amount should not be negative')
+                    return
+                }
             }
         }
         if (activeStep >= 3) {
@@ -333,7 +336,7 @@ export default function FormIntern() {
                                 </RadioGroup>
                             </FormControl>
 
-                            <FormControl required>
+                            {formData.stipend === 'Paid' && <FormControl required>
                                 <FormLabel id="stipendType" style={{
                                     color: 'white',
                                     textAlign: 'start'
@@ -356,9 +359,9 @@ export default function FormIntern() {
                                         color: 'white'
                                     }} />
                                 </RadioGroup>
-                            </FormControl>
+                            </FormControl>}
 
-                            {formData.stipendType === 'Range' && <Box display={'flex'} justifyContent='space-between' flexDirection={{ xs: 'column', sm: 'row' }} gap={2}>
+                            {formData.stipendType === 'Range' && formData.stipend === 'Paid' && <Box display={'flex'} justifyContent='space-between' flexDirection={{ xs: 'column', sm: 'row' }} gap={2}>
                                 <CustomTextField
                                     margin={"dense"}
                                     fullWidth
@@ -385,7 +388,7 @@ export default function FormIntern() {
                                 />
                             </Box>}
 
-                            {formData.stipendType === 'Fixed' && <CustomTextField
+                            {formData.stipendType === 'Fixed' && formData.stipend === 'Paid' && <CustomTextField
                                 margin={"dense"}
                                 fullWidth
                                 name="stipendAmount"
@@ -398,7 +401,7 @@ export default function FormIntern() {
                                 required
                             />}
 
-                            <CustomTextField
+                            {formData.stipend === 'Paid' && <CustomTextField
                                 margin={"dense"}
                                 fullWidth
                                 name="variable"
@@ -409,7 +412,7 @@ export default function FormIntern() {
                                 label="Variable"
                                 variant="filled"
                                 color="secondary"
-                            />
+                            />}
                         </Box>}
                         {activeStep === 3 && <Box sx={{
                             display: 'flex',
