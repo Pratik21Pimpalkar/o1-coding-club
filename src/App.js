@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 import ThousandX from "./pages/ThousandX";
 import PlaceKit from "./pages/PlaceKit";
 import CoreSubjectsForPlacements from "./pages/CoreSubjectsForPlacements";
-import JobStudent from "./pages/JobStudent";
+import JobStudent from "./pages/Jobs";
 import JobSpecificPage from "./pages/JobSpecificPage";
 function App() {
   return (

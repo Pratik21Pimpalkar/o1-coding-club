@@ -1,20 +1,13 @@
 import React, { useState } from "react";
 import NavbarMain from "../components/NavbarMain";
-import JobCard from "../components/JobCard";
 import JobInformation from "../components/JobInformation";
 import styled from "styled-components";
-import { Jobdata } from "../components/JobData";
 import JobDeadLineCard from "../components/JobDeadLineCard";
 import JobAdditionalInfomationCard from "../components/JobAdditionalInfomationCard";
 import JobFilter from "../components/JobFilter";
+import JobCardSidebar from "../components/JobCardSidebar";
 const JobStudent = () => {
   const [jobId, setJobId] = useState(1);
-  const [border, setBorder] = useState("none");
-
-  const handleOnClick = (id)=>{
-    setJobId(id)
-    setBorder("1px solid #816797")
-  }
 
   return (
     <>
@@ -30,20 +23,7 @@ const JobStudent = () => {
         <JobFilter/>
         <JobContainer>
           <div className="jobCardSidebar">
-            <div style={{ height: "100%" }}>
-              {Jobdata.map((job) => {
-                return (
-                  <JobCard
-                    onclick={()=> handleOnClick(job.id)}
-                    border={border}
-                    name={job.jobTitle}
-                    companyName={job.company}
-                    impressions={job.impressions}
-                    daysleft={job.daysleft}
-                  />
-                );
-              })}
-            </div>
+            <JobCardSidebar setJobId={setJobId} />
           </div>
           <div className="jobInformationWindow">
             <JobInformation id={jobId} />
