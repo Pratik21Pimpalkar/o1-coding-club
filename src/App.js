@@ -13,6 +13,7 @@ import ThousandX from "./pages/ThousandX";
 import PlaceKit from "./pages/PlaceKit";
 import CoreSubjectsForPlacements from "./pages/CoreSubjectsForPlacements";
 import JobStudent from "./pages/JobStudent";
+import JobSpecificPage from "./pages/JobSpecificPage";
 function App() {
   return (
     <>
@@ -24,7 +25,8 @@ function App() {
         <Route path="/csfundamentals" element={<CoreSubjectsForPlacements />} />
         <Route path="/placekit" element={<PlaceKit />} />
         <Route path="/1000x" element={<ThousandX />} />
-        <Route path="/jobs/students" element={<JobStudent />} />
+        <Route path="/jobs" element={<JobStudent />} />
+        <Route path="/jobs/:id" element={<JobSpecificPage />} />
         {/*     
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />

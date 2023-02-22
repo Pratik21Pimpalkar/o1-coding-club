@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { Jobdata } from "../components/JobData";
 import JobDeadLineCard from "../components/JobDeadLineCard";
 import JobAdditionalInfomationCard from "../components/JobAdditionalInfomationCard";
+import JobFilter from "../components/JobFilter";
 const JobStudent = () => {
   const [jobId, setJobId] = useState(1);
   const [border, setBorder] = useState("none");
@@ -26,6 +27,7 @@ const JobStudent = () => {
         }}
       >
         <NavbarMain />
+        <JobFilter/>
         <JobContainer>
           <div className="jobCardSidebar">
             <div style={{ height: "100%" }}>
@@ -57,7 +59,7 @@ const JobStudent = () => {
 const JobContainer = styled.div`
   display: flex;
   margin: 0 3rem;
-  margin-top: 6rem;
+  margin-top: 11%;
   height: 100%;
   justify-content: flex-end;
 

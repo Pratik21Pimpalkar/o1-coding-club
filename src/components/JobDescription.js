@@ -8,7 +8,7 @@ import { Jobdata } from "../components/JobData";
 const JobDescription = ({ id }) => {
   const filterById = (jsonObject, id) => {
     return jsonObject.filter((jsonObject) => {
-      return jsonObject["id"] === id;
+      return jsonObject["id"] === Number(id);
     })[0];
   };
 

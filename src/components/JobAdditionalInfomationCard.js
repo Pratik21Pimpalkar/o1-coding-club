@@ -39,8 +39,12 @@ const SmallCard = ({ title, info }) => {
   );
 };
 
-const JobAdditionalInfomationCard = ({id}) => {
-  const filterById = (jsonObject, id) => {return jsonObject.filter((jsonObject)=>{return (jsonObject['id'] === id);})[0];}
+const JobAdditionalInfomationCard = ({ id }) => {
+  const filterById = (jsonObject, id) => {
+    return jsonObject.filter((jsonObject) => {
+      return jsonObject["id"] === Number(id);
+    })[0];
+  };
   const selectedObject = filterById(Jobdata, id);
   return (
     <JobDescriptionContainer>
@@ -52,13 +56,16 @@ const JobAdditionalInfomationCard = ({id}) => {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-evenly",
-          marginTop: "35px"
+          marginTop: "35px",
         }}
       >
         <SmallCard title={"Job Location(s)"} info={selectedObject.location} />
         <SmallCard title={"Experience"} info={selectedObject.exprience} />
         <SmallCard title={"Salary/Stipend"} info={selectedObject.salary} />
-        <SmallCard title={"Work Detail"} info={selectedObject.workDetails.workingdays} />
+        <SmallCard
+          title={"Work Detail"}
+          info={selectedObject.workDetails.workingdays}
+        />
         <SmallCard title={"Job Type/Timing"} info={selectedObject.jobTiming} />
       </div>
     </JobDescriptionContainer>
@@ -68,7 +75,7 @@ const JobAdditionalInfomationCard = ({id}) => {
 export default JobAdditionalInfomationCard;
 
 const JobDescriptionContainer = styled.div`
-  background-color: #1B2430;
+  background-color: #1b2430;
   color: #e5e5e5;
   padding: 1.5rem;
   margin-top: 20px;
