@@ -15,6 +15,8 @@ import CoreSubjectsForPlacements from "./pages/CoreSubjectsForPlacements";
 import ManageDashboard from "./pages/Company/ManageDashboard";
 import CreateJob from "./pages/Company/CreateJob";
 import CreateIntern from "./pages/Company/CreateIntern";
+import JobStudent from "./pages/Jobs";
+import JobSpecificPage from "./pages/JobSpecificPage";
 function App() {
   return (
     <>
@@ -31,6 +33,8 @@ function App() {
           <Route path="manage/jobs/new" element={<CreateJob />} />
           <Route path="manage/intern/new" element={<CreateIntern />} />
         </Route>
+        <Route path="/jobs" element={<JobStudent />} />
+        <Route path="/jobs/:id" element={<JobSpecificPage />} />
         {/*     
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />

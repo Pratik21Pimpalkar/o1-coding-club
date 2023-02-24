@@ -16,6 +16,10 @@ const Circle = () => {
 export default Circle;
 
 const CircleStyle = styled.div`
+  /* position: relative;
+  right: 8.3rem; */
+  height: 34rem;
+  width: 34rem;
 
   background: rgba(0, 0, 0, 0)
     linear-gradient(90deg, rgb(229, 0, 255) 0%, rgb(130, 0, 255) 100%) repeat
@@ -44,5 +48,26 @@ transform: translateY(0)
   &:hover {
     transform: scale(1.01);
     transition: 0.9s all ease-in-out;
+  }
+  @media screen and (max-width: 900px) {
+    animation: none;
+    transform: scale(0.8) !important;
+  }
+  @media screen and (max-width: 600px) {
+    animation: none;
+    /* margin-top: 5rem; */
+    transform: scale(0.5) !important;
+    right: 10rem;
+  }
+
+  @media screen and (min-width: 600px) {
+    position: relative;
+    right: 8.3rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    transform: scale(0.5) !important;
+    right: 10rem;
+    animation: none;
   }
 `;
