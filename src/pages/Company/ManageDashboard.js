@@ -1,5 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import HiringBanner from "../../components/company/HiringBanner";
+import ManageJobsAndIntern from "../../components/company/ManageJobsAndIntern";
 import Navbar from "../../components/NavbarMain";
 
 export default function ManageDashboard() {
@@ -18,6 +19,7 @@ export default function ManageDashboard() {
                     <Typography variant="h5" color={'white'}>Choose your opportunity category from below</Typography>
                 </Box>
                 <HiringBanner />
+                <ManageJobsAndIntern />
             </Container>
         </Container>
     )

@@ -6,8 +6,20 @@ import JobDeadLineCard from "../components/JobDeadLineCard";
 import JobAdditionalInfomationCard from "../components/JobAdditionalInfomationCard";
 import JobFilter from "../components/JobFilter";
 import JobCardSidebar from "../components/JobCardSidebar";
+import DUMMY_DATA from "../components/DummyData";
+import { Grid } from "@mui/material";
+import JobDescription from "./JobDescription";
 const JobStudent = () => {
-  const [jobId, setJobId] = useState(1);
+  const [selectedId, setSelectedId] = useState(1);
+
+  const handleViewApplication = (id) => {
+    setSelectedId(id);
+  }
+
+  const handleFilterChange = () => { }
+
+  const jobInfo = DUMMY_DATA.find(job => job.id === selectedId)
+  console.log(jobInfo)
 
   return (
     <>
@@ -17,48 +29,36 @@ const JobStudent = () => {
           scrollBehavior: "smooth",
           userSelect: "none",
           overflowX: "hidden",
+          minHeight: '100vh'
         }}
       >
         <NavbarMain />
-        <JobFilter/>
-        <JobContainer>
-          <div className="jobCardSidebar">
-            <JobCardSidebar setJobId={setJobId} />
-          </div>
-          <div className="jobInformationWindow">
-            <JobInformation id={jobId} />
-            <JobDeadLineCard id={jobId} />
-            <JobAdditionalInfomationCard id={jobId} />
-          </div>
-        </JobContainer>
+        <JobFilter changeFilter={handleFilterChange} />
+        <Grid container spacing={2} sx={{
+          marginTop: '10rem',
+          padding: '0rem 2rem 0rem 2rem',
+        }}>
+          <Grid item md={4} sx={{
+            maxHeight: '80vh',
+            overflowY: 'auto',
+            padding: '1rem',
+          }}>
+            <JobCardSidebar selectedId={selectedId} changeId={handleViewApplication} />
+          </Grid>
+          <Grid item md={8} sx={{
+            maxHeight: '80vh',
+            overflowY: 'auto',
+            paddingRight: '1rem',
+          }}>
+            <JobInformation jobInfo={jobInfo} selectedId={selectedId} />
+            <JobDeadLineCard jobInfo={jobInfo} />
+            <JobDescription jobInfo={jobInfo} />
+            <JobAdditionalInfomationCard jobInfo={jobInfo} />
+          </Grid>
+        </Grid>
       </div>
     </>
   );
 };
-
-const JobContainer = styled.div`
-  display: flex;
-  margin: 0 3rem;
-  margin-top: 11%;
-  height: 100%;
-  justify-content: flex-end;
-
-  .jobCardSidebar {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    overflow-y: auto;
-    height: 100vh;
-    position: fixed;
-    left: 5%;
-  }
-
-  .jobInformationWindow {
-    display: flex;
-    width: 60%;
-    margin-left: 40px;
-    flex-direction: column;
-  }
-`;
 
 export default JobStudent;

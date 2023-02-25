@@ -1,54 +1,32 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import styled from "styled-components";
-import { Jobdata } from "../components/JobData";
+import { Grid } from "@mui/material";
 
-const SmallCard = ({ title, info }) => {
+const SmallCard = (props) => {
   return (
-    <Card
-      sx={{
+    <Box
+      style={{
         display: "flex",
-        // flexDirection: "column",
         justifyContent: "space-between",
-        height: "100px",
-        backgroundColor: "#51557E",
-        color: "#e5e5e5",
-        marginBottom: "35px",
-        width: "40%",
+        padding: "0.75rem",
+        backgroundColor: 'transparent',
+        border: '1px solid white',
+        borderRadius: '1rem'
       }}
     >
-      <Box
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-around",
-          marginLeft: "5px",
-          padding: "10px",
-        }}
-      >
-        <Typography variant="subtitle1" component="p">
-          {title}
-        </Typography>
-        <Typography variant="subtitle2" component="p">
-          {info}
-        </Typography>
-      </Box>
-    </Card>
+      {props.children}
+    </Box>
   );
 };
 
-const JobAdditionalInfomationCard = ({ id }) => {
-  const filterById = (jsonObject, id) => {
-    return jsonObject.filter((jsonObject) => {
-      return jsonObject["id"] === Number(id);
-    })[0];
-  };
-  const selectedObject = filterById(Jobdata, id);
+const JobAdditionalInfomationCard = (props) => {
+  const data = props.jobInfo
+
   return (
     <JobDescriptionContainer>
-      <Typography variant="h5" component="h2">
+      <Typography variant="h5" fontWeight={700} component="h2">
         Additional Information
       </Typography>
       <div
@@ -59,14 +37,104 @@ const JobAdditionalInfomationCard = ({ id }) => {
           marginTop: "35px",
         }}
       >
-        <SmallCard title={"Job Location(s)"} info={selectedObject.location} />
-        <SmallCard title={"Experience"} info={selectedObject.exprience} />
-        <SmallCard title={"Salary/Stipend"} info={selectedObject.salary} />
-        <SmallCard
-          title={"Work Detail"}
-          info={selectedObject.workDetails.workingdays}
-        />
-        <SmallCard title={"Job Type/Timing"} info={selectedObject.jobTiming} />
+        <Grid container spacing={3}>
+          <Grid item md={4}>
+            <SmallCard>
+              <Box display={'flex'} flexDirection={'column'}>
+                <Typography variant="h6" component="p" fontWeight={600}>
+                  Work Location
+                </Typography>
+                <Typography variant="body1" component="p">
+                  {data.location}
+                </Typography>
+              </Box>
+            </SmallCard>
+          </Grid>
+          {data.type === 'Job' && <Grid item md={4}>
+            <SmallCard>
+              <Box display={'flex'} flexDirection={'column'}>
+                <Typography variant="h6" component="p" fontWeight={600}>
+                  Experience
+                </Typography>
+                <Typography variant="body1" component="p">
+                  {data.experience} Year(s)
+                </Typography>
+              </Box>
+            </SmallCard>
+          </Grid>}
+          {data.type === 'Internship' && <Grid item md={4}>
+            <SmallCard>
+              <Box display={'flex'} flexDirection={'column'}>
+                <Typography variant="h6" component="p" fontWeight={600}>
+                  Duration
+                </Typography>
+                <Typography variant="body1" component="p">
+                  {data.duration} Month(s)
+                </Typography>
+              </Box>
+            </SmallCard>
+          </Grid>}
+          <Grid item md={4}>
+            <SmallCard>
+              <Box display={'flex'} flexDirection={'column'}>
+                <Typography variant="h6" component="p" fontWeight={600}>
+                  Work Timing
+                </Typography>
+                <Typography variant="body1" component="p">
+                  {data.timing}
+                </Typography>
+              </Box>
+            </SmallCard>
+          </Grid>
+          <Grid item md={4}>
+            <SmallCard>
+              <Box display={'flex'} flexDirection={'column'}>
+                <Typography variant="h6" component="p" fontWeight={600}>
+                  Working Days
+                </Typography>
+                <Typography variant="body1" component="p">
+                  {data.workingDays}
+                </Typography>
+              </Box>
+            </SmallCard>
+          </Grid>
+          <Grid item md={4}>
+            <SmallCard>
+              <Box display={'flex'} flexDirection={'column'}>
+                <Typography variant="h6" component="p" fontWeight={600}>
+                  {data.type === 'Internship' ? 'Stipend / Month' : 'Salary / Year'}
+                </Typography>
+                <Typography variant="body1" component="p">
+                  Rs. {data.salary}
+                </Typography>
+              </Box>
+            </SmallCard>
+          </Grid>
+          <Grid item md={4}>
+            <SmallCard>
+              <Box display={'flex'} flexDirection={'column'}>
+                <Typography variant="h6" component="p" fontWeight={600}>
+                  No. of Openings
+                </Typography>
+                <Typography variant="body1" component="p">
+                  {data.noOfOpenings}
+                </Typography>
+              </Box>
+            </SmallCard>
+          </Grid>
+          <Grid item md={4}>
+            <SmallCard>
+              <Box display={'flex'} flexDirection={'column'}>
+                <Typography variant="h6" component="p" fontWeight={600}>
+                  Eligibility
+                </Typography>
+                <Typography variant="body1" component="p">
+                  {data.eligibility}
+                </Typography>
+              </Box>
+            </SmallCard>
+          </Grid>
+        </Grid>
       </div>
     </JobDescriptionContainer>
   );
@@ -80,6 +148,7 @@ const JobDescriptionContainer = styled.div`
   padding: 1.5rem;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 1rem;
 
   .jobResponsibilities {
     margin-top: 10px;

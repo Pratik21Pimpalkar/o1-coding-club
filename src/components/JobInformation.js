@@ -1,143 +1,69 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import JobDescription from "./JobDescription";
-import { Jobdata } from "../components/JobData";
-import styled from "styled-components";
-import Register from "./JobStudentRegister";
+import { Divider, IconButton, Tooltip } from "@mui/material";
+import { BookmarkBorder, Bookmark, Edit } from "@mui/icons-material";
+import JobCardHeader from "./JobCardHeader";
 
-const JobInformation = ({ id }) => {
+const JobInformation = (props) => {
   const navigate = useNavigate();
 
-  const filterById = (jsonObject, id) => {
-    return jsonObject.filter((jsonObject) => {
-      return jsonObject["id"] === Number(id);
-    })[0];
-  };
-
-  const selectedObject = filterById(Jobdata, id);
-  console.log(selectedObject)
-
-  const handleUserModal = () => {
-    setOpen(true);
-  };
-
-  const [open, setOpen] = useState(false);
-  const handleClose = () => setOpen(false);
-
-  const openJobPage = () => {
-    navigate(`/jobs/${id}`);
-  };
+  const data = props.jobInfo
+  console.log(data)
 
   return (
-    <JobInfromationContainer>
-      <Card
-        sx={{
-          display: "flex",
-          // flexDirection: "column",
-          justifyContent: "space-between",
-          height: "300px",
-          backgroundColor: "#1B2430",
-          color: "#ffffff",
-          marginBottom: "30px",
-        }}
-      >
-        <div style={{ width: "100%" }}>
-          <div
-            onClick={openJobPage}
+    <Box sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      bgcolor: "#1B2430",
+      color: 'white',
+      marginBottom: '2rem',
+      padding: '1.5rem',
+      marginBottom: '1rem',
+      borderRadius: '1rem',
+      gap: 2
+    }}>
+      <JobCardHeader
+        name={data.name}
+        title={data.title}
+        location={data.location}
+        isAdmin={props.isAdmin}
+      />
+
+      {!props.isAdmin && <Divider sx={{
+        borderColor: 'white'
+      }} />}
+      {!props.isAdmin && <Box display={'flex'} justifyContent='space-between' marginTop={'0.5rem'}>
+        <Box display={'flex'} gap={1} alignItems='center'>
+          <Tooltip title='Bookmark'>
+            <IconButton>
+              {data.isBookmarked ? <Bookmark sx={{
+                color: 'white'
+              }} /> : <BookmarkBorder sx={{
+                color: 'white'
+              }} />}
+            </IconButton>
+          </Tooltip>
+          <Typography>Bookmark</Typography>
+        </Box>
+        <div>
+          <button
+            className="btn-giveTest btn fullwidthbtn styleInJobApplyButton"
             style={{
-              display: "flex",
-              justifyContent: "space-between",
-              marginBottom: "5rem",
-              cursor: "pointer",
+              marginTop: '0rem'
+            }}
+            onClick={() => {
+              navigate(`/opportunities/${data.id}/register`)
             }}
           >
-            <Box
-              sx={{ display: "flex", marginLeft: "20px", marginTop: "30px" }}
-            >
-              <CardMedia
-                component="img"
-                sx={{ width: 151 }}
-                image="https://m.media-amazon.com/images/G/31/social_share/amazon_logo._CB633266945_.png"
-                alt="Company Logo"
-                style={{ maxWidth: "100px", maxHeight: "100px" }}
-              />
-
-              <Box sx={{ display: "flex" }}>
-                <CardContent sx={{ paddingTop: "0", marginTop: "-6px" }}>
-                  <Typography component="div" variant="h5">
-                    {selectedObject.jobTitle}
-                  </Typography>
-                  <Typography
-                    variant="subtitle2"
-                    color="rgba(255,255,255,0.5)"
-                    component="p"
-                  >
-                    {selectedObject.company}
-                  </Typography>
-                  <Typography
-                    variant="subtitle2"
-                    color="rgba(255,255,255,0.5)"
-                    component="p"
-                  >
-                    {selectedObject.time}
-                  </Typography>
-                  <Typography
-                    variant="subtitle2"
-                    color="rgba(255,255,255,0.5)"
-                    component="p"
-                  >
-                    {selectedObject.applied} applications
-                  </Typography>
-                </CardContent>
-              </Box>
-            </Box>
-            <Box style={{ display: "flex", marginLeft: "20px" }}>
-              <div>
-                <button
-                  onClick={() => setOpen(true)}
-                  className="btn-giveTest btn fullwidthbtn styleInJobApplyButton"
-                >
-                  Apply
-                </button>
-                <Register open={open} handleClose={handleClose} />
-              </div>
-            </Box>
-          </div>
-          <div style={{ display: "flex" }}>
-            <Box style={{ display: "flex", marginLeft: "20px" }}>
-              <div>
-                <button className="btn-giveTest btn fullwidthbtn styleInJobApplyButton">
-                  Bookmark
-                </button>
-              </div>
-              <div>
-                <button className="btn-giveTest btn fullwidthbtn styleInJobApplyButton">
-                  Calender
-                </button>
-              </div>
-            </Box>
-          </div>
+            Apply
+          </button>
         </div>
-      </Card>
-
-      <Card>
-        {/* <JobDescription id={id} /> */}
-      </Card>
-    </JobInfromationContainer>
-  );
+      </Box>}
+    </Box>
+  )
 };
 
 export default JobInformation;
 
-const JobInfromationContainer = styled.div`
-  width: "100%";
-
-  .styleInJobApplyButton {
-    box-shadow: none;
-  }
-`;

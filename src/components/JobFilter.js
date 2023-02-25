@@ -4,6 +4,9 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import JobFilterDropdown from "./JobFilterDropdown";
+import { Box, IconButton, Tooltip } from "@mui/material";
+import { Bookmarks } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const Type = ["Remote", "Onsite", "Hybrid"];
 const Cities = [
@@ -42,8 +45,9 @@ const ExprienceLevel = [
 ];
 
 const JobFilter = () => {
-  const [selectedItem, setSelectedItem] = useState("");
+  const [selectedItem, setSelectedItem] = useState("Job");
   const [backgroundColor, setBackgroundColor] = useState(false);
+  const navigate = useNavigate()
 
   const handleChangeJobType = (event) => {
     setSelectedItem(event.target.value);
@@ -75,10 +79,10 @@ const JobFilter = () => {
               inputProps={{ "aria-label": "Without label" }}
               sx={{ color: "e5e5e5 !important" }}
             >
-              <MenuItem value="">
-                <em>Job</em>
+              <MenuItem value="Job">
+                Job
               </MenuItem>
-              <MenuItem value={10}>Internship</MenuItem>
+              <MenuItem value={'Internship'}>Internship</MenuItem>
             </Select>
           </FormControl>
         </div>
@@ -99,6 +103,18 @@ const JobFilter = () => {
             data={Companies}
           />
         </div>
+
+        <Box display={'flex'} marginRight='1rem'>
+          <Tooltip title="Show Bookmarks">
+            <IconButton onClick={() => {
+              navigate('/opportunities/bookmarks')
+            }}>
+              <Bookmarks sx={{
+                color: 'white'
+              }} />
+            </IconButton>
+          </Tooltip>
+        </Box>
       </div>
     </Navwrap>
   );

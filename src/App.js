@@ -16,7 +16,11 @@ import ManageDashboard from "./pages/Company/ManageDashboard";
 import CreateJob from "./pages/Company/CreateJob";
 import CreateIntern from "./pages/Company/CreateIntern";
 import JobStudent from "./pages/Jobs";
-import JobSpecificPage from "./pages/JobSpecificPage";
+import JobBookmarks from "./pages/JobBookmarks";
+import StudentRegister from "./pages/StudentRegister";
+import ManageJob from "./pages/Company/ManageJob";
+import ManageIntern from "./pages/Company/ManageIntern";
+import SpecificWork from "./pages/SpecificWork";
 function App() {
   return (
     <>
@@ -30,11 +34,16 @@ function App() {
         <Route path="/1000x" element={<ThousandX />} />
         <Route path="/company">
           <Route path="manage" element={<ManageDashboard />} />
+          <Route path="manage/jobs" element={<ManageJob />} />
+          <Route path="manage/intern" element={<ManageIntern />} />
           <Route path="manage/jobs/new" element={<CreateJob />} />
+          <Route path="manage/jobs/:id" element={<SpecificWork />} />
           <Route path="manage/intern/new" element={<CreateIntern />} />
+          <Route path="manage/intern/:id" element={<SpecificWork />} />
         </Route>
-        <Route path="/jobs" element={<JobStudent />} />
-        <Route path="/jobs/:id" element={<JobSpecificPage />} />
+        <Route path="/opportunities" element={<JobStudent />} />
+        <Route path="/opportunities/bookmarks" element={<JobBookmarks />} />
+        <Route path="/opportunities/:id/register" element={<StudentRegister />} />
         {/*     
         <Route path="/aptitudeseries" element={<Aptitudeseries />} />
         <Route path="/sdebootcamp" element={<Sdebootcamp />} />
@@ -42,7 +51,7 @@ function App() {
         <Route path="/coderun" element={<Coderun />} /> 
         <Route path="/dsa" element={<DSA />} />
         <Route path="/pythonbootcamp" element={<Pythonbootcamp />} />*/}
-        {/* <Route path="*" element={<NoPage/>} />  */}
+        {/* <Route path="*" element={<NoPage />} /> */}
 
       </Routes>
     </>

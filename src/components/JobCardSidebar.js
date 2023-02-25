@@ -1,24 +1,26 @@
-import React,{useState} from "react";
-import { Jobdata } from "./JobData";
-import JobCard from "./JobCard";
+import React from "react";
+import JobCardInfo from "./JobCardInfo";
 
-const JobCardSidebar = ({ setJobId }) => {
-    const [border, setBorder] = useState("none");
-  const handleOnClick = (id) => {
-    setJobId(id);
-    setBorder("1px solid #816797");
-  };
+import DUMMY_DATA from "./DummyData";
+
+const JobCardSidebar = (props) => {
+
   return (
     <div style={{ height: "100%" }}>
-      {Jobdata.map((job) => {
+      {DUMMY_DATA.map((job) => {
         return (
-          <JobCard
-            onclick={() => handleOnClick(job.id)}
-            border={border}
-            name={job.jobTitle}
-            companyName={job.company}
-            impressions={job.impressions}
-            daysleft={job.daysleft}
+          <JobCardInfo
+            key={job.id}
+            id={job.id}
+            name={job.name}
+            title={job.title}
+            deadlineDate={"27/01/2023"}
+            type={job.type}
+            experience={job.experience}
+            location={job.location}
+            duration={job.duration}
+            changeId={props.changeId}
+            selectedId={props.selectedId}
           />
         );
       })}

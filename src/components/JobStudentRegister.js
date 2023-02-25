@@ -10,8 +10,8 @@ import JobCandidateinfo from "./JobCandidateinfo";
 const Register = ({ open, handleClose }) => {
   let navigate = useNavigate();
 
-  const [tokenAfterLogin, setTokenAfterLogin] = useState("");
-  const [isLogedIn, setIsLogedIn] = useState(false);
+  // const [tokenAfterLogin, setTokenAfterLogin] = useState("");
+  const [isLogedIn, setIsLogedIn] = useState(true);
   const [isDataPresent, setIsDataPresent] = useState(false);
   const [userInfo, setUserInfo] = useState({
     name: "",
@@ -71,24 +71,24 @@ const Register = ({ open, handleClose }) => {
     borderRadius: "50%",
   };
 
-  const provider = new GoogleAuthProvider();
-  const signInWithGoogle = () =>
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        const credential = GoogleAuthProvider.credentialFromResult(result);
-        const token = credential.accessToken;
-        setTokenAfterLogin(token);
-        const user = result.user;
-        setIsLogedIn(true);
-        console.log(credential, user, token);
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        const email = error.customData.email;
-        const credential = GoogleAuthProvider.credentialFromError(error);
-        console.log(errorCode, errorMessage, email, credential);
-      });
+  // const provider = new GoogleAuthProvider();
+  // const signInWithGoogle = () =>
+  //   signInWithPopup(auth, provider)
+  //     .then((result) => {
+  //       const credential = GoogleAuthProvider.credentialFromResult(result);
+  //       const token = credential.accessToken;
+  //       setTokenAfterLogin(token);
+  //       const user = result.user;
+  //       setIsLogedIn(true);
+  //       console.log(credential, user, token);
+  //     })
+  //     .catch((error) => {
+  //       const errorCode = error.code;
+  //       const errorMessage = error.message;
+  //       const email = error.customData.email;
+  //       const credential = GoogleAuthProvider.credentialFromError(error);
+  //       console.log(errorCode, errorMessage, email, credential);
+  //     });
 
   return (
     <>
@@ -129,7 +129,7 @@ const Register = ({ open, handleClose }) => {
               {/* <button onClick={signInWithGoogle}>Google</button> */}
               <IconButton
                 style={googlebuttonstyle}
-                onClick={signInWithGoogle}
+                onClick={() => { }}
                 aria-label="SignIn"
                 size="large"
               >
