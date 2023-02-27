@@ -1,13 +1,14 @@
 import React from "react";
 import JobCardInfo from "./JobCardInfo";
-
-import DUMMY_DATA from "./DummyData";
+import { useSelector } from "react-redux";
 
 const JobCardSidebar = (props) => {
+  const sideBarData = useSelector(state => state.opportunities.sideBarContent)
+  const jobDescription = useSelector(state => state.opportunities.jobDescription)
 
   return (
     <div style={{ height: "100%" }}>
-      {DUMMY_DATA.map((job) => {
+      {sideBarData.map((job) => {
         return (
           <JobCardInfo
             key={job.id}
@@ -19,8 +20,7 @@ const JobCardSidebar = (props) => {
             experience={job.experience}
             location={job.location}
             duration={job.duration}
-            changeId={props.changeId}
-            selectedId={props.selectedId}
+            selectedId={jobDescription ? jobDescription.id : false}
           />
         );
       })}

@@ -17,7 +17,6 @@ const DUMMY_DATA = [
         timing: "Full Time",
         workType: "In Office",
         eligibility: "Graduate",
-        isBookmarked: true,
         about: `Web Developer\n
         We are looking for an experienced Web Developer to join our team. The ideal candidate will have a strong background in web development and a passion for creating innovative web applications.
         Responsibilities:\n
@@ -55,7 +54,6 @@ Ability to work independently and as part of a team.\n`,
         timing: "Full Time",
         workType: "In Office",
         eligibility: "Graduate",
-        isBookmarked: true,
         about: `Data Analyst\n
         We are looking for a Data Analyst to join our team. The successful candidate will be responsible for collecting, analyzing, and interpreting large amounts of data to identify trends and patterns. The Data Analyst will also be responsible for developing and implementing data models and reports to support business decisions.\n
         Responsibilities:\n

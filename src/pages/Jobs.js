@@ -7,20 +7,11 @@ import JobAdditionalInfomationCard from "../components/JobAdditionalInfomationCa
 import JobFilter from "../components/JobFilter";
 import JobCardSidebar from "../components/JobCardSidebar";
 import DUMMY_DATA from "../components/DummyData";
-import { Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import JobDescription from "./JobDescription";
+import { useSelector } from "react-redux";
 const JobStudent = () => {
-  const [selectedId, setSelectedId] = useState(1);
-
-  const handleViewApplication = (id) => {
-    setSelectedId(id);
-  }
-
-  const handleFilterChange = () => { }
-
-  const jobInfo = DUMMY_DATA.find(job => job.id === selectedId)
-  console.log(jobInfo)
-
+  const jobDescription = useSelector(state => state.opportunities.jobDescription)
   return (
     <>
       <div
@@ -33,28 +24,35 @@ const JobStudent = () => {
         }}
       >
         <NavbarMain />
-        <JobFilter changeFilter={handleFilterChange} />
+        <JobFilter />
         <Grid container spacing={2} sx={{
           marginTop: '10rem',
           padding: '0rem 2rem 0rem 2rem',
         }}>
-          <Grid item md={4} sx={{
+          <Grid item md={jobDescription ? 4 : 12} sx={{
             maxHeight: '80vh',
             overflowY: 'auto',
             padding: '1rem',
+            // display: 'flex',
+            // justifyContent: 'center'
           }}>
-            <JobCardSidebar selectedId={selectedId} changeId={handleViewApplication} />
+            <Box sx={{
+              maxWidth: '40vw',
+              margin: 'auto'
+            }}>
+              <JobCardSidebar />
+            </Box>
           </Grid>
-          <Grid item md={8} sx={{
+          {<Grid item md={8} sx={{
             maxHeight: '80vh',
             overflowY: 'auto',
             paddingRight: '1rem',
           }}>
-            <JobInformation jobInfo={jobInfo} selectedId={selectedId} />
-            <JobDeadLineCard jobInfo={jobInfo} />
-            <JobDescription jobInfo={jobInfo} />
-            <JobAdditionalInfomationCard jobInfo={jobInfo} />
-          </Grid>
+            {jobDescription && <JobInformation jobInfo={jobDescription} />}
+            {jobDescription && <JobDeadLineCard jobInfo={jobDescription} />}
+            {jobDescription && <JobDescription jobInfo={jobDescription} />}
+            {jobDescription && <JobAdditionalInfomationCard jobInfo={jobDescription} />}
+          </Grid>}
         </Grid>
       </div>
     </>

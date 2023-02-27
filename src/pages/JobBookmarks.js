@@ -2,10 +2,13 @@ import { Box, Container, Typography } from "@mui/material";
 import JobInfo from "../components/JobInfo";
 import Navbar from "../components/NavbarMain";
 import DUMMY_DATA from "../components/DummyData";
+import { useSelector } from "react-redux";
 
 export default function JobBookmarks() {
 
-    const filteredData = DUMMY_DATA.filter(data => data.isBookmarked)
+    const bookmarks = useSelector(state => state.userData.bookmarks)
+
+    const filteredData = DUMMY_DATA.filter(data => data.id in bookmarks)
     console.log(filteredData)
 
     return (

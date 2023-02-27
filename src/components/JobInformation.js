@@ -5,12 +5,22 @@ import Typography from "@mui/material/Typography";
 import { Divider, IconButton, Tooltip } from "@mui/material";
 import { BookmarkBorder, Bookmark, Edit } from "@mui/icons-material";
 import JobCardHeader from "./JobCardHeader";
+import { useDispatch, useSelector } from "react-redux";
+import { userDataActions } from "../store/userdata-slice";
 
 const JobInformation = (props) => {
+
+  const bookmarks = useSelector(state => state.userData.bookmarks)
+  let isBookmarked = false
+  const findByIndex = bookmarks.findIndex(id => id === props.jobInfo.id)
+  if (findByIndex !== -1) {
+    isBookmarked = true
+  }
+  const dispatch = useDispatch()
   const navigate = useNavigate();
 
   const data = props.jobInfo
-  console.log(data)
+  console.log(`Data from Job Information: ${data}`)
 
   return (
     <Box sx={{
@@ -18,7 +28,6 @@ const JobInformation = (props) => {
       flexDirection: 'column',
       bgcolor: "#1B2430",
       color: 'white',
-      marginBottom: '2rem',
       padding: '1.5rem',
       marginBottom: '1rem',
       borderRadius: '1rem',
@@ -37,15 +46,17 @@ const JobInformation = (props) => {
       {!props.isAdmin && <Box display={'flex'} justifyContent='space-between' marginTop={'0.5rem'}>
         <Box display={'flex'} gap={1} alignItems='center'>
           <Tooltip title='Bookmark'>
-            <IconButton>
-              {data.isBookmarked ? <Bookmark sx={{
-                color: 'white'
-              }} /> : <BookmarkBorder sx={{
-                color: 'white'
+            <IconButton onClick={() => {
+              dispatch(userDataActions.updateBookmarks({ id: data.id }))
+            }}>
+              {isBookmarked ? <Bookmark fontSize="large" sx={{
+                color: 'white',
+              }} /> : <BookmarkBorder fontSize="large" sx={{
+                color: 'white',
               }} />}
             </IconButton>
           </Tooltip>
-          <Typography>Bookmark</Typography>
+          <Typography variant="h6">Bookmark</Typography>
         </Box>
         <div>
           <button

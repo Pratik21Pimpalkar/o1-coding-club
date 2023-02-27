@@ -35,12 +35,12 @@ export default function JobInfo(props) {
                 <Box display={'flex'} gap={1} alignItems='center'>
                     <Tooltip title='Delete'>
                         <IconButton>
-                            <Delete sx={{
+                            <Delete fontSize="large" sx={{
                                 color: 'white'
                             }} />
                         </IconButton>
                     </Tooltip>
-                    <Typography>Delete</Typography>
+                    <Typography variant="h6">Delete</Typography>
                 </Box>
                 <div>
                     <button

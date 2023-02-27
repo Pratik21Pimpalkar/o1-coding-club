@@ -1,10 +1,16 @@
 import { Business, DateRange, LocationOn, WatchLater } from "@mui/icons-material";
 import { Box, Divider, Typography } from "@mui/material";
+import { useDispatch } from "react-redux";
+import { opportunitiesActions } from "../store/opportunities-slice";
 import JobCardHeader from "./JobCardHeader";
+import DUMMY_DATA from "./DummyData";
 
 export default function JobCardInfo(props) {
-    const handleViewButton = (id) => {
-        props.changeId(id)
+    const dispatch = useDispatch()
+    const handleViewButton = () => {
+        const jobData = DUMMY_DATA.find(job => job.id === props.id)
+        dispatch(opportunitiesActions.loadJobDetails({ jobData: jobData }))
+        // props.changeId(id)
     }
     return (
         <Box sx={{
@@ -38,7 +44,7 @@ export default function JobCardInfo(props) {
                     style={{
                         marginTop: '0rem'
                     }}
-                    onClick={() => handleViewButton(props.id)}
+                    onClick={handleViewButton}
                 >
                     View
                 </button>

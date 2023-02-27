@@ -27,7 +27,7 @@ export default function FormJob() {
         variable: '',
         noOfOpenings: '',
         workDays: '5 Days',
-        jobType: 'On Field',
+        jobType: 'In Office',
         jobTiming: 'Full Time',
         jobLocation: ''
     });
@@ -486,11 +486,6 @@ export default function FormJob() {
                                     <FormControlLabel value="Work From Home" control={<Radio sx={{
                                         color: 'white'
                                     }} />} label="Work From Home" style={{
-                                        color: 'white'
-                                    }} />
-                                    <FormControlLabel value="On Field" control={<Radio sx={{
-                                        color: 'white'
-                                    }} />} label="On Field" style={{
                                         color: 'white'
                                     }} />
                                     <FormControlLabel value="Hybrid" control={<Radio sx={{

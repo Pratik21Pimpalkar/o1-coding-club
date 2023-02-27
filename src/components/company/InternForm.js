@@ -27,7 +27,7 @@ export default function FormIntern() {
         variable: '',
         noOfOpenings: '',
         workDays: '5 Days',
-        internshipType: 'On Field',
+        internshipType: 'In Office',
         internshipTiming: 'Full Time',
         internshipLocation: ''
     });
@@ -485,11 +485,7 @@ export default function FormIntern() {
                                     }} />} label="Work From Home" style={{
                                         color: 'white'
                                     }} />
-                                    <FormControlLabel value="On Field" control={<Radio sx={{
-                                        color: 'white'
-                                    }} />} label="On Field" style={{
-                                        color: 'white'
-                                    }} />
+
                                     <FormControlLabel value="Hybrid" control={<Radio sx={{
                                         color: 'white'
                                     }} />} label="Hybrid" style={{
