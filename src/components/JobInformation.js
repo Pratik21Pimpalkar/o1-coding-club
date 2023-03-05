@@ -38,12 +38,14 @@ const JobInformation = (props) => {
         title={data.title}
         location={data.location}
         isAdmin={props.isAdmin}
+        isMainPage={true}
+        id={data.id}
       />
 
-      {!props.isAdmin && <Divider sx={{
+      {!props.companyPage && <Divider sx={{
         borderColor: 'white'
       }} />}
-      {!props.isAdmin && <Box display={'flex'} justifyContent='space-between' marginTop={'0.5rem'}>
+      {!props.companyPage && <Box display={'flex'} justifyContent='space-between' marginTop={'0.5rem'}>
         <Box display={'flex'} gap={1} alignItems='center'>
           <Tooltip title='Bookmark'>
             <IconButton onClick={() => {

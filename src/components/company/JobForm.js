@@ -12,7 +12,7 @@ export default function FormJob() {
     const [formData, setFormData] = useState({
         type: 'Job',
         title: '',
-        organisation: '',
+        name: '',
         websiteURL: '',
         categories: '',
         about: '',
@@ -26,10 +26,11 @@ export default function FormJob() {
         experience: '',
         variable: '',
         noOfOpenings: '',
-        workDays: '5 Days',
-        jobType: 'In Office',
-        jobTiming: 'Full Time',
-        jobLocation: ''
+        workingDays: '5 Days',
+        workType: 'In Office',
+        timing: 'Full Time',
+        location: '',
+        eligibility: '',
     });
 
     const handleBack = () => {
@@ -46,7 +47,7 @@ export default function FormJob() {
             toast.error("Title field required");
             return;
         }
-        if (formData.organisation.trim() === '') {
+        if (formData.name.trim() === '') {
             toast.error("Organisation name field required");
             return;
         }
@@ -120,8 +121,8 @@ export default function FormJob() {
                 toast.error('Openings should not be negative')
                 return
             }
-            if (formData.jobType !== 'Work From Home') {
-                if (formData.jobLocation.trim().length === 0) {
+            if (formData.workType !== 'Work From Home') {
+                if (formData.location.trim().length === 0) {
                     toast.error('Job Location Field required')
                     return
                 }
@@ -222,11 +223,11 @@ export default function FormJob() {
                             <CustomTextField
                                 margin={"dense"}
                                 fullWidth
-                                name="organisation"
+                                name="name"
                                 type="text"
                                 label="Enter Your Organisation"
                                 onChange={handleInputs}
-                                value={formData.organisation}
+                                value={formData.name}
                                 variant="filled"
                                 color="secondary"
                                 required
@@ -435,16 +436,16 @@ export default function FormJob() {
                             />
 
                             <FormControl>
-                                <FormLabel id="workDays" style={{
+                                <FormLabel id="workingDays" style={{
                                     color: 'white',
                                     fontWeight: 'bold',
                                     textAlign: 'start'
                                 }}>Work Days</FormLabel>
                                 <RadioGroup
                                     row
-                                    id="workDays"
-                                    name="workDays"
-                                    value={formData.workDays}
+                                    id="workingDays"
+                                    name="workingDays"
+                                    value={formData.workingDays}
                                     onChange={handleInputs}
                                 >
                                     <FormControlLabel value="4 Days" control={<Radio sx={{
@@ -466,16 +467,16 @@ export default function FormJob() {
                             </FormControl>
 
                             <FormControl>
-                                <FormLabel id="jobType" style={{
+                                <FormLabel id="workType" style={{
                                     color: 'white',
                                     textAlign: 'start',
                                     fontWeight: 'bold'
                                 }}>Job Type</FormLabel>
                                 <RadioGroup
                                     row
-                                    id="jobType"
-                                    name="jobType"
-                                    value={formData.jobType}
+                                    id="workType"
+                                    name="workType"
+                                    value={formData.workType}
                                     onChange={handleInputs}
                                 >
                                     <FormControlLabel value="In Office" control={<Radio sx={{
@@ -497,16 +498,16 @@ export default function FormJob() {
                             </FormControl>
 
                             <FormControl>
-                                <FormLabel id="jobTiming" style={{
+                                <FormLabel id="timing" style={{
                                     color: 'white',
                                     textAlign: 'start',
                                     fontWeight: 'bold'
                                 }}>Job Timing</FormLabel>
                                 <RadioGroup
                                     row
-                                    id="jobTiming"
-                                    name="jobTiming"
-                                    value={formData.jobTiming}
+                                    id="timing"
+                                    name="timing"
+                                    value={formData.timing}
                                     onChange={handleInputs}
                                 >
                                     <FormControlLabel value="Full Time" control={<Radio sx={{
@@ -535,12 +536,12 @@ export default function FormJob() {
                             {formData.jobType !== 'Work From Home' && <CustomTextField
                                 margin={"dense"}
                                 fullWidth
-                                name="jobLocation"
+                                name="location"
                                 type="text"
                                 label="Job Location"
                                 variant="filled"
                                 onChange={handleInputs}
-                                value={formData.jobLocation}
+                                value={formData.location}
                                 color="secondary"
                                 required
                             />}

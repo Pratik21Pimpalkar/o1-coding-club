@@ -1,9 +1,10 @@
 import React from "react";
 import JobCardInfo from "./JobCardInfo";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { opportunitiesActions } from "../store/opportunities-slice";
 
 const JobCardSidebar = (props) => {
-  const sideBarData = useSelector(state => state.opportunities.sideBarContent)
+  const sideBarData = props.sideBarData;
   const jobDescription = useSelector(state => state.opportunities.jobDescription)
 
   return (
@@ -20,6 +21,7 @@ const JobCardSidebar = (props) => {
             experience={job.experience}
             location={job.location}
             duration={job.duration}
+            eligibility={job.eligibility}
             selectedId={jobDescription ? jobDescription.id : false}
           />
         );

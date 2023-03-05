@@ -1,5 +1,6 @@
 import { Business, DateRange, Edit, LocationOn, WatchLater } from "@mui/icons-material";
 import { Box, IconButton, Tooltip, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function JobCardHeader(props) {
     return (
@@ -21,7 +22,13 @@ export default function JobCardHeader(props) {
                 </Box>
                 <Box display={'flex'} flexDirection='column' gap={1}>
                     <Box display={'flex'} alignItems='center'>
-                        <Typography variant="h5" fontWeight={'700'}>{props.title}</Typography>
+                        {props.isMainPage ?
+                            <Link to={`/opportunities/${props.id}`}>
+                                <Typography variant="h5" fontWeight={'700'} color='white'>{props.title}</Typography>
+                            </Link>
+                            :
+                            <Typography variant="h5" fontWeight={'700'} color='white'>{props.title}</Typography>}
+
                     </Box>
                     <Box display={'flex'} alignItems='center' gap={1}>
                         <Business />
@@ -32,7 +39,7 @@ export default function JobCardHeader(props) {
                         <Typography variant="body1">{props.location}</Typography>
                     </Box>
                 </Box>
-                {props.isAdmin && <Box display={'flex'} gap={1} alignItems='center' marginLeft={'auto'}>
+                {/* {props.isAdmin && <Box display={'flex'} gap={1} alignItems='center' marginLeft={'auto'}>
                     <Tooltip title='Edit'>
                         <IconButton>
                             <Edit sx={{
@@ -41,7 +48,7 @@ export default function JobCardHeader(props) {
                         </IconButton>
                     </Tooltip>
                     <Typography>Edit</Typography>
-                </Box>}
+                </Box>} */}
             </Box>
             {props.showTimeline && <Box display={'flex'} justifyContent='space-evenly' gap={2}>
                 <Box display={'flex'} alignItems='center' gap={1}>

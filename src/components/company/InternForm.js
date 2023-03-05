@@ -13,7 +13,7 @@ export default function FormIntern() {
     const [formData, setFormData] = useState({
         type: 'Internship',
         title: '',
-        organisation: '',
+        name: '',
         websiteURL: '',
         about: '',
         noOfApplicationsAllowed: '',
@@ -26,10 +26,10 @@ export default function FormIntern() {
         stipendMaxAmount: '',
         variable: '',
         noOfOpenings: '',
-        workDays: '5 Days',
-        internshipType: 'In Office',
-        internshipTiming: 'Full Time',
-        internshipLocation: ''
+        workingDays: '5 Days',
+        workType: 'In Office',
+        timing: 'Full Time',
+        location: ''
     });
 
     const handleBack = () => {
@@ -47,7 +47,7 @@ export default function FormIntern() {
             toast.error("Invalid title");
             return;
         }
-        if (formData.organisation.trim() === '') {
+        if (formData.name.trim() === '') {
             toast.error("Invalid Organisation name");
             return;
         }
@@ -108,8 +108,8 @@ export default function FormIntern() {
                 return
             }
         }
-        if (formData.internshipType !== 'Work From Home') {
-            if (formData.internshipLocation.trim().length === 0 && activeStep >= 3) {
+        if (formData.workType !== 'Work From Home') {
+            if (formData.location.trim().length === 0 && activeStep >= 3) {
                 toast.error('Invalid intenship Location')
                 return
             }
@@ -210,11 +210,11 @@ export default function FormIntern() {
                             <CustomTextField
                                 margin={"dense"}
                                 fullWidth
-                                name="organisation"
+                                name="name"
                                 type="text"
                                 label="Enter Your Organisation"
                                 onChange={handleInputs}
-                                value={formData.organisation}
+                                value={formData.name}
                                 variant="filled"
                                 color="secondary"
                                 required
@@ -434,15 +434,15 @@ export default function FormIntern() {
                             />
 
                             <FormControl required>
-                                <FormLabel id="workDays" style={{
+                                <FormLabel id="workingDays" style={{
                                     color: 'white',
                                     textAlign: 'start'
                                 }}>Work Days</FormLabel>
                                 <RadioGroup
                                     row
-                                    id="workDays"
-                                    name="workDays"
-                                    value={formData.workDays}
+                                    id="workingDays"
+                                    name="workingDays"
+                                    value={formData.workingDays}
                                     onChange={handleInputs}
                                 >
                                     <FormControlLabel value="4 Days" control={<Radio sx={{
@@ -464,15 +464,15 @@ export default function FormIntern() {
                             </FormControl>
 
                             <FormControl required>
-                                <FormLabel id="internshipType" style={{
+                                <FormLabel id="workType" style={{
                                     color: 'white',
                                     textAlign: 'start'
                                 }}>Internship Type</FormLabel>
                                 <RadioGroup
                                     row
-                                    id="internshipType"
-                                    name="internshipType"
-                                    value={formData.internshipType}
+                                    id="workType"
+                                    name="workType"
+                                    value={formData.workType}
                                     onChange={handleInputs}
                                 >
                                     <FormControlLabel value="In Office" control={<Radio sx={{
@@ -495,15 +495,15 @@ export default function FormIntern() {
                             </FormControl>
 
                             <FormControl>
-                                <FormLabel id="internshipTiming" style={{
+                                <FormLabel id="timing" style={{
                                     color: 'white',
                                     textAlign: 'start'
                                 }}>Internship Timing</FormLabel>
                                 <RadioGroup
                                     row
-                                    id="internshipTiming"
-                                    name="internshipTiming"
-                                    value={formData.internshipTiming}
+                                    id="timing"
+                                    name="timing"
+                                    value={formData.timing}
                                     onChange={handleInputs}
 
                                 >
@@ -533,12 +533,12 @@ export default function FormIntern() {
                             {formData.internshipType !== 'Work From Home' && <CustomTextField
                                 margin={"dense"}
                                 fullWidth
-                                name="internshipLocation"
+                                name="location"
                                 type="text"
                                 label="Internship Location"
                                 variant="filled"
                                 onChange={handleInputs}
-                                value={formData.internshipLocation}
+                                value={formData.location}
                                 color="secondary"
                                 required
                             />}

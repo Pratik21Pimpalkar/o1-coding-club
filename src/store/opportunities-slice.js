@@ -12,6 +12,7 @@ const initialState = {
             applicationEndDate: '03 Mar 23, 11:59 PM IST',
             experience: "3-4",
             salary: "12,00,000",
+            eligibility: 'Graduate'
         },
         {
             id: 2,
@@ -23,6 +24,7 @@ const initialState = {
             applicationEndDate: '03 Mar 23, 11:59 PM IST',
             duration: '12',
             salary: "1,00,000",
+            eligibility: 'Graduate'
         },
         {
             id: 3,
@@ -34,6 +36,7 @@ const initialState = {
             applicationEndDate: '03 Mar 23, 11:59 PM IST',
             experience: "3-4",
             salary: "1,00,000",
+            eligibility: 'Graduate'
         },
     ],
     jobDescription: null

@@ -37,8 +37,11 @@ export default function JobCardInfo(props) {
                 borderColor: 'white'
             }} />
             <div style={{
-                marginLeft: 'auto'
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
             }}>
+                <Typography>Eligibility: {props.eligibility}</Typography>
                 <button
                     className="btn-giveTest btn fullwidthbtn styleInJobApplyButton"
                     style={{

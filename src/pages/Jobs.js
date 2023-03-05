@@ -9,8 +9,17 @@ import JobCardSidebar from "../components/JobCardSidebar";
 import DUMMY_DATA from "../components/DummyData";
 import { Box, Grid } from "@mui/material";
 import JobDescription from "./JobDescription";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { opportunitiesActions } from "../store/opportunities-slice";
+let initial = true;
 const JobStudent = () => {
+  const dispatch = useDispatch()
+  const sideBarData = useSelector(state => state.opportunities.sideBarContent)
+  if (initial) {
+    const jobData = DUMMY_DATA.find(data => data.id === sideBarData[0].id)
+    dispatch(opportunitiesActions.loadJobDetails({ jobData: jobData }))
+    initial = false;
+  }
   const jobDescription = useSelector(state => state.opportunities.jobDescription)
   return (
     <>
@@ -40,7 +49,7 @@ const JobStudent = () => {
               maxWidth: '40vw',
               margin: 'auto'
             }}>
-              <JobCardSidebar />
+              <JobCardSidebar sideBarData={sideBarData} />
             </Box>
           </Grid>
           {<Grid item md={8} sx={{

@@ -11,7 +11,7 @@ import JobInformation from "../components/JobInformation";
 
 console.log(DUMMY_DATA)
 
-const SpecificWork = () => {
+const SpecificWork = (props) => {
   const { id } = useParams();
   const jobInfo = DUMMY_DATA.find(job => job.id == id)
   console.log(jobInfo)
@@ -28,7 +28,7 @@ const SpecificWork = () => {
       <NavbarMain />
       <JobSpecificPageContainer>
         <Card className="jobDescriptionPageSpecefic">
-          <JobInformation jobInfo={jobInfo} selectedId={jobInfo.id} isAdmin={true} />
+          <JobInformation jobInfo={jobInfo} selectedId={jobInfo.id} companyPage={props.companyPage} />
           <JobDeadLineCard jobInfo={jobInfo} selectedId={jobInfo.id} />
           <JobDescription jobInfo={jobInfo} />
           <JobAdditionalInfomationCard jobInfo={jobInfo} />
