@@ -39,7 +39,7 @@ function App() {
           <Route path="manage/jobs/new" element={<CreateJob />} />
           <Route path="manage/jobs/:id" element={<SpecificWork companyPage={true} />} />
           <Route path="manage/intern/new" element={<CreateIntern />} />
-          <Route path="manage/intern/:id" element={<SpecificWork />} />
+          <Route path="manage/intern/:id" element={<SpecificWork companyPage={true} />} />
         </Route>
         <Route path="/opportunities" element={<JobStudent />} />
         <Route path="/opportunities/bookmarks" element={<JobBookmarks />} />
