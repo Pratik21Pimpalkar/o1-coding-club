@@ -19,34 +19,57 @@ const Timeline = (props) => {
         <div className="container left">
           <div className="content">
             <h2 style={{ marginLeft: 10 }}>Transfer the Fees</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <p>
-                Transfer ₹ 999 to given QR code using any UPI app.<br></br>
+                Transfer ₹ 1999 to given QR code using any UPI app.<br></br>
               </p>
-              <button className="btn-giveTest mobileres" >
-                <a href={require("../Assets/QR.pdf")} rel="noreferrer" download={"QR_Code"}>QR Code</a>
+              <button className="btn-giveTest mobileres">
+                <a
+                  href={require("../Assets/QR.pdf")}
+                  rel="noreferrer"
+                  download={"QR_Code"}
+                >
+                  QR Code
+                </a>
               </button>
             </div>
           </div>
         </div>
 
-
         <div className="container right">
           <div className="content">
             <h2 style={{ marginLeft: 10 }}>Fill Registration Form</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <p>
                 Fill the registration form with screenshot of payment proof.
               </p>
-              <a href={props.data.timelineformlink} rel="noreferrer" className="explore-btn " target="_blank">
-                <button className="btn-giveTest mobileres" >
+              <a
+                href={props.data.timelineformlink}
+                rel="noreferrer"
+                className="explore-btn "
+                target="_blank"
+              >
+                <button className="btn-giveTest mobileres">
                   Application Form
                 </button>
               </a>
-            </div></div>
+            </div>
+          </div>
         </div>
       </div>
-    </TimeLineStyled >
+    </TimeLineStyled>
   );
 };
 
@@ -66,7 +89,7 @@ a{
     margin-bottom: 1rem;
   }
 
- 
+
   .timeline {
     position: relative;
     max-width: 1200px;

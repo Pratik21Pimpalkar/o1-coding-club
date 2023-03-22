@@ -14,7 +14,7 @@ const programData = {
       third: "",
       forth: "",
     },
-    footerbottomtext: ""
+    footerbottomtext: "",
   },
 
   ThousandX: {
@@ -115,7 +115,8 @@ const programData = {
   Super50: {
     programName: "Super40",
     desc: " Exclusive program with a cap of max 40 students per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
-    linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
+    linktoregister:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,
     instructer: [
       {
@@ -171,7 +172,8 @@ const programData = {
       firstimg:
         "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
       firstheading: " Referrals Provided ",
-      first: "Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
+      first:
+        "Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
       secondimg:
         "https://drive.google.com/thumbnail?id=1FhdoY9khrv1p2eIyuJ6Zihvhp-iwdNVw",
       secondheading: "360 Placement Program",
@@ -183,7 +185,8 @@ const programData = {
         "https://i.postimg.cc/8PZgpCvz/44.png",
 
       thirdheading: "Guaranteed min. 7LPA placement or refund",
-      third: " Get a guaranteed placement offer of min. 7LPA or  get 100% refund.",
+      third:
+        " Get a guaranteed placement offer of min. 7LPA or  get 100% refund.",
       forthimg:
         "https://drive.google.com/thumbnail?id=1aw2BXLq2SmSngxE8OtgCv6ebeaubo-JU",
       forth: "",
@@ -205,14 +208,15 @@ const programData = {
       "Aptitude preparation for placements. ",
       "Interview Ready.",
       "100+ hours of live classes",
-      "Referral of MNCs provided based on openings."
+      "Referral of MNCs provided based on openings.",
     ],
     Eligibility: [
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
     timeline: {
-      first: "Fill the following google form to apply for Super 40 shortlisting process",
+      first:
+        "Fill the following google form to apply for Super 40 shortlisting process",
     },
     timelineformlink: "https://forms.gle/TckUMuvqnXFvScM57",
     footerbottomtext: "",
@@ -221,12 +225,13 @@ const programData = {
   },
   placekit: {
     programName: "PlaceKit",
-    desc: " The Complete Placement Preparation Kit is a 5-6 month program designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.",
-    linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
+    desc: " The Complete Placement Preparation Kit is a 4-6 month program designed to provide you with all the guidance required for placements right from DSA, Core Subjects & Aptitude to making you interview ready.",
+    linktoregister:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,
     instructer: [
       {
-        name: "Aditya Sharma      ",
+        name: "Aditya Sharma",
         desig: "SWE at Akamai Tech",
         about:
           " Hi, I'm Aditya and I have experience of training more than 200 students for DSA and have my self aced many coding rounds of top IT companies. I have landaded multiple superdream offers through regular and systematic practice of DSA. I am here to guide you for the same.",
@@ -267,35 +272,33 @@ const programData = {
           "https://drive.google.com/thumbnail?id=1bgCdJIwEmEiluQG-wEuTFc5GAfQ0PFg1",
       },
     ],
-    pricing: "₹ 999  ",
+    pricing: "₹ 1999",
     priceplanA: "5000",
-    cutPricing: "₹ 2999",
+    cutPricing: "₹ 5999",
     priceplanB: "7000",
-    alternativePrice: " transfer ₹ 999 ",
-    perDayPrice: "999/180 = ₹5.55/day",
+    alternativePrice: " transfer ₹ 1999 ",
+    perDayPrice: "1999/180 = ₹11.1/day",
     item: "Cold Drink 🥤",
     itemPrice: "20",
-    perDayPriceOnly: "₹5.55",
+    perDayPriceOnly: "₹11.1",
     features: {
       firstimg:
         "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
       firstheading: "Referrals Provided ",
-      first: " Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
+      first:
+        " Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
       secondimg:
         "https://drive.google.com/thumbnail?id=1FhdoY9khrv1p2eIyuJ6Zihvhp-iwdNVw",
       secondheading: "360 Placement Program",
       second:
         "Tailored program to help you prepare in every aspect of off-campus and on-campus placements.",
-      thirdimg:
-        // "https://drive.google.com/thumbnail?id=11vYLiscmCtj_tuh9S0qPS_ihm7QoPiUp",
-        // "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
-        "https://i.postimg.cc/8PZgpCvz/44.png",
-
+      thirdimg: "https://i.postimg.cc/8PZgpCvz/44.png",
       thirdheading: "Live Guidance Sessions",
-      third: "  20+ hours of live guidance sessions on DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
+      third:
+        "  20+ hours of live guidance sessions on DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
       forthimg:
         "https://drive.google.com/thumbnail?id=1aw2BXLq2SmSngxE8OtgCv6ebeaubo-JU",
-      forth: "",  //default lines already written in component
+      forth: "", //default lines already written in component
       forthheading: "",
     },
     showtimeline: true,
@@ -308,19 +311,18 @@ const programData = {
       studentplaced: "2000+",
     },
     youwillget: [
-
       "Tailormade platform for core subjects & aptitude",
       "Tailormade platform for DSA & Problem Solving",
       "Referrals of Top MNCs provided based on openings",
       "20+ hours of live guidance sessions on DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
-
     ],
     Eligibility: [
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
     timeline: {
-      first: "Fill the following google form to apply for PlaceKit shortlisting process",
+      first:
+        "Fill the following google form to apply for PlaceKit shortlisting process",
     },
     timelineformlink: "https://forms.gle/Ue47rAfCg8A8Hstm6",
     footerbottomtext: "",
@@ -330,11 +332,12 @@ const programData = {
   coresubjectsforplacements: {
     programName: "CS Fundamentals",
     desc: " The complete placement preparation program for core subjects/CS fundamentals important for campus as well as off-campus placements covering technical aptitude, interviews to making you placement ready.    ",
-    linktoregister: "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
+    linktoregister:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,
     instructer: [
       {
-        name: "Aditya Sharma      ",
+        name: "Aditya Sharma",
         desig: "SWE at Akamai Tech",
         about:
           " Hi, I'm Aditya and I have experience of training more than 200 students for DSA and have my self aced many coding rounds of top IT companies. I have landaded multiple superdream offers through regular and systematic practice of DSA. I am here to guide you for the same.",
@@ -388,7 +391,8 @@ const programData = {
       firstimg:
         "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
       firstheading: "Referrals Provided ",
-      first: " Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
+      first:
+        " Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
       secondimg:
         "https://drive.google.com/thumbnail?id=1FhdoY9khrv1p2eIyuJ6Zihvhp-iwdNVw",
       secondheading: "360 Placement Program",
@@ -400,10 +404,11 @@ const programData = {
         "https://i.postimg.cc/8PZgpCvz/44.png",
 
       thirdheading: "Live Guidance Sessions",
-      third: "  60+ hours of live guidance sessions on DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
+      third:
+        "  60+ hours of live guidance sessions on DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
       forthimg:
         "https://drive.google.com/thumbnail?id=1aw2BXLq2SmSngxE8OtgCv6ebeaubo-JU",
-      forth: "",  //default lines already written in component
+      forth: "", //default lines already written in component
       forthheading: "",
     },
     showtimeline: true,
@@ -416,19 +421,18 @@ const programData = {
       studentplaced: "2000+",
     },
     youwillget: [
-
       "Tailormade platform for core subjects & aptitude",
       "Tailormade platform for DSA & Problem Solving",
       "Referrals of Top MNCs provided based on openings",
       "60+ hours of live guidance sessions on DSA, OS, CN, DBMS, OOP, Aptitude, Coding Rounds, Technical Interviews, HR Interviews & much more",
-
     ],
     Eligibility: [
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
     timeline: {
-      first: "Fill the following google form to apply for PlaceKit shortlisting process",
+      first:
+        "Fill the following google form to apply for PlaceKit shortlisting process",
     },
     timelineformlink: "https://forms.gle/LPvv3VtVnBnhwKPJ7",
     footerbottomtext: "",
@@ -486,18 +490,17 @@ const programData = {
           "https://drive.google.com/thumbnail?id=1bgCdJIwEmEiluQG-wEuTFc5GAfQ0PFg1",
       },
     ],
-    pricing: "₹ 3950",
-    cutPricing: "₹ 5950",
+    pricing: "₹ 5950",
+    cutPricing: "₹ 7500",
     priceplanA: "2500",
     priceplanB: "3500",
-    perDayPrice: "3950/180 = ₹21.9/day",
-    item: "Snickers 🍫",
-    itemPrice: "25",
-    alternativePrice: " transfer ₹ 3950 ",
-    perDayPriceOnly: "₹21.9",
+    perDayPrice: "5950/180 = ₹33/day",
+    item: "Cadbury Silk 🍫",
+    itemPrice: "70",
+    alternativePrice: " transfer ₹5950 ",
+    perDayPriceOnly: "₹33",
     features: {
-      firstimg:
-        "https://i.postimg.cc/8PZgpCvz/44.png",
+      firstimg: "https://i.postimg.cc/8PZgpCvz/44.png",
       thirdheading: " Exclusive",
       third: "Exclusive program for top students from different colleges.",
       secondimg:
@@ -511,7 +514,8 @@ const programData = {
         "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
 
       firstheading: "Referrals Provided ",
-      first: " Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
+      first:
+        " Referrals of Top Product Based Dream Companies including Amazon, VMware, Akamai, Zs etc will be provided based on openings.",
       forthimg:
         "https://drive.google.com/thumbnail?id=1aw2BXLq2SmSngxE8OtgCv6ebeaubo-JU",
       forth: "",
@@ -532,19 +536,20 @@ const programData = {
       "Core subjects practice & analysis ",
       "Aptitude practice & analysis ",
       "Interview Ready.",
-      "60+ hours of live classes"
+      "60+ hours of live classes",
     ],
     Eligibility: [
       " Exclusive program for top students from different colleges",
       "Fight hard to earn your spot!!",
     ],
     timeline: {
-      first: "Fill the following google form to apply for PlacePrep 360 shortlisting process",
+      first:
+        "Fill the following google form to apply for PlacePrep 360 shortlisting process",
     },
     timelineformlink: "https://forms.gle/paNLiXkxcUTyKRAv8",
     footerbottomtext: "",
     applyNowURL: "/sdebootcamp/#timeline",
-    shownote: false
+    shownote: false,
   },
   dsa: {
     programName: "DSA",
@@ -775,7 +780,7 @@ const programData = {
       " Internship offer to top performers",
     ],
     timelineformlink: "https://docs.google.com/forms/u/0",
-    footerbottomtext: ""
+    footerbottomtext: "",
   },
 };
 

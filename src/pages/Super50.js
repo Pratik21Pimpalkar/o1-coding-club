@@ -20,6 +20,8 @@ import Pricing from "../components/Pricing";
 import AlternativePaymentMethod from "./AlternativePayment";
 import Offers from "../components/Offers";
 import MainContent from "../components_template/components/TextContent/MainContent";
+import ReferralSlider from "../components/ReferralSlider";
+
 const Super50 = () => {
   const programdata = PagesData.Super50;
   return (
@@ -34,6 +36,7 @@ const Super50 = () => {
         <Navbar />
         <MainContent name={programdata} />
         <Stats data={programdata} />
+        <ReferralSlider />
         <YoutubeVideo />
         <FeaturesCard data={programdata} />
         {/* <AboutProgram data={programdata} /> */}
@@ -63,4 +66,4 @@ const Super50 = () => {
   );
 };
 
-export default Super50; 
+export default Super50;

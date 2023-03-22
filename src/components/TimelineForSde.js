@@ -6,7 +6,7 @@ const Timeline = (props) => {
   const downloadTxtFile = () => {
     const element = document.createElement("a");
     const file = new Blob([document.getElementById("input").value], {
-      type: "text/plain;charset=utf-8}"
+      type: "text/plain;charset=utf-8}",
     });
     element.href = "../Assets/one.csv";
     element.download = "one.csv";
@@ -19,45 +19,67 @@ const Timeline = (props) => {
         <div className="container left">
           <div className="content">
             <h2 style={{ marginLeft: 10 }}>Transfer the Fees</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <p>
-                Transfer ₹ 3950 to given QR code using any UPI app.<br></br>
+                Transfer ₹ 5950 to given QR code using any UPI app.<br></br>
               </p>
-              <button className="btn-giveTest mobileres" >
-                <a href={require("../Assets/QR.pdf")} rel="noreferrer" download={"QR_Code"}>QR Code</a>
+              <button className="btn-giveTest mobileres">
+                <a
+                  href={require("../Assets/QR.pdf")}
+                  rel="noreferrer"
+                  download={"QR_Code"}
+                >
+                  QR Code
+                </a>
               </button>
             </div>
           </div>
         </div>
 
-
         <div className="container right">
           <div className="content">
             <h2 style={{ marginLeft: 10 }}>Fill Registration Form</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <p>
                 Fill the registration form with screenshot of payment proof.
               </p>
-              <a href={props.data.timelineformlink} rel="noreferrer" className="explore-btn " target="_blank">
-                <button className="btn-giveTest mobileres" >
+              <a
+                href={props.data.timelineformlink}
+                rel="noreferrer"
+                className="explore-btn "
+                target="_blank"
+              >
+                <button className="btn-giveTest mobileres">
                   Application Form
                 </button>
               </a>
-            </div></div>
+            </div>
+          </div>
         </div>
       </div>
-    </TimeLineStyled >
+    </TimeLineStyled>
   );
 };
 
 export default Timeline;
 
 const TimeLineStyled = styled.div`
-
-a{
-  text-decoration: none;
-  color: white;
-}
+  a {
+    text-decoration: none;
+    color: white;
+  }
   .heading-desktop {
     margin: 2rem 0;
     text-align: center;
@@ -66,7 +88,6 @@ a{
     margin-bottom: 1rem;
   }
 
- 
   .timeline {
     position: relative;
     max-width: 1200px;
@@ -167,7 +188,9 @@ a{
     font-size: 1.32rem;
   }
   .btn-giveTest {
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(229, 0, 255) 0%, rgb(130, 0, 255) 100%) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(90deg, rgb(229, 0, 255) 0%, rgb(130, 0, 255) 100%) repeat
+      scroll 0% 0%;
     font-family: "Poppins";
     margin-top: 0.9rem;
     margin-right: 0.6rem;
@@ -189,13 +212,14 @@ a{
     border-radius: 300px;
     /* filter: brightness(100%); */
     visibility: visible;
-    cursor: pointer;}
+    cursor: pointer;
+  }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
-    .mobileres{
-    transform: scale(0.7);
-  }
+    .mobileres {
+      transform: scale(0.7);
+    }
 
     /* Place the timelime to the left */
 

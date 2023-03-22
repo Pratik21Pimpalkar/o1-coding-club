@@ -20,7 +20,9 @@ import AlternativePaymentMethod from "./AlternativePayment";
 import AboutInstructor from "../components/AboutInstructor";
 import Pricing from "../components/Pricing";
 import Offers from "../components/Offers";
+import ReferralSlider from "../components/ReferralSlider";
 import MainContent from "../components_template/components/TextContent/MainContent";
+
 const CoreSubjectsForPlacements = () => {
   const programdata = PagesData.coresubjectsforplacements;
   return (
@@ -39,6 +41,7 @@ const CoreSubjectsForPlacements = () => {
         <Navbar />
         <MainContent name={programdata} size={true} />
         <Stats data={programdata} />
+        <ReferralSlider />
         <YoutubeVideo />
         <FeaturesCard data={programdata} />
         {/* <AboutProgram data={programdata} /> */}
@@ -69,4 +72,4 @@ const CoreSubjectsForPlacements = () => {
   );
 };
 
-export default CoreSubjectsForPlacements; 
+export default CoreSubjectsForPlacements;

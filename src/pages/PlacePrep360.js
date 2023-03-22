@@ -3,14 +3,10 @@ import FooterNew from "../components_template/components/Footer/FooterNew";
 import Testimonial from "../components/Testimonial2";
 import CompanySlider from "../components/CompanySlider";
 import Stats from "../components/Stats";
-// import TimelineFor1000x from "../components/TimelineFor1000x";
-// import TimelineforSuper40 from "../components/TimelineForSuper40";
 import Timeline from "../components/TimelineForSde";
 import FeaturesCard from "../components/FeaturesCard";
-// import AboutProgram from "../components_template/components/Features/Feature";
 import PagesData from "./PagesData";
 import YouWillGet from "../components_template/components/YouWillGet";
-// import Eligibility from "../components_template/components/Eligiblity";
 import ApplyNowBtn from "../components/ApplyNowBtn";
 import Navbar from "../components/Navbar";
 import YoutubeVideo from "../components/YoutubeVideo";
@@ -20,6 +16,10 @@ import PlaceKitPricing from "../components/PlaceKitPricing";
 import AlternativePaymentMethod from "./AlternativePayment";
 import Offers from "../components/Offers";
 import MainContent from "../components_template/components/TextContent/MainContent";
+import ReferralSlider from "../components/ReferralSlider";
+import { Container, Typography } from "@mui/material";
+import p1 from "../Assets/events/sde_bcamp_schedule.jpeg";
+
 const Super50 = () => {
   const programdata = PagesData.PlacePrep360;
   return (
@@ -34,15 +34,32 @@ const Super50 = () => {
         <Navbar />
         <MainContent name={programdata} />
         <Stats data={programdata} />
+        <ReferralSlider />
         <YoutubeVideo />
         <FeaturesCard data={programdata} />
-        {/* <AboutProgram data={programdata} /> */}
         <AboutInstructor data={programdata} />
-        <Offers />
+
+        <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
+          <Typography
+            variant="h4"
+            sx={{
+              textAlign: "center",
+              color: "white",
+              fontSize: "2.5rem",
+              margin: "2rem 0",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif",
+            }}
+          >
+            SDE Bootcamp Schedule
+          </Typography>
+          <img src={p1} alt="" style={{ width: "100%", marginTop: "1rem" }} />
+        </Container>
+
+        {/* <Offers /> */}
         <Pricing data={programdata} />
         <PlaceKitPricing data={programdata} />
         <ApplyNowBtn data={programdata} />
-        {/* <Eligibility  data={programdata}/> */}
+
         {programdata.showyouwillget ? (
           <YouWillGet data={programdata} />
         ) : (
@@ -51,9 +68,9 @@ const Super50 = () => {
         {programdata.showtimeline ? (
           <Timeline data={programdata} />
         ) : (
-          // <TimelineFor1000x  data={programdata}/>
           <div></div>
         )}
+
         <AlternativePaymentMethod data={programdata} />
         <CompanySlider />
         <Testimonial />
@@ -63,4 +80,4 @@ const Super50 = () => {
   );
 };
 
-export default Super50; 
+export default Super50;
