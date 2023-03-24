@@ -38,6 +38,7 @@ const Super50 = () => {
         <YoutubeVideo />
         <FeaturesCard data={programdata} />
         <AboutInstructor data={programdata} />
+        <Offers />
 
         <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
           <Typography
@@ -55,7 +56,6 @@ const Super50 = () => {
           <img src={p1} alt="" style={{ width: "100%", marginTop: "1rem" }} />
         </Container>
 
-        {/* <Offers /> */}
         <Pricing data={programdata} />
         <PlaceKitPricing data={programdata} />
         <ApplyNowBtn data={programdata} />

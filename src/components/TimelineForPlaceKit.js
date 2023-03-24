@@ -27,7 +27,7 @@ const Timeline = (props) => {
               }}
             >
               <p>
-                Transfer ₹ 1999 to given QR code using any UPI app.<br></br>
+                Transfer ₹ 999 to given QR code using any UPI app.<br></br>
               </p>
               <button className="btn-giveTest mobileres">
                 <a

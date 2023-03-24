@@ -24,12 +24,18 @@ const Sdebootcamp = () => {
         <Stats data={programdata} />
         <FeaturesCard data={programdata} />
         <AboutProgram data={programdata} />
-        {programdata.youwillget?
-        <YouWillGet data={programdata}/>
-        :<div></div>}
-        {programdata.showtimeline?
-        <Timeline data={programdata}/>
-        :<div></div>}
+
+        {programdata.youwillget ? (
+          <YouWillGet data={programdata} />
+        ) : (
+          <div></div>
+        )}
+        {programdata.showtimeline ? (
+          <Timeline data={programdata} />
+        ) : (
+          <div></div>
+        )}
+
         <CompanySlider />
         <Testimonial />
         <FooterNew name={programdata} />
