@@ -3,7 +3,7 @@ import FooterNew from "../components_template/components/Footer/FooterNew";
 import Testimonial from "../components/Testimonial2";
 import CompanySlider from "../components/CompanySlider";
 import Stats from "../components/Stats";
-import TimelineforSuper40 from "../components/TimelineForPlaceKit";
+import TimelineForPlacekit from "../components/TimelineForPlaceKit";
 import FeaturesCard from "../components/FeaturesCard";
 import PagesData from "./PagesData";
 import YouWillGet from "../components_template/components/YouWillGet";
@@ -46,8 +46,9 @@ const PlaceKit = () => {
         ) : (
           <div></div>
         )}
+
         {programdata.showtimeline ? (
-          <TimelineforSuper40 data={programdata} />
+          <TimelineForPlacekit data={programdata} />
         ) : (
           <div></div>
         )}

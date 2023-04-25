@@ -114,7 +114,7 @@ const programData = {
   },
   Super50: {
     programName: "Super40",
-    desc: " Exclusive program with a cap of max 40 students per college, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
+    desc: " Exclusive program with a cap of max 40 students per batch, designed to make you placement ready right from DSA, Core Subjects & Aptitude to grab your dream job.",
     linktoregister:
       "https://docs.google.com/forms/d/e/1FAIpQLSdpbgY9WrAiJXFc-FdXftpKatZJq2KK3KIuUlRrzuHukCGR4g/viewform",
     registertoapply: true,
@@ -184,9 +184,8 @@ const programData = {
         // "https://drive.google.com/thumbnail?id=177AWll1kihjAZ1tt9pWnHXQhkLNsfVBA",
         "https://i.postimg.cc/8PZgpCvz/44.png",
 
-      thirdheading: "Guaranteed min. 7LPA placement or refund",
-      third:
-        " Get a guaranteed placement offer of min. 7LPA or  get 100% refund.",
+      thirdheading: "Guaranteed placement or refund*",
+      third: " Get a guaranteed placement offer or get 100% refund.",
       forthimg:
         "https://drive.google.com/thumbnail?id=1aw2BXLq2SmSngxE8OtgCv6ebeaubo-JU",
       forth: "",
@@ -216,7 +215,9 @@ const programData = {
     ],
     timeline: {
       first:
-        "Fill the following google form to apply for Super 40 shortlisting process",
+        "Pay the upfront fees of ₹5450 or ₹7450 according to your preferred plan on given QR code.",
+      second:
+        "Once payment is done, fill this form to complete your registration.",
     },
     timelineformlink: "https://forms.gle/TckUMuvqnXFvScM57",
     footerbottomtext: "",

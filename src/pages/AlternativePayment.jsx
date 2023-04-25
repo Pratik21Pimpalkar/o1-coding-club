@@ -9,9 +9,12 @@ const AlternativePaymentMethod = (props) => {
       <Container>
         <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
           <Grid item xs={12} md={6}>
-            <div className="card" style={{
-              borderRadius: '1rem'
-            }}>
+            <div
+              className="card"
+              style={{
+                borderRadius: "1rem",
+              }}
+            >
               <h1 className="heading"> Alternative Payment Method</h1>
               <h3 className="heading2">
                 Use Only If Above Method Is Not Working
@@ -21,16 +24,17 @@ const AlternativePaymentMethod = (props) => {
                   Use the bank account transfer feature of any UPI app &
                   transfer {props.data.alternativePrice} to following account :-
                 </h4>
-              <br></br>
+                <br></br>
                 <p className="bankdetails">
                   Account no: 0354002100261752 <br></br>
                   Ifsc code: PUNB0035400<br></br>
                   Account holders name: Catalysing Dreams and beyond<br></br>
                   <br></br>
-                  
                 </p>{" "}
-                <p>Once payment is done don't forget to fill the application form
-                  given above.</p>
+                <p>
+                  Once payment is done don't forget to fill the application form
+                  given above.
+                </p>
               </div>
               <div id="timeline"></div>
             </div>

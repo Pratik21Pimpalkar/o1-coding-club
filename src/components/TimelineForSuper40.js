@@ -6,7 +6,7 @@ const Timeline = (props) => {
   const downloadTxtFile = () => {
     const element = document.createElement("a");
     const file = new Blob([document.getElementById("input").value], {
-      type: "text/plain;charset=utf-8}"
+      type: "text/plain;charset=utf-8}",
     });
     element.href = "../Assets/one.csv";
     element.download = "one.csv";
@@ -16,59 +16,69 @@ const Timeline = (props) => {
     <TimeLineStyled>
       <h3 className="heading-desktop">How to Apply</h3>
       {/* <div className="timeline">
-
         <div className="container left">
           <div className="content">
-            <h2>Enroll  </h2>
+            <h2>Enroll </h2>
             <p>
-              Enroll in the program by choosing one of the payment option.<br></br>{" "}
-              <button className="btn-giveTest mobileres" onClick={downloadTxtFile}>
-                <a href={require("../Assets/ISCFORM.pdf")} download={"ISC_FORM"}>ISA Form Download</a>
+              Enroll in the program by choosing one of the payment option.
+              <br></br>{" "}
+              <button
+                className="btn-giveTest mobileres"
+                onClick={downloadTxtFile}
+              >
+                <a
+                  href={require("../Assets/ISCFORM.pdf")}
+                  download={"ISC_FORM"}
+                >
+                  ISA Form Download
+                </a>
               </button>
-
             </p>
           </div>
         </div>
 
-
         <div className="container right">
           <div className="content">
             <h2>Pay Fees</h2>
-            <p>Do the specified payment to the given UPI id @oksbi.
-            </p>
+            <p>Do the specified payment to the given UPI id @oksbi.</p>
           </div>
         </div>
         <div className="container left">
           <div className="content">
             <h2>Fill google form </h2>
-            <p>
-              Fill google form circulated in the meet & group to apply.
-            </p>
+            <p>Fill google form circulated in the meet & group to apply.</p>
           </div>
         </div>
       </div> */}
-      <div className="timeline">
-        <a href={props.data.timelineformlink} rel="noreferrer" className="explore-btn " target="_blank">
+
+      {/* <div className="timeline">
+        <a
+          href={props.data.timelineformlink}
+          rel="noreferrer"
+          className="explore-btn "
+          target="_blank"
+        >
           <div className="container left">
             <div className="content">
               <h2 style={{ marginLeft: 10 }}>Fill Application Form</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
                 <p>
-                  {props.data.timeline.first}<br></br>
+                  {props.data.timeline.first}
+                  <br></br>
                 </p>
-                <button className="btn-giveTest mobileres" >
+                <button className="btn-giveTest mobileres">
                   Application Form
                 </button>
               </div>
             </div>
-          </div></a>
-
-        {/* <div className="container right">
-          <div className="content">
-            <h2>Fill Google Form</h2>
-            <p>Fill google form circulated in the meet & group to apply.</p>
           </div>
-        </div> */}
+        </a>
         <div className="container right">
           <div className="content">
             <h2 style={{ marginLeft: 10 }}>Shortlisting Process</h2>
@@ -77,6 +87,61 @@ const Timeline = (props) => {
             </p>
           </div>
         </div>
+      </div> */}
+
+      <div className="timeline">
+        <div className="container left">
+          <div className="content">
+            <h2 style={{ marginLeft: 10 }}>Transfer Fees</h2>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <p>{props.data.timeline.first}</p>
+              <span>
+                <button className="btn-giveTest mobileres">
+                  <a
+                    rel="noreferrer"
+                    href={require("../Assets/QR.pdf")}
+                    download={"QR_Code"}
+                  >
+                    QR Code
+                  </a>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <a
+          href={props.data.timelineformlink}
+          rel="noreferrer"
+          className="explore-btn "
+          target="_blank"
+        >
+          <div className="container right">
+            <div className="content">
+              <h2 style={{ marginLeft: 10 }}>Fill Registration form</h2>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <p>
+                  {props.data.timeline.second}
+                  <br></br>
+                </p>
+                <button className="btn-giveTest mobileres">
+                  Application Form
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </TimeLineStyled>
   );
@@ -85,11 +150,10 @@ const Timeline = (props) => {
 export default Timeline;
 
 const TimeLineStyled = styled.div`
-
-a{
-  text-decoration: none;
-  color: black;
-}
+  a {
+    text-decoration: none;
+    color: black;
+  }
   .heading-desktop {
     margin: 2rem 0;
     text-align: center;
@@ -98,7 +162,6 @@ a{
     margin-bottom: 1rem;
   }
 
- 
   .timeline {
     position: relative;
     max-width: 1200px;
@@ -199,7 +262,9 @@ a{
     font-size: 1.32rem;
   }
   .btn-giveTest {
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(229, 0, 255) 0%, rgb(130, 0, 255) 100%) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(90deg, rgb(229, 0, 255) 0%, rgb(130, 0, 255) 100%) repeat
+      scroll 0% 0%;
     font-family: "Poppins";
     margin-top: 0.9rem;
     margin-right: 0.6rem;
@@ -221,13 +286,14 @@ a{
     border-radius: 300px;
     /* filter: brightness(100%); */
     visibility: visible;
-    cursor: pointer;}
+    cursor: pointer;
+  }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
-    .mobileres{
-    transform: scale(0.7);
-  }
+    .mobileres {
+      transform: scale(0.7);
+    }
 
     /* Place the timelime to the left */
 

@@ -19,6 +19,7 @@ import MainContent from "../components_template/components/TextContent/MainConte
 import ReferralSlider from "../components/ReferralSlider";
 import { Container, Typography } from "@mui/material";
 import p1 from "../Assets/events/sde_bcamp_schedule.jpeg";
+import AllOffers from "../components/AllOffers";
 
 const Super50 = () => {
   const programdata = PagesData.PlacePrep360;
@@ -38,7 +39,9 @@ const Super50 = () => {
         <YoutubeVideo />
         <FeaturesCard data={programdata} />
         <AboutInstructor data={programdata} />
-        <Offers />
+        {/* <Offers /> */}
+
+        {/* <AllOffers /> */}
 
         <Container maxWidth="md" sx={{ marginTop: "3rem" }}>
           <Typography

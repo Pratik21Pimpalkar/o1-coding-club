@@ -16,6 +16,7 @@ const FeatureParagraph = {
   flexDirection: "column",
   marginBottom: "1rem",
 };
+
 const Wrap = styled.div`
   .limited {
     margin-top: 1.1rem;
@@ -175,4 +176,4 @@ const Pricing = ({ data }) => {
   );
 };
 
-export default Pricing
+export default Pricing;
