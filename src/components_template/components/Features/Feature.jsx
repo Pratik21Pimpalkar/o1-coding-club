@@ -150,6 +150,7 @@ const AboutProgram = styled.div`
   .price-desktop {
     font-size: 2.8rem;
     text-align: center;
+    font-color: white;
   }
   .price-desktop2 {
     font-size: 1.5rem;

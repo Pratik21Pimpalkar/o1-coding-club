@@ -68,7 +68,7 @@ const OurEvents = () => {
           </Grid>
         </Grid>
 
-        <Grid
+        {/* <Grid
           container
           alignItems={"center"}
           rowSpacing={1}
@@ -103,7 +103,7 @@ const OurEvents = () => {
               <img src={coresubjects} alt="" width={"90%"} />
             </Box>
           </Grid>
-        </Grid>
+        </Grid> */}
 
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>

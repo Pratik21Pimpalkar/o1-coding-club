@@ -21,6 +21,8 @@ import Offers from "../components/Offers";
 import AllOffers from "../components/AllOffers";
 import { Card, CardContent, Grid, Typography, Box } from "@mui/material";
 import rupee from "../Assets/rupee.png";
+import FAQ from "../components/FAQ";
+import Super50Curriculum from "../components/Super50Curriculum";
 
 const Super50 = () => {
   const programdata = PagesData.Super50;
@@ -40,6 +42,7 @@ const Super50 = () => {
         <YoutubeVideo />
         <FeaturesCard data={programdata} />
         <AboutInstructor data={programdata} />
+        {/* <Super50Curriculum /> */}
 
         {/* <Banner /> */}
         {/* <Offers /> */}
@@ -305,6 +308,7 @@ const Super50 = () => {
         </TimeLineStyled> */}
 
         <CompanySlider />
+        <FAQ />
         <Testimonial />
         <FooterNew name={programdata} />
       </div>
@@ -347,6 +351,7 @@ const Wrap = styled.div`
   .price-desktop {
     font-size: 2.8rem;
     text-align: center;
+    font-color: white;
   }
   .price-desktop2 {
     font-size: 1.5rem;

@@ -103,7 +103,7 @@ const FooterNew = (props) => {
                     </p>
                     <p>
                       * Super-40 Placement Guarantee is only applicable if you
-                      maintain minimum of 75% attendance through out the
+                      maintain minimum of 85% attendance through out the
                       duration of the course.
                     </p>
                   </div>
