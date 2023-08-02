@@ -38,10 +38,20 @@ const FooterNew = (props) => {
                         style={{
                           color: "#7e7e7e",
                         }}
+                        href="tel:9284320920"
+                        rel="noreferrer"
+                      >
+                        9284320920
+                        <br />
+                      </a>
+                      <a
+                        style={{
+                          color: "#7e7e7e",
+                        }}
                         href="tel:9850314506"
                         rel="noreferrer"
                       >
-                        9850314506
+                        9850314506 <br />
                       </a>
                       <a
                         style={{
@@ -50,7 +60,7 @@ const FooterNew = (props) => {
                         href="tel:9970780928"
                         rel="noreferrer"
                       >
-                        , 9970780928
+                        9970780928
                       </a>
                     </div>
                   </div>

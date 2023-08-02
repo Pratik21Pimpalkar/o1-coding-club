@@ -85,7 +85,7 @@ export default function MainContent(props) {
                   display: props.name.programName === "Super40" ? "" : "none",
                 }}
               >
-                Batch starts from - 27<sup>th</sup> June
+                Batch starts from - 4<sup>th</sup> August
               </Typography>
             </Box>
 
