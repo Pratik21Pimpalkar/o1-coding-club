@@ -25,8 +25,10 @@ export default function Navbar() {
 
   return (
     <Navwrap>
-      <nav className={navbarColor ? "navigation scrolled" : "navigation"} style={{ color: "white" }}>
-
+      <nav
+        className={navbarColor ? "navigation scrolled" : "navigation"}
+        style={{ color: "white" }}
+      >
         <HashLink smooth to="/#" className="brand-name" title="O1 Analysis">
           <img src={logo} width="50" alt="O(1)-logo" className="img-fluid" />
         </HashLink>
@@ -38,13 +40,11 @@ export default function Navbar() {
             setNavbarColor(true);
           }}
         >
-
-          {
-            !isNavExpanded ?
-
-              <MenuSharpIcon sx={{ color: 'white' }} /> : <CancelSharpIcon sx={{ color: 'white' }} />
-          }
-
+          {!isNavExpanded ? (
+            <MenuSharpIcon sx={{ color: "white" }} />
+          ) : (
+            <CancelSharpIcon sx={{ color: "white" }} />
+          )}
         </button>
         <div
           className={
@@ -52,7 +52,7 @@ export default function Navbar() {
           }
         >
           <ul>
-            <li>
+            {/* <li>
               <HashLink
                 smooth
                 to="/1000x/#timeline"
@@ -60,18 +60,38 @@ export default function Navbar() {
               >
                 Apply Now
               </HashLink>
+            </li> */}
+            <li>
+              <HashLink smooth to="#" onClick={() => setIsNavExpanded(false)}>
+                Home
+              </HashLink>
             </li>
             <li>
-              <HashLink smooth to='#' onClick={() => setIsNavExpanded(false)}>Home</HashLink>
+              <HashLink
+                smooth
+                to="#stats"
+                onClick={() => setIsNavExpanded(false)}
+              >
+                Stats
+              </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#stats" onClick={() => setIsNavExpanded(false)}>Stats</HashLink>
+              <HashLink
+                smooth
+                to="#events"
+                onClick={() => setIsNavExpanded(false)}
+              >
+                Ongoing Events
+              </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#events" onClick={() => setIsNavExpanded(false)}>Ongoing Events</HashLink>
-            </li>
-            <li>
-              <HashLink smooth to="#testimonial" onClick={() => setIsNavExpanded(false)}> Testimonial</HashLink>
+              <HashLink
+                smooth
+                to="#testimonial"
+                onClick={() => setIsNavExpanded(false)}
+              >
+                Testimonial
+              </HashLink>
             </li>
             {/* <li >
               <HashLink smooth to="#about" onClick={() => setIsNavExpanded(false)}> About</HashLink>

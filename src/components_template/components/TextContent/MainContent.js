@@ -74,6 +74,19 @@ export default function MainContent(props) {
               >
                 {props.name.desc ? props.name.desc : s}
               </Typography>
+              <br />
+              <Typography
+                margin={1}
+                textAlign={{ xs: "center", md: "start" }}
+                color={"rgba(255,255,255,1)"}
+                sx={{
+                  fontFamily: "Roboto, Helvetica, Arial, sans-serif",
+                  fontSize: "large",
+                  display: props.name.programName === "Super40" ? "" : "none",
+                }}
+              >
+                Batch starts from - 4<sup>th</sup> August
+              </Typography>
             </Box>
 
             {props.name.linktoregister ? (

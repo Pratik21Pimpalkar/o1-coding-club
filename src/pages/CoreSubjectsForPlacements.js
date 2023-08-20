@@ -22,6 +22,7 @@ import Pricing from "../components/Pricing";
 import Offers from "../components/Offers";
 import ReferralSlider from "../components/ReferralSlider";
 import MainContent from "../components_template/components/TextContent/MainContent";
+import AllOffers from "../components/AllOffers";
 
 const CoreSubjectsForPlacements = () => {
   const programdata = PagesData.coresubjectsforplacements;
@@ -47,7 +48,10 @@ const CoreSubjectsForPlacements = () => {
         {/* <AboutProgram data={programdata} /> */}
         <AboutInstructor data={programdata} />
         {/* <Banner /> */}
-        <Offers />
+        {/* <Offers /> */}
+
+        {/* <AllOffers /> */}
+
         <Pricing data={programdata} />
         <PlaceKitPricing data={programdata} />
         <ApplyNowBtn data={programdata} />

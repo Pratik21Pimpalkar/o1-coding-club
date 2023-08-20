@@ -1,17 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ApplyNowBtn from "./ApplyNowBtn";
 
 const Timeline = (props) => {
-  const downloadTxtFile = () => {
-    const element = document.createElement("a");
-    const file = new Blob([document.getElementById("input").value], {
-      type: "text/plain;charset=utf-8}",
-    });
-    element.href = "../Assets/one.csv";
-    element.download = "one.csv";
-    element.click();
-  };
   return (
     <TimeLineStyled>
       <h3 className="heading-desktop">How to Register</h3>
@@ -29,15 +19,29 @@ const Timeline = (props) => {
               <p>
                 Transfer ₹ 5950 to given QR code using any UPI app.<br></br>
               </p>
-              <button className="btn-giveTest mobileres">
-                <a
-                  href={require("../Assets/QR.pdf")}
-                  rel="noreferrer"
-                  download={"QR_Code"}
-                >
-                  QR Code
-                </a>
-              </button>
+              <span>
+                {/* <button className="btn-giveTest mobileres">
+                  <a
+                    href={`upi://pay?pa=${encodeURIComponent(
+                      "9850314506m@pnb"
+                    )}&tn=${encodeURIComponent(
+                      "Paying for SDE Bootcamp"
+                    )}&am=${5950}&pn=${"O(1) Coding Club"}`}
+                    rel="noreferrer"
+                  >
+                    Pay Now
+                  </a>
+                </button> */}
+                <button className="btn-giveTest mobileres">
+                  <a
+                    rel="noreferrer"
+                    href={require("../Assets/QR.pdf")}
+                    download={"QR_Code"}
+                  >
+                    QR Code
+                  </a>
+                </button>
+              </span>
             </div>
           </div>
         </div>

@@ -40,7 +40,35 @@ const OurEvents = () => {
           Ongoing Events
         </Typography>
 
-        <Grid
+        <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
+          <Grid item xs={12} sm={12} md={5}>
+            <Box
+              display={"flex"}
+              justifyContent="center"
+              marginBottom={{ xs: "-3rem", md: "0rem" }}
+            >
+              <img src={super40} alt="super40" width={"100%"} />
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={12} md={7}>
+            <Box>
+              <div style={FeatureParagraph}>
+                <h3 className="heading-desktop">
+                  <span>Super 40</span> Program
+                </h3>
+                <p>
+                  The most complete & our biggest program, with guaranteed dream
+                  placements & much more.
+                </p>
+              </div>
+              <Link className="explore-btn" to="/super40">
+                Explore More
+              </Link>
+            </Box>
+          </Grid>
+        </Grid>
+
+        {/* <Grid
           container
           alignItems={"center"}
           rowSpacing={1}
@@ -75,7 +103,7 @@ const OurEvents = () => {
               <img src={coresubjects} alt="" width={"90%"} />
             </Box>
           </Grid>
-        </Grid>
+        </Grid> */}
 
         <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
           <Grid item xs={12} sm={12} md={5}>
@@ -107,7 +135,7 @@ const OurEvents = () => {
           </Grid>
         </Grid>
 
-        <Grid
+        {/* <Grid
           container
           alignItems={"center"}
           rowSpacing={1}
@@ -139,34 +167,6 @@ const OurEvents = () => {
               marginBottom={{ xs: "-3rem", md: "0rem" }}
             >
               <img src={core} alt="core" width={"90%"} />
-            </Box>
-          </Grid>
-        </Grid>
-
-        {/* <Grid container alignItems={"center"} rowSpacing={1} columnSpacing={5}>
-          <Grid item xs={12} sm={12} md={5}>
-            <Box
-              display={"flex"}
-              justifyContent="center"
-              marginBottom={{ xs: "-3rem", md: "0rem" }}
-            >
-              <img src={super40} alt="super40" width={"100%"} />
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={12} md={7}>
-            <Box>
-              <div style={FeatureParagraph}>
-                <h3 className="heading-desktop">
-                  <span>Super 40</span> Program
-                </h3>
-                <p>
-                  The most complete & our biggest program, with guaranteed dream
-                  placements & much more.
-                </p>
-              </div>
-              <Link className="explore-btn" to="/super40">
-                Explore More
-              </Link>
             </Box>
           </Grid>
         </Grid> */}
