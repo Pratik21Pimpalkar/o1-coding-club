@@ -7,8 +7,6 @@ const ApplyNowBtn = (props) => {
       <HashLink
         smooth
         to={props.data.applyNowURL}
-
-
       >
         {props.data.shownote ?
           <p style={{ color: '#9874ff', fontWeight: 'bold', fontSize: '20px' }}>Note : The program is free if we fail to land you minimum of 7LPA job. 100% refund, no questions asked.</p> : <div></div>}

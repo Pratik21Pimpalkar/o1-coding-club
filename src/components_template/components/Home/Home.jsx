@@ -27,16 +27,21 @@ export default Home;
 
 const MainWrapper = styled.div`
   .home {
-    height: 100vh;
+    /* height: 100vh; */
   }
   @media screen and (max-width: 600px) {
     .home {
-      min-height: 100vh; 
+      max-height: 100vh; 
     }
   }
-  @media screen and (min-device-width:380px) and (max-device-width:900px)  {
+  @media screen and (max-width: 900px) {
+    .home {
+      /* max-height: 100vh;  */
+    }
+  }
+  @media screen and (min-device-width:380px) and (max-device-width: 900px){
     .home{
-      height: 81vh !important;
+      /* height: 100vh !important; */
       min-height: initial;
     }
   }

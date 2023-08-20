@@ -8,7 +8,7 @@ import pythonbootcamp from "../Assets/events/pythonbootcamp.png";
 import sdebootcamp from "../Assets/events/sdebootcamp.png";
 import super50 from "../Assets/events/super50.png";
 
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 const FeaturePosition = {
   color: "white",
   fontFamily: "muli",

@@ -27,7 +27,7 @@ const Hero = () => {
       {/* <img src={bg} alt="" /> */}
       <Container>
         <Grid container className="main-grid">
-          <Grid item xs={12} md={8} lg={4} className="inside-grid">
+          <Grid item xs={12} md={4} lg={4} className="inside-grid">
             <div className="text-position">
               <Typography className="  css-130rcti" variant="h1">
                 O(1) Coding Club
@@ -72,7 +72,7 @@ const Hero = () => {
           </Grid>
         </Grid>
       </Container>
-      <ReferralSlider/>
+      <ReferralSlider />
     </HeroWrapper >
   );
 };
@@ -235,8 +235,7 @@ const HeroWrapper = styled.div`
   }
   .css-18q3wgh {
     position: absolute;
-    top: 0;
-    left: 0;
+
     -webkit-transform: translateX(-40%) translateY(-40%);
     -moz-transform: translateX(-40%) translateY(-40%);
     -ms-transform: translateX(-40%) translateY(-40%);
@@ -251,8 +250,7 @@ const HeroWrapper = styled.div`
 
   .css-19fx3dz {
     position: absolute;
-    top: 0;
-    right: 0;
+   
     -webkit-transform: translateX(40%) translateY(-40%);
     -moz-transform: translateX(40%) translateY(-40%);
     -ms-transform: translateX(40%) translateY(-40%);

@@ -3,13 +3,17 @@ import styled from 'styled-components'
 import { Card, CardContent, Grid, Typography } from "@mui/material";
 
 
-export default function IncomeAgreement({pricedata}) {
+export default function IncomeAgreement({ pricedata }) {
 
     return (
         <Wrapper>
             <Grid container justifyContent="center" spacing={9}>
                 <Grid item sm={6}>
-                    <Card className="root">
+                    <Card className="root" style={{
+                        backgroundColor: '#140230',
+                        color: 'white',
+                        borderRadius: '1rem'
+                    }}>
                         <CardContent>
                             <Typography className="title">PLAN A</Typography>
                             <hr />
@@ -18,10 +22,11 @@ export default function IncomeAgreement({pricedata}) {
                                 variant="h5"
                                 component="h2"
                             >
-                              ₹ {pricedata.priceplanA }  <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
+                                ₹ {pricedata.priceplanA}
+                                {/* <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span> */}
                             </Typography>
 
-                            <Typography className="pos" color="textSecondary">
+                            <Typography className="pos">
                                 Upfront Registration Fees
                             </Typography>
                             <hr />
@@ -34,28 +39,34 @@ export default function IncomeAgreement({pricedata}) {
                             </Typography>
 
                             <table className="table" border="1">
-                                <tr className="tr">
-                                    <th className="th1">If You Get</th>
-                                    <th className="th">You Pay</th>
-                                </tr>
-                                <tr className="tr">
-                                    <td className="td1">Internship Offer</td>
-                                    <td className="td">
-                                        20% of monthly salary for 1 month
-                                    </td>
-                                </tr>
-                                <tr className="tr">
-                                    <td className="td1">Full-Time Offer</td>
-                                    <td className="td">
-                                        20% of monthly salary for 1 month
-                                    </td>
-                                </tr>
+                                <tbody>
+                                    <tr className="tr">
+                                        <th className="th1">If You Get</th>
+                                        <th className="th">You Pay</th>
+                                    </tr>
+                                    <tr className="tr">
+                                        <td className="td1">Internship Offer</td>
+                                        <td className="td">
+                                            20% of monthly salary for 1 month
+                                        </td>
+                                    </tr>
+                                    <tr className="tr">
+                                        <td className="td1">Full-Time Offer</td>
+                                        <td className="td">
+                                            20% of monthly salary for 1 month
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </CardContent>
                     </Card>
                 </Grid>
                 <Grid item sm={6}>
-                    <Card className="root">
+                    <Card className="root" style={{
+                        backgroundColor: '#140230',
+                        color: 'white',
+                        borderRadius: '1rem'
+                    }}>
                         <CardContent>
                             <Typography className="title">PLAN B</Typography>
                             <hr />
@@ -64,9 +75,10 @@ export default function IncomeAgreement({pricedata}) {
                                 variant="h5"
                                 component="h2"
                             >
-                            ₹ {pricedata.priceplanB }<span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span>
+                                ₹ {pricedata.priceplanB}
+                                {/* <span style={{ marginLeft: "0.51rem", lineHeight: "50px", fontSize: "16px", fontWeight: "550" }}>+ GST</span> */}
                             </Typography>
-                            <Typography className="pos" color="textSecondary">
+                            <Typography className="pos">
                                 Upfront Registration Fees
                             </Typography>
                             <hr />
@@ -109,6 +121,7 @@ export default function IncomeAgreement({pricedata}) {
 const Wrapper = styled.div`
 -webkit-text-fill-color:initial;
 text-align: center;
+margin: 1rem;
 margin-top: 3rem;
 
 .root
@@ -149,28 +162,28 @@ margin-top: 3rem;
         font-size: 15px;
     }
     .table{
-        border: 2px solid forestgreen;
+        border: 2px solid #9874ff;
         width: 85%;
         margin: auto;
         margin-top: 25px;
     }
     tr {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #9874ff;
     };
     .th {
-        border-bottom: 1px solid black;
-        border-left: 2px solid green;
+        border-bottom: 1px solid #9874ff;
+        border-left: 2px solid #9874ff;
         font-size: 20px;
         padding: 10px;
     }
     .th1 {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #9874ff;
         font-size: 20px;
         padding: 10px;
     }
     .td{
         text-align: center;
-        border-left: 2px solid green;
+        border-left: 2px solid #9874ff;
         font-size: 20px;
         padding: 10px;
     }

@@ -1,39 +1,71 @@
 import React from "react";
 import styled from "styled-components";
+import ApplyNowBtn from "./ApplyNowBtn";
 
 const Timeline = (props) => {
+  const downloadTxtFile = () => {
+    const element = document.createElement("a");
+    const file = new Blob([document.getElementById("input").value], {
+      type: "text/plain;charset=utf-8}",
+    });
+    element.href = "../Assets/one.csv";
+    element.download = "one.csv";
+    element.click();
+  };
   return (
     <TimeLineStyled>
-      <h3 className="heading-desktop">How to Apply</h3>
+      <h3 className="heading-desktop">How to Register</h3>
       <div className="timeline">
-        <a href={props.data.timelineformlink} rel="noreferrer" className="explore-btn ">
-          <div className="container left">
-            <div className="content">
-              <h2>Join Whatsapp Group</h2>
+        <div className="container left">
+          <div className="content">
+            <h2 style={{ marginLeft: 10 }}>Transfer the Fees</h2>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <p>
-                Join the following Whatsapp group and attend program details
-                briefing meet.<br></br>{" "}
-                <button className="btn-giveTest mobileres">
-
-                  Join Now
-
-                </button>
+                Transfer ₹ 5950 to given QR code using any UPI app.<br></br>
               </p>
+              <button className="btn-giveTest mobileres">
+                <a
+                  href={require("../Assets/QR.pdf")}
+                  rel="noreferrer"
+                  download={"QR_Code"}
+                >
+                  QR Code
+                </a>
+              </button>
             </div>
-          </div></a>
+          </div>
+        </div>
 
         <div className="container right">
           <div className="content">
-            <h2>Fill Google Form</h2>
-            <p>Fill google form circulated in the meet & group to apply.</p>
-          </div>
-        </div>
-        <div className="container left">
-          <div className="content">
-            <h2>Shortlisting Process</h2>
-            <p>
-              Appear for the shortlisting and selection process, all the best.
-            </p>
+            <h2 style={{ marginLeft: 10 }}>Fill Registration Form</h2>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <p>
+                Fill the registration form with screenshot of payment proof.
+              </p>
+              <a
+                href={props.data.timelineformlink}
+                rel="noreferrer"
+                className="explore-btn "
+                target="_blank"
+              >
+                <button className="btn-giveTest mobileres">
+                  Application Form
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -44,11 +76,10 @@ const Timeline = (props) => {
 export default Timeline;
 
 const TimeLineStyled = styled.div`
-
-a{
-  text-decoration: none;
-  color: black;
-}
+  a {
+    text-decoration: none;
+    color: white;
+  }
   .heading-desktop {
     margin: 2rem 0;
     text-align: center;
@@ -57,7 +88,6 @@ a{
     margin-bottom: 1rem;
   }
 
- 
   .timeline {
     position: relative;
     max-width: 1200px;
@@ -157,12 +187,39 @@ a{
     padding: 0.2rem 0.7rem;
     font-size: 1.32rem;
   }
+  .btn-giveTest {
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(90deg, rgb(229, 0, 255) 0%, rgb(130, 0, 255) 100%) repeat
+      scroll 0% 0%;
+    font-family: "Poppins";
+    margin-top: 0.9rem;
+    margin-right: 0.6rem;
+    text-transform: uppercase;
+    height: auto;
+    color: white !important;
+    transition: all ease 0.5s;
+    text-decoration: none;
+    white-space: normal;
+    width: initial !important;
+    text-align: center;
+    /* line-height: 35px; */
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgb(103 0 255 / 40%) 0px 10px 60px 0px;
+    padding: 4px 26px;
+    padding: 4px 14px;
+    border-radius: 300px;
+    /* filter: brightness(100%); */
+    visibility: visible;
+    cursor: pointer;
+  }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
-    .mobileres{
-    transform: scale(0.7);
-  }
+    .mobileres {
+      transform: scale(0.7);
+    }
 
     /* Place the timelime to the left */
 

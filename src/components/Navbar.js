@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/logo.svg";
 import { HashLink } from "react-router-hash-link";

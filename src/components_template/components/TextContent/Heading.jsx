@@ -3,7 +3,8 @@ import   "./textStyle.css"
 
 function Heading(data) {
   return (
-    <>{console.log(data)}
+    <>
+    {/* {console.log(data)} */}
 
       <div className="head">
         {/* <h6 className="sidehead">AN O(1) Product</h6> */}

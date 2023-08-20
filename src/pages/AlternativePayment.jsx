@@ -1,54 +1,60 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import styled from "styled-components";
-import beginLogo from "../images/benefits.jpg";
-import benefits from '../../Assets/benefits.png'
 import { Container } from "@mui/system";
-const YouWillGet = ({ data }) => {
+
+const AlternativePaymentMethod = (props) => {
   return (
     <FeaturesCardWrapper>
-
       <Container>
-        {/* <Typography variant="h2" sx={{
-            color: 'white', textAlign: "center", '@media screen and (max-width:480px)':{
-              fontSize:"2.2rem"
-            }
-        }}>YOU GET !</Typography> */}
-
         <Grid container maxWidth={"lg"} justifyContent={"center"} spacing={5}>
           <Grid item xs={12} md={6}>
             <div className="card" style={{
               borderRadius: '1rem'
             }}>
-              <div className="imgdiv">
-                <img src={benefits} alt="" />
-              </div>
+              <h1 className="heading"> Alternative Payment Method</h1>
+              <h3 className="heading2">
+                Use Only If Above Method Is Not Working
+              </h3>
               <div className="contentdetails">
-                {data.youwillget.map((item, key) => {
-                  return (
-                    <ul key={key}>
-                      <li className="items">{item}</li>{" "}
-                    </ul>
-                  );
-                })}
+                <h4>
+                  Use the bank account transfer feature of any UPI app &
+                  transfer {props.data.alternativePrice} to following account :-
+                </h4>
+              <br></br>
+                <p className="bankdetails">
+                  Account no: 0354002100261752 <br></br>
+                  Ifsc code: PUNB0035400<br></br>
+                  Account holders name: Catalysing Dreams and beyond<br></br>
+                  <br></br>
+                  
+                </p>{" "}
+                <p>Once payment is done don't forget to fill the application form
+                  given above.</p>
               </div>
               <div id="timeline"></div>
             </div>
           </Grid>
         </Grid>
       </Container>
-
     </FeaturesCardWrapper>
   );
 };
 
-export default YouWillGet;
-
 const FeaturesCardWrapper = styled.div`
- 
+  margin-top: 4rem;
+  .heading2 {
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: white;
+  }
+  .bankdetails{
+    text-align: center;
+  }
   .heading {
     text-align: center;
-    font-size: 5rem;
+    font-size: 2.2rem;
     color: white;
   }
   .card {
@@ -62,28 +68,23 @@ const FeaturesCardWrapper = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    .imgdiv {
-      width: 13rem;
-      img {
-        object-fit: cover;
-        width: 100%;
-      }
-    }
+
     .contentdetails {
       color: #ffffff;
       text-align: left;
 
       margin: 1rem 0rem;
       opacity: 70%;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       line-height: 2rem;
     }
 
     @media screen and (max-width: 576px) {
-     
       .contentdetails {
         font-size: 1.2rem;
       }
     }
   }
 `;
+
+export default AlternativePaymentMethod;

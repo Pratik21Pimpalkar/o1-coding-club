@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ApplyNowBtn from "./ApplyNowBtn";
+
 const Timeline = (props) => {
   const downloadTxtFile = () => {
     const element = document.createElement("a");
@@ -14,75 +15,61 @@ const Timeline = (props) => {
   return (
     <TimeLineStyled>
       <h3 className="heading-desktop">How to Register</h3>
-      {/* <div className="timeline">
-
-        <div className="container left">
-          <div className="content">
-            <h2>Enroll  </h2>
-            <p>
-              Enroll in the program by choosing one of the payment option.<br></br>{" "}
-              <button className="btn-giveTest mobileres" onClick={downloadTxtFile}>
-                <a href={require("../Assets/ISCFORM.pdf")} download={"ISC_FORM"}>ISA Form Download</a>
-              </button>
-
-            </p>
-          </div>
-        </div>
-
-
-        <div className="container right">
-          <div className="content">
-            <h2>Pay Fees</h2>
-            <p>Do the specified payment to the given UPI id @oksbi.
-            </p>
-          </div>
-        </div>
-        <div className="container left">
-          <div className="content">
-            <h2>Fill google form </h2>
-            <p>
-              Fill google form circulated in the meet & group to apply.
-            </p>
-          </div>
-        </div>
-      </div> */}
       <div className="timeline">
         <div className="container left">
           <div className="content">
             <h2 style={{ marginLeft: 10 }}>Transfer the Fees</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <p>
                 Transfer ₹ 999 to given QR code using any UPI app.<br></br>
               </p>
-              <button className="btn-giveTest mobileres" >
-                <a href={require("../Assets/QR.pdf")} download={"QR_Code"}>QR Code</a>
+              <button className="btn-giveTest mobileres">
+                <a
+                  href={require("../Assets/QR.pdf")}
+                  rel="noreferrer"
+                  download={"QR_Code"}
+                >
+                  QR Code
+                </a>
               </button>
             </div>
           </div>
         </div>
 
-      {/* <div className="container right">
+        <div className="container right">
           <div className="content">
-            <h2>Fill Google Form</h2>
-            <p>Fill google form circulated in the meet & group to apply.</p>
+            <h2 style={{ marginLeft: 10 }}>Fill Registration Form</h2>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <p>
+                Fill the registration form with screenshot of payment proof.
+              </p>
+              <a
+                href={props.data.timelineformlink}
+                rel="noreferrer"
+                className="explore-btn "
+                target="_blank"
+              >
+                <button className="btn-giveTest mobileres">
+                  Application Form
+                </button>
+              </a>
+            </div>
           </div>
-        </div> */}
-      <div className="container right">
-        <div className="content">
-          <h2 style={{ marginLeft: 10 }}>Fill Registration Form</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: "center" }}>
-            <p>
-              Fill the registration form with screenshot of payment proof.
-            </p>
-            <a href={props.data.timelineformlink} className="explore-btn " target="_blank">
-              <button className="btn-giveTest mobileres" >
-                Applcation Form
-              </button>
-            </a>
-          </div></div>
+        </div>
       </div>
-    </div>
-    </TimeLineStyled >
+    </TimeLineStyled>
   );
 };
 
@@ -102,7 +89,7 @@ a{
     margin-bottom: 1rem;
   }
 
- 
+
   .timeline {
     position: relative;
     max-width: 1200px;
